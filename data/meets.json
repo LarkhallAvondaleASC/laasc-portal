@@ -1,506 +1,506 @@
 [
   {
     "id": 270,
-    "name": "Results",
-    "course": "REN96 Development Meet 2026",
-    "date": "S"
+    "name": "REN96 Development Meet 2026",
+    "course": "SCM",
+    "date": "2026-06-20"
   },
   {
     "id": 269,
-    "name": "Results",
-    "course": "SAST Open meet 13-14 June 2026",
-    "date": "S"
+    "name": "SAST Open meet 13-14 June 2026",
+    "course": "SCM",
+    "date": "2026-06-13"
   },
   {
     "id": 272,
-    "name": "Results",
-    "course": "2026 WD LC May AG Meet",
-    "date": "L"
+    "name": "2026 WD LC May AG Meet",
+    "course": "LCM",
+    "date": "2026-05-09"
   },
   {
     "id": 263,
-    "name": "Results",
-    "course": "Sl Development Meet 3 - 2026",
-    "date": "S"
+    "name": "Sl Development Meet 3 - 2026",
+    "course": "SCM",
+    "date": "2026-05-09"
   },
   {
     "id": 268,
-    "name": "Results",
-    "course": "Club Time Trials May 2026",
-    "date": "S"
+    "name": "Club Time Trials May 2026",
+    "course": "SCM",
+    "date": "2026-05-04"
   },
   {
     "id": 271,
-    "name": "Results",
-    "course": "North Ayrshire Junior Meet",
-    "date": "S"
+    "name": "North Ayrshire Junior Meet",
+    "course": "SCM",
+    "date": "2026-05-02"
   },
   {
     "id": 260,
-    "name": "Results",
-    "course": "EK Long Course Age Group Meet",
-    "date": "L"
+    "name": "EK Long Course Age Group Meet",
+    "course": "LCM",
+    "date": "2026-04-25"
   },
   {
     "id": 267,
-    "name": "Results",
-    "course": "FVT Spring & Dev Meet_25 & 26",
-    "date": "S"
+    "name": "FVT Spring & Dev Meet_25 & 26",
+    "course": "SCM",
+    "date": "2026-04-25"
   },
   {
     "id": 265,
-    "name": "Results",
-    "course": "Club Time Trials April 2026",
-    "date": "S"
+    "name": "Club Time Trials April 2026",
+    "course": "SCM",
+    "date": "2026-04-20"
   },
   {
     "id": 258,
-    "name": "Results",
-    "course": "Scottish National Age Group Ch",
-    "date": "L"
+    "name": "Scottish National Age Group Ch",
+    "course": "LCM",
+    "date": "2026-04-04"
   },
   {
     "id": 256,
-    "name": "Results",
-    "course": "2026 WD Long Course March Meet",
-    "date": "L"
+    "name": "2026 WD Long Course March Meet",
+    "course": "LCM",
+    "date": "2026-03-21"
   },
   {
     "id": 259,
-    "name": "Results",
-    "course": "Club 200 fly",
-    "date": "S"
+    "name": "Club 200 fly",
+    "course": "SCM",
+    "date": "2026-03-14"
   },
   {
     "id": 255,
-    "name": "Results",
-    "course": "Cumbernauld Spring Open Meet 2",
-    "date": "S"
+    "name": "Cumbernauld Spring Open Meet 2",
+    "course": "SCM",
+    "date": "2026-03-14"
   },
   {
     "id": 262,
-    "name": "Results",
-    "course": "South Lanarkshire Schools 2026",
-    "date": "S"
+    "name": "South Lanarkshire Schools 2026",
+    "course": "SCM",
+    "date": "2026-03-11"
   },
   {
     "id": 257,
-    "name": "Results",
-    "course": "Club Time Trials March 2026",
-    "date": "S"
+    "name": "Club Time Trials March 2026",
+    "course": "SCM",
+    "date": "2026-03-02"
   },
   {
     "id": 252,
-    "name": "Results",
-    "course": "2026 WD Long Course Championsh",
-    "date": "L"
+    "name": "2026 WD Long Course Championsh",
+    "course": "LCM",
+    "date": "2026-02-21"
   },
   {
     "id": 251,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2026-02-21"
   },
   {
     "id": 250,
-    "name": "Results",
-    "course": "North Ayrshire 200 Meet 2026",
-    "date": "S"
+    "name": "North Ayrshire 200 Meet 2026",
+    "course": "SCM",
+    "date": "2026-02-13"
   },
   {
     "id": 248,
-    "name": "Results",
-    "course": "2026 WD Long Course Championsh",
-    "date": "L"
+    "name": "2026 WD Long Course Championsh",
+    "course": "LCM",
+    "date": "2026-02-07"
   },
   {
     "id": 254,
-    "name": "Results",
-    "course": "Club Time Trials February 2026",
-    "date": "S"
+    "name": "Club Time Trials February 2026",
+    "course": "SCM",
+    "date": "2026-02-02"
   },
   {
     "id": 249,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2026-01-31"
   },
   {
     "id": 253,
-    "name": "Results",
-    "course": "Clyde Coast Mini League",
-    "date": "S"
+    "name": "Clyde Coast Mini League",
+    "course": "SCM",
+    "date": "2026-01-24"
   },
   {
     "id": 247,
-    "name": "Results",
-    "course": "Forth Valley Tridents Open Mee",
-    "date": "S"
+    "name": "Forth Valley Tridents Open Mee",
+    "course": "SCM",
+    "date": "2026-01-17"
   },
   {
     "id": 243,
-    "name": "Results",
-    "course": "EK Winter Invitational Meet 20",
-    "date": "S"
+    "name": "EK Winter Invitational Meet 20",
+    "course": "SCM",
+    "date": "2025-12-07"
   },
   {
     "id": 244,
-    "name": "Results",
-    "course": "EK Graded Meet December 2025",
-    "date": "S"
+    "name": "EK Graded Meet December 2025",
+    "course": "SCM",
+    "date": "2025-12-06"
   },
   {
     "id": 245,
-    "name": "Results",
-    "course": "Larkhall Club Championships 20",
-    "date": "S"
+    "name": "Larkhall Club Championships 20",
+    "course": "SCM",
+    "date": "2025-11-28"
   },
   {
     "id": 239,
-    "name": "Results",
-    "course": "Dumfries ASC Advent Open 2025",
-    "date": "S"
+    "name": "Dumfries ASC Advent Open 2025",
+    "course": "SCM",
+    "date": "2025-11-21"
   },
   {
     "id": 241,
-    "name": "Results",
-    "course": "2025 WD Short Course Champions",
-    "date": "S"
+    "name": "2025 WD Short Course Champions",
+    "course": "SCM",
+    "date": "2025-11-08"
   },
   {
     "id": 246,
-    "name": "Results",
-    "course": "Club Time Trials November 2025",
-    "date": "S"
+    "name": "Club Time Trials November 2025",
+    "course": "SCM",
+    "date": "2025-11-03"
   },
   {
     "id": 242,
-    "name": "Results",
-    "course": "southlanarkshire development m",
-    "date": "S"
+    "name": "southlanarkshire development m",
+    "course": "SCM",
+    "date": "2025-11-01"
   },
   {
     "id": 236,
-    "name": "Results",
-    "course": "RB Spooky Splash Development m",
-    "date": "S"
+    "name": "RB Spooky Splash Development m",
+    "course": "SCM",
+    "date": "2025-10-25"
   },
   {
     "id": 234,
-    "name": "Results",
-    "course": "2025 WD Short Course Champions",
-    "date": "S"
+    "name": "2025 WD Short Course Champions",
+    "course": "SCM",
+    "date": "2025-10-18"
   },
   {
     "id": 240,
-    "name": "Results",
-    "course": "Club Time Trials October 2025",
-    "date": "S"
+    "name": "Club Time Trials October 2025",
+    "course": "SCM",
+    "date": "2025-10-06"
   },
   {
     "id": 235,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2025-10-04"
   },
   {
     "id": 232,
-    "name": "Results",
-    "course": "Forth Valley Tridents Age Grou",
-    "date": "S"
+    "name": "Forth Valley Tridents Age Grou",
+    "course": "SCM",
+    "date": "2025-09-28"
   },
   {
     "id": 231,
-    "name": "Results",
-    "course": "Forth Valley Tridents Developm",
-    "date": "S"
+    "name": "Forth Valley Tridents Developm",
+    "course": "SCM",
+    "date": "2025-09-27"
   },
   {
     "id": 233,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2025-09-20"
   },
   {
     "id": 237,
-    "name": "Results",
-    "course": "Club Time Trials September 202",
-    "date": "S"
+    "name": "Club Time Trials September 202",
+    "course": "SCM",
+    "date": "2025-09-01"
   },
   {
     "id": 238,
-    "name": "Results",
-    "course": "Club 50m Time Trials",
-    "date": "S"
+    "name": "Club 50m Time Trials",
+    "course": "SCM",
+    "date": "2025-08-18"
   },
   {
     "id": 229,
-    "name": "Results",
-    "course": "Scottish Summer Meet 2025",
-    "date": "L"
+    "name": "Scottish Summer Meet 2025",
+    "course": "LCM",
+    "date": "2025-07-10"
   },
   {
     "id": 230,
-    "name": "Results",
-    "course": "Club Time Trials June 2025",
-    "date": "S"
+    "name": "Club Time Trials June 2025",
+    "course": "SCM",
+    "date": "2025-06-02"
   },
   {
     "id": 203,
-    "name": "Results",
-    "course": "Stirling Summer Meet 2025",
-    "date": "S"
+    "name": "Stirling Summer Meet 2025",
+    "course": "SCM",
+    "date": "2025-06-01"
   },
   {
     "id": 202,
-    "name": "Results",
-    "course": "Cumbernauld Summer Sprints Mee",
-    "date": "S"
+    "name": "Cumbernauld Summer Sprints Mee",
+    "course": "SCM",
+    "date": "2025-05-17"
   },
   {
     "id": 204,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2025-05-10"
   },
   {
     "id": 200,
-    "name": "Results",
-    "course": "2025 WD LC May AG Meet",
-    "date": "L"
+    "name": "2025 WD LC May AG Meet",
+    "course": "LCM",
+    "date": "2025-05-10"
   },
   {
     "id": 227,
-    "name": "Results",
-    "course": "Club Time Trials May 2025",
-    "date": "S"
+    "name": "Club Time Trials May 2025",
+    "course": "SCM",
+    "date": "2025-05-05"
   },
   {
     "id": 201,
-    "name": "Results",
-    "course": "North Ayrshire Junior Meet",
-    "date": "S"
+    "name": "North Ayrshire Junior Meet",
+    "course": "SCM",
+    "date": "2025-05-03"
   },
   {
     "id": 224,
-    "name": "Results",
-    "course": "Club Time Trials April 2025",
-    "date": "S"
+    "name": "Club Time Trials April 2025",
+    "course": "SCM",
+    "date": "2025-04-07"
   },
   {
     "id": 196,
-    "name": "Results",
-    "course": "Scottish National Age Groups",
-    "date": "L"
+    "name": "Scottish National Age Groups",
+    "course": "LCM",
+    "date": "2025-04-05"
   },
   {
     "id": 199,
-    "name": "Results",
-    "course": "Dumfries Spring Splash Graded",
-    "date": "S"
+    "name": "Dumfries Spring Splash Graded",
+    "course": "SCM",
+    "date": "2025-03-29"
   },
   {
     "id": 198,
-    "name": "Results",
-    "course": "South Lanarkshire PreSNAGS Tim",
-    "date": "S"
+    "name": "South Lanarkshire PreSNAGS Tim",
+    "course": "SCM",
+    "date": "2025-03-15"
   },
   {
     "id": 207,
-    "name": "Results",
-    "course": "REN 96 Pre-SNAGs Meet",
-    "date": "S"
+    "name": "REN 96 Pre-SNAGs Meet",
+    "course": "SCM",
+    "date": "2025-03-08"
   },
   {
     "id": 226,
-    "name": "Results",
-    "course": "Club Time Trials March 2025",
-    "date": "S"
+    "name": "Club Time Trials March 2025",
+    "course": "SCM",
+    "date": "2025-03-03"
   },
   {
     "id": 205,
-    "name": "Results",
-    "course": "2025 WD Long Course Championsh",
-    "date": "L"
+    "name": "2025 WD Long Course Championsh",
+    "course": "LCM",
+    "date": "2025-03-01"
   },
   {
     "id": 190,
-    "name": "Results",
-    "course": "Glenrothes Spring Meet",
-    "date": "S"
+    "name": "Glenrothes Spring Meet",
+    "course": "SCM",
+    "date": "2025-02-22"
   },
   {
     "id": 189,
-    "name": "Results",
-    "course": "Hearts Fast February",
-    "date": "S"
+    "name": "Hearts Fast February",
+    "course": "SCM",
+    "date": "2025-02-22"
   },
   {
     "id": 191,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2025-02-22"
   },
   {
     "id": 195,
-    "name": "Results",
-    "course": "Glenrothes Spring Meet 2025",
-    "date": "S"
+    "name": "Glenrothes Spring Meet 2025",
+    "course": "SCM",
+    "date": "2025-02-22"
   },
   {
     "id": 206,
-    "name": "Results",
-    "course": "EK Graded Meet 2025",
-    "date": "S"
+    "name": "EK Graded Meet 2025",
+    "course": "SCM",
+    "date": "2025-02-15"
   },
   {
     "id": 225,
-    "name": "Results",
-    "course": "Club Time Trials February 2025",
-    "date": "S"
+    "name": "Club Time Trials February 2025",
+    "course": "SCM",
+    "date": "2025-02-03"
   },
   {
     "id": 192,
-    "name": "Results",
-    "course": "Scottish Schools Championships",
-    "date": "L"
+    "name": "Scottish Schools Championships",
+    "course": "LCM",
+    "date": "2025-01-24"
   },
   {
     "id": 187,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2025-01-18"
   },
   {
     "id": 186,
-    "name": "Results",
-    "course": "Larkhall Club Championships 20",
-    "date": "S"
+    "name": "Larkhall Club Championships 20",
+    "course": "SCM",
+    "date": "2024-12-08"
   },
   {
     "id": 223,
-    "name": "Results",
-    "course": "EKASC Club Championships 2024",
-    "date": "S"
+    "name": "EKASC Club Championships 2024",
+    "course": "SCM",
+    "date": "2024-11-23"
   },
   {
     "id": 184,
-    "name": "Results",
-    "course": "Dumfries ASC Advent Open 2024",
-    "date": "S"
+    "name": "Dumfries ASC Advent Open 2024",
+    "course": "SCM",
+    "date": "2024-11-22"
   },
   {
     "id": 185,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2024-11-16"
   },
   {
     "id": 222,
-    "name": "Results",
-    "course": "South Lanarkshire Schools 2024",
-    "date": "S"
+    "name": "South Lanarkshire Schools 2024",
+    "course": "SCM",
+    "date": "2024-11-15"
   },
   {
     "id": 176,
-    "name": "Results",
-    "course": "2024 WD Short Course Champions",
-    "date": "S"
+    "name": "2024 WD Short Course Champions",
+    "course": "SCM",
+    "date": "2024-11-09"
   },
   {
     "id": 183,
-    "name": "Results",
-    "course": "Club Time Trials November 2024",
-    "date": "S"
+    "name": "Club Time Trials November 2024",
+    "course": "SCM",
+    "date": "2024-11-04"
   },
   {
     "id": 208,
-    "name": "Results",
-    "course": "Ren 96 Open Meet 2024",
-    "date": "S"
+    "name": "Ren 96 Open Meet 2024",
+    "course": "SCM",
+    "date": "2024-11-01"
   },
   {
     "id": 170,
-    "name": "Results",
-    "course": "2024 WD Short Course Champions",
-    "date": "S"
+    "name": "2024 WD Short Course Champions",
+    "course": "SCM",
+    "date": "2024-10-19"
   },
   {
     "id": 221,
-    "name": "Results",
-    "course": "DASC 3 Club Development Meet",
-    "date": "S"
+    "name": "DASC 3 Club Development Meet",
+    "course": "SCM",
+    "date": "2024-10-12"
   },
   {
     "id": 173,
-    "name": "Results",
-    "course": "Club Time Trials October 2024",
-    "date": "S"
+    "name": "Club Time Trials October 2024",
+    "course": "SCM",
+    "date": "2024-10-12"
   },
   {
     "id": 165,
-    "name": "Results",
-    "course": "Autumn Graded Meet 2024",
-    "date": "S"
+    "name": "Autumn Graded Meet 2024",
+    "course": "SCM",
+    "date": "2024-10-05"
   },
   {
     "id": 172,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2024-10-05"
   },
   {
     "id": 161,
-    "name": "Results",
-    "course": "South Lanarkshire Development",
-    "date": "S"
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2024-09-14"
   },
   {
     "id": 160,
-    "name": "Results",
-    "course": "2024 WD AG Meet and Relay Cham",
-    "date": "S"
+    "name": "2024 WD AG Meet and Relay Cham",
+    "course": "SCM",
+    "date": "2024-09-07"
   },
   {
     "id": 166,
-    "name": "Results",
-    "course": "Club Time Trials September 202",
-    "date": "S"
+    "name": "Club Time Trials September 202",
+    "course": "SCM",
+    "date": "2024-09-02"
   },
   {
     "id": 163,
-    "name": "Results",
-    "course": "Club 50m Sprints August 2024",
-    "date": "S"
+    "name": "Club 50m Sprints August 2024",
+    "course": "SCM",
+    "date": "2024-08-19"
   },
   {
     "id": 164,
-    "name": "Results",
-    "course": "Scottish Summer Meet 2024",
-    "date": "L"
+    "name": "Scottish Summer Meet 2024",
+    "course": "LCM",
+    "date": "2024-07-11"
   },
   {
     "id": 156,
-    "name": "Results",
-    "course": "Warrender End of Season SC Mee",
-    "date": "S"
+    "name": "Warrender End of Season SC Mee",
+    "course": "SCM",
+    "date": "2024-06-15"
   },
   {
     "id": 158,
-    "name": "Results",
-    "course": "Lothian Region Distance Meet d",
-    "date": "S"
+    "name": "Lothian Region Distance Meet d",
+    "course": "SCM",
+    "date": "2024-06-09"
   },
   {
     "id": 162,
-    "name": "Results",
-    "course": "Club Time Trials June 2024",
-    "date": "S"
+    "name": "Club Time Trials June 2024",
+    "course": "SCM",
+    "date": "2024-06-03"
   },
   {
     "id": 220,
-    "name": "Results",
-    "course": "SAST 3 Club development meet",
-    "date": "S"
+    "name": "SAST 3 Club development meet",
+    "course": "SCM",
+    "date": "2024-06-02"
   }
 ]
