@@ -184,8 +184,55 @@ def fetch_meets(session):
     return meets
 
 
+def fetch_meet_results(session, meet_id):
+    soup = get_soup(session, f"{BASE_URL}/aMeetRESULTS.ASP", {"db": DB, "MEET": meet_id})
+    table = find_data_table(soup)
+    if not table:
+        return []
+    results = []
+    for cells in data_rows(table):
+        if len(cells) < 8:
+            continue
+        # Find athlete column: the cell containing "Last, First" format
+        athlete_idx = next(
+            (i for i, c in enumerate(cells) if "," in c.get_text()),
+            None,
+        )
+        if athlete_idx is None:
+            continue
+        offset = athlete_idx  # everything else is relative to this
+        if len(cells) < offset + 8:
+            continue
+        athlete_raw = cells[offset].get_text(strip=True)
+        last, first = (p.strip() for p in athlete_raw.split(",", 1))
+        dist_raw   = cells[offset + 4].get_text(strip=True)
+        stroke_raw = cells[offset + 5].get_text(strip=True)
+        time_str   = cells[offset + 7].get_text(strip=True)
+        place_str  = cells[offset + 8].get_text(strip=True) if len(cells) > offset + 8 else ""
+
+        if not time_str or not dist_raw or not stroke_raw:
+            continue
+        if re.search(r"[xX×]", dist_raw):
+            continue
+
+        stroke = STROKE_EXPAND.get(stroke_raw, stroke_raw)
+        results.append({
+            "last":   last,
+            "first":  first,
+            "gender": cells[offset + 1].get_text(strip=True),
+            "age":    cells[offset + 2].get_text(strip=True),
+            "event":  f"{dist_raw} {stroke}",
+            "time":   time_str,
+            "place":  "" if place_str in ("—", "-") else place_str,
+        })
+    return results
+
+
 def main():
     DATA_DIR.mkdir(exist_ok=True)
+    meet_results_dir = DATA_DIR / "meet_results"
+    meet_results_dir.mkdir(exist_ok=True)
+
     print("Starting Sports-Tek scrape…")
     session = make_session()
 
@@ -198,7 +245,16 @@ def main():
 
     print("Fetching meets list…")
     meets = fetch_meets(session)
-    print(f"Found {len(meets)} meets.")
+    print(f"Found {len(meets)} meets. Fetching meet results…")
+    for i, meet in enumerate(meets, 1):
+        if meet["id"] is None:
+            continue
+        print(f"  [{i}/{len(meets)}] {meet['name']}")
+        results = fetch_meet_results(session, meet["id"])
+        (meet_results_dir / f"{meet['id']}.json").write_text(
+            json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+        time.sleep(DELAY)
 
     (DATA_DIR / "athletes.json").write_text(
         json.dumps(athletes, indent=2, ensure_ascii=False), encoding="utf-8"

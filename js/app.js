@@ -191,37 +191,14 @@ function showMeetsList() {
   document.getElementById("meet-detail-view").classList.add("hidden");
 }
 
-function showMeet(id) {
+async function showMeet(id) {
   const meet = meets.find(m => m.id === id);
   if (!meet) return;
 
-  // Find all PBs set at this meet across all athletes
-  const results = [];
-  athletes.forEach(ath => {
-    ath.pbs.forEach(pb => {
-      if (pb.meet === meet.name) {
-        results.push({ ath, pb });
-      }
-    });
-  });
-
-  results.sort((a, b) =>
-    a.pb.event.localeCompare(b.pb.event) ||
-    a.ath.last.localeCompare(b.ath.last)
-  );
-
   const badge = courseBadge(meet.course);
-  const rows = results.map(({ ath, pb }) =>
-    "<tr>" +
-      '<td><button class="link-btn" onclick="switchTab(\'swimmers\'); setTimeout(() => showSwimmer(' + ath.id + '), 50)">' +
-        esc(ath.first + " " + ath.last) +
-      "</button></td>" +
-      "<td>" + esc(pb.event) + "</td>" +
-      '<td class="pb-time">' + esc(pb.time) + "</td>" +
-    "</tr>"
-  ).join("");
+  const detailEl = document.getElementById("meet-detail");
 
-  document.getElementById("meet-detail").innerHTML =
+  detailEl.innerHTML =
     '<div class="detail-header">' +
       '<div class="detail-name">' + esc(meet.name) + "</div>" +
       '<div class="detail-meta">' +
@@ -229,17 +206,61 @@ function showMeet(id) {
         ' &middot; <span class="course-label ' + badge.cls + '">' + badge.label + "</span>" +
       "</div>" +
     "</div>" +
-    (results.length
-      ? '<p class="results-count">' + results.length + " personal best" + (results.length !== 1 ? "s" : "") + " set at this meet</p>" +
-        '<table class="pb-table">' +
-          "<thead><tr><th>Swimmer</th><th>Event</th><th>Time</th></tr></thead>" +
-          "<tbody>" + rows + "</tbody>" +
-        "</table>"
-      : '<p class="no-pbs">No personal bests recorded at this meet.</p>');
+    '<p class="loading">Loading results…</p>';
 
   document.getElementById("meets-list-view").classList.add("hidden");
   document.getElementById("meet-detail-view").classList.remove("hidden");
   window.scrollTo(0, 0);
+
+  let results = [];
+  try {
+    const r = await fetch("data/meet_results/" + id + ".json");
+    if (r.ok) results = await r.json();
+  } catch { /* file not yet generated */ }
+
+  if (!results.length) {
+    detailEl.querySelector(".loading").outerHTML =
+      '<p class="no-pbs">No results available for this meet yet — re-run the data refresh.</p>';
+    return;
+  }
+
+  // Group by event
+  const byEvent = {};
+  results.forEach(row => {
+    (byEvent[row.event] = byEvent[row.event] || []).push(row);
+  });
+
+  const eventSections = Object.keys(byEvent).sort().map(event => {
+    const rows = byEvent[event]
+      .sort((a, b) => a.time.localeCompare(b.time))
+      .map(row =>
+        "<tr>" +
+          "<td>" + esc(row.first + " " + row.last) + "</td>" +
+          '<td class="pb-time">' + esc(row.time) + "</td>" +
+          "<td>" + esc(row.place) + "</td>" +
+        "</tr>"
+      ).join("");
+    return (
+      '<div class="course-section">' +
+        '<span class="course-label badge-scm">' + esc(event) + "</span>" +
+        '<table class="pb-table">' +
+          "<thead><tr><th>Swimmer</th><th>Time</th><th>Place</th></tr></thead>" +
+          "<tbody>" + rows + "</tbody>" +
+        "</table>" +
+      "</div>"
+    );
+  }).join("");
+
+  detailEl.innerHTML =
+    '<div class="detail-header">' +
+      '<div class="detail-name">' + esc(meet.name) + "</div>" +
+      '<div class="detail-meta">' +
+        esc(formatDate(meet.date)) +
+        ' &middot; <span class="course-label ' + badge.cls + '">' + badge.label + "</span>" +
+      "</div>" +
+    "</div>" +
+    '<p class="results-count">' + results.length + " result" + (results.length !== 1 ? "s" : "") + " across " + Object.keys(byEvent).length + " events</p>" +
+    eventSections;
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
