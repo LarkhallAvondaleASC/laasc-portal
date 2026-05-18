@@ -105,12 +105,12 @@ def fetch_athletes(session):
                 continue
             athletes[ath_id] = {
                 "id": ath_id,
-                "last": cells[0].get_text(strip=True),
-                "first": cells[1].get_text(strip=True),
-                "age": cells[2].get_text(strip=True),
-                "gender": cells[3].get_text(strip=True),
-                "group": cells[4].get_text(strip=True),
-                "subgroup": cells[5].get_text(strip=True) if len(cells) > 5 else "",
+                "last": cells[1].get_text(strip=True),
+                "first": cells[2].get_text(strip=True),
+                "age": cells[3].get_text(strip=True),
+                "gender": cells[4].get_text(strip=True),
+                "group": cells[5].get_text(strip=True),
+                "subgroup": cells[6].get_text(strip=True) if len(cells) > 6 else "",
                 "pbs": [],
             }
         time.sleep(DELAY)
@@ -130,14 +130,14 @@ def fetch_pbs(session, ath_id):
         if not table:
             continue
         for cells in data_rows(table):
-            if len(cells) < 4:
+            if len(cells) < 5:
                 continue
-            # Columns: Dist, Stroke, P/F, Time, Place, Pts, Date, Meet
-            dist_raw = cells[0].get_text(strip=True)
-            stroke_raw = cells[1].get_text(strip=True)
-            time_str = cells[3].get_text(strip=True)
-            date_str = parse_date(cells[6].get_text(strip=True)) if len(cells) > 6 else ""
-            meet_str = cells[7].get_text(strip=True) if len(cells) > 7 else ""
+            # Columns: [label], Dist, Stroke, P/F, Time, Place, Pts, Date, Meet
+            dist_raw = cells[1].get_text(strip=True)
+            stroke_raw = cells[2].get_text(strip=True)
+            time_str = cells[4].get_text(strip=True)
+            date_str = parse_date(cells[7].get_text(strip=True)) if len(cells) > 7 else ""
+            meet_str = cells[8].get_text(strip=True) if len(cells) > 8 else ""
 
             if not time_str or not dist_raw or not stroke_raw:
                 continue
@@ -163,7 +163,7 @@ def fetch_meets(session):
         return []
     meets = []
     for cells in data_rows(table):
-        if len(cells) < 3:
+        if len(cells) < 4:
             continue
         link = next(
             (c.find("a", href=True) for c in cells if c.find("a", href=True) and "MEET=" in c.find("a")["href"].upper()),
@@ -174,12 +174,12 @@ def fetch_meets(session):
             m = re.search(r"MEET=(\d+)", link["href"], re.IGNORECASE)
             if m:
                 meet_id = int(m.group(1))
-        raw_course = cells[1].get_text(strip=True)
+        raw_course = cells[2].get_text(strip=True)
         meets.append({
             "id": meet_id,
-            "name": cells[0].get_text(strip=True),
+            "name": cells[1].get_text(strip=True),
             "course": COURSE_MAP.get(raw_course, raw_course),
-            "date": parse_date(cells[2].get_text(strip=True)),
+            "date": parse_date(cells[3].get_text(strip=True)) if len(cells) > 3 else "",
         })
     return meets
 
