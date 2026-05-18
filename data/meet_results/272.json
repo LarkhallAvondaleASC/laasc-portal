@@ -1,0 +1,83 @@
+[
+  {
+    "last": "Buchan",
+    "first": "Oliver",
+    "gender": "M",
+    "age": "13",
+    "event": "50 Freestyle",
+    "time": "30.93",
+    "place": "4"
+  },
+  {
+    "last": "Buchan",
+    "first": "Oliver",
+    "gender": "M",
+    "age": "13",
+    "event": "50 Backstroke",
+    "time": "35.28",
+    "place": "3"
+  },
+  {
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Freestyle",
+    "time": "29.99",
+    "place": "3"
+  },
+  {
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "12",
+    "event": "100 Breaststroke",
+    "time": "1:29.28",
+    "place": "1"
+  },
+  {
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "12",
+    "event": "200 Breaststroke",
+    "time": "3:07.67",
+    "place": "2"
+  },
+  {
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Butterfly",
+    "time": "34.01",
+    "place": "4"
+  },
+  {
+    "last": "Jones",
+    "first": "Sam",
+    "gender": "M",
+    "age": "14",
+    "event": "50 Breaststroke",
+    "time": "41.46",
+    "place": "7"
+  },
+  {
+    "last": "Scott",
+    "first": "Cole",
+    "gender": "M",
+    "age": "15",
+    "event": "50 Breaststroke",
+    "time": "42.03",
+    "place": "5"
+  },
+  {
+    "last": "Scott",
+    "first": "Cole",
+    "gender": "M",
+    "age": "15",
+    "event": "200 Breaststroke",
+    "time": "3:06.87",
+    "place": "8"
+  }
+]

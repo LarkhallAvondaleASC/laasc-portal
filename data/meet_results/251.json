@@ -1,0 +1,182 @@
+[
+  {
+    "last": "Addison",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "50 Freestyle",
+    "time": "43.06",
+    "place": "2"
+  },
+  {
+    "last": "Addison",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "50 Backstroke",
+    "time": "50.35",
+    "place": "1"
+  },
+  {
+    "last": "Addison",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "50 Breaststroke",
+    "time": "57.56",
+    "place": "2"
+  },
+  {
+    "last": "Addison",
+    "first": "Wendy",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Backstroke",
+    "time": "1:27.37",
+    "place": "1"
+  },
+  {
+    "last": "Addison",
+    "first": "Wendy",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Breaststroke",
+    "time": "1:40.23",
+    "place": "1"
+  },
+  {
+    "last": "Addison",
+    "first": "Wendy",
+    "gender": "F",
+    "age": "12",
+    "event": "200 IM",
+    "time": "2:56.53",
+    "place": "1"
+  },
+  {
+    "last": "Bayne",
+    "first": "Emily",
+    "gender": "F",
+    "age": "10",
+    "event": "50 Freestyle",
+    "time": "47.51",
+    "place": "2"
+  },
+  {
+    "last": "Bayne",
+    "first": "Emily",
+    "gender": "F",
+    "age": "10",
+    "event": "50 Backstroke",
+    "time": "53.21",
+    "place": "3"
+  },
+  {
+    "last": "Buchan",
+    "first": "Tom",
+    "gender": "M",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "1:21.14",
+    "place": "1"
+  },
+  {
+    "last": "Buchan",
+    "first": "Tom",
+    "gender": "M",
+    "age": "10",
+    "event": "50 Breaststroke",
+    "time": "52.02",
+    "place": "1"
+  },
+  {
+    "last": "Callaghan",
+    "first": "Locky",
+    "gender": "M",
+    "age": "10",
+    "event": "50 Freestyle",
+    "time": "50.15",
+    "place": "9"
+  },
+  {
+    "last": "Callaghan",
+    "first": "Locky",
+    "gender": "M",
+    "age": "10",
+    "event": "50 Backstroke",
+    "time": "55.59",
+    "place": "7"
+  },
+  {
+    "last": "Callaghan",
+    "first": "Millie",
+    "gender": "F",
+    "age": "14",
+    "event": "100 Backstroke",
+    "time": "1:32.59",
+    "place": "8"
+  },
+  {
+    "last": "Callaghan",
+    "first": "Millie",
+    "gender": "F",
+    "age": "14",
+    "event": "100 Breaststroke",
+    "time": "1:52.94",
+    "place": "11"
+  },
+  {
+    "last": "Connor",
+    "first": "Carys",
+    "gender": "F",
+    "age": "13",
+    "event": "100 Freestyle",
+    "time": "1:15.98",
+    "place": "1"
+  },
+  {
+    "last": "Connor",
+    "first": "Carys",
+    "gender": "F",
+    "age": "13",
+    "event": "100 Breaststroke",
+    "time": "1:38.27",
+    "place": "2"
+  },
+  {
+    "last": "Connor",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "50 Freestyle",
+    "time": "46.86",
+    "place": "6"
+  },
+  {
+    "last": "Connor",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "50 Breaststroke",
+    "time": "1:01.48",
+    "place": "3"
+  },
+  {
+    "last": "Connor",
+    "first": "Richard",
+    "gender": "M",
+    "age": "12",
+    "event": "100 Freestyle",
+    "time": "1:22.54",
+    "place": "1"
+  },
+  {
+    "last": "Connor",
+    "first": "Richard",
+    "gender": "M",
+    "age": "12",
+    "event": "100 Backstroke",
+    "time": "1:28.22",
+    "place": "1"
+  }
+]

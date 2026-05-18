@@ -1,0 +1,83 @@
+[
+  {
+    "last": "Addison",
+    "first": "Heidi",
+    "gender": "F",
+    "age": "13",
+    "event": "200 Breaststroke",
+    "time": "3:15.42",
+    "place": "10"
+  },
+  {
+    "last": "Buchan",
+    "first": "Oliver",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Backstroke",
+    "time": "39.44",
+    "place": "6"
+  },
+  {
+    "last": "Buchan",
+    "first": "Oliver",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Backstroke",
+    "time": "39.62",
+    "place": "7"
+  },
+  {
+    "last": "Connor",
+    "first": "Richard",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Backstroke",
+    "time": "40.41",
+    "place": "11"
+  },
+  {
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Freestyle",
+    "time": "34.24",
+    "place": "10"
+  },
+  {
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Freestyle",
+    "time": "34.58",
+    "place": "9"
+  },
+  {
+    "last": "Mcauley",
+    "first": "Cailyn",
+    "gender": "F",
+    "age": "14",
+    "event": "100 Butterfly",
+    "time": "DQ",
+    "place": ""
+  },
+  {
+    "last": "Neeson",
+    "first": "Zakk",
+    "gender": "M",
+    "age": "14",
+    "event": "100 Breaststroke",
+    "time": "1:21.74",
+    "place": "8"
+  },
+  {
+    "last": "Perrie",
+    "first": "Sam",
+    "gender": "M",
+    "age": "14",
+    "event": "100 Butterfly",
+    "time": "1:13.17",
+    "place": "5"
+  }
+]
