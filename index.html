@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larkhall Avondale ASC — Results Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="club-brand">
+        <span class="club-name">Larkhall Avondale ASC</span>
+        <span class="club-sub">Results Portal</span>
+      </div>
+      <nav class="tab-nav" role="navigation" aria-label="Main navigation">
+        <button class="tab-btn active" data-tab="home">Home</button>
+        <button class="tab-btn" data-tab="swimmers">Swimmers</button>
+        <button class="tab-btn" data-tab="meets">Meets</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section id="tab-home" class="tab-panel active" role="tabpanel">
+      <div class="hero">
+        <h1>Welcome to the Results Portal</h1>
+        <p>Search swimmer personal bests, browse competition history, and follow the club's progress.</p>
+        <p id="last-updated" class="last-updated"></p>
+      </div>
+      <div class="home-cards">
+        <button class="card" onclick="switchTab('swimmers')">
+          <div class="card-icon" aria-hidden="true">🏊</div>
+          <h2>Swimmers</h2>
+          <p>Browse all club members and their personal best times.</p>
+        </button>
+        <button class="card" onclick="switchTab('meets')">
+          <div class="card-icon" aria-hidden="true">🏆</div>
+          <h2>Meets</h2>
+          <p>View past competition meets and results.</p>
+        </button>
+      </div>
+    </section>
+
+    <!-- Swimmers -->
+    <section id="tab-swimmers" class="tab-panel" role="tabpanel">
+
+      <div id="swimmers-list-view">
+        <div class="controls">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search by name…"
+            autocomplete="off"
+            aria-label="Search swimmers"
+          >
+          <select id="group-filter" aria-label="Filter by group">
+            <option value="">All Groups</option>
+          </select>
+        </div>
+        <p id="swimmers-count" class="results-count" aria-live="polite"></p>
+        <div id="swimmers-list"></div>
+      </div>
+
+      <div id="swimmer-detail-view" class="hidden">
+        <button class="back-btn" onclick="showSwimmersList()">← Back to Swimmers</button>
+        <div id="swimmer-detail"></div>
+      </div>
+
+    </section>
+
+    <!-- Meets -->
+    <section id="tab-meets" class="tab-panel" role="tabpanel">
+      <div id="meets-list"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Larkhall Avondale ASC &middot; Data sourced from Hy-Tek TM Online</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

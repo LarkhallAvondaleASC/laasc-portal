@@ -1,7 +1,10 @@
 [project]
 name = "laasc-portal"
 version = "0.1.0"
-description = "Add your description here"
+description = "Larkhall Avondale ASC Results Portal"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+]
