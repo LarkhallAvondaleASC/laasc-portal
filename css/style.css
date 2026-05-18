@@ -272,8 +272,15 @@ main {
   gap: .75rem;
 }
 
+.meet-item { cursor: pointer; font-family: inherit; text-align: left; transition: background .1s, transform .1s; }
+.meet-item:hover { background: var(--blue-light); transform: translateX(3px); }
+.meet-item:focus-visible { outline: 2px solid var(--blue); }
+.meet-item-right { display: flex; align-items: center; gap: .5rem; flex-shrink: 0; }
+.meet-arrow { color: var(--blue); font-size: 1.2rem; }
 .meet-name { font-weight: 600; color: var(--navy); }
 .meet-date { font-size: .8rem; color: var(--text-muted); margin-top: .1rem; }
+.link-btn { background: none; border: none; color: var(--blue); cursor: pointer; font-family: inherit; font-size: inherit; padding: 0; text-decoration: underline; text-underline-offset: 2px; }
+.link-btn:hover { color: var(--navy); }
 
 .meet-badge {
   font-size: .68rem;

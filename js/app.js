@@ -172,15 +172,74 @@ function renderMeets() {
   container.innerHTML = sorted.map(m => {
     const badge = courseBadge(m.course);
     return (
-      '<div class="meet-item">' +
+      '<button class="meet-item" onclick="showMeet(' + m.id + ')">' +
         "<div>" +
           '<div class="meet-name">' + esc(m.name) + "</div>" +
           '<div class="meet-date">' + esc(formatDate(m.date)) + "</div>" +
         "</div>" +
-        '<span class="meet-badge ' + badge.cls + '">' + badge.label + "</span>" +
-      "</div>"
+        '<div class="meet-item-right">' +
+          '<span class="meet-badge ' + badge.cls + '">' + badge.label + "</span>" +
+          '<span class="meet-arrow" aria-hidden="true">&#8250;</span>' +
+        "</div>" +
+      "</button>"
     );
   }).join("");
+}
+
+function showMeetsList() {
+  document.getElementById("meets-list-view").classList.remove("hidden");
+  document.getElementById("meet-detail-view").classList.add("hidden");
+}
+
+function showMeet(id) {
+  const meet = meets.find(m => m.id === id);
+  if (!meet) return;
+
+  // Find all PBs set at this meet across all athletes
+  const results = [];
+  athletes.forEach(ath => {
+    ath.pbs.forEach(pb => {
+      if (pb.meet === meet.name) {
+        results.push({ ath, pb });
+      }
+    });
+  });
+
+  results.sort((a, b) =>
+    a.pb.event.localeCompare(b.pb.event) ||
+    a.ath.last.localeCompare(b.ath.last)
+  );
+
+  const badge = courseBadge(meet.course);
+  const rows = results.map(({ ath, pb }) =>
+    "<tr>" +
+      '<td><button class="link-btn" onclick="switchTab(\'swimmers\'); setTimeout(() => showSwimmer(' + ath.id + '), 50)">' +
+        esc(ath.first + " " + ath.last) +
+      "</button></td>" +
+      "<td>" + esc(pb.event) + "</td>" +
+      '<td class="pb-time">' + esc(pb.time) + "</td>" +
+    "</tr>"
+  ).join("");
+
+  document.getElementById("meet-detail").innerHTML =
+    '<div class="detail-header">' +
+      '<div class="detail-name">' + esc(meet.name) + "</div>" +
+      '<div class="detail-meta">' +
+        esc(formatDate(meet.date)) +
+        ' &middot; <span class="course-label ' + badge.cls + '">' + badge.label + "</span>" +
+      "</div>" +
+    "</div>" +
+    (results.length
+      ? '<p class="results-count">' + results.length + " personal best" + (results.length !== 1 ? "s" : "") + " set at this meet</p>" +
+        '<table class="pb-table">' +
+          "<thead><tr><th>Swimmer</th><th>Event</th><th>Time</th></tr></thead>" +
+          "<tbody>" + rows + "</tbody>" +
+        "</table>"
+      : '<p class="no-pbs">No personal bests recorded at this meet.</p>');
+
+  document.getElementById("meets-list-view").classList.add("hidden");
+  document.getElementById("meet-detail-view").classList.remove("hidden");
+  window.scrollTo(0, 0);
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
