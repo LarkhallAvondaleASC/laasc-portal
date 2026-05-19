@@ -151,7 +151,9 @@ function pbSection(pbs, label, badgeClass) {
     ).join("");
   return (
     '<div class="course-section">' +
-      '<span class="course-label ' + badgeClass + '">' + label + "</span>" +
+      '<button class="course-label ' + badgeClass + '" onclick="toggleSection(this)" aria-expanded="true">' +
+        label + '<span class="section-chevron" aria-hidden="true">&#8963;</span>' +
+      "</button>" +
       '<table class="pb-table">' +
         "<thead><tr><th>Event</th><th>Time</th><th>Date</th><th>Meet</th></tr></thead>" +
         "<tbody>" + rows + "</tbody>" +
@@ -273,6 +275,12 @@ function formatDate(str) {
     : new Date(str + "T00:00:00");
   if (isNaN(d)) return str;
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
+function toggleSection(btn) {
+  const section = btn.closest(".course-section");
+  const collapsed = section.classList.toggle("collapsed");
+  btn.setAttribute("aria-expanded", String(!collapsed));
 }
 
 function squadLabel(g) {
