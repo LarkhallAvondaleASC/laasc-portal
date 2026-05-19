@@ -144,6 +144,7 @@ function showSwimmer(id) {
         '</div>' +
       '</div>' +
       '<div class="chart-wrap"><canvas id="progression-canvas"></canvas></div>' +
+      '<p class="chart-note">★ personal best at the time of the swim</p>' +
     '</div>';
 
   document.getElementById("swimmers-list-view").classList.add("hidden");
@@ -305,20 +306,33 @@ function secondsToTime(s) {
 function drawProgressionChart(history, event) {
   const toTs = d => new Date(d + "T00:00:00").getTime();
 
+  const PB_COLOR = "#f59e0b";
+
   const makeDataset = (course, color) => {
     const rows = history
       .filter(r => r.event === event && r.course === course && timeToSeconds(r.time) !== null)
       .sort((a, b) => a.date.localeCompare(b.date));
+
+    let best = Infinity;
+    const data = rows.map(r => {
+      const secs = timeToSeconds(r.time);
+      const pb = secs < best;
+      if (pb) best = secs;
+      return { x: toTs(r.date), y: secs, meet: r.meet, date: r.date, pb };
+    });
+
     return {
       rows,
       dataset: {
         label: course,
-        data: rows.map(r => ({ x: toTs(r.date), y: timeToSeconds(r.time), meet: r.meet, date: r.date })),
+        data,
         borderColor: color,
         backgroundColor: color.replace(")", ",0.08)").replace("rgb", "rgba"),
-        pointBackgroundColor: color,
-        pointRadius: 5,
-        pointHoverRadius: 7,
+        pointStyle:           data.map(p => p.pb ? "star" : "circle"),
+        pointRadius:          data.map(p => p.pb ? 9 : 4),
+        pointHoverRadius:     data.map(p => p.pb ? 11 : 6),
+        pointBackgroundColor: data.map(p => p.pb ? PB_COLOR : color),
+        pointBorderColor:     data.map(p => p.pb ? "#d97706" : color),
         tension: 0.2,
         fill: false,
       }
@@ -348,7 +362,7 @@ function drawProgressionChart(history, event) {
         tooltip: {
           callbacks: {
             title: ctx => formatDate(ctx[0].raw.date),
-            label: ctx => ctx.dataset.label + ": " + secondsToTime(ctx.raw.y) + "  —  " + ctx.raw.meet,
+            label: ctx => ctx.dataset.label + ": " + secondsToTime(ctx.raw.y) + "  —  " + ctx.raw.meet + (ctx.raw.pb ? "  ★ PB" : ""),
           }
         }
       },
