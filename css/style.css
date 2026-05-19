@@ -310,10 +310,27 @@ main {
 .progression-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   margin-bottom: .75rem;
   flex-wrap: wrap;
 }
+
+.progression-controls {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.chart-toggles { display: flex; gap: .4rem; }
+
+.chart-toggle {
+  margin-bottom: 0;
+  transition: opacity .15s;
+}
+
+.chart-toggle.inactive { opacity: .3; }
 
 .progression-title {
   font-size: 1rem;

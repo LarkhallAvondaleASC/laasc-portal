@@ -135,7 +135,13 @@ function showSwimmer(id) {
     '<div id="progression-section" class="progression-wrap">' +
       '<div class="progression-header">' +
         '<h3 class="progression-title">Time Progression</h3>' +
-        '<select id="progression-event" class="progression-select"></select>' +
+        '<div class="progression-controls">' +
+          '<select id="progression-event" class="progression-select"></select>' +
+          '<div class="chart-toggles">' +
+            '<button class="course-label badge-scm chart-toggle" id="toggle-scm" onclick="toggleCourse(0,this)">SCM</button>' +
+            '<button class="course-label badge-lcm chart-toggle" id="toggle-lcm" onclick="toggleCourse(1,this)">LCM</button>' +
+          '</div>' +
+        '</div>' +
       '</div>' +
       '<div class="chart-wrap"><canvas id="progression-canvas"></canvas></div>' +
     '</div>';
@@ -297,13 +303,35 @@ function secondsToTime(s) {
 }
 
 function drawProgressionChart(history, event) {
-  const rows = history
-    .filter(r => r.event === event && timeToSeconds(r.time) !== null)
-    .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  const toTs = d => new Date(d + "T00:00:00").getTime();
 
-  const labels = rows.map(r => formatDate(r.date));
-  const data   = rows.map(r => timeToSeconds(r.time));
-  const meets  = rows.map(r => r.meet + (r.course ? " (" + r.course + ")" : ""));
+  const makeDataset = (course, color) => {
+    const rows = history
+      .filter(r => r.event === event && r.course === course && timeToSeconds(r.time) !== null)
+      .sort((a, b) => a.date.localeCompare(b.date));
+    return {
+      rows,
+      dataset: {
+        label: course,
+        data: rows.map(r => ({ x: toTs(r.date), y: timeToSeconds(r.time), meet: r.meet, date: r.date })),
+        borderColor: color,
+        backgroundColor: color.replace(")", ",0.08)").replace("rgb", "rgba"),
+        pointBackgroundColor: color,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+        tension: 0.2,
+        fill: false,
+      }
+    };
+  };
+
+  const scm = makeDataset("SCM", "#0369a1");
+  const lcm = makeDataset("LCM", "#166534");
+
+  const scmToggle = document.getElementById("toggle-scm");
+  const lcmToggle = document.getElementById("toggle-lcm");
+  if (scmToggle) { scmToggle.style.display = scm.rows.length ? "" : "none"; scmToggle.classList.remove("inactive"); }
+  if (lcmToggle) { lcmToggle.style.display = lcm.rows.length ? "" : "none"; lcmToggle.classList.remove("inactive"); }
 
   if (progressionChart) progressionChart.destroy();
   const canvas = document.getElementById("progression-canvas");
@@ -311,19 +339,7 @@ function drawProgressionChart(history, event) {
 
   progressionChart = new Chart(canvas.getContext("2d"), {
     type: "line",
-    data: {
-      labels,
-      datasets: [{
-        data,
-        borderColor: "#1e3a5f",
-        backgroundColor: "rgba(30,58,95,0.08)",
-        pointBackgroundColor: "#1e3a5f",
-        pointRadius: 5,
-        pointHoverRadius: 7,
-        tension: 0.2,
-        fill: true,
-      }]
-    },
+    data: { datasets: [scm.dataset, lcm.dataset] },
     options: {
       responsive: true,
       maintainAspectRatio: false,
@@ -331,11 +347,19 @@ function drawProgressionChart(history, event) {
         legend: { display: false },
         tooltip: {
           callbacks: {
-            label: ctx => secondsToTime(ctx.parsed.y) + "  —  " + meets[ctx.dataIndex],
+            title: ctx => formatDate(ctx[0].raw.date),
+            label: ctx => ctx.dataset.label + ": " + secondsToTime(ctx.raw.y) + "  —  " + ctx.raw.meet,
           }
         }
       },
       scales: {
+        x: {
+          type: "linear",
+          ticks: {
+            callback: v => new Date(v).toLocaleDateString("en-GB", { month: "short", year: "2-digit" }),
+            maxTicksLimit: 8,
+          }
+        },
         y: {
           ticks: { callback: v => secondsToTime(v) },
           title: { display: true, text: "Time" },
@@ -343,6 +367,14 @@ function drawProgressionChart(history, event) {
       }
     }
   });
+}
+
+function toggleCourse(datasetIdx, btn) {
+  if (!progressionChart) return;
+  const visible = progressionChart.isDatasetVisible(datasetIdx);
+  progressionChart.setDatasetVisibility(datasetIdx, !visible);
+  progressionChart.update();
+  btn.classList.toggle("inactive", visible);
 }
 
 async function loadProgressionSection(ath) {
