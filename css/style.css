@@ -208,6 +208,38 @@ main {
 .detail-name   { font-size: 1.5rem; font-weight: 700; color: var(--navy); }
 .detail-meta   { font-size: .875rem; color: var(--text-muted); margin-top: .25rem; }
 
+.detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .75rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--blue-light);
+  border-radius: var(--radius);
+  padding: .4rem .75rem;
+  min-width: 3.5rem;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--text-muted);
+  margin-top: .1rem;
+}
+
 .course-section { margin-bottom: 1.5rem; }
 
 .course-label {

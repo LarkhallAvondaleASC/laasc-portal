@@ -125,6 +125,7 @@ function showSwimmer(id) {
     '<div class="detail-header">' +
       '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
       '<div class="detail-meta">' + esc(meta) + "</div>" +
+      '<div class="detail-stats" id="detail-stats"></div>' +
     "</div>" +
     (scm.length || lcm.length || other.length
       ? pbSection(scm, "SCM", "badge-scm") +
@@ -358,9 +359,30 @@ async function loadProgressionSection(ath) {
     return;
   }
 
-  const events = [...new Set(
-    history.filter(r => timeToSeconds(r.time) !== null).map(r => r.event)
-  )].sort();
+  const validRaces = history.filter(r => timeToSeconds(r.time) !== null);
+  const uniqueMeets = new Set(history.map(r => r.meet_id)).size;
+  const strokeCounts = {};
+  validRaces.forEach(r => {
+    const stroke = r.event.split(" ").pop();
+    strokeCounts[stroke] = (strokeCounts[stroke] || 0) + 1;
+  });
+  const strokeOrder = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
+  const statsEl = document.getElementById("detail-stats");
+  if (statsEl) {
+    const statItems = [
+      { value: uniqueMeets,         label: "Meets" },
+      { value: validRaces.length,   label: "Swims" },
+      ...strokeOrder.filter(s => strokeCounts[s]).map(s => ({ value: strokeCounts[s], label: s })),
+    ];
+    statsEl.innerHTML = statItems.map(s =>
+      '<div class="stat-item">' +
+        '<span class="stat-value">' + s.value + "</span>" +
+        '<span class="stat-label">' + s.label + "</span>" +
+      "</div>"
+    ).join("");
+  }
+
+  const events = [...new Set(validRaces.map(r => r.event))].sort();
 
   if (!events.length) { section.remove(); return; }
 
