@@ -392,7 +392,16 @@ async function loadProgressionSection(ath) {
   }
 
   const validRaces = history.filter(r => timeToSeconds(r.time) !== null);
-  const uniqueMeets = new Set(history.map(r => r.meet_id)).size;
+
+  const meetMap = {};
+  history.forEach(r => { if (!meetMap[r.meet_id]) meetMap[r.meet_id] = { name: r.meet, course: r.course }; });
+  const uniqueMeets = Object.values(meetMap);
+  const isTimeTrial = m => /time trial/i.test(m.name);
+  const totalMeets    = uniqueMeets.length;
+  const timeTrials    = uniqueMeets.filter(m => isTimeTrial(m)).length;
+  const scmMeets      = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
+  const lcmMeets      = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "LCM").length;
+
   const strokeCounts = {};
   validRaces.forEach(r => {
     const stroke = r.event.split(" ").pop();
@@ -402,8 +411,11 @@ async function loadProgressionSection(ath) {
   const statsEl = document.getElementById("detail-stats");
   if (statsEl) {
     const statItems = [
-      { value: uniqueMeets,         label: "Meets" },
-      { value: validRaces.length,   label: "Swims" },
+      { value: totalMeets,        label: "Total Meets" },
+      { value: timeTrials,        label: "Time Trials" },
+      { value: scmMeets,          label: "SCM Meets" },
+      { value: lcmMeets,          label: "LCM Meets" },
+      { value: validRaces.length, label: "Total Swims" },
       ...strokeOrder.filter(s => strokeCounts[s]).map(s => ({ value: strokeCounts[s], label: s })),
     ];
     statsEl.innerHTML = statItems.map(s =>
