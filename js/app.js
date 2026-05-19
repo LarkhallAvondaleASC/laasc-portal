@@ -336,9 +336,8 @@ function drawProgressionChart(history, event) {
       },
       scales: {
         y: {
-          reverse: true,
           ticks: { callback: v => secondsToTime(v) },
-          title: { display: true, text: "Time (lower = faster)" },
+          title: { display: true, text: "Time" },
         }
       }
     }
