@@ -211,15 +211,37 @@ main {
 .detail-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: .75rem;
   margin-top: .75rem;
 }
+
+.stats-group {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.stats-group-label {
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--text-muted);
+}
+
+.stats-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.stats-group:first-child .stat-item { background: #e0f2fe; }
+.stats-group:last-child  .stat-item { background: #dcfce7; }
 
 .stat-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--blue-light);
   border-radius: var(--radius);
   padding: .4rem .75rem;
   min-width: 3.5rem;

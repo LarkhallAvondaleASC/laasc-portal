@@ -410,20 +410,34 @@ async function loadProgressionSection(ath) {
   const strokeOrder = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
   const statsEl = document.getElementById("detail-stats");
   if (statsEl) {
-    const statItems = [
-      { value: totalMeets,        label: "Total Meets" },
-      { value: timeTrials,        label: "Time Trials" },
-      { value: scmMeets,          label: "SCM Meets" },
-      { value: lcmMeets,          label: "LCM Meets" },
-      { value: validRaces.length, label: "Total Swims" },
+    const renderItems = items =>
+      items.map(s =>
+        '<div class="stat-item">' +
+          '<span class="stat-value">' + s.value + "</span>" +
+          '<span class="stat-label">' + s.label + "</span>" +
+        "</div>"
+      ).join("");
+
+    const competitionStats = [
+      { value: totalMeets,  label: "Total" },
+      { value: timeTrials,  label: "Time Trials" },
+      { value: scmMeets,    label: "SCM" },
+      { value: lcmMeets,    label: "LCM" },
+    ];
+    const strokeStats = [
+      { value: validRaces.length, label: "Total" },
       ...strokeOrder.filter(s => strokeCounts[s]).map(s => ({ value: strokeCounts[s], label: s })),
     ];
-    statsEl.innerHTML = statItems.map(s =>
-      '<div class="stat-item">' +
-        '<span class="stat-value">' + s.value + "</span>" +
-        '<span class="stat-label">' + s.label + "</span>" +
-      "</div>"
-    ).join("");
+
+    statsEl.innerHTML =
+      '<div class="stats-group">' +
+        '<span class="stats-group-label">Competitions</span>' +
+        '<div class="stats-items">' + renderItems(competitionStats) + "</div>" +
+      "</div>" +
+      '<div class="stats-group">' +
+        '<span class="stats-group-label">Strokes</span>' +
+        '<div class="stats-items">' + renderItems(strokeStats) + "</div>" +
+      "</div>";
   }
 
   const events = [...new Set(validRaces.map(r => r.event))].sort();
