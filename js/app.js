@@ -59,7 +59,7 @@ function initGroupFilter() {
   groups.forEach(g => {
     const opt = document.createElement("option");
     opt.value = g;
-    opt.textContent = g;
+    opt.textContent = squadLabel(g);
     select.appendChild(opt);
   });
 }
@@ -86,7 +86,7 @@ function renderSwimmers() {
     return;
   }
   container.innerHTML = list.map(a => {
-    const meta = [a.group, a.subgroup, genderLabel(a.gender)].filter(Boolean).join(" · ");
+    const meta = [squadLabel(a.group), a.subgroup, genderLabel(a.gender)].filter(Boolean).join(" · ");
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
         '<div>' +
@@ -118,7 +118,7 @@ function showSwimmer(id) {
   const scm   = ath.pbs.filter(p => p.course === "SCM");
   const lcm   = ath.pbs.filter(p => p.course === "LCM");
   const other = ath.pbs.filter(p => p.course !== "SCM" && p.course !== "LCM");
-  const meta  = [ath.group, ath.subgroup, genderLabel(ath.gender)].filter(Boolean).join(" · ");
+  const meta  = [squadLabel(ath.group), ath.subgroup, genderLabel(ath.gender)].filter(Boolean).join(" · ");
 
   document.getElementById("swimmer-detail").innerHTML =
     '<div class="detail-header">' +
@@ -273,6 +273,11 @@ function formatDate(str) {
     : new Date(str + "T00:00:00");
   if (isNaN(d)) return str;
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
+function squadLabel(g) {
+  const labels = { SEN: "Senior", TRN: "Transition", JUN: "Junior", DEV: "Development", ENT: "Entry" };
+  return (labels[g] ? labels[g] + " Squad" : g) || "";
 }
 
 function genderLabel(g) {
