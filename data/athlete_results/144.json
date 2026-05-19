@@ -1,0 +1,38 @@
+[
+  {
+    "meet_id": 236,
+    "meet": "RB Spooky Splash Development m",
+    "date": "2025-10-25",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "41.24",
+    "place": "17"
+  },
+  {
+    "meet_id": 236,
+    "meet": "RB Spooky Splash Development m",
+    "date": "2025-10-25",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "52.43",
+    "place": "27"
+  },
+  {
+    "meet_id": 236,
+    "meet": "RB Spooky Splash Development m",
+    "date": "2025-10-25",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "55.54",
+    "place": "19"
+  },
+  {
+    "meet_id": 236,
+    "meet": "RB Spooky Splash Development m",
+    "date": "2025-10-25",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "53.15",
+    "place": "20"
+  }
+]

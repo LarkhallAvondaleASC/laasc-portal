@@ -1,12 +1,14 @@
 import json
 import re
 import string
+import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
-from bs4 import BeautifulSoup
+if "--build-histories" not in sys.argv:
+    import requests
+    from bs4 import BeautifulSoup
 
 BASE_URL = "https://sports-tek.active.com/TMOnline"
 DB = r"upload\LarkhallAvondaleASC.mdb"
@@ -215,8 +217,16 @@ def fetch_meet_results(session, meet_id):
         if re.search(r"[xX×]", dist_raw):
             continue
 
+        ath_link = cells[offset].find("a", href=True)
+        ath_id = None
+        if ath_link:
+            m = re.search(r"ATH=(\d+)", ath_link["href"], re.IGNORECASE)
+            if m:
+                ath_id = int(m.group(1))
+
         stroke = STROKE_EXPAND.get(stroke_raw, stroke_raw)
         results.append({
+            "ath_id": ath_id,
             "last":   last,
             "first":  first,
             "gender": cells[offset + 1].get_text(strip=True),
@@ -226,6 +236,46 @@ def fetch_meet_results(session, meet_id):
             "place":  "" if place_str in ("—", "-") else place_str,
         })
     return results
+
+
+def build_athlete_histories(athletes, meets, meet_results_dir):
+    name_to_id = {(a["first"].lower(), a["last"].lower()): a["id"] for a in athletes}
+    histories = {}
+
+    for meet in meets:
+        if meet["id"] is None:
+            continue
+        result_file = meet_results_dir / f"{meet['id']}.json"
+        if not result_file.exists():
+            continue
+        try:
+            results = json.loads(result_file.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for row in results:
+            ath_id = row.get("ath_id") or name_to_id.get(
+                (row["first"].lower(), row["last"].lower())
+            )
+            if not ath_id:
+                continue
+            histories.setdefault(ath_id, []).append({
+                "meet_id": meet["id"],
+                "meet":    meet["name"],
+                "date":    meet["date"],
+                "course":  meet["course"],
+                "event":   row["event"],
+                "time":    row["time"],
+                "place":   row.get("place", ""),
+            })
+
+    ath_results_dir = meet_results_dir.parent / "athlete_results"
+    ath_results_dir.mkdir(exist_ok=True)
+    for ath_id, races in histories.items():
+        races.sort(key=lambda r: r.get("date") or "")
+        (ath_results_dir / f"{ath_id}.json").write_text(
+            json.dumps(races, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+    print(f"  Built history files for {len(histories)} athletes")
 
 
 def main():
@@ -266,8 +316,19 @@ def main():
         json.dumps({"utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}),
         encoding="utf-8",
     )
+
+    print("Building per-athlete race histories…")
+    build_athlete_histories(athletes, meets, meet_results_dir)
+
     print("Done. Data written to data/")
 
 
 if __name__ == "__main__":
-    main()
+    if "--build-histories" in sys.argv:
+        athletes = json.loads((DATA_DIR / "athletes.json").read_text(encoding="utf-8"))
+        meets    = json.loads((DATA_DIR / "meets.json").read_text(encoding="utf-8"))
+        print("Building athlete history files from existing data…")
+        build_athlete_histories(athletes, meets, DATA_DIR / "meet_results")
+        print("Done.")
+    else:
+        main()

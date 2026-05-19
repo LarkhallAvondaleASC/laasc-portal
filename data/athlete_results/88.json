@@ -1,0 +1,29 @@
+[
+  {
+    "meet_id": 184,
+    "meet": "Dumfries ASC Advent Open 2024",
+    "date": "2024-11-22",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:30.31",
+    "place": "29"
+  },
+  {
+    "meet_id": 184,
+    "meet": "Dumfries ASC Advent Open 2024",
+    "date": "2024-11-22",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:38.95",
+    "place": "22"
+  },
+  {
+    "meet_id": 184,
+    "meet": "Dumfries ASC Advent Open 2024",
+    "date": "2024-11-22",
+    "course": "SCM",
+    "event": "200 Breaststroke",
+    "time": "3:48.70",
+    "place": "14"
+  }
+]

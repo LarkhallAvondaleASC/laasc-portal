@@ -1,5 +1,6 @@
 let athletes = [];
 let meets = [];
+let progressionChart = null;
 
 // ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -129,11 +130,20 @@ function showSwimmer(id) {
       ? pbSection(scm, "SCM", "badge-scm") +
         pbSection(lcm, "LCM", "badge-lcm") +
         (other.length ? pbSection(other, other[0].course, "badge-other") : "")
-      : '<p class="no-pbs">No personal best times recorded yet.</p>');
+      : '<p class="no-pbs">No personal best times recorded yet.</p>') +
+    '<div id="progression-section" class="progression-wrap">' +
+      '<div class="progression-header">' +
+        '<h3 class="progression-title">Time Progression</h3>' +
+        '<select id="progression-event" class="progression-select"></select>' +
+      '</div>' +
+      '<div class="chart-wrap"><canvas id="progression-canvas"></canvas></div>' +
+    '</div>';
 
   document.getElementById("swimmers-list-view").classList.add("hidden");
   document.getElementById("swimmer-detail-view").classList.remove("hidden");
   window.scrollTo(0, 0);
+
+  loadProgressionSection(ath);
 }
 
 function pbSection(pbs, label, badgeClass) {
@@ -263,6 +273,108 @@ async function showMeet(id) {
     "</div>" +
     '<p class="results-count">' + results.length + " result" + (results.length !== 1 ? "s" : "") + " across " + Object.keys(byEvent).length + " events</p>" +
     eventSections;
+}
+
+// ── Progression chart ─────────────────────────────────────────────────────────
+
+function timeToSeconds(t) {
+  if (!t || /^(DQ|NS|NT|SCR|DNF|DNS)$/i.test(t.trim())) return null;
+  const parts = t.trim().split(":");
+  return parts.length === 2
+    ? parseFloat(parts[0]) * 60 + parseFloat(parts[1])
+    : parseFloat(parts[0]);
+}
+
+function secondsToTime(s) {
+  if (s === null || isNaN(s)) return "";
+  if (s >= 60) {
+    const m = Math.floor(s / 60);
+    const sec = (s % 60).toFixed(2).padStart(5, "0");
+    return m + ":" + sec;
+  }
+  return s.toFixed(2);
+}
+
+function drawProgressionChart(history, event) {
+  const rows = history
+    .filter(r => r.event === event && timeToSeconds(r.time) !== null)
+    .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+
+  const labels = rows.map(r => formatDate(r.date));
+  const data   = rows.map(r => timeToSeconds(r.time));
+  const meets  = rows.map(r => r.meet + (r.course ? " (" + r.course + ")" : ""));
+
+  if (progressionChart) progressionChart.destroy();
+  const canvas = document.getElementById("progression-canvas");
+  if (!canvas) return;
+
+  progressionChart = new Chart(canvas.getContext("2d"), {
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        data,
+        borderColor: "#1e3a5f",
+        backgroundColor: "rgba(30,58,95,0.08)",
+        pointBackgroundColor: "#1e3a5f",
+        pointRadius: 5,
+        pointHoverRadius: 7,
+        tension: 0.2,
+        fill: true,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => secondsToTime(ctx.parsed.y) + "  —  " + meets[ctx.dataIndex],
+          }
+        }
+      },
+      scales: {
+        y: {
+          reverse: true,
+          ticks: { callback: v => secondsToTime(v) },
+          title: { display: true, text: "Time (lower = faster)" },
+        }
+      }
+    }
+  });
+}
+
+async function loadProgressionSection(ath) {
+  const section = document.getElementById("progression-section");
+  if (!section) return;
+
+  let history;
+  try {
+    const r = await fetch("data/athlete_results/" + ath.id + ".json");
+    if (!r.ok) throw new Error();
+    history = await r.json();
+  } catch {
+    section.remove();
+    return;
+  }
+
+  const events = [...new Set(
+    history.filter(r => timeToSeconds(r.time) !== null).map(r => r.event)
+  )].sort();
+
+  if (!events.length) { section.remove(); return; }
+
+  const select = document.getElementById("progression-event");
+  events.forEach(e => {
+    const opt = document.createElement("option");
+    opt.value = e;
+    opt.textContent = e;
+    select.appendChild(opt);
+  });
+
+  drawProgressionChart(history, events[0]);
+  select.addEventListener("change", () => drawProgressionChart(history, select.value));
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

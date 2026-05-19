@@ -1,0 +1,533 @@
+[
+  {
+    "meet_id": 162,
+    "meet": "Club Time Trials June 2024",
+    "date": "2024-06-03",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "46.61",
+    "place": ""
+  },
+  {
+    "meet_id": 162,
+    "meet": "Club Time Trials June 2024",
+    "date": "2024-06-03",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "2:06.00",
+    "place": ""
+  },
+  {
+    "meet_id": 156,
+    "meet": "Warrender End of Season SC Mee",
+    "date": "2024-06-15",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:41.87",
+    "place": "54"
+  },
+  {
+    "meet_id": 156,
+    "meet": "Warrender End of Season SC Mee",
+    "date": "2024-06-15",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "51.98",
+    "place": "44"
+  },
+  {
+    "meet_id": 156,
+    "meet": "Warrender End of Season SC Mee",
+    "date": "2024-06-15",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:16.72",
+    "place": "44"
+  },
+  {
+    "meet_id": 156,
+    "meet": "Warrender End of Season SC Mee",
+    "date": "2024-06-15",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "57.34",
+    "place": "37"
+  },
+  {
+    "meet_id": 161,
+    "meet": "South Lanarkshire Development",
+    "date": "2024-09-14",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:45.43",
+    "place": "2"
+  },
+  {
+    "meet_id": 165,
+    "meet": "Autumn Graded Meet 2024",
+    "date": "2024-10-05",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:31.93",
+    "place": "18"
+  },
+  {
+    "meet_id": 165,
+    "meet": "Autumn Graded Meet 2024",
+    "date": "2024-10-05",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:55.50",
+    "place": "15"
+  },
+  {
+    "meet_id": 173,
+    "meet": "Club Time Trials October 2024",
+    "date": "2024-10-12",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "2:00.69",
+    "place": ""
+  },
+  {
+    "meet_id": 173,
+    "meet": "Club Time Trials October 2024",
+    "date": "2024-10-12",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "53.58",
+    "place": ""
+  },
+  {
+    "meet_id": 183,
+    "meet": "Club Time Trials November 2024",
+    "date": "2024-11-04",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "42.20",
+    "place": ""
+  },
+  {
+    "meet_id": 183,
+    "meet": "Club Time Trials November 2024",
+    "date": "2024-11-04",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:00.03",
+    "place": ""
+  },
+  {
+    "meet_id": 185,
+    "meet": "South Lanarkshire Development",
+    "date": "2024-11-16",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:32.14",
+    "place": "7"
+  },
+  {
+    "meet_id": 185,
+    "meet": "South Lanarkshire Development",
+    "date": "2024-11-16",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:00.82",
+    "place": "7"
+  },
+  {
+    "meet_id": 187,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-01-18",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:30.46",
+    "place": "9"
+  },
+  {
+    "meet_id": 187,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-01-18",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:54.89",
+    "place": "2"
+  },
+  {
+    "meet_id": 225,
+    "meet": "Club Time Trials February 2025",
+    "date": "2025-02-03",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "38.83",
+    "place": ""
+  },
+  {
+    "meet_id": 191,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-02-22",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:27.60",
+    "place": "3"
+  },
+  {
+    "meet_id": 191,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-02-22",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:54.89",
+    "place": "6"
+  },
+  {
+    "meet_id": 224,
+    "meet": "Club Time Trials April 2025",
+    "date": "2025-04-07",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "47.99",
+    "place": ""
+  },
+  {
+    "meet_id": 224,
+    "meet": "Club Time Trials April 2025",
+    "date": "2025-04-07",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:54.24",
+    "place": ""
+  },
+  {
+    "meet_id": 204,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-05-10",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:26.89",
+    "place": "6"
+  },
+  {
+    "meet_id": 204,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-05-10",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:50.08",
+    "place": "5"
+  },
+  {
+    "meet_id": 233,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-09-20",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:20.25",
+    "place": "4"
+  },
+  {
+    "meet_id": 233,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-09-20",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:42.84",
+    "place": "3"
+  },
+  {
+    "meet_id": 231,
+    "meet": "Forth Valley Tridents Developm",
+    "date": "2025-09-27",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "35.62",
+    "place": "3"
+  },
+  {
+    "meet_id": 231,
+    "meet": "Forth Valley Tridents Developm",
+    "date": "2025-09-27",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "44.61",
+    "place": "6"
+  },
+  {
+    "meet_id": 231,
+    "meet": "Forth Valley Tridents Developm",
+    "date": "2025-09-27",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "47.17",
+    "place": "4"
+  },
+  {
+    "meet_id": 231,
+    "meet": "Forth Valley Tridents Developm",
+    "date": "2025-09-27",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "45.67",
+    "place": "7"
+  },
+  {
+    "meet_id": 231,
+    "meet": "Forth Valley Tridents Developm",
+    "date": "2025-09-27",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:32.41",
+    "place": "4"
+  },
+  {
+    "meet_id": 232,
+    "meet": "Forth Valley Tridents Age Grou",
+    "date": "2025-09-28",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:21.88",
+    "place": "13"
+  },
+  {
+    "meet_id": 232,
+    "meet": "Forth Valley Tridents Age Grou",
+    "date": "2025-09-28",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:45.22",
+    "place": "13"
+  },
+  {
+    "meet_id": 235,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-10-04",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:23.08",
+    "place": "6"
+  },
+  {
+    "meet_id": 235,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-10-04",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:47.38",
+    "place": "3"
+  },
+  {
+    "meet_id": 240,
+    "meet": "Club Time Trials October 2025",
+    "date": "2025-10-06",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:43.32",
+    "place": ""
+  },
+  {
+    "meet_id": 241,
+    "meet": "2025 WD Short Course Champions",
+    "date": "2025-11-08",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "46.00",
+    "place": "26"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "34.26",
+    "place": "9"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:18.70",
+    "place": "15"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "42.99",
+    "place": "9"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:33.06",
+    "place": "12"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "45.15",
+    "place": "8"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:42.23",
+    "place": "12"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "42.50",
+    "place": "12"
+  },
+  {
+    "meet_id": 239,
+    "meet": "Dumfries ASC Advent Open 2025",
+    "date": "2025-11-21",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:38.47",
+    "place": "12"
+  },
+  {
+    "meet_id": 244,
+    "meet": "EK Graded Meet December 2025",
+    "date": "2025-12-06",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:17.12",
+    "place": "1"
+  },
+  {
+    "meet_id": 244,
+    "meet": "EK Graded Meet December 2025",
+    "date": "2025-12-06",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "42.77",
+    "place": "2"
+  },
+  {
+    "meet_id": 244,
+    "meet": "EK Graded Meet December 2025",
+    "date": "2025-12-06",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "45.73",
+    "place": "1"
+  },
+  {
+    "meet_id": 247,
+    "meet": "Forth Valley Tridents Open Mee",
+    "date": "2026-01-17",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "44.29",
+    "place": "10"
+  },
+  {
+    "meet_id": 253,
+    "meet": "Clyde Coast Mini League",
+    "date": "2026-01-24",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "34.03",
+    "place": ""
+  },
+  {
+    "meet_id": 253,
+    "meet": "Clyde Coast Mini League",
+    "date": "2026-01-24",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "44.13",
+    "place": ""
+  },
+  {
+    "meet_id": 249,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-01-31",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:17.27",
+    "place": "3"
+  },
+  {
+    "meet_id": 249,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-01-31",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:45.59",
+    "place": "3"
+  },
+  {
+    "meet_id": 250,
+    "meet": "North Ayrshire 200 Meet 2026",
+    "date": "2026-02-13",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:12.19",
+    "place": "12"
+  },
+  {
+    "meet_id": 251,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-02-21",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:15.98",
+    "place": "1"
+  },
+  {
+    "meet_id": 251,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-02-21",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:38.27",
+    "place": "2"
+  },
+  {
+    "meet_id": 262,
+    "meet": "South Lanarkshire Schools 2026",
+    "date": "2026-03-11",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:14.91",
+    "place": "6"
+  },
+  {
+    "meet_id": 262,
+    "meet": "South Lanarkshire Schools 2026",
+    "date": "2026-03-11",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:40.21",
+    "place": "10"
+  },
+  {
+    "meet_id": 256,
+    "meet": "2026 WD Long Course March Meet",
+    "date": "2026-03-21",
+    "course": "LCM",
+    "event": "50 Breaststroke",
+    "time": "46.37",
+    "place": "5"
+  }
+]

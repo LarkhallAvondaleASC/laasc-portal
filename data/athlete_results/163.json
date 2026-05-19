@@ -1,0 +1,29 @@
+[
+  {
+    "meet_id": 253,
+    "meet": "Clyde Coast Mini League",
+    "date": "2026-01-24",
+    "course": "SCM",
+    "event": "25 Butterfly",
+    "time": "27.47",
+    "place": ""
+  },
+  {
+    "meet_id": 251,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-02-21",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "46.86",
+    "place": "6"
+  },
+  {
+    "meet_id": 251,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-02-21",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:01.48",
+    "place": "3"
+  }
+]

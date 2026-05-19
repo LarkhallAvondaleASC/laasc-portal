@@ -1,0 +1,38 @@
+[
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "50.08",
+    "place": ""
+  },
+  {
+    "meet_id": 237,
+    "meet": "Club Time Trials September 202",
+    "date": "2025-09-01",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:30.79",
+    "place": ""
+  },
+  {
+    "meet_id": 262,
+    "meet": "South Lanarkshire Schools 2026",
+    "date": "2026-03-11",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "37.76",
+    "place": "14"
+  },
+  {
+    "meet_id": 262,
+    "meet": "South Lanarkshire Schools 2026",
+    "date": "2026-03-11",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "50.85",
+    "place": "6"
+  }
+]

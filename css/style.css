@@ -272,6 +272,44 @@ main {
 
 .no-pbs { color: var(--text-muted); font-style: italic; padding: .75rem 0; }
 
+/* ── Progression chart ────────────────────────────────────────────────────── */
+.progression-wrap  { margin-top: 2rem; }
+
+.progression-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .75rem;
+  flex-wrap: wrap;
+}
+
+.progression-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+
+.progression-select {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .3rem .6rem;
+  font-size: .875rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--white);
+  cursor: pointer;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 280px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
 /* ── Meets ────────────────────────────────────────────────────────────────── */
 .meet-item {
   background: var(--white);
