@@ -1,0 +1,110 @@
+[
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "35.56",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "3:02.29",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "46.91",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:34.90",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:37.02",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:09.81",
+    "place": ""
+  },
+  {
+    "meet_id": 268,
+    "meet": "Club Time Trials May 2026",
+    "date": "2026-05-04",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "42.40",
+    "place": ""
+  },
+  {
+    "meet_id": 268,
+    "meet": "Club Time Trials May 2026",
+    "date": "2026-05-04",
+    "course": "SCM",
+    "event": "200 Breaststroke",
+    "time": "3:41.09",
+    "place": ""
+  },
+  {
+    "meet_id": 268,
+    "meet": "Club Time Trials May 2026",
+    "date": "2026-05-04",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:30.10",
+    "place": ""
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:21.78",
+    "place": "3"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:32.13",
+    "place": "6"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:44.28",
+    "place": "3"
+  }
+]

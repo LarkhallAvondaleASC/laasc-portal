@@ -1,0 +1,74 @@
+[
+  {
+    "meet_id": 246,
+    "meet": "Club Time Trials November 2025",
+    "date": "2025-11-03",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "1:05.04",
+    "place": ""
+  },
+  {
+    "meet_id": 246,
+    "meet": "Club Time Trials November 2025",
+    "date": "2025-11-03",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:57.23",
+    "place": ""
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "2:27.00",
+    "place": ""
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:36.26",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "2:09.59",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "1:00.08",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "1:25.56",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "2:28.48",
+    "place": ""
+  }
+]

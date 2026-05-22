@@ -18,6 +18,42 @@
     "place": ""
   },
   {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "1:02.62",
+    "place": "8"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "1:23.85",
+    "place": "6"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:23.09",
+    "place": "6"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "1:11.41",
+    "place": "6"
+  },
+  {
     "meet_id": 265,
     "meet": "Club Time Trials April 2026",
     "date": "2026-04-20",

@@ -1,0 +1,506 @@
+[
+  {
+    "meet_id": 162,
+    "meet": "Club Time Trials June 2024",
+    "date": "2024-06-03",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "2:57.70",
+    "place": ""
+  },
+  {
+    "meet_id": 162,
+    "meet": "Club Time Trials June 2024",
+    "date": "2024-06-03",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:03.70",
+    "place": ""
+  },
+  {
+    "meet_id": 162,
+    "meet": "Club Time Trials June 2024",
+    "date": "2024-06-03",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:41.85",
+    "place": ""
+  },
+  {
+    "meet_id": 163,
+    "meet": "Club 50m Sprints August 2024",
+    "date": "2024-08-19",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "38.44",
+    "place": ""
+  },
+  {
+    "meet_id": 163,
+    "meet": "Club 50m Sprints August 2024",
+    "date": "2024-08-19",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "47.11",
+    "place": ""
+  },
+  {
+    "meet_id": 163,
+    "meet": "Club 50m Sprints August 2024",
+    "date": "2024-08-19",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "56.03",
+    "place": ""
+  },
+  {
+    "meet_id": 163,
+    "meet": "Club 50m Sprints August 2024",
+    "date": "2024-08-19",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "45.52",
+    "place": ""
+  },
+  {
+    "meet_id": 166,
+    "meet": "Club Time Trials September 202",
+    "date": "2024-09-02",
+    "course": "SCM",
+    "event": "400 Freestyle",
+    "time": "6:30.41",
+    "place": ""
+  },
+  {
+    "meet_id": 166,
+    "meet": "Club Time Trials September 202",
+    "date": "2024-09-02",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:37.38",
+    "place": ""
+  },
+  {
+    "meet_id": 172,
+    "meet": "South Lanarkshire Development",
+    "date": "2024-10-05",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "DNF",
+    "place": ""
+  },
+  {
+    "meet_id": 172,
+    "meet": "South Lanarkshire Development",
+    "date": "2024-10-05",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "DNF",
+    "place": ""
+  },
+  {
+    "meet_id": 186,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2024-12-08",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:25.54",
+    "place": "7"
+  },
+  {
+    "meet_id": 186,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2024-12-08",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:38.60",
+    "place": "6"
+  },
+  {
+    "meet_id": 186,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2024-12-08",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:55.59",
+    "place": "3"
+  },
+  {
+    "meet_id": 186,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2024-12-08",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:33.51",
+    "place": "5"
+  },
+  {
+    "meet_id": 225,
+    "meet": "Club Time Trials February 2025",
+    "date": "2025-02-03",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "36.43",
+    "place": ""
+  },
+  {
+    "meet_id": 225,
+    "meet": "Club Time Trials February 2025",
+    "date": "2025-02-03",
+    "course": "SCM",
+    "event": "200 Breaststroke",
+    "time": "4:30.12",
+    "place": ""
+  },
+  {
+    "meet_id": 225,
+    "meet": "Club Time Trials February 2025",
+    "date": "2025-02-03",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:37.91",
+    "place": ""
+  },
+  {
+    "meet_id": 226,
+    "meet": "Club Time Trials March 2025",
+    "date": "2025-03-03",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "42.45",
+    "place": ""
+  },
+  {
+    "meet_id": 226,
+    "meet": "Club Time Trials March 2025",
+    "date": "2025-03-03",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:45.94",
+    "place": ""
+  },
+  {
+    "meet_id": 226,
+    "meet": "Club Time Trials March 2025",
+    "date": "2025-03-03",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:35.94",
+    "place": ""
+  },
+  {
+    "meet_id": 230,
+    "meet": "Club Time Trials June 2025",
+    "date": "2025-06-02",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "2:51.45",
+    "place": ""
+  },
+  {
+    "meet_id": 230,
+    "meet": "Club Time Trials June 2025",
+    "date": "2025-06-02",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "51.38",
+    "place": ""
+  },
+  {
+    "meet_id": 230,
+    "meet": "Club Time Trials June 2025",
+    "date": "2025-06-02",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:32.13",
+    "place": ""
+  },
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "35.27",
+    "place": ""
+  },
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "41.04",
+    "place": ""
+  },
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "50.14",
+    "place": ""
+  },
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "38.77",
+    "place": ""
+  },
+  {
+    "meet_id": 237,
+    "meet": "Club Time Trials September 202",
+    "date": "2025-09-01",
+    "course": "SCM",
+    "event": "400 Freestyle",
+    "time": "6:05.75",
+    "place": ""
+  },
+  {
+    "meet_id": 237,
+    "meet": "Club Time Trials September 202",
+    "date": "2025-09-01",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:30.62",
+    "place": ""
+  },
+  {
+    "meet_id": 235,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-10-04",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:14.11",
+    "place": "4"
+  },
+  {
+    "meet_id": 235,
+    "meet": "South Lanarkshire Development",
+    "date": "2025-10-04",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:24.75",
+    "place": "1"
+  },
+  {
+    "meet_id": 240,
+    "meet": "Club Time Trials October 2025",
+    "date": "2025-10-06",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:51.96",
+    "place": ""
+  },
+  {
+    "meet_id": 240,
+    "meet": "Club Time Trials October 2025",
+    "date": "2025-10-06",
+    "course": "SCM",
+    "event": "400 IM",
+    "time": "7:20.84",
+    "place": ""
+  },
+  {
+    "meet_id": 242,
+    "meet": "southlanarkshire development m",
+    "date": "2025-11-01",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:13.98",
+    "place": "2"
+  },
+  {
+    "meet_id": 242,
+    "meet": "southlanarkshire development m",
+    "date": "2025-11-01",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:22.97",
+    "place": "1"
+  },
+  {
+    "meet_id": 242,
+    "meet": "southlanarkshire development m",
+    "date": "2025-11-01",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:46.68",
+    "place": "4"
+  },
+  {
+    "meet_id": 246,
+    "meet": "Club Time Trials November 2025",
+    "date": "2025-11-03",
+    "course": "SCM",
+    "event": "800 Freestyle",
+    "time": "12:11.69",
+    "place": ""
+  },
+  {
+    "meet_id": 246,
+    "meet": "Club Time Trials November 2025",
+    "date": "2025-11-03",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "38.18",
+    "place": ""
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:15.12",
+    "place": "3"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:25.79",
+    "place": "2"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:29.75",
+    "place": "2"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:12.53",
+    "place": "3"
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:13.59",
+    "place": ""
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "200 Backstroke",
+    "time": "3:17.56",
+    "place": ""
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:47.25",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "2:43.96",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "46.46",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:29.76",
+    "place": ""
+  },
+  {
+    "meet_id": 262,
+    "meet": "South Lanarkshire Schools 2026",
+    "date": "2026-03-11",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:11.19",
+    "place": "9"
+  },
+  {
+    "meet_id": 262,
+    "meet": "South Lanarkshire Schools 2026",
+    "date": "2026-03-11",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:01.81",
+    "place": "4"
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "33.63",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:30.03",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:12.67",
+    "place": ""
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:13.25",
+    "place": "2"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:24.98",
+    "place": "1"
+  }
+]

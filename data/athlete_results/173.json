@@ -1,0 +1,56 @@
+[
+  {
+    "meet_id": 253,
+    "meet": "Clyde Coast Mini League",
+    "date": "2026-01-24",
+    "course": "SCM",
+    "event": "25 Breaststroke",
+    "time": "34.87",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "2:17.47",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "1:02.79",
+    "place": ""
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "58.47",
+    "place": "15"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "56.00",
+    "place": "7"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:18.99",
+    "place": "4"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "meet_id": 253,
+    "meet": "Clyde Coast Mini League",
+    "date": "2026-01-24",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "56.46",
+    "place": ""
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "45.72",
+    "place": ""
+  },
+  {
+    "meet_id": 254,
+    "meet": "Club Time Trials February 2026",
+    "date": "2026-02-02",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:01.78",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:45.61",
+    "place": ""
+  },
+  {
+    "meet_id": 257,
+    "meet": "Club Time Trials March 2026",
+    "date": "2026-03-02",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "52.58",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "1:01.14",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:57.63",
+    "place": ""
+  },
+  {
+    "meet_id": 268,
+    "meet": "Club Time Trials May 2026",
+    "date": "2026-05-04",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:53.05",
+    "place": ""
+  },
+  {
+    "meet_id": 268,
+    "meet": "Club Time Trials May 2026",
+    "date": "2026-05-04",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "57.21",
+    "place": ""
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:35.68",
+    "place": "3"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:46.53",
+    "place": "5"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "meet_id": 166,
+    "meet": "Club Time Trials September 202",
+    "date": "2024-09-02",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "2:11.25",
+    "place": ""
+  },
+  {
+    "meet_id": 166,
+    "meet": "Club Time Trials September 202",
+    "date": "2024-09-02",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "1:01.65",
+    "place": ""
+  },
+  {
+    "meet_id": 183,
+    "meet": "Club Time Trials November 2024",
+    "date": "2024-11-04",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "55.67",
+    "place": ""
+  },
+  {
+    "meet_id": 183,
+    "meet": "Club Time Trials November 2024",
+    "date": "2024-11-04",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:46.75",
+    "place": ""
+  }
+]

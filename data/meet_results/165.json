@@ -198,5 +198,45 @@
     "event": "100 Freestyle",
     "time": "1:31.94",
     "place": "3"
+  },
+  {
+    "ath_id": null,
+    "last": "Thompson",
+    "first": "Emma",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Backstroke",
+    "time": "1:43.82",
+    "place": "2"
+  },
+  {
+    "ath_id": null,
+    "last": "Thompson",
+    "first": "Emma",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "57.13",
+    "place": "10"
+  },
+  {
+    "ath_id": null,
+    "last": "Wayt",
+    "first": "Quinn",
+    "gender": "F",
+    "age": "10",
+    "event": "100 Backstroke",
+    "time": "1:53.01",
+    "place": "7"
+  },
+  {
+    "ath_id": null,
+    "last": "Wayt",
+    "first": "Quinn",
+    "gender": "F",
+    "age": "10",
+    "event": "50 Butterfly",
+    "time": "53.82",
+    "place": "5"
   }
 ]

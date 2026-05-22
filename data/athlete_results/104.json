@@ -567,6 +567,33 @@
     "place": ""
   },
   {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "38.15",
+    "place": ""
+  },
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "50.13",
+    "place": ""
+  },
+  {
+    "meet_id": 238,
+    "meet": "Club 50m Time Trials",
+    "date": "2025-08-18",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "38.43",
+    "place": ""
+  },
+  {
     "meet_id": 237,
     "meet": "Club Time Trials September 202",
     "date": "2025-09-01",
@@ -808,6 +835,42 @@
     "event": "50 Butterfly",
     "time": "38.00",
     "place": "5"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:12.10",
+    "place": "2"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:21.55",
+    "place": "1"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:35.54",
+    "place": "2"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:09.51",
+    "place": "2"
   },
   {
     "meet_id": 243,
@@ -1087,6 +1150,33 @@
     "event": "200 Backstroke",
     "time": "2:53.45",
     "place": "2"
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "30.48",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:20.39",
+    "place": ""
+  },
+  {
+    "meet_id": 265,
+    "meet": "Club Time Trials April 2026",
+    "date": "2026-04-20",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "2:59.81",
+    "place": ""
   },
   {
     "meet_id": 268,

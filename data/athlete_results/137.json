@@ -333,6 +333,42 @@
     "place": ""
   },
   {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:48.45",
+    "place": "12"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:54.73",
+    "place": "8"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:12.67",
+    "place": "10"
+  },
+  {
+    "meet_id": 245,
+    "meet": "Larkhall Club Championships 20",
+    "date": "2025-11-28",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "2:14.21",
+    "place": "4"
+  },
+  {
     "meet_id": 253,
     "meet": "Clyde Coast Mini League",
     "date": "2026-01-24",
