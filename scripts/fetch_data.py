@@ -186,23 +186,18 @@ def fetch_meets(session):
     return meets
 
 
-def fetch_meet_results(session, meet_id):
-    soup = get_soup(session, f"{BASE_URL}/aMeetRESULTS.ASP", {"db": DB, "MEET": meet_id})
-    table = find_data_table(soup)
-    if not table:
-        return []
-    results = []
+def _parse_meet_results_page(table):
+    rows = []
     for cells in data_rows(table):
         if len(cells) < 8:
             continue
-        # Find athlete column: the cell containing "Last, First" format
         athlete_idx = next(
             (i for i, c in enumerate(cells) if "," in c.get_text()),
             None,
         )
         if athlete_idx is None:
             continue
-        offset = athlete_idx  # everything else is relative to this
+        offset = athlete_idx
         if len(cells) < offset + 8:
             continue
         athlete_raw = cells[offset].get_text(strip=True)
@@ -225,7 +220,7 @@ def fetch_meet_results(session, meet_id):
                 ath_id = int(m.group(1))
 
         stroke = STROKE_EXPAND.get(stroke_raw, stroke_raw)
-        results.append({
+        rows.append({
             "ath_id": ath_id,
             "last":   last,
             "first":  first,
@@ -235,6 +230,38 @@ def fetch_meet_results(session, meet_id):
             "time":   time_str,
             "place":  "" if place_str in ("—", "-") else place_str,
         })
+    return rows
+
+
+MEET_PAGE_SIZE = 1000  # Request large pages so most meets fit in a single request
+
+
+def fetch_meet_results(session, meet_id):
+    results = []
+    seen = set()
+    page = 1
+
+    while True:
+        params = {
+            "db": DB, "MEET": meet_id,
+            "thePage": page, "PageSize": MEET_PAGE_SIZE,
+        }
+        soup = get_soup(session, f"{BASE_URL}/aMeetRESULTS.ASP", params)
+        table = find_data_table(soup)
+        new_count = 0
+        if table:
+            for row in _parse_meet_results_page(table):
+                key = (row["last"], row["first"], row["event"], row["time"])
+                if key not in seen:
+                    seen.add(key)
+                    results.append(row)
+                    new_count += 1
+
+        if new_count < MEET_PAGE_SIZE:
+            break
+        page += 1
+        time.sleep(DELAY)
+
     return results
 
 
