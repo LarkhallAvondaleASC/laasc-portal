@@ -581,6 +581,13 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 .stats-date-range {
   font-size: .8rem;
   color: var(--text-muted);
+  margin-bottom: .2rem;
+}
+
+.stats-note {
+  font-size: .75rem;
+  color: var(--text-muted);
+  font-style: italic;
   margin-bottom: 1rem;
 }
 
