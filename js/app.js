@@ -61,22 +61,33 @@ function switchTab(name, push = true) {
   );
 }
 
+function openSwimmersTab() {
+  switchTab("swimmers");
+  selectedGroup = "";
+  document.getElementById("search-input").value = "";
+  renderSquadCards();
+  renderSwimmers();
+  showSwimmersList(false);
+}
+
+function openMeetsTab() {
+  switchTab("meets");
+  meetCourseFilter = "";
+  renderMeets();
+  showMeetsList(false);
+}
+
+function openStatsTab() {
+  switchTab("stats");
+  renderStats();
+}
+
 document.querySelectorAll(".tab-btn").forEach(btn =>
   btn.addEventListener("click", () => {
-    switchTab(btn.dataset.tab);
-    if (btn.dataset.tab === "swimmers") {
-      selectedGroup = "";
-      document.getElementById("search-input").value = "";
-      renderSquadCards();
-      renderSwimmers();
-      showSwimmersList(false);
-    }
-    if (btn.dataset.tab === "meets") {
-      meetCourseFilter = "";
-      renderMeets();
-      showMeetsList(false);
-    }
-    if (btn.dataset.tab === "stats") renderStats();
+    if (btn.dataset.tab === "swimmers") openSwimmersTab();
+    else if (btn.dataset.tab === "meets")  openMeetsTab();
+    else if (btn.dataset.tab === "stats")  openStatsTab();
+    else switchTab(btn.dataset.tab);
   })
 );
 
