@@ -523,11 +523,9 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 
 /* ── Section headings ─────────────────────────────────────────────────────── */
 .section-heading {
-  font-size: .7rem;
+  font-size: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  color: var(--text-muted);
+  color: var(--navy);
   margin: 1.25rem 0 .5rem;
 }
 
