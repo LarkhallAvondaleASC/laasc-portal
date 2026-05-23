@@ -71,7 +71,7 @@ function renderSquadCards() {
     const active = selectedGroup === g ? " active" : "";
     const label = isAll ? "All" : squadLabel(g).replace(" Squad", "");
     return (
-      '<button class="squad-card' + active + '" onclick="selectSquad(' + JSON.stringify(g) + ')" aria-pressed="' + (selectedGroup === g) + '">' +
+      '<button class="squad-card' + active + '" onclick="selectSquad(\'' + g + '\')" aria-pressed="' + (selectedGroup === g) + '">' +
         '<span class="squad-card-name">' + esc(label) + "</span>" +
         '<span class="squad-card-count">' + pool.length + "</span>" +
         '<span class="squad-card-gender">' + m + "m / " + f + "f</span>" +
