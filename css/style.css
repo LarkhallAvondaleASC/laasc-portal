@@ -588,7 +588,7 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   font-size: .75rem;
   color: var(--text-muted);
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .stats-toggle-group { display: flex; gap: .35rem; flex-wrap: wrap; }
