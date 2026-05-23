@@ -165,6 +165,7 @@ function showSwimmer(id, push = true) {
     '<div class="detail-header">' +
       '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
       '<div class="detail-meta">' + esc(meta) + "</div>" +
+      '<div id="detail-dates" class="detail-dates"></div>' +
       '<div class="detail-stats" id="detail-stats"></div>' +
     "</div>" +
     (scm.length || lcm.length || other.length
@@ -501,6 +502,14 @@ async function loadProgressionSection(ath) {
   }
 
   const validRaces = history.filter(r => timeToSeconds(r.time) !== null);
+
+  const raceDates = history.map(r => r.date).filter(Boolean).sort();
+  const datesEl = document.getElementById("detail-dates");
+  if (datesEl && raceDates.length) {
+    const first = formatDate(raceDates[0]);
+    const last  = formatDate(raceDates[raceDates.length - 1]);
+    datesEl.textContent = first === last ? first : first + " – " + last;
+  }
 
   const meetMap = {};
   history.forEach(r => { if (!meetMap[r.meet_id]) meetMap[r.meet_id] = { name: r.meet, course: r.course }; });

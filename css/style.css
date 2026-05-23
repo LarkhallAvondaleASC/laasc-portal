@@ -275,6 +275,12 @@ main {
 .detail-name   { font-size: 1.5rem; font-weight: 700; color: var(--navy); }
 .detail-meta   { font-size: .875rem; color: var(--text-muted); margin-top: .25rem; }
 
+.detail-dates {
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-top: .15rem;
+}
+
 .detail-stats {
   display: flex;
   flex-wrap: wrap;
