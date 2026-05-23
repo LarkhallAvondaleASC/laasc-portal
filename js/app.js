@@ -348,7 +348,11 @@ async function showMeet(id, push = true) {
 
   const eventSections = Object.keys(byEvent).sort().map(event => {
     const rows = byEvent[event]
-      .sort((a, b) => a.time.localeCompare(b.time))
+      .sort((a, b) => {
+        const ta = timeToSeconds(a.time);
+        const tb = timeToSeconds(b.time);
+        return (ta !== null ? ta : Infinity) - (tb !== null ? tb : Infinity);
+      })
       .map(row =>
         "<tr>" +
           "<td>" + esc(row.first + " " + row.last) + "</td>" +
