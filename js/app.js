@@ -124,6 +124,12 @@ function filteredAthletes() {
 
 function renderSwimmers() {
   const list = filteredAthletes();
+  const headingEl = document.getElementById("swimmers-heading");
+  if (headingEl) {
+    headingEl.textContent = selectedGroup
+      ? squadLabel(selectedGroup).replace(" Squad", "")
+      : "All";
+  }
   document.getElementById("swimmers-count").textContent =
     list.length + " swimmer" + (list.length !== 1 ? "s" : "");
 
