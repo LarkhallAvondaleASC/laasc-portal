@@ -569,6 +569,65 @@ main {
   font-size: .9rem;
 }
 
+/* ── Stats tab ────────────────────────────────────────────────────────────── */
+.stats-filter-bar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.stats-toggle-group { display: flex; gap: .35rem; flex-wrap: wrap; }
+
+.stats-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats-overview .stat-item { background: var(--blue-light); }
+
+.faster-pct { color: #166534; font-weight: 700; }
+
+.squad-comparison-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .8rem;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.squad-comparison-grid th {
+  background: var(--navy);
+  color: var(--white);
+  padding: .45rem .6rem;
+  text-align: center;
+  font-size: .72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.squad-comparison-grid th:first-child { text-align: left; }
+
+.squad-comparison-grid td {
+  padding: .45rem .6rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+
+.squad-comparison-grid tr:last-child td { border-bottom: none; }
+.squad-comparison-grid td:first-child { text-align: left; font-weight: 600; color: var(--navy); }
+
+.cell-green { background: #dcfce7 !important; color: #166534; font-weight: 700; }
+.cell-amber { background: #fef9c3 !important; color: #854d0e; font-weight: 700; }
+.cell-red   { background: #fee2e2 !important; color: #dc2626; font-weight: 700; }
+.cell-empty { color: var(--text-muted); }
+
 /* ── Footer ───────────────────────────────────────────────────────────────── */
 footer {
   text-align: center;

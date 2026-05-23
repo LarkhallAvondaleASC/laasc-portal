@@ -3,9 +3,14 @@ let meets = [];
 let progressionChart = null;
 let selectedGroup = "";
 let meetCourseFilter = "";
+let statsCourse = "SCM";
+let statsGender = "";
 
-const SQUAD_ORDER = ["SEN", "TRN", "JUN", "DEV", "ENT"];
+const SQUAD_ORDER  = ["SEN", "TRN", "JUN", "DEV", "ENT"];
 const COURSE_ORDER = ["SCM", "LCM", "Yards"];
+const STROKE_ORDER = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
+const STROKE_BADGES = { Freestyle: "badge-scm", Backstroke: "badge-lcm", Breaststroke: "badge-yards", Butterfly: "badge-other", IM: "badge-neutral" };
+const STATS_MIN_ATHLETES = 5;
 
 // ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -33,6 +38,7 @@ async function loadData() {
     renderSquadCards();
     renderSwimmers();
     renderMeets();
+    renderStats();
     navigate(location.hash || "#home");
   } catch {
     document.getElementById("tab-home").insertAdjacentHTML(
@@ -70,6 +76,7 @@ document.querySelectorAll(".tab-btn").forEach(btn =>
       renderMeets();
       showMeetsList(false);
     }
+    if (btn.dataset.tab === "stats") renderStats();
   })
 );
 
@@ -617,6 +624,170 @@ function esc(str) {
     .replace(/"/g, "&quot;");
 }
 
+// ── Stats ─────────────────────────────────────────────────────────────────────
+
+function goToSwimmer(id) {
+  switchTab("swimmers", false);
+  showSwimmer(id);
+}
+
+function selectStatsCourse(c) { statsCourse = c; renderStats(); }
+function selectStatsGender(g) { statsGender = g; renderStats(); }
+
+function renderStats() {
+  const pool = statsGender ? athletes.filter(a => a.gender === statsGender) : athletes;
+
+  // Filter toggles
+  const courseEl = document.getElementById("stats-course-filter");
+  if (courseEl) {
+    courseEl.innerHTML = ["SCM", "LCM"].map(c => {
+      const badge = courseBadge(c).cls;
+      return '<button class="course-label ' + badge + ' chart-toggle' + (statsCourse === c ? "" : " inactive") + '" onclick="selectStatsCourse(\'' + c + '\')">' + c + "</button>";
+    }).join("");
+  }
+
+  const genderEl = document.getElementById("stats-gender-filter");
+  if (genderEl) {
+    genderEl.innerHTML = [["", "All"], ["M", "Male"], ["F", "Female"]].map(([val, label]) =>
+      '<button class="course-label badge-neutral chart-toggle' + (statsGender === val ? "" : " inactive") + '" onclick="selectStatsGender(\'' + val + '\')">' + label + "</button>"
+    ).join("");
+  }
+
+  // Build event map: event → [{seconds, time, athlete}]
+  const eventMap = {};
+  pool.forEach(ath => {
+    (ath.pbs || []).forEach(pb => {
+      if (pb.course !== statsCourse) return;
+      const secs = timeToSeconds(pb.time);
+      if (secs === null) return;
+      if (!eventMap[pb.event]) eventMap[pb.event] = [];
+      eventMap[pb.event].push({ seconds: secs, time: pb.time, athlete: ath });
+    });
+  });
+  Object.keys(eventMap).forEach(e => { if (eventMap[e].length < STATS_MIN_ATHLETES) delete eventMap[e]; });
+
+  // Compute per-event stats
+  const eventStats = {};
+  Object.keys(eventMap).forEach(event => {
+    const entries = eventMap[event].slice().sort((a, b) => a.seconds - b.seconds);
+    const times   = entries.map(e => e.seconds);
+    const avg     = times.reduce((s, t) => s + t, 0) / times.length;
+    eventStats[event] = {
+      fastest:    entries[0].time,
+      fastestAth: entries[0].athlete,
+      avgSeconds: avg,
+      avg:        secondsToTime(avg),
+      count:      times.length,
+      fasterCount: times.filter(t => t < avg).length,
+    };
+  });
+
+  // Overview chips
+  const overviewEl = document.getElementById("stats-overview");
+  if (overviewEl) {
+    const items = [
+      { value: pool.length,                                    label: "Swimmers" },
+      { value: pool.filter(a => a.gender === "M").length,     label: "Male" },
+      { value: pool.filter(a => a.gender === "F").length,     label: "Female" },
+      { value: Object.keys(eventStats).length,                label: "Events" },
+    ];
+    overviewEl.innerHTML = items.map(s =>
+      '<div class="stat-item">' +
+        '<span class="stat-value">' + s.value + "</span>" +
+        '<span class="stat-label">' + s.label + "</span>" +
+      "</div>"
+    ).join("");
+  }
+
+  // Event stats table grouped by stroke
+  const eventsEl = document.getElementById("stats-events");
+  if (eventsEl) {
+    const eventKeys = Object.keys(eventStats);
+    if (!eventKeys.length) {
+      eventsEl.innerHTML = '<p class="no-pbs">No events with ' + STATS_MIN_ATHLETES + '+ athletes for ' + statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + ".</p>";
+    } else {
+      const byStroke = {};
+      eventKeys.forEach(event => {
+        const stroke = event.replace(/^\d+\s+/, "");
+        (byStroke[stroke] = byStroke[stroke] || []).push(event);
+      });
+      Object.keys(byStroke).forEach(s => byStroke[s].sort((a, b) => parseInt(a) - parseInt(b)));
+      const orderedStrokes = [
+        ...STROKE_ORDER.filter(s => byStroke[s]),
+        ...Object.keys(byStroke).filter(s => !STROKE_ORDER.includes(s)),
+      ];
+      eventsEl.innerHTML = orderedStrokes.map(stroke => {
+        const badge = STROKE_BADGES[stroke] || "badge-neutral";
+        const rows = byStroke[stroke].map(event => {
+          const s = eventStats[event];
+          const pct = Math.round(s.fasterCount / s.count * 100);
+          return "<tr>" +
+            "<td>" + esc(event) + "</td>" +
+            '<td class="pb-time">' + esc(s.fastest) + "</td>" +
+            '<td><button class="link-btn" onclick="goToSwimmer(' + s.fastestAth.id + ')">' + esc(s.fastestAth.first + " " + s.fastestAth.last) + "</button></td>" +
+            '<td class="pb-time">' + esc(s.avg) + "</td>" +
+            "<td>" + s.count + "</td>" +
+            '<td class="faster-pct">' + s.fasterCount + " (" + pct + "%)</td>" +
+          "</tr>";
+        }).join("");
+        return '<details class="course-section" open>' +
+          '<summary class="course-label ' + badge + '">' + stroke + "</summary>" +
+          '<table class="pb-table">' +
+            "<thead><tr><th>Event</th><th>Fastest</th><th>Held by</th><th>Average</th><th>Swimmers</th><th>Faster than avg</th></tr></thead>" +
+            "<tbody>" + rows + "</tbody>" +
+          "</table>" +
+        "</details>";
+      }).join("");
+    }
+  }
+
+  // Squad vs club average comparison
+  const squadEl = document.getElementById("stats-squad-comparison");
+  if (!squadEl) return;
+
+  const squads = SQUAD_ORDER.filter(g => pool.some(a => a.group === g));
+  const activeStrokes = STROKE_ORDER.filter(s =>
+    Object.keys(eventStats).some(e => e.replace(/^\d+\s+/, "") === s)
+  );
+
+  if (squads.length < 2 || !activeStrokes.length) { squadEl.innerHTML = ""; return; }
+
+  const strokeEvents = {};
+  activeStrokes.forEach(stroke => {
+    strokeEvents[stroke] = Object.keys(eventStats).filter(e => e.replace(/^\d+\s+/, "") === stroke);
+  });
+
+  const headerCells = activeStrokes.map(s => "<th>" + esc(s) + "</th>").join("");
+  const bodyRows = squads.map(squad => {
+    const squadPool = pool.filter(a => a.group === squad);
+    const cells = activeStrokes.map(stroke => {
+      const events = strokeEvents[stroke];
+      let faster = 0, total = 0;
+      squadPool.forEach(ath => {
+        const pbs = (ath.pbs || []).filter(pb => pb.course === statsCourse && events.includes(pb.event) && timeToSeconds(pb.time) !== null);
+        if (!pbs.length) return;
+        total++;
+        if (pbs.some(pb => timeToSeconds(pb.time) < eventStats[pb.event].avgSeconds)) faster++;
+      });
+      if (total < 2) return '<td class="cell-empty">—</td>';
+      const pct = faster / total;
+      const cls = pct >= 0.6 ? "cell-green" : pct >= 0.4 ? "cell-amber" : "cell-red";
+      return '<td class="' + cls + '">' + faster + "/" + total + "</td>";
+    }).join("");
+    return "<tr><td>" + esc(squadLabel(squad).replace(" Squad", "")) + "</td>" + cells + "</tr>";
+  }).join("");
+
+  squadEl.innerHTML =
+    '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Squad vs Club Average</h3>' +
+    '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Swimmers with a PB faster than the club average · ' + statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
+    '<div style="overflow-x:auto">' +
+      '<table class="squad-comparison-grid">' +
+        "<thead><tr><th>Squad</th>" + headerCells + "</tr></thead>" +
+        "<tbody>" + bodyRows + "</tbody>" +
+      "</table>" +
+    "</div>";
+}
+
 // ── Routing ───────────────────────────────────────────────────────────────────
 
 function navigate(hash) {
@@ -633,6 +804,8 @@ function navigate(hash) {
   } else if (h === "meets") {
     switchTab("meets", false);
     showMeetsList(false);
+  } else if (h === "stats") {
+    switchTab("stats", false);
   } else if (h.startsWith("meet-")) {
     const id = parseInt(h.slice(5), 10);
     switchTab("meets", false);

@@ -21,6 +21,7 @@
         <button class="tab-btn active" data-tab="home">Home</button>
         <button class="tab-btn" data-tab="swimmers">Swimmers</button>
         <button class="tab-btn" data-tab="meets">Meets</button>
+        <button class="tab-btn" data-tab="stats">Stats</button>
       </nav>
     </div>
   </header>
@@ -90,6 +91,17 @@
         <button class="back-btn" onclick="showMeetsList()">← Back to Meets</button>
         <div id="meet-detail"></div>
       </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="tab-stats" class="tab-panel" role="tabpanel">
+      <div class="stats-filter-bar">
+        <div id="stats-course-filter" class="stats-toggle-group"></div>
+        <div id="stats-gender-filter" class="stats-toggle-group"></div>
+      </div>
+      <div id="stats-overview" class="stats-overview"></div>
+      <div id="stats-events"></div>
+      <div id="stats-squad-comparison"></div>
     </section>
 
   </main>
