@@ -653,6 +653,21 @@ function renderStats() {
     ).join("");
   }
 
+  // Date range for current course + gender filter
+  const dateRangeEl = document.getElementById("stats-date-range");
+  if (dateRangeEl) {
+    const dates = pool.flatMap(a =>
+      (a.pbs || []).filter(pb => pb.course === statsCourse && pb.date).map(pb => pb.date)
+    ).sort();
+    if (dates.length) {
+      const first = formatDate(dates[0]);
+      const last  = formatDate(dates[dates.length - 1]);
+      dateRangeEl.textContent = "Personal bests: " + (first === last ? first : first + " – " + last);
+    } else {
+      dateRangeEl.textContent = "";
+    }
+  }
+
   // Build event map: event → [{seconds, time, athlete}]
   const eventMap = {};
   pool.forEach(ath => {

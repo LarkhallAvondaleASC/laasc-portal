@@ -575,7 +575,13 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.stats-date-range {
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
 }
 
 .stats-toggle-group { display: flex; gap: .35rem; flex-wrap: wrap; }
