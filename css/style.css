@@ -58,6 +58,9 @@ header {
 .club-logo {
   height: 44px;
   width: auto;
+  max-height: 44px;
+  max-width: 120px;
+  object-fit: contain;
 }
 
 .club-brand > div {
