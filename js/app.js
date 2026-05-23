@@ -11,6 +11,12 @@ const COURSE_ORDER = ["SCM", "LCM", "Yards"];
 const STROKE_ORDER = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
 const STROKE_BADGES = { Freestyle: "badge-scm", Backstroke: "badge-lcm", Breaststroke: "badge-yards", Butterfly: "badge-other", IM: "badge-neutral" };
 const STATS_MIN_ATHLETES = 5;
+const AGE_GROUPS = [
+  { label: "10 & Under", min: 0,        max: 10       },
+  { label: "11–12",      min: 11,       max: 12       },
+  { label: "13–14",      min: 13,       max: 14       },
+  { label: "15 & Over",  min: 15,       max: Infinity },
+];
 
 // ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -817,23 +823,118 @@ function renderStats() {
 
   // Squad averages by event
   const squadAvgEl = document.getElementById("stats-squad-averages");
-  if (!squadAvgEl || !squads.length || !orderedStrokes.length) return;
+  if (squadAvgEl) {
+    if (!squads.length || !orderedStrokes.length) {
+      squadAvgEl.innerHTML = "";
+    } else {
+      const squadAvgHeaderCells =
+        "<th>Club avg</th>" +
+        squads.map(g => "<th>" + esc(squadLabel(g).replace(" Squad", "")) + "</th>").join("");
+      squadAvgEl.innerHTML =
+        '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Squad Averages by Event</h3>' +
+        '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Average personal best per squad · green = faster than club average · ' +
+        statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
+        orderedStrokes.map(stroke => {
+          const badge = STROKE_BADGES[stroke] || "badge-neutral";
+          const rows = byStroke[stroke].map(event => {
+            const clubAvg = eventStats[event].avgSeconds;
+            const squadCells = squads.map(squad => {
+              const times = pool
+                .filter(a => a.group === squad)
+                .flatMap(a => (a.pbs || []).filter(pb => pb.course === statsCourse && pb.event === event))
+                .map(pb => timeToSeconds(pb.time))
+                .filter(t => t !== null);
+              if (times.length < 2) return '<td class="cell-empty">—</td>';
+              const avg = times.reduce((s, t) => s + t, 0) / times.length;
+              const ratio = avg / clubAvg;
+              const cls = ratio <= 1.0 ? "cell-green" : ratio <= 1.15 ? "cell-amber" : "cell-red";
+              return '<td class="' + cls + ' pb-time">' + secondsToTime(avg) + "</td>";
+            }).join("");
+            return "<tr>" +
+              "<td>" + esc(event) + "</td>" +
+              '<td class="pb-time">' + secondsToTime(clubAvg) + "</td>" +
+              squadCells +
+            "</tr>";
+          }).join("");
+          return '<details class="course-section">' +
+            '<summary class="course-label ' + badge + '">' + stroke + "</summary>" +
+            '<div style="overflow-x:auto">' +
+            '<table class="squad-comparison-grid">' +
+              "<thead><tr><th>Event</th>" + squadAvgHeaderCells + "</tr></thead>" +
+              "<tbody>" + rows + "</tbody>" +
+            "</table>" +
+            "</div>" +
+          "</details>";
+        }).join("");
+    }
+  }
 
-  const squadAvgHeaderCells =
+  if (!orderedStrokes.length) return;
+
+  // Active age groups (only those with at least one athlete in the pool)
+  const activeAgeGroups = AGE_GROUPS.filter(g =>
+    pool.some(a => a.age >= g.min && a.age <= g.max)
+  );
+
+  // Age Group vs Club Average
+  const ageCompEl = document.getElementById("stats-age-comparison");
+  if (ageCompEl) {
+    if (!activeAgeGroups.length) {
+      ageCompEl.innerHTML = "";
+    } else {
+      const headerCells = orderedStrokes.map(s => "<th>" + esc(s) + "</th>").join("");
+      const bodyRows = activeAgeGroups.map(group => {
+        const groupPool = pool.filter(a => a.age >= group.min && a.age <= group.max);
+        const cells = orderedStrokes.map(stroke => {
+          const events = byStroke[stroke];
+          let faster = 0, total = 0;
+          groupPool.forEach(ath => {
+            const pbs = (ath.pbs || []).filter(pb =>
+              pb.course === statsCourse && events.includes(pb.event) && timeToSeconds(pb.time) !== null
+            );
+            if (!pbs.length) return;
+            total++;
+            if (pbs.some(pb => timeToSeconds(pb.time) < eventStats[pb.event].avgSeconds)) faster++;
+          });
+          if (total < 2) return '<td class="cell-empty">—</td>';
+          const pct = faster / total;
+          const cls = pct >= 0.6 ? "cell-green" : pct >= 0.4 ? "cell-amber" : "cell-red";
+          return '<td class="' + cls + '">' + faster + "/" + total + "</td>";
+        }).join("");
+        return "<tr><td>" + esc(group.label) + "</td>" + cells + "</tr>";
+      }).join("");
+      ageCompEl.innerHTML =
+        '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Age Group vs Club Average</h3>' +
+        '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Swimmers with a PB faster than the club average · ' +
+        statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
+        '<div style="overflow-x:auto">' +
+          '<table class="squad-comparison-grid">' +
+            "<thead><tr><th>Age group</th>" + headerCells + "</tr></thead>" +
+            "<tbody>" + bodyRows + "</tbody>" +
+          "</table>" +
+        "</div>";
+    }
+  }
+
+  // Age Group Averages by Event
+  const ageAvgEl = document.getElementById("stats-age-averages");
+  if (!ageAvgEl || !activeAgeGroups.length) return;
+
+  const ageAvgHeaderCells =
     "<th>Club avg</th>" +
-    squads.map(g => "<th>" + esc(squadLabel(g).replace(" Squad", "")) + "</th>").join("");
+    activeAgeGroups.map(g => "<th>" + esc(g.label) + "</th>").join("");
 
-  squadAvgEl.innerHTML =
-    '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Squad Averages by Event</h3>' +
-    '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Average personal best per squad · green = faster than club average · ' +
+  ageAvgEl.innerHTML =
+    '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Age Group Averages by Event</h3>' +
+    '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Average personal best per age group · green = faster than club average · ' +
     statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
     orderedStrokes.map(stroke => {
       const badge = STROKE_BADGES[stroke] || "badge-neutral";
       const rows = byStroke[stroke].map(event => {
         const clubAvg = eventStats[event].avgSeconds;
-        const squadCells = squads.map(squad => {
+        const groupCells = activeAgeGroups.map(group => {
           const times = pool
-            .filter(a => a.group === squad)
+            .filter(a => a.age >= group.min && a.age <= group.max)
             .flatMap(a => (a.pbs || []).filter(pb => pb.course === statsCourse && pb.event === event))
             .map(pb => timeToSeconds(pb.time))
             .filter(t => t !== null);
@@ -846,14 +947,14 @@ function renderStats() {
         return "<tr>" +
           "<td>" + esc(event) + "</td>" +
           '<td class="pb-time">' + secondsToTime(clubAvg) + "</td>" +
-          squadCells +
+          groupCells +
         "</tr>";
       }).join("");
       return '<details class="course-section">' +
         '<summary class="course-label ' + badge + '">' + stroke + "</summary>" +
         '<div style="overflow-x:auto">' +
         '<table class="squad-comparison-grid">' +
-          "<thead><tr><th>Event</th>" + squadAvgHeaderCells + "</tr></thead>" +
+          "<thead><tr><th>Event</th>" + ageAvgHeaderCells + "</tr></thead>" +
           "<tbody>" + rows + "</tbody>" +
         "</table>" +
         "</div>" +
