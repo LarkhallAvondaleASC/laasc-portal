@@ -697,6 +697,19 @@ function renderStats() {
     };
   });
 
+  // Shared: stroke groupings + squads (used by all three render sections below)
+  const byStroke = {};
+  Object.keys(eventStats).forEach(event => {
+    const stroke = event.replace(/^\d+\s+/, "");
+    (byStroke[stroke] = byStroke[stroke] || []).push(event);
+  });
+  Object.keys(byStroke).forEach(s => byStroke[s].sort((a, b) => parseInt(a) - parseInt(b)));
+  const orderedStrokes = [
+    ...STROKE_ORDER.filter(s => byStroke[s]),
+    ...Object.keys(byStroke).filter(s => !STROKE_ORDER.includes(s)),
+  ];
+  const squads = SQUAD_ORDER.filter(g => pool.some(a => a.group === g));
+
   // Overview chips
   const overviewEl = document.getElementById("stats-overview");
   if (overviewEl) {
@@ -717,20 +730,9 @@ function renderStats() {
   // Event stats table grouped by stroke
   const eventsEl = document.getElementById("stats-events");
   if (eventsEl) {
-    const eventKeys = Object.keys(eventStats);
-    if (!eventKeys.length) {
+    if (!orderedStrokes.length) {
       eventsEl.innerHTML = '<p class="no-pbs">No events with ' + STATS_MIN_ATHLETES + '+ athletes for ' + statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + ".</p>";
     } else {
-      const byStroke = {};
-      eventKeys.forEach(event => {
-        const stroke = event.replace(/^\d+\s+/, "");
-        (byStroke[stroke] = byStroke[stroke] || []).push(event);
-      });
-      Object.keys(byStroke).forEach(s => byStroke[s].sort((a, b) => parseInt(a) - parseInt(b)));
-      const orderedStrokes = [
-        ...STROKE_ORDER.filter(s => byStroke[s]),
-        ...Object.keys(byStroke).filter(s => !STROKE_ORDER.includes(s)),
-      ];
       eventsEl.innerHTML = orderedStrokes.map(stroke => {
         const badge = STROKE_BADGES[stroke] || "badge-neutral";
         const rows = byStroke[stroke].map(event => {
@@ -760,49 +762,85 @@ function renderStats() {
 
   // Squad vs club average comparison
   const squadEl = document.getElementById("stats-squad-comparison");
-  if (!squadEl) return;
+  if (squadEl) {
+    if (squads.length < 2 || !orderedStrokes.length) {
+      squadEl.innerHTML = "";
+    } else {
+      const headerCells = orderedStrokes.map(s => "<th>" + esc(s) + "</th>").join("");
+      const bodyRows = squads.map(squad => {
+        const squadPool = pool.filter(a => a.group === squad);
+        const cells = orderedStrokes.map(stroke => {
+          const events = byStroke[stroke];
+          let faster = 0, total = 0;
+          squadPool.forEach(ath => {
+            const pbs = (ath.pbs || []).filter(pb => pb.course === statsCourse && events.includes(pb.event) && timeToSeconds(pb.time) !== null);
+            if (!pbs.length) return;
+            total++;
+            if (pbs.some(pb => timeToSeconds(pb.time) < eventStats[pb.event].avgSeconds)) faster++;
+          });
+          if (total < 2) return '<td class="cell-empty">—</td>';
+          const pct = faster / total;
+          const cls = pct >= 0.6 ? "cell-green" : pct >= 0.4 ? "cell-amber" : "cell-red";
+          return '<td class="' + cls + '">' + faster + "/" + total + "</td>";
+        }).join("");
+        return "<tr><td>" + esc(squadLabel(squad).replace(" Squad", "")) + "</td>" + cells + "</tr>";
+      }).join("");
+      squadEl.innerHTML =
+        '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Squad vs Club Average</h3>' +
+        '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Swimmers with a PB faster than the club average · ' + statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
+        '<div style="overflow-x:auto">' +
+          '<table class="squad-comparison-grid">' +
+            "<thead><tr><th>Squad</th>" + headerCells + "</tr></thead>" +
+            "<tbody>" + bodyRows + "</tbody>" +
+          "</table>" +
+        "</div>";
+    }
+  }
 
-  const squads = SQUAD_ORDER.filter(g => pool.some(a => a.group === g));
-  const activeStrokes = STROKE_ORDER.filter(s =>
-    Object.keys(eventStats).some(e => e.replace(/^\d+\s+/, "") === s)
-  );
+  // Squad averages by event
+  const squadAvgEl = document.getElementById("stats-squad-averages");
+  if (!squadAvgEl || !squads.length || !orderedStrokes.length) return;
 
-  if (squads.length < 2 || !activeStrokes.length) { squadEl.innerHTML = ""; return; }
+  const squadAvgHeaderCells =
+    "<th>Club avg</th>" +
+    squads.map(g => "<th>" + esc(squadLabel(g).replace(" Squad", "")) + "</th>").join("");
 
-  const strokeEvents = {};
-  activeStrokes.forEach(stroke => {
-    strokeEvents[stroke] = Object.keys(eventStats).filter(e => e.replace(/^\d+\s+/, "") === stroke);
-  });
-
-  const headerCells = activeStrokes.map(s => "<th>" + esc(s) + "</th>").join("");
-  const bodyRows = squads.map(squad => {
-    const squadPool = pool.filter(a => a.group === squad);
-    const cells = activeStrokes.map(stroke => {
-      const events = strokeEvents[stroke];
-      let faster = 0, total = 0;
-      squadPool.forEach(ath => {
-        const pbs = (ath.pbs || []).filter(pb => pb.course === statsCourse && events.includes(pb.event) && timeToSeconds(pb.time) !== null);
-        if (!pbs.length) return;
-        total++;
-        if (pbs.some(pb => timeToSeconds(pb.time) < eventStats[pb.event].avgSeconds)) faster++;
-      });
-      if (total < 2) return '<td class="cell-empty">—</td>';
-      const pct = faster / total;
-      const cls = pct >= 0.6 ? "cell-green" : pct >= 0.4 ? "cell-amber" : "cell-red";
-      return '<td class="' + cls + '">' + faster + "/" + total + "</td>";
+  squadAvgEl.innerHTML =
+    '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Squad Averages by Event</h3>' +
+    '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Average personal best per squad · green = faster than club average · ' +
+    statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
+    orderedStrokes.map(stroke => {
+      const badge = STROKE_BADGES[stroke] || "badge-neutral";
+      const rows = byStroke[stroke].map(event => {
+        const clubAvg = eventStats[event].avgSeconds;
+        const squadCells = squads.map(squad => {
+          const times = pool
+            .filter(a => a.group === squad)
+            .flatMap(a => (a.pbs || []).filter(pb => pb.course === statsCourse && pb.event === event))
+            .map(pb => timeToSeconds(pb.time))
+            .filter(t => t !== null);
+          if (times.length < 2) return '<td class="cell-empty">—</td>';
+          const avg = times.reduce((s, t) => s + t, 0) / times.length;
+          const ratio = avg / clubAvg;
+          const cls = ratio <= 1.0 ? "cell-green" : ratio <= 1.15 ? "cell-amber" : "cell-red";
+          return '<td class="' + cls + ' pb-time">' + secondsToTime(avg) + "</td>";
+        }).join("");
+        return "<tr>" +
+          "<td>" + esc(event) + "</td>" +
+          '<td class="pb-time">' + secondsToTime(clubAvg) + "</td>" +
+          squadCells +
+        "</tr>";
+      }).join("");
+      return '<details class="course-section">' +
+        '<summary class="course-label ' + badge + '">' + stroke + "</summary>" +
+        '<div style="overflow-x:auto">' +
+        '<table class="squad-comparison-grid">' +
+          "<thead><tr><th>Event</th>" + squadAvgHeaderCells + "</tr></thead>" +
+          "<tbody>" + rows + "</tbody>" +
+        "</table>" +
+        "</div>" +
+      "</details>";
     }).join("");
-    return "<tr><td>" + esc(squadLabel(squad).replace(" Squad", "")) + "</td>" + cells + "</tr>";
-  }).join("");
-
-  squadEl.innerHTML =
-    '<h3 class="progression-title" style="margin:1.5rem 0 .35rem">Squad vs Club Average</h3>' +
-    '<p class="chart-note" style="text-align:left;margin-bottom:.6rem">Swimmers with a PB faster than the club average · ' + statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + "</p>" +
-    '<div style="overflow-x:auto">' +
-      '<table class="squad-comparison-grid">' +
-        "<thead><tr><th>Squad</th>" + headerCells + "</tr></thead>" +
-        "<tbody>" + bodyRows + "</tbody>" +
-      "</table>" +
-    "</div>";
 }
 
 // ── Routing ───────────────────────────────────────────────────────────────────
