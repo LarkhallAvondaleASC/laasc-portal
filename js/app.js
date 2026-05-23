@@ -90,7 +90,10 @@ function renderSquadCards() {
       '<button class="squad-card' + active + '" onclick="selectSquad(\'' + g + '\')" aria-pressed="' + (selectedGroup === g) + '">' +
         '<span class="squad-card-name">' + esc(label) + "</span>" +
         '<span class="squad-card-count">' + pool.length + "</span>" +
-        '<span class="squad-card-gender">' + m + "m / " + f + "f</span>" +
+        '<div class="squad-gender-chips">' +
+          '<span class="squad-chip squad-chip--m">M&nbsp;' + m + "</span>" +
+          '<span class="squad-chip squad-chip--f">F&nbsp;' + f + "</span>" +
+        "</div>" +
       "</button>"
     );
   }).join("");

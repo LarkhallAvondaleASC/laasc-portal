@@ -182,7 +182,22 @@ main {
 
 .squad-card-name  { font-size: .8rem; font-weight: 700; color: inherit; }
 .squad-card-count { font-size: 1.15rem; font-weight: 700; color: inherit; line-height: 1.2; }
-.squad-card-gender { font-size: .68rem; color: inherit; opacity: .75; }
+.squad-gender-chips { display: flex; gap: .25rem; margin-top: .15rem; }
+
+.squad-chip {
+  font-size: .62rem;
+  font-weight: 700;
+  padding: .1rem .35rem;
+  border-radius: 3px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.squad-chip--m { background: #dbeafe; color: #1e40af; }
+.squad-chip--f { background: #fce7f3; color: #9d174d; }
+
+.squad-card.active .squad-chip--m { background: rgba(255,255,255,.2); color: var(--white); }
+.squad-card.active .squad-chip--f { background: rgba(255,255,255,.15); color: var(--white); }
 
 /* ── Controls ─────────────────────────────────────────────────────────────── */
 .controls {
