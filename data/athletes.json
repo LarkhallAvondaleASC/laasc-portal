@@ -592,7 +592,7 @@
     "first": "Emily",
     "age": "9",
     "gender": "F",
-    "group": "",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -1996,7 +1996,7 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "23:04.82",
+        "time": "2:04.82",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
       },
@@ -2296,7 +2296,7 @@
     "first": "Callum",
     "age": "12",
     "gender": "M",
-    "group": "JUN",
+    "group": "TRN",
     "subgroup": "",
     "pbs": [
       {
@@ -2479,7 +2479,7 @@
     "first": "Arya",
     "age": "13",
     "gender": "F",
-    "group": "JUN",
+    "group": "TRN",
     "subgroup": "",
     "pbs": [
       {
@@ -2648,7 +2648,7 @@
     "first": "Maksym",
     "age": "12",
     "gender": "M",
-    "group": "",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -6446,7 +6446,7 @@
     "first": "Emma",
     "age": "11",
     "gender": "F",
-    "group": "JUN",
+    "group": "TRN",
     "subgroup": "ML",
     "pbs": [
       {
