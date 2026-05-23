@@ -512,7 +512,9 @@ async function loadProgressionSection(ath) {
   if (datesEl && raceDates.length) {
     const first = formatDate(raceDates[0]);
     const last  = formatDate(raceDates[raceDates.length - 1]);
-    datesEl.textContent = first === last ? first : first + " – " + last;
+    datesEl.textContent = first === last
+      ? "Competed: " + first
+      : "Competed: " + first + " – " + last;
   }
 
   const meetMap = {};
