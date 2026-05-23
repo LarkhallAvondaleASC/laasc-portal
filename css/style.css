@@ -56,10 +56,10 @@ header {
 }
 
 .club-logo {
-  height: 44px;
+  height: 88px;
   width: auto;
-  max-height: 44px;
-  max-width: 120px;
+  max-height: 88px;
+  max-width: 240px;
   object-fit: contain;
 }
 
