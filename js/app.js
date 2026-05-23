@@ -733,7 +733,8 @@ function renderStats() {
     if (!orderedStrokes.length) {
       eventsEl.innerHTML = '<p class="no-pbs">No events with ' + STATS_MIN_ATHLETES + '+ athletes for ' + statsCourse + (statsGender ? " · " + genderLabel(statsGender) : "") + ".</p>";
     } else {
-      eventsEl.innerHTML = orderedStrokes.map(stroke => {
+      eventsEl.innerHTML = '<h3 class="progression-title" style="margin:0 0 .75rem">Event Statistics</h3>' +
+      orderedStrokes.map(stroke => {
         const badge = STROKE_BADGES[stroke] || "badge-neutral";
         const rows = byStroke[stroke].map(event => {
           const s = eventStats[event];
