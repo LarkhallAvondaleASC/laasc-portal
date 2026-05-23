@@ -732,10 +732,12 @@ function renderStats() {
         }).join("");
         return '<details class="course-section" open>' +
           '<summary class="course-label ' + badge + '">' + stroke + "</summary>" +
+          '<div style="overflow-x:auto">' +
           '<table class="pb-table">' +
             "<thead><tr><th>Event</th><th>Fastest</th><th>Held by</th><th>Average</th><th>Swimmers</th><th>Faster than avg</th></tr></thead>" +
             "<tbody>" + rows + "</tbody>" +
           "</table>" +
+          "</div>" +
         "</details>";
       }).join("");
     }
