@@ -471,6 +471,20 @@ main {
   flex-shrink: 0;
 }
 
+/* ── Past meets header ────────────────────────────────────────────────────── */
+.past-meets-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin: 1.25rem 0 .5rem;
+  flex-wrap: wrap;
+}
+
+.meet-course-filter { display: flex; gap: .35rem; flex-wrap: wrap; }
+
+.badge-neutral { background: #f3f4f6; color: #374151; }
+
 /* ── Section headings ─────────────────────────────────────────────────────── */
 .section-heading {
   font-size: .7rem;

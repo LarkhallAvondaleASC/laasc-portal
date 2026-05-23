@@ -2,8 +2,10 @@ let athletes = [];
 let meets = [];
 let progressionChart = null;
 let selectedGroup = "";
+let meetCourseFilter = "";
 
 const SQUAD_ORDER = ["SEN", "TRN", "JUN", "DEV", "ENT"];
+const COURSE_ORDER = ["SCM", "LCM", "Yards"];
 
 // ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -63,7 +65,11 @@ document.querySelectorAll(".tab-btn").forEach(btn =>
       renderSwimmers();
       showSwimmersList(false);
     }
-    if (btn.dataset.tab === "meets") showMeetsList(false);
+    if (btn.dataset.tab === "meets") {
+      meetCourseFilter = "";
+      renderMeets();
+      showMeetsList(false);
+    }
   })
 );
 
@@ -211,16 +217,44 @@ function pbSection(pbs, label, badgeClass) {
 
 // ── Meets ─────────────────────────────────────────────────────────────────────
 
+function selectMeetCourse(course) {
+  meetCourseFilter = course;
+  renderMeets();
+}
+
 function renderMeets() {
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = [...meets].filter(m => m.date > today).sort((a, b) => (a.date || "").localeCompare(b.date || ""));
-  const past     = [...meets].filter(m => m.date <= today).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  const allPast  = [...meets].filter(m => m.date <= today).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
   const upcomingSection = document.getElementById("upcoming-meets-section");
   const upcomingList    = document.getElementById("upcoming-meets-list");
+  const filterEl        = document.getElementById("meet-course-filter");
   const pastList        = document.getElementById("meets-list");
 
   if (upcomingSection) upcomingSection.classList.toggle("hidden", upcoming.length === 0);
+
+  // Course filter buttons — only show if more than one course type exists
+  if (filterEl) {
+    const courses = COURSE_ORDER.filter(c => allPast.some(m => m.course === c));
+    const extras  = [...new Set(allPast.map(m => m.course))].filter(c => !COURSE_ORDER.includes(c));
+    const all = [...courses, ...extras];
+    if (all.length > 1) {
+      filterEl.innerHTML = ["", ...all].map(c => {
+        const isAll   = c === "";
+        const active  = meetCourseFilter === c;
+        const badge   = isAll ? "badge-neutral" : courseBadge(c).cls;
+        const label   = isAll ? "All" : c;
+        return (
+          '<button class="course-label ' + badge + ' chart-toggle' + (active ? "" : " inactive") + '" onclick="selectMeetCourse(\'' + c + '\')">' +
+            label +
+          "</button>"
+        );
+      }).join("");
+    } else {
+      filterEl.innerHTML = "";
+    }
+  }
 
   if (upcomingList) {
     upcomingList.innerHTML = upcoming.map(m => {
@@ -239,6 +273,8 @@ function renderMeets() {
       );
     }).join("");
   }
+
+  const past = meetCourseFilter ? allPast.filter(m => m.course === meetCourseFilter) : allPast;
 
   if (!past.length) {
     pastList.innerHTML = '<p class="no-pbs">No meets available yet.</p>';
