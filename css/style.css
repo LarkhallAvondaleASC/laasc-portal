@@ -427,7 +427,8 @@ main {
 }
 
 /* ── Meets ────────────────────────────────────────────────────────────────── */
-#meets-list {
+#meets-list,
+#upcoming-meets-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: .6rem;
@@ -533,7 +534,8 @@ footer {
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 @media (max-width: 750px) {
   #swimmers-list,
-  #meets-list { grid-template-columns: repeat(2, 1fr); }
+  #meets-list,
+  #upcoming-meets-list { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -547,5 +549,6 @@ footer {
   .pb-table td { padding: .4rem .5rem; }
   .detail-name { font-size: 1.25rem; }
   #swimmers-list,
-  #meets-list { grid-template-columns: 1fr; }
+  #meets-list,
+  #upcoming-meets-list { grid-template-columns: 1fr; }
 }

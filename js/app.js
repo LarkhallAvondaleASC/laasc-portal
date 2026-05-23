@@ -54,7 +54,11 @@ function switchTab(name, push = true) {
 }
 
 document.querySelectorAll(".tab-btn").forEach(btn =>
-  btn.addEventListener("click", () => switchTab(btn.dataset.tab))
+  btn.addEventListener("click", () => {
+    switchTab(btn.dataset.tab);
+    if (btn.dataset.tab === "swimmers") showSwimmersList(false);
+    if (btn.dataset.tab === "meets") showMeetsList(false);
+  })
 );
 
 // ── Swimmers ──────────────────────────────────────────────────────────────────
