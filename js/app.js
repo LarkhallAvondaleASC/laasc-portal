@@ -1,6 +1,9 @@
 let athletes = [];
 let meets = [];
 let progressionChart = null;
+let selectedGroup = "";
+
+const SQUAD_ORDER = ["SEN", "TRN", "JUN", "DEV", "ENT"];
 
 // ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -25,9 +28,10 @@ async function loadData() {
         " UTC";
     }
 
-    initGroupFilter();
+    renderSquadCards();
     renderSwimmers();
     renderMeets();
+    navigate(location.hash || "#home");
   } catch {
     document.getElementById("tab-home").insertAdjacentHTML(
       "beforeend",
@@ -39,7 +43,8 @@ async function loadData() {
 
 // ── Tab navigation ────────────────────────────────────────────────────────────
 
-function switchTab(name) {
+function switchTab(name, push = true) {
+  if (push) history.pushState(null, "", "#" + name);
   document.querySelectorAll(".tab-btn").forEach(btn =>
     btn.classList.toggle("active", btn.dataset.tab === name)
   );
@@ -54,24 +59,39 @@ document.querySelectorAll(".tab-btn").forEach(btn =>
 
 // ── Swimmers ──────────────────────────────────────────────────────────────────
 
-function initGroupFilter() {
-  const groups = [...new Set(athletes.map(a => a.group).filter(Boolean))].sort();
-  const select = document.getElementById("group-filter");
-  groups.forEach(g => {
-    const opt = document.createElement("option");
-    opt.value = g;
-    opt.textContent = squadLabel(g);
-    select.appendChild(opt);
-  });
+function renderSquadCards() {
+  const container = document.getElementById("squad-filter-cards");
+  if (!container) return;
+  const groups = SQUAD_ORDER.filter(g => athletes.some(a => a.group === g));
+  container.innerHTML = ["", ...groups].map(g => {
+    const isAll = g === "";
+    const pool = isAll ? athletes : athletes.filter(a => a.group === g);
+    const m = pool.filter(a => a.gender === "M").length;
+    const f = pool.filter(a => a.gender === "F").length;
+    const active = selectedGroup === g ? " active" : "";
+    const label = isAll ? "All" : squadLabel(g).replace(" Squad", "");
+    return (
+      '<button class="squad-card' + active + '" onclick="selectSquad(' + JSON.stringify(g) + ')" aria-pressed="' + (selectedGroup === g) + '">' +
+        '<span class="squad-card-name">' + esc(label) + "</span>" +
+        '<span class="squad-card-count">' + pool.length + "</span>" +
+        '<span class="squad-card-gender">' + m + "m / " + f + "f</span>" +
+      "</button>"
+    );
+  }).join("");
+}
+
+function selectSquad(group) {
+  selectedGroup = group;
+  renderSquadCards();
+  renderSwimmers();
 }
 
 function filteredAthletes() {
   const query = document.getElementById("search-input").value.trim().toLowerCase();
-  const group = document.getElementById("group-filter").value;
   return athletes
     .filter(a => {
       const name = (a.first + " " + a.last).toLowerCase();
-      return (!query || name.includes(query)) && (!group || a.group === group);
+      return (!query || name.includes(query)) && (!selectedGroup || a.group === selectedGroup);
     })
     .sort((a, b) => a.last.localeCompare(b.last) || a.first.localeCompare(b.first));
 }
@@ -90,7 +110,7 @@ function renderSwimmers() {
     const meta = [squadLabel(a.group), a.subgroup, genderLabel(a.gender)].filter(Boolean).join(" · ");
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
-        '<div>' +
+        "<div>" +
           '<div class="swimmer-name">' + esc(a.first + " " + a.last) + "</div>" +
           '<div class="swimmer-meta">' + esc(meta) + "</div>" +
         "</div>" +
@@ -105,16 +125,17 @@ document.getElementById("search-input").addEventListener("input", () => {
   clearTimeout(debounce);
   debounce = setTimeout(renderSwimmers, 180);
 });
-document.getElementById("group-filter").addEventListener("change", renderSwimmers);
 
-function showSwimmersList() {
+function showSwimmersList(push = true) {
+  if (push) history.pushState(null, "", "#swimmers");
   document.getElementById("swimmers-list-view").classList.remove("hidden");
   document.getElementById("swimmer-detail-view").classList.add("hidden");
 }
 
-function showSwimmer(id) {
+function showSwimmer(id, push = true) {
   const ath = athletes.find(a => a.id === id);
   if (!ath) return;
+  if (push) history.pushState(null, "", "#swimmer-" + id);
 
   const scm   = ath.pbs.filter(p => p.course === "SCM");
   const lcm   = ath.pbs.filter(p => p.course === "LCM");
@@ -140,12 +161,12 @@ function showSwimmer(id) {
           '<div class="chart-toggles">' +
             '<button class="course-label badge-scm chart-toggle" id="toggle-scm" onclick="toggleCourse(0,this)">SCM</button>' +
             '<button class="course-label badge-lcm chart-toggle" id="toggle-lcm" onclick="toggleCourse(1,this)">LCM</button>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
+          "</div>" +
+        "</div>" +
+      "</div>" +
       '<div class="chart-wrap"><canvas id="progression-canvas"></canvas></div>' +
       '<p class="chart-note">★ personal best at the time of the swim</p>' +
-    '</div>';
+    "</div>";
 
   document.getElementById("swimmers-list-view").classList.add("hidden");
   document.getElementById("swimmer-detail-view").classList.remove("hidden");
@@ -181,13 +202,39 @@ function pbSection(pbs, label, badgeClass) {
 // ── Meets ─────────────────────────────────────────────────────────────────────
 
 function renderMeets() {
-  const sorted = [...meets].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  const container = document.getElementById("meets-list");
-  if (!sorted.length) {
-    container.innerHTML = '<p class="no-pbs">No meets available yet.</p>';
+  const today = new Date().toISOString().slice(0, 10);
+  const upcoming = [...meets].filter(m => m.date > today).sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  const past     = [...meets].filter(m => m.date <= today).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+
+  const upcomingSection = document.getElementById("upcoming-meets-section");
+  const upcomingList    = document.getElementById("upcoming-meets-list");
+  const pastList        = document.getElementById("meets-list");
+
+  if (upcomingSection) upcomingSection.classList.toggle("hidden", upcoming.length === 0);
+
+  if (upcomingList) {
+    upcomingList.innerHTML = upcoming.map(m => {
+      const badge = courseBadge(m.course);
+      return (
+        '<div class="meet-item meet-item--upcoming">' +
+          "<div>" +
+            '<div class="meet-name">' + esc(m.name) + "</div>" +
+            '<div class="meet-date">' + esc(formatDate(m.date)) + "</div>" +
+          "</div>" +
+          '<div class="meet-item-right">' +
+            '<span class="meet-badge ' + badge.cls + '">' + badge.label + "</span>" +
+            '<span class="meet-badge meet-badge--upcoming">Upcoming</span>' +
+          "</div>" +
+        "</div>"
+      );
+    }).join("");
+  }
+
+  if (!past.length) {
+    pastList.innerHTML = '<p class="no-pbs">No meets available yet.</p>';
     return;
   }
-  container.innerHTML = sorted.map(m => {
+  pastList.innerHTML = past.map(m => {
     const badge = courseBadge(m.course);
     return (
       '<button class="meet-item" onclick="showMeet(' + m.id + ')">' +
@@ -204,14 +251,16 @@ function renderMeets() {
   }).join("");
 }
 
-function showMeetsList() {
+function showMeetsList(push = true) {
+  if (push) history.pushState(null, "", "#meets");
   document.getElementById("meets-list-view").classList.remove("hidden");
   document.getElementById("meet-detail-view").classList.add("hidden");
 }
 
-async function showMeet(id) {
+async function showMeet(id, push = true) {
   const meet = meets.find(m => m.id === id);
   if (!meet) return;
+  if (push) history.pushState(null, "", "#meet-" + id);
 
   const badge = courseBadge(meet.course);
   const detailEl = document.getElementById("meet-detail");
@@ -242,7 +291,6 @@ async function showMeet(id) {
     return;
   }
 
-  // Group by event
   const byEvent = {};
   results.forEach(row => {
     (byEvent[row.event] = byEvent[row.event] || []).push(row);
@@ -409,10 +457,10 @@ async function loadProgressionSection(ath) {
   history.forEach(r => { if (!meetMap[r.meet_id]) meetMap[r.meet_id] = { name: r.meet, course: r.course }; });
   const uniqueMeets = Object.values(meetMap);
   const isTimeTrial = m => /time trial/i.test(m.name);
-  const totalMeets    = uniqueMeets.length;
-  const timeTrials    = uniqueMeets.filter(m => isTimeTrial(m)).length;
-  const scmMeets      = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
-  const lcmMeets      = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "LCM").length;
+  const totalMeets = uniqueMeets.length;
+  const timeTrials = uniqueMeets.filter(m => isTimeTrial(m)).length;
+  const scmMeets   = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
+  const lcmMeets   = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "LCM").length;
 
   const strokeCounts = {};
   validRaces.forEach(r => {
@@ -431,10 +479,10 @@ async function loadProgressionSection(ath) {
       ).join("");
 
     const competitionStats = [
-      { value: totalMeets,  label: "Total" },
-      { value: timeTrials,  label: "Time Trials" },
-      { value: scmMeets,    label: "SCM" },
-      { value: lcmMeets,    label: "LCM" },
+      { value: totalMeets, label: "Total" },
+      { value: timeTrials, label: "Time Trials" },
+      { value: scmMeets,   label: "SCM" },
+      { value: lcmMeets,   label: "LCM" },
     ];
     const strokeStats = [
       { value: validRaces.length, label: "Total" },
@@ -472,7 +520,6 @@ async function loadProgressionSection(ath) {
 
 function formatDate(str) {
   if (!str) return "";
-  // YYYY-MM-DD (from scraper) or M/D/YYYY (raw from site)
   const d = str.includes("/")
     ? new Date(str)
     : new Date(str + "T00:00:00");
@@ -492,8 +539,8 @@ function genderLabel(g) {
 }
 
 function courseBadge(course) {
-  if (course === "SCM") return { cls: "badge-scm",   label: "SCM" };
-  if (course === "LCM") return { cls: "badge-lcm",   label: "LCM" };
+  if (course === "SCM")   return { cls: "badge-scm",   label: "SCM" };
+  if (course === "LCM")   return { cls: "badge-lcm",   label: "LCM" };
   if (course === "Yards") return { cls: "badge-yards", label: "Yards" };
   return { cls: "badge-other", label: course || "?" };
 }
@@ -505,6 +552,33 @@ function esc(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 }
+
+// ── Routing ───────────────────────────────────────────────────────────────────
+
+function navigate(hash) {
+  const h = (hash || "").replace(/^#/, "");
+  if (!h || h === "home") {
+    switchTab("home", false);
+  } else if (h === "swimmers") {
+    switchTab("swimmers", false);
+    showSwimmersList(false);
+  } else if (h.startsWith("swimmer-")) {
+    const id = parseInt(h.slice(8), 10);
+    switchTab("swimmers", false);
+    showSwimmer(id, false);
+  } else if (h === "meets") {
+    switchTab("meets", false);
+    showMeetsList(false);
+  } else if (h.startsWith("meet-")) {
+    const id = parseInt(h.slice(5), 10);
+    switchTab("meets", false);
+    showMeet(id, false);
+  } else {
+    switchTab("home", false);
+  }
+}
+
+window.addEventListener("popstate", () => navigate(location.hash));
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
 

@@ -49,6 +49,7 @@
     <section id="tab-swimmers" class="tab-panel" role="tabpanel">
 
       <div id="swimmers-list-view">
+        <div id="squad-filter-cards" class="squad-filter-grid"></div>
         <div class="controls">
           <input
             type="search"
@@ -57,9 +58,6 @@
             autocomplete="off"
             aria-label="Search swimmers"
           >
-          <select id="group-filter" aria-label="Filter by group">
-            <option value="">All Groups</option>
-          </select>
         </div>
         <p id="swimmers-count" class="results-count" aria-live="polite"></p>
         <div id="swimmers-list"></div>
@@ -75,6 +73,11 @@
     <!-- Meets -->
     <section id="tab-meets" class="tab-panel" role="tabpanel">
       <div id="meets-list-view">
+        <div id="upcoming-meets-section">
+          <h2 class="section-heading">Upcoming</h2>
+          <div id="upcoming-meets-list"></div>
+        </div>
+        <h2 class="section-heading">Past Meets</h2>
         <div id="meets-list"></div>
       </div>
       <div id="meet-detail-view" class="hidden">

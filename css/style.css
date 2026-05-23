@@ -137,6 +137,38 @@ main {
 .card h2    { font-size: 1.1rem; color: var(--navy); margin-bottom: .35rem; }
 .card p     { font-size: .875rem; color: var(--text-muted); }
 
+/* ── Squad filter cards ───────────────────────────────────────────────────── */
+.squad-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+
+.squad-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .55rem .5rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  font-family: inherit;
+  transition: background .15s, border-color .15s, transform .15s, box-shadow .15s;
+}
+
+.squad-card:hover { background: var(--blue-light); border-color: var(--blue); transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.13); }
+.squad-card:focus-visible { outline: 2px solid var(--blue); }
+.squad-card.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.squad-card.active:hover { background: var(--navy-dark); border-color: var(--navy-dark); }
+
+.squad-card-name  { font-size: .8rem; font-weight: 700; color: inherit; }
+.squad-card-count { font-size: 1.15rem; font-weight: 700; color: inherit; line-height: 1.2; }
+.squad-card-gender { font-size: .68rem; color: inherit; opacity: .75; }
+
 /* ── Controls ─────────────────────────────────────────────────────────────── */
 .controls {
   display: flex;
@@ -145,7 +177,7 @@ main {
   flex-wrap: wrap;
 }
 
-#search-input, #group-filter {
+#search-input {
   padding: .5rem .75rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -156,10 +188,9 @@ main {
   font-family: inherit;
 }
 
-#search-input  { flex: 1; min-width: 180px; }
-#group-filter  { min-width: 150px; }
+#search-input { flex: 1; min-width: 0; }
 
-#search-input:focus, #group-filter:focus {
+#search-input:focus {
   outline: 2px solid var(--blue);
   border-color: var(--blue);
 }
@@ -439,6 +470,36 @@ main {
   flex-shrink: 0;
 }
 
+/* ── Section headings ─────────────────────────────────────────────────────── */
+.section-heading {
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin: 1.25rem 0 .5rem;
+}
+
+#upcoming-meets-section .section-heading { margin-top: 0; }
+
+/* ── Upcoming meets ───────────────────────────────────────────────────────── */
+.meet-item--upcoming {
+  opacity: .8;
+  cursor: default;
+  border-style: dashed;
+}
+
+.meet-item--upcoming:hover {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transform: none;
+}
+
+.meet-badge--upcoming {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
 /* ── States ───────────────────────────────────────────────────────────────── */
 .loading {
   text-align: center;
@@ -476,6 +537,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .squad-filter-grid { grid-template-columns: repeat(3, 1fr); }
   .club-name  { font-size: .95rem; }
   .tab-btn    { padding: .3rem .6rem; font-size: .8rem; }
   .hero h1    { font-size: 1.35rem; }
