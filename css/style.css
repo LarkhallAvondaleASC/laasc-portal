@@ -185,6 +185,7 @@ main {
   box-shadow: var(--shadow);
   transition: background .1s, box-shadow .1s, transform .1s;
   text-align: left;
+  width: 100%;
 }
 
 .swimmer-item:hover { background: var(--blue-light); box-shadow: 0 4px 10px rgba(0,0,0,.13); transform: translateY(-2px); }
@@ -415,6 +416,7 @@ main {
   font-family: inherit;
   text-align: left;
   transition: background .1s, box-shadow .1s, transform .1s;
+  width: 100%;
 }
 
 .meet-item:hover { background: var(--blue-light); box-shadow: 0 4px 10px rgba(0,0,0,.13); transform: translateY(-2px); }
