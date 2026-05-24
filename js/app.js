@@ -231,20 +231,24 @@ function pbSection(pbs, label, badgeClass) {
     .slice()
     .sort((a, b) => a.event.localeCompare(b.event))
     .map(p =>
-      "<tr>" +
+      '<tr data-event="' + esc(p.event) + '" data-course="' + esc(p.course) + '">' +
         "<td>" + esc(p.event) + "</td>" +
         '<td class="pb-time">' + esc(p.time) + "</td>" +
         "<td>" + esc(formatDate(p.date)) + "</td>" +
         "<td>" + esc(p.meet) + "</td>" +
+        '<td class="pb-improvement" data-col="overall">—</td>' +
+        '<td class="pb-improvement" data-col="latest">—</td>' +
       "</tr>"
     ).join("");
   return (
     '<details class="course-section" open>' +
       '<summary class="course-label ' + badgeClass + '">' + label + "</summary>" +
+      '<div style="overflow-x:auto">' +
       '<table class="pb-table">' +
-        "<thead><tr><th>Event</th><th>Time</th><th>Date</th><th>Meet</th></tr></thead>" +
+        "<thead><tr><th>Event</th><th>Time</th><th>Date</th><th>Meet</th><th>Overall ↓</th><th>Latest ↓</th></tr></thead>" +
         "<tbody>" + rows + "</tbody>" +
       "</table>" +
+      "</div>" +
     "</details>"
   );
 }
@@ -592,6 +596,40 @@ async function loadProgressionSection(ath) {
         '<span class="stats-group-label">Strokes</span>' +
         '<div class="stats-items">' + renderItems(strokeStats) + "</div>" +
       "</div>";
+  }
+
+  // Patch PB table with improvement columns
+  const detail = document.getElementById("swimmer-detail");
+  if (detail) {
+    ath.pbs.forEach(pb => {
+      const currentSecs = timeToSeconds(pb.time);
+      if (currentSecs === null) return;
+      const races = validRaces
+        .filter(r => r.event === pb.event && r.course === pb.course)
+        .sort((a, b) => a.date.localeCompare(b.date));
+      if (races.length < 2) return;
+      const firstSecs = timeToSeconds(races[0].time);
+      if (firstSecs === null) return;
+      // Build chronological PB history
+      let runningBest = Infinity;
+      const pbHistory = [];
+      races.forEach(r => {
+        const t = timeToSeconds(r.time);
+        if (t !== null && t < runningBest) { runningBest = t; pbHistory.push(t); }
+      });
+      const prevPBSecs = pbHistory.length >= 2 ? pbHistory[pbHistory.length - 2] : null;
+      const row = detail.querySelector('[data-event="' + pb.event + '"][data-course="' + pb.course + '"]');
+      if (!row) return;
+      const fmt = (delta, base) =>
+        delta > 0.005
+          ? '<span class="improvement-val">↓' + secondsToTime(delta) + "</span>" +
+            '<span class="improvement-pct"> (' + Math.round(delta / base * 100) + "%)</span>"
+          : "—";
+      const overallCell = row.querySelector('[data-col="overall"]');
+      if (overallCell) overallCell.innerHTML = fmt(firstSecs - currentSecs, firstSecs);
+      const latestCell = row.querySelector('[data-col="latest"]');
+      if (latestCell && prevPBSecs !== null) latestCell.innerHTML = fmt(prevPBSecs - currentSecs, prevPBSecs);
+    });
   }
 
   const events = [...new Set(validRaces.map(r => r.event))].sort();

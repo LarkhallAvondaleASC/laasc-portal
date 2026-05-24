@@ -397,6 +397,9 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 .pb-table tr:last-child td { border-bottom: none; }
 .pb-table tr:hover td      { background: var(--blue-light); }
 .pb-time { font-weight: 700; font-family: ui-monospace, monospace; color: var(--navy); }
+.pb-improvement { white-space: nowrap; color: var(--text-muted); font-size: .82rem; }
+.improvement-val { font-weight: 600; color: #15803d; font-family: ui-monospace, monospace; }
+.improvement-pct { color: #16a34a; font-size: .75rem; }
 
 .no-pbs { color: var(--text-muted); font-style: italic; padding: .75rem 0; }
 
