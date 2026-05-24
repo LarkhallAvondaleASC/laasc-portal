@@ -552,6 +552,11 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   color: #854d0e;
 }
 
+.meet-badge--disability {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
 /* ── States ───────────────────────────────────────────────────────────────── */
 .loading {
   text-align: center;

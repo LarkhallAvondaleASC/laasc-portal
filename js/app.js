@@ -22,14 +22,15 @@ const AGE_GROUPS = [
 
 async function loadData() {
   try {
-    const [athleteData, meetData, updatedData] = await Promise.all([
+    const [athleteData, meetData, updatedData, meetFlags] = await Promise.all([
       fetch("data/athletes.json").then(r => { if (!r.ok) throw new Error(); return r.json(); }),
       fetch("data/meets.json").then(r => { if (!r.ok) throw new Error(); return r.json(); }),
       fetch("data/last_updated.json").then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/meet_flags.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
     ]);
 
     athletes = athleteData;
-    meets = meetData;
+    meets = meetData.map(m => ({ ...m, ...(meetFlags[m.id] || {}) }));
 
     if (updatedData?.utc) {
       const d = new Date(updatedData.utc);
@@ -305,6 +306,7 @@ function renderMeets() {
           "</div>" +
           '<div class="meet-item-right">' +
             '<span class="meet-badge ' + badge.cls + '">' + badge.label + "</span>" +
+            (m.disability ? '<span class="meet-badge meet-badge--disability">Disability</span>' : "") +
             '<span class="meet-badge meet-badge--upcoming">Upcoming</span>' +
           "</div>" +
         "</div>"
@@ -328,6 +330,7 @@ function renderMeets() {
         "</div>" +
         '<div class="meet-item-right">' +
           '<span class="meet-badge ' + badge.cls + '">' + badge.label + "</span>" +
+          (m.disability ? '<span class="meet-badge meet-badge--disability">Disability</span>' : "") +
           '<span class="meet-arrow" aria-hidden="true">&#8250;</span>' +
         "</div>" +
       "</button>"
@@ -355,6 +358,7 @@ async function showMeet(id, push = true) {
       '<div class="detail-meta">' +
         esc(formatDate(meet.date)) +
         ' &middot; <span class="course-label ' + badge.cls + '">' + badge.label + "</span>" +
+        (meet.disability ? ' &middot; <span class="course-label meet-badge--disability">Disability Meet</span>' : "") +
       "</div>" +
     "</div>" +
     '<p class="loading">Loading results…</p>';
@@ -411,6 +415,7 @@ async function showMeet(id, push = true) {
       '<div class="detail-meta">' +
         esc(formatDate(meet.date)) +
         ' &middot; <span class="course-label ' + badge.cls + '">' + badge.label + "</span>" +
+        (meet.disability ? ' &middot; <span class="course-label meet-badge--disability">Disability Meet</span>' : "") +
       "</div>" +
     "</div>" +
     '<p class="results-count">' + results.length + " result" + (results.length !== 1 ? "s" : "") + " across " + Object.keys(byEvent).length + " events</p>" +
