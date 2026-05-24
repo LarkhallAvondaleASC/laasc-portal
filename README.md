@@ -40,7 +40,7 @@ A static, client-side results portal for Larkhall Avondale ASC, hosted on GitHub
 
 ## Data
 
-Data is sourced from [Hy-Tek TM Online](https://www.hy-tekltd.com/) (Sports-Tek) and stored as static JSON files in `data/`:
+Data is sourced from [Hy-Tek TM Online](https://sports-tek.active.com/TMOnline/index.asp?STRIPPED=LarkhallAvondaleASC) (Sports-Tek) and stored as static JSON files in `data/`:
 
 | File | Contents |
 |------|----------|
