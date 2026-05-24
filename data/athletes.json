@@ -3793,11 +3793,18 @@
     "subgroup": "ML",
     "pbs": [
       {
+        "event": "25 Freestyle",
+        "course": "SCM",
+        "time": "25.10",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
+      },
+      {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "57.87",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "53.54",
+        "date": "2026-05-23",
+        "meet": "Jubilee Gala 2026"
       },
       {
         "event": "100 Freestyle",
@@ -3807,11 +3814,18 @@
         "meet": "Club Time Trials March 2026"
       },
       {
+        "event": "25 Backstroke",
+        "course": "SCM",
+        "time": "27.81",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
+      },
+      {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:03.59",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "59.43",
+        "date": "2026-05-23",
+        "meet": "Jubilee Gala 2026"
       },
       {
         "event": "100 Backstroke",
@@ -3819,6 +3833,13 @@
         "time": "2:17.11",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "25 Breaststroke",
+        "course": "SCM",
+        "time": "29.19",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
       },
       {
         "event": "50 Breaststroke",
@@ -5094,11 +5115,32 @@
     "subgroup": "",
     "pbs": [
       {
+        "event": "100 Freestyle",
+        "course": "SCM",
+        "time": "13:13.50",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
+      },
+      {
+        "event": "50 Breaststroke",
+        "course": "SCM",
+        "time": "45.47",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
+      },
+      {
         "event": "100 Breaststroke",
         "course": "SCM",
         "time": "1:46.27",
         "date": "2024-09-14",
         "meet": "South Lanarkshire Development"
+      },
+      {
+        "event": "50 Butterfly",
+        "course": "SCM",
+        "time": "40.66",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
       }
     ]
   },
@@ -5135,9 +5177,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:11.61",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
+        "time": "1:08.05",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
       },
       {
         "event": "100 Backstroke",
@@ -5149,9 +5191,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:17.83",
-        "date": "2025-06-02",
-        "meet": "Club Time Trials June 2025"
+        "time": "1:16.35",
+        "date": "2026-03-14",
+        "meet": "WoS Regional Championships for"
       },
       {
         "event": "100 Breaststroke",

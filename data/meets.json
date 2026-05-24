@@ -6,10 +6,22 @@
     "date": "2026-06-20"
   },
   {
+    "id": 275,
+    "name": "Temple Swimming Club 50th Anni",
+    "course": "SCM",
+    "date": "2026-06-20"
+  },
+  {
     "id": 269,
     "name": "SAST Open meet 13-14 June 2026",
     "course": "SCM",
     "date": "2026-06-13"
+  },
+  {
+    "id": 273,
+    "name": "Jubilee Gala 2026",
+    "course": "SCM",
+    "date": "2026-05-23"
   },
   {
     "id": 272,
@@ -74,6 +86,12 @@
   {
     "id": 255,
     "name": "Cumbernauld Spring Open Meet 2",
+    "course": "SCM",
+    "date": "2026-03-14"
+  },
+  {
+    "id": 274,
+    "name": "WoS Regional Championships for",
     "course": "SCM",
     "date": "2026-03-14"
   },
@@ -258,15 +276,15 @@
     "date": "2025-05-17"
   },
   {
-    "id": 204,
-    "name": "South Lanarkshire Development",
-    "course": "SCM",
-    "date": "2025-05-10"
-  },
-  {
     "id": 200,
     "name": "2025 WD LC May AG Meet",
     "course": "LCM",
+    "date": "2025-05-10"
+  },
+  {
+    "id": 204,
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
     "date": "2025-05-10"
   },
   {
@@ -324,6 +342,12 @@
     "date": "2025-03-01"
   },
   {
+    "id": 191,
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
+    "date": "2025-02-22"
+  },
+  {
     "id": 190,
     "name": "Glenrothes Spring Meet",
     "course": "SCM",
@@ -332,12 +356,6 @@
   {
     "id": 189,
     "name": "Hearts Fast February",
-    "course": "SCM",
-    "date": "2025-02-22"
-  },
-  {
-    "id": 191,
-    "name": "South Lanarkshire Development",
     "course": "SCM",
     "date": "2025-02-22"
   },

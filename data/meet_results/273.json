@@ -1,0 +1,42 @@
+[
+  {
+    "ath_id": null,
+    "last": "Lorimer",
+    "first": "Hamish",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Freestyle",
+    "time": "53.54",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Lorimer",
+    "first": "Hamish",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Backstroke",
+    "time": "59.43",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Nutt",
+    "first": "Kaitlin",
+    "gender": "F",
+    "age": "26",
+    "event": "50 Freestyle",
+    "time": "1:03.38",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Nutt",
+    "first": "Kaitlin",
+    "gender": "F",
+    "age": "26",
+    "event": "50 Backstroke",
+    "time": "1:13.53",
+    "place": ""
+  }
+]

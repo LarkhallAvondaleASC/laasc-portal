@@ -162,6 +162,33 @@
     "place": ""
   },
   {
+    "meet_id": 274,
+    "meet": "WoS Regional Championships for",
+    "date": "2026-03-14",
+    "course": "SCM",
+    "event": "25 Freestyle",
+    "time": "25.10",
+    "place": ""
+  },
+  {
+    "meet_id": 274,
+    "meet": "WoS Regional Championships for",
+    "date": "2026-03-14",
+    "course": "SCM",
+    "event": "25 Backstroke",
+    "time": "27.81",
+    "place": ""
+  },
+  {
+    "meet_id": 274,
+    "meet": "WoS Regional Championships for",
+    "date": "2026-03-14",
+    "course": "SCM",
+    "event": "25 Breaststroke",
+    "time": "29.19",
+    "place": ""
+  },
+  {
     "meet_id": 265,
     "meet": "Club Time Trials April 2026",
     "date": "2026-04-20",
@@ -195,6 +222,24 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:03.02",
+    "place": ""
+  },
+  {
+    "meet_id": 273,
+    "meet": "Jubilee Gala 2026",
+    "date": "2026-05-23",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "53.54",
+    "place": ""
+  },
+  {
+    "meet_id": 273,
+    "meet": "Jubilee Gala 2026",
+    "date": "2026-05-23",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "59.43",
     "place": ""
   }
 ]
