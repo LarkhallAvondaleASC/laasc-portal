@@ -11,22 +11,30 @@ A static, client-side results portal for Larkhall Avondale ASC, hosted on GitHub
 ### Swimmers
 - Browse all club members, filterable by squad (Senior, Transition, Junior, Development, Entry)
 - Search by name
-- Personal best times grouped by course (SCM / LCM)
-- Time progression chart per event with PB markers
-- Competition date range and meet/stroke summary stats per swimmer
+- Personal best times grouped by course (SCM / LCM) with horizontal scroll on mobile
+- **Improvement columns** — each PB row shows:
+  - *Overall ↓* — time delta and percentage from first recorded time to current PB
+  - *Latest ↓* — time delta and percentage from previous PB to current PB
+- Time progression chart per event, split into SCM and LCM datasets with toggle buttons
+- ★ markers on the chart for each point that was a PB at the time of the swim
+- Competition date range and meet/stroke summary stats per swimmer (split into Competitions and Strokes groups)
 
 ### Meets
 - Upcoming meets listed separately from past results
 - Past meets filterable by course (SCM / LCM)
+- **Disability Meet badge** — purple badge shown on any meet manually flagged in `data/meet_flags.json`
 - Full results per meet, sorted fastest to slowest per event
 
 ### Stats
 - Club-wide fastest and average times per event, grouped by stroke
 - "Held by" link navigates directly to the swimmer's profile
-- Squad vs Club Average grid — shows what proportion of each squad swims faster than the club average
-- Squad Averages by Event — average PB per squad per event, colour-coded against the club average
-- Filters for course (SCM / LCM) and gender
+- Date range shown for the current course/gender filter
 - Only events with 5 or more recorded personal bests are shown
+- Filters for course (SCM / LCM) and gender (All / Male / Female)
+- **Squad vs Club Average** — proportion of each squad with a PB faster than the club average, colour-coded green / amber / red
+- **Squad Averages by Event** — average PB per squad per event, colour-coded against the club average
+- **Age Group vs Club Average** — same comparison split by club championship age bands (10 & Under / 11–12 / 13–14 / 15 & Over)
+- **Age Group Averages by Event** — average PB per age group per event, colour-coded against the club average
 
 ---
 
@@ -41,6 +49,20 @@ Data is sourced from [Hy-Tek TM Online](https://www.hy-tekltd.com/) (Sports-Tek)
 | `data/meet_results/<id>.json` | Full results for each meet |
 | `data/athlete_results/<id>.json` | Full race history per athlete |
 | `data/last_updated.json` | Timestamp of the last data refresh |
+| `data/meet_flags.json` | Manual per-meet flags (e.g. disability meets) |
+
+### meet_flags.json
+
+This file is not touched by the automated refresh and is maintained manually. Each key is a meet ID (visible in the URL as `#meet-<id>` when viewing a meet):
+
+```json
+{
+  "273": { "disability": true },
+  "274": { "disability": true }
+}
+```
+
+Setting `"disability": true` adds a purple **Disability** badge to the meet in the list and detail views.
 
 ### Refreshing data
 
@@ -63,6 +85,7 @@ css/style.css     — all styles
 js/app.js         — data loading, rendering, routing
 scripts/          — Python data scraper
 data/             — JSON data files (committed by CI)
+data/meet_flags.json — manual meet flags (committed by hand)
 images/           — club logo
 ```
 
