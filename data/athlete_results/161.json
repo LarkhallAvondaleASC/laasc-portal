@@ -34,5 +34,32 @@
     "event": "50 Breaststroke",
     "time": "50.85",
     "place": "6"
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "47.08",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "53.15",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "51.03",
+    "place": ""
   }
 ]

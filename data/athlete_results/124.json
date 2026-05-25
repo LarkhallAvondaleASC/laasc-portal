@@ -718,5 +718,32 @@
     "event": "100 Backstroke",
     "time": "1:29.93",
     "place": "1"
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "41.88",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "59.12",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "47.37",
+    "place": ""
   }
 ]

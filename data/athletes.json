@@ -824,9 +824,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "50.08",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "47.08",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "50 Breaststroke",
@@ -834,6 +834,13 @@
         "time": "50.85",
         "date": "2026-03-11",
         "meet": "South Lanarkshire Schools 2026"
+      },
+      {
+        "event": "50 Butterfly",
+        "course": "SCM",
+        "time": "51.03",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       }
     ]
   },
@@ -1994,6 +2001,20 @@
     "subgroup": "",
     "pbs": [
       {
+        "event": "50 Freestyle",
+        "course": "SCM",
+        "time": "1:06.25",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:20.31",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
         "event": "100 Backstroke",
         "course": "SCM",
         "time": "2:04.82",
@@ -2032,6 +2053,20 @@
     "group": "DEV",
     "subgroup": "",
     "pbs": [
+      {
+        "event": "50 Freestyle",
+        "course": "SCM",
+        "time": "1:04.25",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:22.03",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
       {
         "event": "100 Backstroke",
         "course": "SCM",
@@ -2464,9 +2499,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "48.43",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "47.94",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -2478,9 +2513,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "58.01",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "57.13",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Breaststroke",
@@ -2521,6 +2556,20 @@
     "group": "ENT",
     "subgroup": "",
     "pbs": [
+      {
+        "event": "50 Freestyle",
+        "course": "SCM",
+        "time": "57.56",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:04.79",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
       {
         "event": "50 Breaststroke",
         "course": "SCM",
@@ -2570,9 +2619,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "48.39",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "48.15",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -2584,9 +2633,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "55.12",
-        "date": "2025-12-06",
-        "meet": "EK Graded Meet December 2025"
+        "time": "54.51",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Breaststroke",
@@ -2605,9 +2654,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "56.96",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
+        "time": "51.57",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Butterfly",
@@ -2686,9 +2735,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:06.85",
-        "date": "2026-02-21",
-        "meet": "South Lanarkshire Development"
+        "time": "1:04.82",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Breaststroke",
@@ -2746,9 +2795,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:06.91",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "49.15",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "50 Breaststroke",
@@ -2763,6 +2812,13 @@
         "time": "1:46.76",
         "date": "2026-02-02",
         "meet": "Club Time Trials February 2026"
+      },
+      {
+        "event": "50 Butterfly",
+        "course": "SCM",
+        "time": "43.37",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       }
     ]
   },
@@ -2813,9 +2869,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "59.74",
-        "date": "2025-05-10",
-        "meet": "South Lanarkshire Development"
+        "time": "59.12",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Breaststroke",
@@ -3067,9 +3123,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "57.51",
-        "date": "2026-02-21",
-        "meet": "South Lanarkshire Development"
+        "time": "47.46",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 IM",
@@ -3412,9 +3468,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "53.93",
-        "date": "2025-12-06",
-        "meet": "EK Graded Meet December 2025"
+        "time": "52.23",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -3440,9 +3496,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "1:00.36",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "59.31",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 IM",
@@ -3646,6 +3702,20 @@
     "subgroup": "",
     "pbs": [
       {
+        "event": "50 Freestyle",
+        "course": "SCM",
+        "time": "1:01.21",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:04.90",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
         "event": "100 Backstroke",
         "course": "SCM",
         "time": "2:27.90",
@@ -3761,9 +3831,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "56.98",
-        "date": "2025-09-01",
-        "meet": "Club Time Trials September 202"
+        "time": "52.86",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -3775,9 +3845,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "57.59",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
+        "time": "53.39",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Breaststroke",
@@ -3826,11 +3896,25 @@
     "subgroup": "",
     "pbs": [
       {
+        "event": "50 Freestyle",
+        "course": "SCM",
+        "time": "54.37",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
+      },
+      {
         "event": "100 Freestyle",
         "course": "SCM",
         "time": "1:44.94",
         "date": "2026-05-09",
         "meet": "Sl Development Meet 3 - 2026"
+      },
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "57.52",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -3842,9 +3926,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:17.98",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "1:17.92",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "50 Butterfly",
@@ -4064,9 +4148,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "53.92",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "50.67",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -4194,9 +4278,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "50.99",
-        "date": "2025-12-06",
-        "meet": "EK Graded Meet December 2025"
+        "time": "49.28",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -4222,9 +4306,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "58.25",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
+        "time": "53.99",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Butterfly",
@@ -4613,9 +4697,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "58.34",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "55.08",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -5851,9 +5935,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "58.47",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "55.36",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Freestyle",
@@ -5879,9 +5963,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:18.99",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:14.77",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       }
     ]
   },
@@ -6295,9 +6379,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "48.27",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "47.45",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Backstroke",
@@ -6309,9 +6393,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "50.41",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "48.64",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Breaststroke",
@@ -6330,9 +6414,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "45.10",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "44.44",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "100 Butterfly",
@@ -6724,16 +6808,16 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:19.46",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "1:17.16",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:19.02",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "1:17.81",
+        "date": "2026-04-27",
+        "meet": "Club Squad Time Trials April 2"
       },
       {
         "event": "50 Butterfly",

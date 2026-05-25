@@ -1,13 +1,13 @@
 [
   {
-    "id": 270,
-    "name": "REN96 Development Meet 2026",
+    "id": 275,
+    "name": "Temple Swimming Club 50th Anni",
     "course": "SCM",
     "date": "2026-06-20"
   },
   {
-    "id": 275,
-    "name": "Temple Swimming Club 50th Anni",
+    "id": 270,
+    "name": "REN96 Development Meet 2026",
     "course": "SCM",
     "date": "2026-06-20"
   },
@@ -48,15 +48,21 @@
     "date": "2026-05-02"
   },
   {
-    "id": 260,
-    "name": "EK Long Course Age Group Meet",
-    "course": "LCM",
-    "date": "2026-04-25"
+    "id": 276,
+    "name": "Club Squad Time Trials April 2",
+    "course": "SCM",
+    "date": "2026-04-27"
   },
   {
     "id": 267,
     "name": "FVT Spring & Dev Meet_25 & 26",
     "course": "SCM",
+    "date": "2026-04-25"
+  },
+  {
+    "id": 260,
+    "name": "EK Long Course Age Group Meet",
+    "course": "LCM",
     "date": "2026-04-25"
   },
   {
@@ -84,14 +90,14 @@
     "date": "2026-03-14"
   },
   {
-    "id": 255,
-    "name": "Cumbernauld Spring Open Meet 2",
+    "id": 274,
+    "name": "WoS Regional Championships for",
     "course": "SCM",
     "date": "2026-03-14"
   },
   {
-    "id": 274,
-    "name": "WoS Regional Championships for",
+    "id": 255,
+    "name": "Cumbernauld Spring Open Meet 2",
     "course": "SCM",
     "date": "2026-03-14"
   },

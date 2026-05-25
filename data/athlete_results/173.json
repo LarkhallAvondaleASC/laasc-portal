@@ -27,6 +27,33 @@
     "place": ""
   },
   {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "55.36",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "57.49",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:14.77",
+    "place": ""
+  },
+  {
     "meet_id": 263,
     "meet": "Sl Development Meet 3 - 2026",
     "date": "2026-05-09",

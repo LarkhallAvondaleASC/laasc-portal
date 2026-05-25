@@ -846,6 +846,33 @@
     "place": "4"
   },
   {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "50.10",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "1:02.08",
+    "place": ""
+  },
+  {
+    "meet_id": 276,
+    "meet": "Club Squad Time Trials April 2",
+    "date": "2026-04-27",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "58.56",
+    "place": ""
+  },
+  {
     "meet_id": 271,
     "meet": "North Ayrshire Junior Meet",
     "date": "2026-05-02",
