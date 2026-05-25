@@ -1052,6 +1052,26 @@
   {
     "ath_id": null,
     "last": "Stanton",
+    "first": "Adam",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Freestyle",
+    "time": "1:02.65",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Stanton",
+    "first": "Adam",
+    "gender": "M",
+    "age": "11",
+    "event": "100 Breaststroke",
+    "time": "2:50.20",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Stanton",
     "first": "Elliott",
     "gender": "M",
     "age": "14",

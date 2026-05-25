@@ -411,6 +411,26 @@
   },
   {
     "ath_id": null,
+    "last": "Donnelly",
+    "first": "Jorgie",
+    "gender": "F",
+    "age": "11",
+    "event": "100 Backstroke",
+    "time": "3:01.38",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Donnelly",
+    "first": "Jorgie",
+    "gender": "F",
+    "age": "11",
+    "event": "50 Breaststroke",
+    "time": "1:32.48",
+    "place": ""
+  },
+  {
+    "ath_id": null,
     "last": "Farrell",
     "first": "Rosie",
     "gender": "F",
@@ -467,6 +487,26 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "58.01",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Fletcher",
+    "first": "Natalie",
+    "gender": "F",
+    "age": "8",
+    "event": "50 Breaststroke",
+    "time": "1:13.32",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Fletcher",
+    "first": "Natalie",
+    "gender": "F",
+    "age": "8",
+    "event": "100 IM",
+    "time": "2:27.53",
     "place": ""
   },
   {
@@ -537,6 +577,16 @@
     "age": "12",
     "event": "50 Breaststroke",
     "time": "43.41",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Hagan",
+    "first": "Harris",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Breaststroke",
+    "time": "1:13.30",
     "place": ""
   },
   {
