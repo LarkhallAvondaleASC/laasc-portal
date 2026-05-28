@@ -131,26 +131,6 @@
   },
   {
     "ath_id": null,
-    "last": "Blackstock",
-    "first": "Anna",
-    "gender": "F",
-    "age": "13",
-    "event": "50 Backstroke",
-    "time": "58.56",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Blackstock",
-    "first": "James",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Backstroke",
-    "time": "50.08",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Brown",
     "first": "Katie",
     "gender": "F",
@@ -757,46 +737,6 @@
     "age": "10",
     "event": "50 Butterfly",
     "time": "53.24",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "48.91",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Backstroke",
-    "time": "59.74",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Breaststroke",
-    "time": "1:06.02",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Butterfly",
-    "time": "59.74",
     "place": ""
   },
   {

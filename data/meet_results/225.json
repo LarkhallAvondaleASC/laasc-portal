@@ -341,46 +341,6 @@
   },
   {
     "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "49.92",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:27.38",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "46.35",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:08.82",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Hamilton",
     "first": "Leah",
     "gender": "F",
@@ -727,26 +687,6 @@
     "age": "13",
     "event": "100 IM",
     "time": "1:27.00",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "45.97",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "100 Breaststroke",
-    "time": "2:18.20",
     "place": ""
   },
   {

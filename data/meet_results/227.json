@@ -241,26 +241,6 @@
   },
   {
     "ath_id": null,
-    "last": "Crawford",
-    "first": "Layla",
-    "gender": "F",
-    "age": "10",
-    "event": "100 Freestyle",
-    "time": "1:57.90",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Crawford",
-    "first": "Layla",
-    "gender": "F",
-    "age": "10",
-    "event": "50 Breaststroke",
-    "time": "57.50",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Easton",
     "first": "Joshua",
     "gender": "M",
@@ -337,46 +317,6 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "1:02.21",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "1:54.39",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Breaststroke",
-    "time": "1:03.80",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "1:46.57",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Breaststroke",
-    "time": "1:00.27",
     "place": ""
   },
   {

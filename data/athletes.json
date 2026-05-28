@@ -205,7 +205,7 @@
     "first": "Isaac",
     "age": "9",
     "gender": "M",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -774,83 +774,12 @@
     ]
   },
   {
-    "id": 160,
-    "last": "Blackstock",
-    "first": "Anna Teresa",
-    "age": "14",
-    "gender": "F",
-    "group": "",
-    "subgroup": "",
-    "pbs": [
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:48.36",
-        "date": "2025-09-01",
-        "meet": "Club Time Trials September 202"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "58.56",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
-      }
-    ]
-  },
-  {
-    "id": 161,
-    "last": "Blackstock",
-    "first": "James",
-    "age": "12",
-    "gender": "M",
-    "group": "",
-    "subgroup": "",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "37.76",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
-      },
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:30.79",
-        "date": "2025-09-01",
-        "meet": "Club Time Trials September 202"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "47.08",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "50.85",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "51.03",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
-      }
-    ]
-  },
-  {
     "id": 137,
     "last": "Brown",
     "first": "Katie",
     "age": "12",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "",
     "pbs": [
       {
@@ -1103,7 +1032,7 @@
     "first": "Tom",
     "age": "9",
     "gender": "M",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -1198,7 +1127,7 @@
     "first": "Locky",
     "age": "10",
     "gender": "M",
-    "group": "ENT",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -1462,7 +1391,7 @@
     "first": "James",
     "age": "10",
     "gender": "M",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -1529,7 +1458,7 @@
     "first": "Matthew",
     "age": "12",
     "gender": "M",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -1719,7 +1648,7 @@
     "first": "Isaac",
     "age": "9",
     "gender": "M",
-    "group": "ENT",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -1939,65 +1868,12 @@
     ]
   },
   {
-    "id": 151,
-    "last": "Crawford",
-    "first": "Layla",
-    "age": "12",
-    "gender": "F",
-    "group": "DEV",
-    "subgroup": "ML",
-    "pbs": [
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:41.90",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "55.56",
-        "date": "2025-04-07",
-        "meet": "Club Time Trials April 2025"
-      },
-      {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "time": "2:00.76",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "57.50",
-        "date": "2025-05-05",
-        "meet": "Club Time Trials May 2025"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:05.91",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "1:06.93",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
-      }
-    ]
-  },
-  {
     "id": 176,
     "last": "De Fazio",
     "first": "Finlay",
     "age": "10",
     "gender": "M",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -2050,7 +1926,7 @@
     "first": "Jorgie",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -2472,7 +2348,7 @@
     "first": "Connie",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -2687,7 +2563,7 @@
     "first": "Kai",
     "age": "9",
     "gender": "M",
-    "group": "ENT",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -2768,7 +2644,7 @@
     "first": "Maksym",
     "age": "12",
     "gender": "M",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "",
     "pbs": [
       {
@@ -2828,7 +2704,7 @@
     "first": "Campbell",
     "age": "11",
     "gender": "M",
-    "group": "JUN",
+    "group": "TRN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -2918,86 +2794,12 @@
     ]
   },
   {
-    "id": 148,
-    "last": "Gillespie",
-    "first": "Emily",
-    "age": "12",
-    "gender": "F",
-    "group": "DEV",
-    "subgroup": "ML",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "47.56",
-        "date": "2025-06-02",
-        "meet": "Club Time Trials June 2025"
-      },
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:54.39",
-        "date": "2025-05-05",
-        "meet": "Club Time Trials May 2025"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "54.85",
-        "date": "2025-04-07",
-        "meet": "Club Time Trials April 2025"
-      },
-      {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "time": "2:12.99",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "1:03.80",
-        "date": "2025-05-05",
-        "meet": "Club Time Trials May 2025"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:09.27",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "1:15.96",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
-      },
-      {
-        "event": "100 IM",
-        "course": "SCM",
-        "time": "2:11.43",
-        "date": "2025-06-02",
-        "meet": "Club Time Trials June 2025"
-      },
-      {
-        "event": "200 IM",
-        "course": "SCM",
-        "time": "5:39.06",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
-      }
-    ]
-  },
-  {
     "id": 181,
     "last": "Hagan",
     "first": "Harris",
     "age": "11",
     "gender": "M",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -3010,72 +2812,12 @@
     ]
   },
   {
-    "id": 150,
-    "last": "Halforty",
-    "first": "John",
-    "age": "12",
-    "gender": "M",
-    "group": "DEV",
-    "subgroup": "",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "46.35",
-        "date": "2025-02-03",
-        "meet": "Club Time Trials February 2025"
-      },
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:46.57",
-        "date": "2025-05-05",
-        "meet": "Club Time Trials May 2025"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "59.74",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
-      },
-      {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "time": "2:06.03",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "55.50",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:08.82",
-        "date": "2025-02-03",
-        "meet": "Club Time Trials February 2025"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "59.60",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
-      }
-    ]
-  },
-  {
     "id": 166,
     "last": "Hamilton",
     "first": "Kieran",
     "age": "10",
     "gender": "M",
-    "group": "ENT",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -3374,7 +3116,7 @@
     "first": "Grace",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -3441,7 +3183,7 @@
     "first": "Owen",
     "age": "14",
     "gender": "M",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "",
     "pbs": [
       {
@@ -3698,7 +3440,7 @@
     "first": "Calum",
     "age": "11",
     "gender": "M",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -4040,7 +3782,7 @@
     "first": "Lauren",
     "age": "12",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -4251,7 +3993,7 @@
     "first": "Isla",
     "age": "12",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "",
     "pbs": [
       {
@@ -4337,7 +4079,7 @@
     "id": 183,
     "last": "McCarthy",
     "first": "Alexis",
-    "age": "12",
+    "age": "13",
     "gender": "F",
     "group": "TRN",
     "subgroup": "",
@@ -4422,51 +4164,12 @@
     ]
   },
   {
-    "id": 132,
-    "last": "McDonald",
-    "first": "Holly",
-    "age": "12",
-    "gender": "F",
-    "group": "DEV",
-    "subgroup": "ML",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "55.67",
-        "date": "2024-11-04",
-        "meet": "Club Time Trials November 2024"
-      },
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "2:11.25",
-        "date": "2024-09-02",
-        "meet": "Club Time Trials September 202"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "1:01.65",
-        "date": "2024-09-02",
-        "meet": "Club Time Trials September 202"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:46.75",
-        "date": "2024-11-04",
-        "meet": "Club Time Trials November 2024"
-      }
-    ]
-  },
-  {
     "id": 157,
     "last": "McMillan",
     "first": "Skye",
     "age": "9",
     "gender": "F",
-    "group": "ENT",
+    "group": "DEV",
     "subgroup": "ML",
     "pbs": [
       {
@@ -4670,7 +4373,7 @@
     "first": "Chloe",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -4751,7 +4454,7 @@
     "first": "Gabriella",
     "age": "10",
     "gender": "M",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": []
   },
@@ -5674,73 +5377,6 @@
     ]
   },
   {
-    "id": 86,
-    "last": "Smart",
-    "first": "Lily",
-    "age": "14",
-    "gender": "F",
-    "group": "JUN",
-    "subgroup": "",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "45.77",
-        "date": "2025-06-02",
-        "meet": "Club Time Trials June 2025"
-      },
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:49.65",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "55.84",
-        "date": "2024-09-02",
-        "meet": "Club Time Trials September 202"
-      },
-      {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "time": "2:06.49",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "57.76",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:18.20",
-        "date": "2025-02-03",
-        "meet": "Club Time Trials February 2025"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "59.07",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
-      },
-      {
-        "event": "100 IM",
-        "course": "SCM",
-        "time": "2:01.93",
-        "date": "2025-06-02",
-        "meet": "Club Time Trials June 2025"
-      }
-    ]
-  },
-  {
     "id": 88,
     "last": "Smith",
     "first": "Noah",
@@ -5929,7 +5565,7 @@
     "first": "Stark",
     "age": "8",
     "gender": "M",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -5975,7 +5611,7 @@
     "first": "Darcy",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -6158,7 +5794,7 @@
     "first": "Adam",
     "age": "11",
     "gender": "M",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -6204,7 +5840,7 @@
     "first": "Elliott",
     "age": "14",
     "gender": "M",
-    "group": "JUN",
+    "group": "TRN",
     "subgroup": "",
     "pbs": [
       {
@@ -6285,7 +5921,7 @@
     "first": "Skye",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -6359,7 +5995,7 @@
     "first": "Jessica",
     "age": "12",
     "gender": "F",
-    "group": "JUN",
+    "group": "TRN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -6788,7 +6424,7 @@
     "first": "Evie",
     "age": "11",
     "gender": "F",
-    "group": "DEV",
+    "group": "ENT",
     "subgroup": "",
     "pbs": [
       {
@@ -6929,7 +6565,7 @@
     "first": "Leila",
     "age": "10",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {

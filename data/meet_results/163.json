@@ -1041,46 +1041,6 @@
   },
   {
     "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "53.55",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Backstroke",
-    "time": "59.44",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Breaststroke",
-    "time": "1:10.32",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Butterfly",
-    "time": "1:02.18",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Smith",
     "first": "Noah",
     "gender": "M",

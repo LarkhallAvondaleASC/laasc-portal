@@ -631,26 +631,6 @@
   },
   {
     "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "49.72",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "100 IM",
-    "time": "2:12.21",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Smith",
     "first": "Noah",
     "gender": "M",

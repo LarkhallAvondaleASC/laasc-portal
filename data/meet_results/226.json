@@ -261,26 +261,6 @@
   },
   {
     "ath_id": null,
-    "last": "Crawford",
-    "first": "Layla",
-    "gender": "F",
-    "age": "10",
-    "event": "100 Freestyle",
-    "time": "1:56.09",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Crawford",
-    "first": "Layla",
-    "gender": "F",
-    "age": "10",
-    "event": "50 Butterfly",
-    "time": "1:06.93",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Easton",
     "first": "Joshua",
     "gender": "M",
@@ -407,46 +387,6 @@
     "age": "10",
     "event": "50 Butterfly",
     "time": "51.88",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "1:58.96",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Butterfly",
-    "time": "1:15.96",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "1:52.40",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Halforty",
-    "first": "John",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Butterfly",
-    "time": "59.60",
     "place": ""
   },
   {
@@ -797,26 +737,6 @@
     "age": "13",
     "event": "200 IM",
     "time": "2:54.66",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "100 Freestyle",
-    "time": "1:49.65",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Smart",
-    "first": "Lily",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Butterfly",
-    "time": "59.07",
     "place": ""
   },
   {

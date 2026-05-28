@@ -641,46 +641,6 @@
   },
   {
     "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "2:11.76",
-    "place": "10"
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Backstroke",
-    "time": "2:12.99",
-    "place": "10"
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:09.27",
-    "place": "5"
-  },
-  {
-    "ath_id": null,
-    "last": "Gillespie",
-    "first": "Emily",
-    "gender": "F",
-    "age": "11",
-    "event": "200 IM",
-    "time": "5:39.06",
-    "place": "7"
-  },
-  {
-    "ath_id": null,
     "last": "Hamilton",
     "first": "Leah",
     "gender": "F",
