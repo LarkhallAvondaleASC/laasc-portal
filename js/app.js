@@ -1329,11 +1329,11 @@ async function renderCompareResult() {
   });
 
   // RAG: rank only active swimmers on PB
-  const activePBs = swimData.filter(d => d?.pbSecs !== null).map(d => d.pbSecs).sort((a, b) => a - b);
+  const activePBs = swimData.filter(d => d !== null && d.pbSecs !== null).map(d => d.pbSecs).sort((a, b) => a - b);
   const fastestPB = activePBs[0] ?? null;
   const slowestPB = activePBs[activePBs.length - 1] ?? null;
 
-  const activeAvgs = swimData.filter(d => d?.avg !== null).map(d => d.avg).sort((a, b) => a - b);
+  const activeAvgs = swimData.filter(d => d !== null && d.avg !== null).map(d => d.avg).sort((a, b) => a - b);
   const fastestAvg = activeAvgs[0] ?? null;
   const slowestAvg = activeAvgs[activeAvgs.length - 1] ?? null;
 
