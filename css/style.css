@@ -908,6 +908,17 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 .compare-table tr.row-avg td { background: #f8fafc; }
 .compare-table tr.row-avg td.row-label { background: #f1f5f9; }
 
+/* benchmark section divider */
+.compare-table tr.row-section-header td {
+  background: var(--navy);
+  color: rgba(255,255,255,.85);
+  font-size: .72rem;
+  font-weight: 600;
+  padding: .45rem .85rem;
+  border-bottom: none;
+  letter-spacing: .02em;
+}
+
 .compare-no-data { color: var(--text-muted); font-style: italic; text-align: center; padding: 2rem; }
 
 /* ── Footer ───────────────────────────────────────────────────────────────── */

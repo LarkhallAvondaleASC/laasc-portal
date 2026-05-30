@@ -1429,14 +1429,13 @@ async function renderCompareResult() {
     </tr>`;
   }).join("");
 
+  const colSpan = swimmers.length + 1;
+
   resultEl.innerHTML =
     `<p class="chart-note" style="text-align:left;margin-bottom:.6rem">
-      <strong>PB / avg rows:</strong> <span style="color:#166534;font-weight:700">green = fastest</span> ·
+      <span style="color:#166534;font-weight:700">Green = fastest</span> ·
       <span style="color:#854d0e;font-weight:700">amber = middle</span> ·
-      <span style="color:#dc2626;font-weight:700">red = slowest</span> among selected swimmers &nbsp;|&nbsp;
-      <strong>Benchmark rows:</strong> <span style="color:#166534;font-weight:700">green = faster than benchmark</span> ·
-      <span style="color:#854d0e;font-weight:700">amber = within 10%</span> ·
-      <span style="color:#dc2626;font-weight:700">red = &gt;10% slower</span>
+      <span style="color:#dc2626;font-weight:700">red = slowest</span> among selected swimmers
     </p>` +
     `<div class="compare-table-wrap">
       <table class="compare-table">
@@ -1449,6 +1448,14 @@ async function renderCompareResult() {
           <tr>
             <td class="row-label">All swims avg</td>
             ${avgCells}
+          </tr>
+          <tr class="row-section-header">
+            <td colspan="${colSpan}">
+              Benchmarks &nbsp;—&nbsp;
+              <span style="color:#166534;font-weight:700">green = faster than benchmark</span> ·
+              <span style="color:#854d0e;font-weight:700">amber = within 10%</span> ·
+              <span style="color:#dc2626;font-weight:700">red = &gt;10% slower</span>
+            </td>
           </tr>
           <tr class="row-avg">
             <td class="row-label">Club avg</td>
