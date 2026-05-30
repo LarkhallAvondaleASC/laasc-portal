@@ -911,12 +911,21 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 /* benchmark section divider */
 .compare-table tr.row-section-header td {
   background: var(--navy);
-  color: rgba(255,255,255,.85);
+  color: rgba(255,255,255,.9);
   font-size: .72rem;
-  font-weight: 600;
-  padding: .45rem .85rem;
+  font-weight: 700;
+  padding: .4rem .85rem .35rem;
   border-bottom: none;
-  letter-spacing: .02em;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.compare-table tr.row-section-legend td {
+  background: #f1f5f9;
+  color: var(--text-muted);
+  font-size: .72rem;
+  padding: .3rem .85rem .4rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .compare-no-data { color: var(--text-muted); font-style: italic; text-align: center; padding: 2rem; }

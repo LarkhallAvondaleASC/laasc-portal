@@ -1450,9 +1450,11 @@ async function renderCompareResult() {
             ${avgCells}
           </tr>
           <tr class="row-section-header">
+            <td colspan="${colSpan}">Benchmarks</td>
+          </tr>
+          <tr class="row-section-legend">
             <td colspan="${colSpan}">
-              Benchmarks &nbsp;—&nbsp;
-              <span style="color:#166534;font-weight:700">green = faster than benchmark</span> ·
+              <span style="color:#166534;font-weight:700">Green = faster than benchmark</span> ·
               <span style="color:#854d0e;font-weight:700">amber = within 10%</span> ·
               <span style="color:#dc2626;font-weight:700">red = &gt;10% slower</span>
             </td>
