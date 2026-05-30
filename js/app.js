@@ -1299,6 +1299,14 @@ function ragClass(val, ordered) {
   return "cmp-amber";
 }
 
+function ragVsAvg(swimmerSecs, avgSecs) {
+  if (swimmerSecs === null || avgSecs === null) return "";
+  const ratio = swimmerSecs / avgSecs;
+  if (ratio <= 1.0)  return "cmp-green";
+  if (ratio <= 1.10) return "cmp-amber";
+  return "cmp-red";
+}
+
 function barWidth(val, fastest, slowest) {
   if (val === null || fastest === null || slowest === null) return 0;
   if (fastest === slowest) return 100;
@@ -1384,19 +1392,20 @@ async function renderCompareResult() {
 
   // Club avg row
   const clubAvgDisplay = clubAvg !== null ? secondsToTime(clubAvg) : "—";
-  const clubAvgCells = swimmers.map(() =>
-    `<td><span class="compare-time" style="color:var(--text-muted);font-weight:600">${esc(clubAvgDisplay)}</span></td>`
-  ).join("");
+  const clubAvgCells = swimData.map(d => {
+    const cls = d ? ragVsAvg(d.pbSecs, clubAvg) : "";
+    return `<td class="${cls}"><span class="compare-time">${esc(clubAvgDisplay)}</span></td>`;
+  }).join("");
 
   // Squad avg rows (one per unique squad)
   const squadRows = uniqueSquads.map(sq => {
     const avg = squadAvgs[sq];
     const display = avg !== null ? secondsToTime(avg) : "—";
-    const cells = swimmers.map(ath =>
-      ath?.group === sq
-        ? `<td><span class="compare-time" style="color:var(--text-muted);font-weight:600">${esc(display)}</span></td>`
-        : `<td style="color:var(--text-muted)">—</td>`
-    ).join("");
+    const cells = swimData.map(d => {
+      if (!d || d.ath.group !== sq) return `<td style="color:var(--text-muted)">—</td>`;
+      const cls = ragVsAvg(d.pbSecs, avg);
+      return `<td class="${cls}"><span class="compare-time">${esc(display)}</span></td>`;
+    }).join("");
     return `<tr class="row-avg">
       <td class="row-label">${esc(squadLabel(sq).replace(" Squad",""))} Squad avg</td>
       ${cells}
@@ -1407,12 +1416,12 @@ async function renderCompareResult() {
   const ageRows = uniqueAgeGroups.map(g => {
     const avg = ageAvgs[g.label];
     const display = avg !== null ? secondsToTime(avg) : "—";
-    const cells = swimmers.map(ath => {
-      if (!ath) return `<td style="color:var(--text-muted)">—</td>`;
-      const inGroup = ath.age >= g.min && ath.age <= g.max;
-      return inGroup
-        ? `<td><span class="compare-time" style="color:var(--text-muted);font-weight:600">${esc(display)}</span></td>`
-        : `<td style="color:var(--text-muted)">—</td>`;
+    const cells = swimData.map(d => {
+      if (!d) return `<td style="color:var(--text-muted)">—</td>`;
+      const inGroup = d.ath.age >= g.min && d.ath.age <= g.max;
+      if (!inGroup) return `<td style="color:var(--text-muted)">—</td>`;
+      const cls = ragVsAvg(d.pbSecs, avg);
+      return `<td class="${cls}"><span class="compare-time">${esc(display)}</span></td>`;
     }).join("");
     return `<tr class="row-avg">
       <td class="row-label">Age ${esc(g.label)} avg</td>
@@ -1422,9 +1431,12 @@ async function renderCompareResult() {
 
   resultEl.innerHTML =
     `<p class="chart-note" style="text-align:left;margin-bottom:.6rem">
-      RAG colouring: <span style="color:#166534;font-weight:700">green = fastest</span> ·
+      <strong>PB / avg rows:</strong> <span style="color:#166534;font-weight:700">green = fastest</span> ·
       <span style="color:#854d0e;font-weight:700">amber = middle</span> ·
-      <span style="color:#dc2626;font-weight:700">red = slowest</span> among selected swimmers
+      <span style="color:#dc2626;font-weight:700">red = slowest</span> among selected swimmers &nbsp;|&nbsp;
+      <strong>Benchmark rows:</strong> <span style="color:#166534;font-weight:700">green = faster than benchmark</span> ·
+      <span style="color:#854d0e;font-weight:700">amber = within 10%</span> ·
+      <span style="color:#dc2626;font-weight:700">red = &gt;10% slower</span>
     </p>` +
     `<div class="compare-table-wrap">
       <table class="compare-table">
