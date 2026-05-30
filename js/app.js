@@ -1113,7 +1113,7 @@ let allSwimResults  = {};                 // id → results array, loaded lazily
 let allSwimLoaded   = false;
 let compareDebounce = [null, null, null];
 
-const DISTANCES = ["50","100","200","400","800","1500","200 IM","400 IM"];
+const COMPARE_EXCLUDED_DISTANCES = new Set([75]);
 
 let compareTabInited = false;
 
@@ -1147,7 +1147,8 @@ function populateCompareSelects() {
     const course = courseEl.value;
     const events = [...new Set(
       athletes.flatMap(a => (a.pbs || []).filter(pb => pb.course === course).map(pb => pb.event))
-    )].sort((a, b) => {
+    )].filter(e => !COMPARE_EXCLUDED_DISTANCES.has(parseInt(e)))
+    .sort((a, b) => {
       const strokeA = a.replace(/^\d+\s*/, "");
       const strokeB = b.replace(/^\d+\s*/, "");
       const siA = STROKE_ORDER.indexOf(strokeA);
