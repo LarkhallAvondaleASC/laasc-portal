@@ -1040,7 +1040,7 @@ window.addEventListener("popstate", () => navigate(location.hash));
 
 // ── Coach PIN ─────────────────────────────────────────────────────────────────
 
-const COACH_PIN = "1234";
+const COACH_PIN = "1968";
 
 function isCoachMode() {
   return sessionStorage.getItem("coachMode") === "1";
