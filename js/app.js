@@ -92,8 +92,9 @@ function openStatsTab() {
 document.querySelectorAll(".tab-btn").forEach(btn =>
   btn.addEventListener("click", () => {
     if (btn.dataset.tab === "swimmers") openSwimmersTab();
-    else if (btn.dataset.tab === "meets")  openMeetsTab();
-    else if (btn.dataset.tab === "stats")  openStatsTab();
+    else if (btn.dataset.tab === "meets")   openMeetsTab();
+    else if (btn.dataset.tab === "stats")   openStatsTab();
+    else if (btn.dataset.tab === "compare") openCompareTab();
     else switchTab(btn.dataset.tab);
   })
 );
@@ -1023,6 +1024,9 @@ function navigate(hash) {
     showMeetsList(false);
   } else if (h === "stats") {
     switchTab("stats", false);
+  } else if (h === "compare") {
+    if (isCoachMode()) openCompareTab();
+    else switchTab("home", false);
   } else if (h.startsWith("meet-")) {
     const id = parseInt(h.slice(5), 10);
     switchTab("meets", false);
@@ -1034,6 +1038,419 @@ function navigate(hash) {
 
 window.addEventListener("popstate", () => navigate(location.hash));
 
+// ── Coach PIN ─────────────────────────────────────────────────────────────────
+
+const COACH_PIN = "1234";
+
+function isCoachMode() {
+  return sessionStorage.getItem("coachMode") === "1";
+}
+
+function setCoachMode(active) {
+  if (active) {
+    sessionStorage.setItem("coachMode", "1");
+  } else {
+    sessionStorage.removeItem("coachMode");
+  }
+  const btn  = document.getElementById("coach-btn");
+  const tab  = document.querySelector(".tab-btn--compare");
+  if (btn)  btn.classList.toggle("active", active);
+  if (tab)  tab.classList.toggle("hidden", !active);
+}
+
+function openCoachModal() {
+  if (isCoachMode()) {
+    setCoachMode(false);
+    if (document.querySelector(".tab-btn.active")?.dataset.tab === "compare") {
+      switchTab("home");
+    }
+    return;
+  }
+  const modal = document.getElementById("coach-modal");
+  if (!modal) return;
+  modal.classList.remove("hidden");
+  const pin = document.getElementById("coach-pin");
+  if (pin) { pin.value = ""; pin.focus(); }
+  const err = document.getElementById("coach-pin-error");
+  if (err) err.classList.add("hidden");
+}
+
+function closeCoachModal() {
+  const modal = document.getElementById("coach-modal");
+  if (modal) modal.classList.add("hidden");
+}
+
+function submitCoachPin() {
+  const pin = document.getElementById("coach-pin");
+  const err = document.getElementById("coach-pin-error");
+  if (!pin) return;
+  if (pin.value === COACH_PIN) {
+    closeCoachModal();
+    setCoachMode(true);
+    openCompareTab();
+  } else {
+    if (err) err.classList.remove("hidden");
+    pin.classList.add("shake");
+    pin.addEventListener("animationend", () => pin.classList.remove("shake"), { once: true });
+    pin.value = "";
+    pin.focus();
+  }
+}
+
+document.getElementById("coach-pin")?.addEventListener("keydown", e => {
+  if (e.key === "Enter") submitCoachPin();
+  if (e.key === "Escape") closeCoachModal();
+});
+
+document.getElementById("coach-modal")?.addEventListener("click", e => {
+  if (e.target === document.getElementById("coach-modal")) closeCoachModal();
+});
+
+// ── Compare tab ───────────────────────────────────────────────────────────────
+
+let compareSlots    = [null, null, null]; // athlete objects
+let allSwimResults  = {};                 // id → results array, loaded lazily
+let allSwimLoaded   = false;
+let compareDebounce = [null, null, null];
+
+const DISTANCES = ["50","100","200","400","800","1500","200 IM","400 IM"];
+
+let compareTabInited = false;
+
+function openCompareTab() {
+  if (!isCoachMode()) { openCoachModal(); return; }
+  switchTab("compare");
+  if (!compareTabInited) { initCompareTab(); compareTabInited = true; }
+}
+
+function initCompareTab() {
+  populateCompareSelects();
+}
+
+function populateCompareSelects() {
+  const courseEl = document.getElementById("cmp-course");
+  const eventEl  = document.getElementById("cmp-event");
+  if (!courseEl || !eventEl) return;
+
+  // Gather all unique course+event combos from athlete PBs
+  const courseSet = new Set();
+  const eventSet  = new Set();
+  athletes.forEach(a => (a.pbs || []).forEach(pb => {
+    courseSet.add(pb.course);
+    eventSet.add(pb.event);
+  }));
+
+  const courses = COURSE_ORDER.filter(c => courseSet.has(c));
+  courseEl.innerHTML = courses.map(c => `<option value="${c}">${c}</option>`).join("");
+
+  const updateEventList = () => {
+    const course = courseEl.value;
+    const events = [...new Set(
+      athletes.flatMap(a => (a.pbs || []).filter(pb => pb.course === course).map(pb => pb.event))
+    )].sort((a, b) => {
+      const strokeA = a.replace(/^\d+\s*/, "");
+      const strokeB = b.replace(/^\d+\s*/, "");
+      const siA = STROKE_ORDER.indexOf(strokeA);
+      const siB = STROKE_ORDER.indexOf(strokeB);
+      if (siA !== siB) return siA - siB;
+      return parseInt(a) - parseInt(b);
+    });
+    eventEl.innerHTML = events.map(e => `<option value="${e}">${e}</option>`).join("");
+    renderCompareResult();
+  };
+
+  courseEl.addEventListener("change", updateEventList);
+  eventEl.addEventListener("change", renderCompareResult);
+  updateEventList();
+}
+
+function filterCompareSearch(slot, query) {
+  clearTimeout(compareDebounce[slot]);
+  compareDebounce[slot] = setTimeout(() => {
+    const dropdown = document.getElementById("dropdown-" + slot);
+    if (!dropdown) return;
+    const q = query.trim().toLowerCase();
+    if (!q) { dropdown.classList.add("hidden"); return; }
+    const matches = athletes
+      .filter(a => (a.first + " " + a.last).toLowerCase().includes(q))
+      .sort((a, b) => a.last.localeCompare(b.last) || a.first.localeCompare(b.first))
+      .slice(0, 12);
+    if (!matches.length) { dropdown.classList.add("hidden"); return; }
+    dropdown.innerHTML = matches.map(a =>
+      `<div class="compare-dropdown-item" onmousedown="selectCompareAthlete(${slot},${a.id})">${esc(a.last + ", " + a.first)} <span style="color:var(--text-muted);font-size:.75rem">${squadLabel(a.group).replace(" Squad","")}</span></div>`
+    ).join("");
+    dropdown.classList.remove("hidden");
+  }, 150);
+}
+
+function showCompareDropdown(slot) {
+  const input = document.querySelector(`#slot-${slot} .compare-search`);
+  if (input?.value.trim()) filterCompareSearch(slot, input.value);
+}
+
+function hideCompareDropdown(slot) {
+  setTimeout(() => {
+    const dropdown = document.getElementById("dropdown-" + slot);
+    if (dropdown) dropdown.classList.add("hidden");
+  }, 200);
+}
+
+function selectCompareAthlete(slot, id) {
+  const ath = athletes.find(a => a.id === id);
+  if (!ath) return;
+  compareSlots[slot] = ath;
+
+  const searchWrap = document.querySelector(`#slot-${slot} .compare-search-wrap`);
+  const selectedEl = document.getElementById("selected-" + slot);
+  const nameEl     = document.getElementById("selected-name-" + slot);
+  const dropdown   = document.getElementById("dropdown-" + slot);
+
+  if (searchWrap) searchWrap.classList.add("hidden");
+  if (selectedEl) selectedEl.classList.remove("hidden");
+  if (nameEl)     nameEl.textContent = ath.first + " " + ath.last;
+  if (dropdown)   dropdown.classList.add("hidden");
+
+  renderCompareResult();
+}
+
+function clearCompareSlot(slot) {
+  compareSlots[slot] = null;
+
+  const searchWrap = document.querySelector(`#slot-${slot} .compare-search-wrap`);
+  const selectedEl = document.getElementById("selected-" + slot);
+  const input      = document.querySelector(`#slot-${slot} .compare-search`);
+
+  if (searchWrap) searchWrap.classList.remove("hidden");
+  if (selectedEl) selectedEl.classList.add("hidden");
+  if (input)      { input.value = ""; input.focus(); }
+
+  renderCompareResult();
+}
+
+async function ensureAllSwimResults() {
+  if (allSwimLoaded) return;
+  document.getElementById("compare-loading")?.classList.remove("hidden");
+  await Promise.all(athletes.map(async a => {
+    if (allSwimResults[a.id]) return;
+    try {
+      const r = await fetch("data/athlete_results/" + a.id + ".json");
+      allSwimResults[a.id] = r.ok ? await r.json() : [];
+    } catch { allSwimResults[a.id] = []; }
+  }));
+  allSwimLoaded = true;
+  document.getElementById("compare-loading")?.classList.add("hidden");
+}
+
+function avgSeconds(times) {
+  const valid = times.filter(t => t !== null);
+  if (!valid.length) return null;
+  return valid.reduce((s, t) => s + t, 0) / valid.length;
+}
+
+function swimmerAvgForEvent(athleteId, event, course) {
+  const results = allSwimResults[athleteId] || [];
+  const times = results
+    .filter(r => r.event === event && r.course === course)
+    .map(r => timeToSeconds(r.time))
+    .filter(t => t !== null);
+  return { avg: avgSeconds(times), count: times.length };
+}
+
+function clubAvgForEvent(event, course) {
+  const times = athletes.flatMap(a =>
+    (allSwimResults[a.id] || [])
+      .filter(r => r.event === event && r.course === course)
+      .map(r => timeToSeconds(r.time))
+      .filter(t => t !== null)
+  );
+  return avgSeconds(times);
+}
+
+function squadAvgForEvent(squad, event, course) {
+  const squadAthletes = athletes.filter(a => a.group === squad);
+  const times = squadAthletes.flatMap(a =>
+    (allSwimResults[a.id] || [])
+      .filter(r => r.event === event && r.course === course)
+      .map(r => timeToSeconds(r.time))
+      .filter(t => t !== null)
+  );
+  return avgSeconds(times);
+}
+
+function ageGroupAvgForEvent(group, event, course) {
+  const groupAthletes = athletes.filter(a => a.age >= group.min && a.age <= group.max);
+  const times = groupAthletes.flatMap(a =>
+    (allSwimResults[a.id] || [])
+      .filter(r => r.event === event && r.course === course)
+      .map(r => timeToSeconds(r.time))
+      .filter(t => t !== null)
+  );
+  return avgSeconds(times);
+}
+
+function ragClass(val, ordered) {
+  // ordered = [fastest, ..., slowest] seconds values for selected swimmers only
+  if (val === null) return "";
+  const rank = ordered.indexOf(val);
+  if (ordered.length === 1) return "cmp-green";
+  if (rank === 0) return "cmp-green";
+  if (rank === ordered.length - 1) return "cmp-red";
+  return "cmp-amber";
+}
+
+function barWidth(val, fastest, slowest) {
+  if (val === null || fastest === null || slowest === null) return 0;
+  if (fastest === slowest) return 100;
+  // fastest = 100%, slowest = 60%
+  return Math.round(60 + 40 * (1 - (val - fastest) / (slowest - fastest)));
+}
+
+async function renderCompareResult() {
+  const active = compareSlots.filter(Boolean);
+  const resultEl = document.getElementById("compare-result");
+  if (!resultEl) return;
+  if (!active.length) { resultEl.innerHTML = ""; return; }
+
+  await ensureAllSwimResults();
+
+  const event  = document.getElementById("cmp-event")?.value;
+  const course = document.getElementById("cmp-course")?.value;
+  if (!event || !course) return;
+
+  const swimmers = compareSlots; // keep nulls for column alignment
+
+  // Per-swimmer data
+  const swimData = swimmers.map(ath => {
+    if (!ath) return null;
+    const pb    = (ath.pbs || []).find(p => p.event === event && p.course === course);
+    const { avg, count } = swimmerAvgForEvent(ath.id, event, course);
+    return { ath, pbSecs: pb ? timeToSeconds(pb.time) : null, pbStr: pb?.time ?? null, avg, count };
+  });
+
+  // RAG: rank only active swimmers on PB
+  const activePBs = swimData.filter(d => d?.pbSecs !== null).map(d => d.pbSecs).sort((a, b) => a - b);
+  const fastestPB = activePBs[0] ?? null;
+  const slowestPB = activePBs[activePBs.length - 1] ?? null;
+
+  const activeAvgs = swimData.filter(d => d?.avg !== null).map(d => d.avg).sort((a, b) => a - b);
+  const fastestAvg = activeAvgs[0] ?? null;
+  const slowestAvg = activeAvgs[activeAvgs.length - 1] ?? null;
+
+  // Club + squad + age group averages
+  const clubAvg  = clubAvgForEvent(event, course);
+
+  // Unique squads among selected swimmers
+  const uniqueSquads = [...new Set(active.map(a => a.group))];
+  const squadAvgs    = Object.fromEntries(uniqueSquads.map(sq => [sq, squadAvgForEvent(sq, event, course)]));
+
+  // Age groups for selected swimmers
+  const uniqueAgeGroups = AGE_GROUPS.filter(g =>
+    active.some(a => a.age >= g.min && a.age <= g.max)
+  );
+  const ageAvgs = Object.fromEntries(uniqueAgeGroups.map(g => [g.label, ageGroupAvgForEvent(g, event, course)]));
+
+  // Build header
+  const headerCols = swimmers.map((ath, i) =>
+    ath
+      ? `<th class="col-swimmer">${esc(ath.first + " " + ath.last)}<br><span style="font-weight:400;font-size:.7rem;opacity:.8">${squadLabel(ath.group).replace(" Squad","")}</span></th>`
+      : `<th class="col-swimmer" style="opacity:.35">Swimmer ${i + 1}</th>`
+  ).join("");
+
+  // PB row
+  const pbCells = swimData.map((d, i) => {
+    if (!d) return `<td style="color:var(--text-muted);font-style:italic">—</td>`;
+    if (!d.pbStr) return `<td style="color:var(--text-muted);font-style:italic">No PB</td>`;
+    const cls = ragClass(d.pbSecs, activePBs);
+    const bw  = barWidth(d.pbSecs, fastestPB, slowestPB);
+    return `<td class="${cls}">
+      <div class="compare-time">${esc(d.pbStr)}</div>
+      <div class="compare-bar-wrap"><div class="compare-bar" style="width:${bw}%"></div></div>
+    </td>`;
+  }).join("");
+
+  // Avg row
+  const avgCells = swimData.map(d => {
+    if (!d) return `<td style="color:var(--text-muted)">—</td>`;
+    if (d.avg === null) return `<td style="color:var(--text-muted);font-style:italic">No data</td>`;
+    const cls = ragClass(d.avg, activeAvgs);
+    const bw  = barWidth(d.avg, fastestAvg, slowestAvg);
+    return `<td class="${cls}">
+      <div class="compare-time">${esc(secondsToTime(d.avg))}</div>
+      <div class="compare-sub">${d.count} swim${d.count !== 1 ? "s" : ""}</div>
+      <div class="compare-bar-wrap"><div class="compare-bar" style="width:${bw}%"></div></div>
+    </td>`;
+  }).join("");
+
+  // Club avg row
+  const clubAvgDisplay = clubAvg !== null ? secondsToTime(clubAvg) : "—";
+  const clubAvgCells = swimmers.map(() =>
+    `<td><span class="compare-time" style="color:var(--text-muted);font-weight:600">${esc(clubAvgDisplay)}</span></td>`
+  ).join("");
+
+  // Squad avg rows (one per unique squad)
+  const squadRows = uniqueSquads.map(sq => {
+    const avg = squadAvgs[sq];
+    const display = avg !== null ? secondsToTime(avg) : "—";
+    const cells = swimmers.map(ath =>
+      ath?.group === sq
+        ? `<td><span class="compare-time" style="color:var(--text-muted);font-weight:600">${esc(display)}</span></td>`
+        : `<td style="color:var(--text-muted)">—</td>`
+    ).join("");
+    return `<tr class="row-avg">
+      <td class="row-label">${esc(squadLabel(sq).replace(" Squad",""))} Squad avg</td>
+      ${cells}
+    </tr>`;
+  }).join("");
+
+  // Age group avg rows
+  const ageRows = uniqueAgeGroups.map(g => {
+    const avg = ageAvgs[g.label];
+    const display = avg !== null ? secondsToTime(avg) : "—";
+    const cells = swimmers.map(ath => {
+      if (!ath) return `<td style="color:var(--text-muted)">—</td>`;
+      const inGroup = ath.age >= g.min && ath.age <= g.max;
+      return inGroup
+        ? `<td><span class="compare-time" style="color:var(--text-muted);font-weight:600">${esc(display)}</span></td>`
+        : `<td style="color:var(--text-muted)">—</td>`;
+    }).join("");
+    return `<tr class="row-avg">
+      <td class="row-label">Age ${esc(g.label)} avg</td>
+      ${cells}
+    </tr>`;
+  }).join("");
+
+  resultEl.innerHTML =
+    `<p class="chart-note" style="text-align:left;margin-bottom:.6rem">
+      RAG colouring: <span style="color:#166534;font-weight:700">green = fastest</span> ·
+      <span style="color:#854d0e;font-weight:700">amber = middle</span> ·
+      <span style="color:#dc2626;font-weight:700">red = slowest</span> among selected swimmers
+    </p>` +
+    `<div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead><tr><th></th>${headerCols}</tr></thead>
+        <tbody>
+          <tr>
+            <td class="row-label">PB</td>
+            ${pbCells}
+          </tr>
+          <tr>
+            <td class="row-label">All swims avg</td>
+            ${avgCells}
+          </tr>
+          <tr class="row-avg">
+            <td class="row-label">Club avg</td>
+            ${clubAvgCells}
+          </tr>
+          ${squadRows}
+          ${ageRows}
+        </tbody>
+      </table>
+    </div>`;
+}
+
 // ── Boot ──────────────────────────────────────────────────────────────────────
 
 loadData();
+
+// Restore coach mode UI across page refreshes (athletes not yet loaded here)
+if (isCoachMode()) setCoachMode(true);

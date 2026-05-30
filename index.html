@@ -23,7 +23,9 @@
         <button class="tab-btn" data-tab="swimmers">Swimmers</button>
         <button class="tab-btn" data-tab="meets">Meets</button>
         <button class="tab-btn" data-tab="stats">Stats</button>
+        <button class="tab-btn tab-btn--compare hidden" data-tab="compare">Compare</button>
       </nav>
+      <button class="coach-btn" id="coach-btn" onclick="openCoachModal()" aria-label="Coach login">Coach</button>
     </div>
   </header>
 
@@ -117,7 +119,76 @@
       <div id="stats-age-averages"></div>
     </section>
 
+    <!-- Compare (coaches only) -->
+    <section id="tab-compare" class="tab-panel" role="tabpanel">
+      <h2 class="section-heading" style="margin-top:0">Swimmer Comparison</h2>
+
+      <div class="compare-event-bar">
+        <div class="compare-field">
+          <label class="compare-label" for="cmp-course">Course</label>
+          <select id="cmp-course" class="progression-select"></select>
+        </div>
+        <div class="compare-field">
+          <label class="compare-label" for="cmp-event">Event</label>
+          <select id="cmp-event" class="progression-select"></select>
+        </div>
+      </div>
+
+      <div class="compare-slots" id="compare-slots">
+        <div class="compare-slot" id="slot-0">
+          <label class="compare-label">Swimmer 1</label>
+          <div class="compare-search-wrap">
+            <input type="search" class="compare-search" placeholder="Search by name…" autocomplete="off" oninput="filterCompareSearch(0,this.value)" onfocus="showCompareDropdown(0)" onblur="hideCompareDropdown(0)">
+            <div class="compare-dropdown hidden" id="dropdown-0"></div>
+          </div>
+          <div class="compare-selected hidden" id="selected-0">
+            <span class="compare-selected-name" id="selected-name-0"></span>
+            <button class="compare-clear-btn" onclick="clearCompareSlot(0)" aria-label="Remove swimmer">✕</button>
+          </div>
+        </div>
+        <div class="compare-slot" id="slot-1">
+          <label class="compare-label">Swimmer 2</label>
+          <div class="compare-search-wrap">
+            <input type="search" class="compare-search" placeholder="Search by name…" autocomplete="off" oninput="filterCompareSearch(1,this.value)" onfocus="showCompareDropdown(1)" onblur="hideCompareDropdown(1)">
+            <div class="compare-dropdown hidden" id="dropdown-1"></div>
+          </div>
+          <div class="compare-selected hidden" id="selected-1">
+            <span class="compare-selected-name" id="selected-name-1"></span>
+            <button class="compare-clear-btn" onclick="clearCompareSlot(1)" aria-label="Remove swimmer">✕</button>
+          </div>
+        </div>
+        <div class="compare-slot" id="slot-2">
+          <label class="compare-label">Swimmer 3 <span class="compare-optional">(optional)</span></label>
+          <div class="compare-search-wrap">
+            <input type="search" class="compare-search" placeholder="Search by name…" autocomplete="off" oninput="filterCompareSearch(2,this.value)" onfocus="showCompareDropdown(2)" onblur="hideCompareDropdown(2)">
+            <div class="compare-dropdown hidden" id="dropdown-2"></div>
+          </div>
+          <div class="compare-selected hidden" id="selected-2">
+            <span class="compare-selected-name" id="selected-name-2"></span>
+            <button class="compare-clear-btn" onclick="clearCompareSlot(2)" aria-label="Remove swimmer">✕</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="compare-loading" class="loading hidden">Loading swimmer data…</div>
+      <div id="compare-result"></div>
+    </section>
+
   </main>
+
+  <!-- PIN modal -->
+  <div id="coach-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Coach login">
+    <div class="modal-box">
+      <h2 class="modal-title">Coach Login</h2>
+      <p class="modal-sub">Enter the coach PIN to unlock comparison tools.</p>
+      <input type="password" id="coach-pin" class="coach-pin-input" maxlength="8" placeholder="PIN" autocomplete="off">
+      <p id="coach-pin-error" class="coach-pin-error hidden">Incorrect PIN — try again.</p>
+      <div class="modal-actions">
+        <button class="modal-btn modal-btn--cancel" onclick="closeCoachModal()">Cancel</button>
+        <button class="modal-btn modal-btn--confirm" onclick="submitCoachPin()">Unlock</button>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <p>Larkhall Avondale ASC &middot; Data sourced from Hy-Tek TM Online</p>
