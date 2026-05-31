@@ -256,8 +256,8 @@ main {
 .swimmer-arrow { color: var(--blue); font-size: 1.2rem; flex-shrink: 0; margin-left: .5rem; }
 
 .swimmer-thumb {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   object-fit: contain;
   flex-shrink: 0;
   margin-right: .75rem;
