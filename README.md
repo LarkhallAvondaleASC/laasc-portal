@@ -11,13 +11,15 @@ A static, client-side results portal for Larkhall Avondale ASC, hosted on GitHub
 ### Swimmers
 - Browse all club members, filterable by squad (Senior, Transition, Junior, Development, Entry)
 - Search by name
+- **Swimmer thumbnails** — photo shown on each roster card and on the swimmer detail page; images stored in `images/swimmers/<firstname_lastname>.png`
+- **Profile card** on the swimmer detail page — photo, name, squad, gender, and competition date range in a dedicated card at the top
+- **Competitions & Strokes stats card** — summary of competitions attended and strokes swum, shown as a separate card below the profile
 - Personal best times grouped by course (SCM / LCM) with horizontal scroll on mobile
 - **Improvement columns** — each PB row shows:
   - *Overall ↓* — time delta and percentage from first recorded time to current PB
   - *Latest ↓* — time delta and percentage from previous PB to current PB
 - Time progression chart per event, split into SCM and LCM datasets with toggle buttons
 - ★ markers on the chart for each point that was a PB at the time of the swim
-- Competition date range and meet/stroke summary stats per swimmer (split into Competitions and Strokes groups)
 
 ### Meets
 - Upcoming meets listed separately from past results
@@ -86,7 +88,7 @@ js/app.js         — data loading, rendering, routing
 scripts/          — Python data scraper
 data/             — JSON data files (committed by CI)
 data/meet_flags.json — manual meet flags (committed by hand)
-images/           — club logo
+images/           — club logo and swimmer photos (images/swimmers/)
 ```
 
 To run locally, serve the repo root over HTTP (browsers block `fetch()` on `file://`):
