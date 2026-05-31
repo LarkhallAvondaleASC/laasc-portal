@@ -255,6 +255,16 @@ main {
 .swimmer-meta  { font-size: .78rem; color: var(--text-muted); margin-top: .1rem; }
 .swimmer-arrow { color: var(--blue); font-size: 1.2rem; flex-shrink: 0; margin-left: .5rem; }
 
+.swimmer-thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: .75rem;
+  border: 2px solid var(--border);
+}
+
 /* ── Swimmer detail ───────────────────────────────────────────────────────── */
 .back-btn {
   background: none;
@@ -271,7 +281,21 @@ main {
 
 .back-btn:hover { background: var(--blue); color: var(--white); }
 
-.detail-header { margin-bottom: 1.25rem; }
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.detail-header-text { flex: 1; min-width: 0; }
+.detail-thumb {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--border);
+}
 .detail-name   { font-size: 1.5rem; font-weight: 700; color: var(--navy); }
 .detail-meta   { font-size: .875rem; color: var(--text-muted); margin-top: .25rem; }
 

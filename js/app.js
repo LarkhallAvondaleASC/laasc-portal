@@ -164,8 +164,10 @@ function renderSwimmers() {
   }
   container.innerHTML = list.map(a => {
     const meta = [squadLabel(a.group), a.subgroup, genderLabel(a.gender)].filter(Boolean).join(" · ");
+    const thumb = swimmerThumbHtml(a, "swimmer-thumb");
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
+        thumb +
         "<div>" +
           '<div class="swimmer-name">' + esc(a.first + " " + a.last) + "</div>" +
           '<div class="swimmer-meta">' + esc(meta) + "</div>" +
@@ -200,10 +202,13 @@ function showSwimmer(id, push = true) {
 
   document.getElementById("swimmer-detail").innerHTML =
     '<div class="detail-header">' +
-      '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
-      '<div class="detail-meta">' + esc(meta) + "</div>" +
-      '<div id="detail-dates" class="detail-dates"></div>' +
-      '<div class="detail-stats" id="detail-stats"></div>' +
+      swimmerThumbHtml(ath, "detail-thumb") +
+      '<div class="detail-header-text">' +
+        '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
+        '<div class="detail-meta">' + esc(meta) + "</div>" +
+        '<div id="detail-dates" class="detail-dates"></div>' +
+        '<div class="detail-stats" id="detail-stats"></div>' +
+      "</div>" +
     "</div>" +
     (scm.length || lcm.length || other.length
       ? pbSection(scm, "SCM", "badge-scm", ath) +
@@ -719,6 +724,12 @@ function esc(str) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+function swimmerThumbHtml(ath, cssClass) {
+  const slug = ath.first.toLowerCase() + "_" + ath.last.toLowerCase();
+  const src  = "images/swimmers/" + slug + ".png";
+  return '<img class="' + cssClass + '" src="' + src + '" alt="" onerror="this.style.display=\'none\'">';
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
