@@ -262,6 +262,7 @@ main {
   flex-shrink: 0;
   margin-right: .75rem;
 }
+.swimmer-item > div { flex: 1; min-width: 0; }
 
 /* ── Swimmer detail ───────────────────────────────────────────────────────── */
 .back-btn {
@@ -287,8 +288,8 @@ main {
 }
 .detail-header-text { flex: 1; min-width: 0; }
 .detail-thumb {
-  width: 5rem;
-  height: 5rem;
+  width: 8.75rem;
+  height: 8.75rem;
   object-fit: contain;
   flex-shrink: 0;
 }
