@@ -207,9 +207,9 @@ function showSwimmer(id, push = true) {
         '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
         '<div class="detail-meta">' + esc(meta) + "</div>" +
         '<div id="detail-dates" class="detail-dates"></div>' +
-        '<div class="detail-stats" id="detail-stats"></div>' +
       "</div>" +
     "</div>" +
+    '<div class="detail-stats-card"><div class="detail-stats" id="detail-stats"></div></div>' +
     (scm.length || lcm.length || other.length
       ? pbSection(scm, "SCM", "badge-scm", ath) +
         pbSection(lcm, "LCM", "badge-lcm", ath) +

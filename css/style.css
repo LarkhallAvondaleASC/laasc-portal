@@ -314,11 +314,19 @@ main {
   margin-top: .15rem;
 }
 
+.detail-stats-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .detail-stats {
   display: flex;
   flex-wrap: wrap;
   gap: .75rem;
-  margin-top: .75rem;
 }
 
 .stats-group {
