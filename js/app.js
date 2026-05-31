@@ -201,14 +201,12 @@ function showSwimmer(id, push = true) {
   const meta  = [squadLabel(ath.group), ath.subgroup, genderLabel(ath.gender)].filter(Boolean).join(" · ");
 
   document.getElementById("swimmer-detail").innerHTML =
-    '<div class="detail-header">' +
+    '<div class="profile-card">' +
       swimmerThumbHtml(ath, "detail-thumb") +
-      '<div class="detail-header-text">' +
-        '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
-        '<div class="detail-meta">' + esc(meta) + "</div>" +
-        '<div id="detail-dates" class="detail-dates"></div>' +
-        '<div class="detail-stats" id="detail-stats"></div>' +
-      "</div>" +
+      '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
+      '<div class="detail-meta">' + esc(meta) + "</div>" +
+      '<div id="detail-dates" class="detail-dates"></div>' +
+      '<div class="detail-stats" id="detail-stats"></div>' +
     "</div>" +
     (scm.length || lcm.length || other.length
       ? pbSection(scm, "SCM", "badge-scm", ath) +

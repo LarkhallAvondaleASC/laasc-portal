@@ -280,18 +280,23 @@ main {
 
 .back-btn:hover { background: var(--blue); color: var(--white); }
 
-.detail-header {
+.profile-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.75rem 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.detail-header-text { flex: 1; min-width: 0; }
 .detail-thumb {
-  width: 8.75rem;
-  height: 8.75rem;
+  width: 12rem;
+  height: 12rem;
   object-fit: contain;
-  flex-shrink: 0;
+  margin-bottom: .75rem;
 }
 .detail-name   { font-size: 1.5rem; font-weight: 700; color: var(--navy); }
 .detail-meta   { font-size: .875rem; color: var(--text-muted); margin-top: .25rem; }
