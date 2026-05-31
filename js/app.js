@@ -203,10 +203,12 @@ function showSwimmer(id, push = true) {
   document.getElementById("swimmer-detail").innerHTML =
     '<div class="profile-card">' +
       swimmerThumbHtml(ath, "detail-thumb") +
-      '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
-      '<div class="detail-meta">' + esc(meta) + "</div>" +
-      '<div id="detail-dates" class="detail-dates"></div>' +
-      '<div class="detail-stats" id="detail-stats"></div>' +
+      '<div class="profile-card-text">' +
+        '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
+        '<div class="detail-meta">' + esc(meta) + "</div>" +
+        '<div id="detail-dates" class="detail-dates"></div>' +
+        '<div class="detail-stats" id="detail-stats"></div>' +
+      "</div>" +
     "</div>" +
     (scm.length || lcm.length || other.length
       ? pbSection(scm, "SCM", "badge-scm", ath) +
