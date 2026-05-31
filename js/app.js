@@ -5,6 +5,9 @@ let selectedGroup = "";
 let meetCourseFilter = "";
 let statsCourse = "SCM";
 let statsGender = "";
+let rankingsCourse = "SCM";
+let rankingsGender = "";
+let rankings = {};
 
 const SQUAD_ORDER  = ["SEN", "TRN", "JUN", "DEV", "ENT"];
 const COURSE_ORDER = ["SCM", "LCM", "Yards"];
@@ -46,6 +49,7 @@ async function loadData() {
     renderSwimmers();
     renderMeets();
     renderStats();
+    buildRankings();
     navigate(location.hash || "#home");
   } catch {
     document.getElementById("tab-home").insertAdjacentHTML(
@@ -91,10 +95,11 @@ function openStatsTab() {
 
 document.querySelectorAll(".tab-btn").forEach(btn =>
   btn.addEventListener("click", () => {
-    if (btn.dataset.tab === "swimmers") openSwimmersTab();
-    else if (btn.dataset.tab === "meets")   openMeetsTab();
-    else if (btn.dataset.tab === "stats")   openStatsTab();
-    else if (btn.dataset.tab === "compare") openCompareTab();
+    if (btn.dataset.tab === "swimmers")  openSwimmersTab();
+    else if (btn.dataset.tab === "meets")    openMeetsTab();
+    else if (btn.dataset.tab === "stats")    openStatsTab();
+    else if (btn.dataset.tab === "rankings") openRankingsTab();
+    else if (btn.dataset.tab === "compare")  openCompareTab();
     else switchTab(btn.dataset.tab);
   })
 );
@@ -201,9 +206,10 @@ function showSwimmer(id, push = true) {
       '<div class="detail-stats" id="detail-stats"></div>' +
     "</div>" +
     (scm.length || lcm.length || other.length
-      ? pbSection(scm, "SCM", "badge-scm") +
-        pbSection(lcm, "LCM", "badge-lcm") +
-        (other.length ? pbSection(other, other[0].course, "badge-other") : "")
+      ? pbSection(scm, "SCM", "badge-scm", ath) +
+        pbSection(lcm, "LCM", "badge-lcm", ath) +
+        (other.length ? pbSection(other, other[0].course, "badge-other", ath) : "") +
+        '<p class="rank-note">Club ranking is based on personal bests currently held in the data set — not historical club records.</p>'
       : '<p class="no-pbs">No personal best times recorded yet.</p>') +
     '<div id="progression-section" class="progression-wrap">' +
       '<div class="progression-header">' +
@@ -227,27 +233,51 @@ function showSwimmer(id, push = true) {
   loadProgressionSection(ath);
 }
 
-function pbSection(pbs, label, badgeClass) {
+function pbSection(pbs, label, badgeClass, ath) {
   if (!pbs.length) return "";
+  const showRank = !!ath && Object.keys(rankings).length > 0;
   const rows = pbs
     .slice()
     .sort((a, b) => a.event.localeCompare(b.event))
-    .map(p =>
-      '<tr data-event="' + esc(p.event) + '" data-course="' + esc(p.course) + '">' +
-        "<td>" + esc(p.event) + "</td>" +
-        '<td class="pb-time">' + esc(p.time) + "</td>" +
-        "<td>" + esc(formatDate(p.date)) + "</td>" +
-        "<td>" + esc(p.meet) + "</td>" +
-        '<td class="pb-improvement" data-col="overall">—</td>' +
-        '<td class="pb-improvement" data-col="latest">—</td>' +
-      "</tr>"
-    ).join("");
+    .map(p => {
+      let rankCell = "";
+      if (showRank) {
+        const clubR  = getRank(ath.id, p.event, p.course, ath.gender);
+        const squadR = getSquadRank(ath.id, ath.group, p.event, p.course, ath.gender);
+        const ageR   = getAgeGroupRankForAthlete(ath, p.event, p.course);
+        if (clubR) {
+          const sub = [
+            squadR && squadR.total >= 2 ? ordinal(squadR.rank) + " squad" : null,
+            ageR   && ageR.total >= 2   ? ordinal(ageR.rank)   + " age grp" : null,
+          ].filter(Boolean).join(" · ");
+          rankCell =
+            '<td>' +
+              '<div class="rank-primary">' + clubR.rank + " / " + clubR.total + "</div>" +
+              (sub ? '<div class="rank-sub">' + esc(sub) + "</div>" : "") +
+            "</td>";
+        } else {
+          rankCell = '<td style="color:var(--text-muted)">—</td>';
+        }
+      }
+      return (
+        '<tr data-event="' + esc(p.event) + '" data-course="' + esc(p.course) + '">' +
+          "<td>" + esc(p.event) + "</td>" +
+          '<td class="pb-time">' + esc(p.time) + "</td>" +
+          (showRank ? rankCell : "") +
+          "<td>" + esc(formatDate(p.date)) + "</td>" +
+          "<td>" + esc(p.meet) + "</td>" +
+          '<td class="pb-improvement" data-col="overall">—</td>' +
+          '<td class="pb-improvement" data-col="latest">—</td>' +
+        "</tr>"
+      );
+    }).join("");
+  const rankTh = showRank ? "<th>Club Rank</th>" : "";
   return (
     '<details class="course-section" open>' +
       '<summary class="course-label ' + badgeClass + '">' + label + "</summary>" +
       '<div style="overflow-x:auto">' +
       '<table class="pb-table">' +
-        "<thead><tr><th>Event</th><th>Time</th><th>Date</th><th>Meet</th><th>Overall ↓</th><th>Latest ↓</th></tr></thead>" +
+        "<thead><tr><th>Event</th><th>Time</th>" + rankTh + "<th>Date</th><th>Meet</th><th>Overall ↓</th><th>Latest ↓</th></tr></thead>" +
         "<tbody>" + rows + "</tbody>" +
       "</table>" +
       "</div>" +
@@ -1006,6 +1036,169 @@ function renderStats() {
     }).join("");
 }
 
+// ── Rankings ──────────────────────────────────────────────────────────────────
+
+function buildRankings() {
+  rankings = {};
+  athletes.forEach(ath => {
+    (ath.pbs || []).forEach(pb => {
+      const secs = timeToSeconds(pb.time);
+      if (secs === null) return;
+      if (!rankings[pb.event])                        rankings[pb.event]                        = {};
+      if (!rankings[pb.event][pb.course])             rankings[pb.event][pb.course]             = {};
+      if (!rankings[pb.event][pb.course][ath.gender]) rankings[pb.event][pb.course][ath.gender] = [];
+      rankings[pb.event][pb.course][ath.gender].push({ ath, secs, time: pb.time });
+    });
+  });
+  Object.values(rankings).forEach(byCourse =>
+    Object.values(byCourse).forEach(byGender =>
+      Object.values(byGender).forEach(list => list.sort((a, b) => a.secs - b.secs))
+    )
+  );
+}
+
+function getRank(athleteId, event, course, gender) {
+  const list = rankings[event]?.[course]?.[gender];
+  if (!list) return null;
+  const idx = list.findIndex(e => e.ath.id === athleteId);
+  return idx === -1 ? null : { rank: idx + 1, total: list.length };
+}
+
+function getSquadRank(athleteId, squad, event, course, gender) {
+  const list = rankings[event]?.[course]?.[gender];
+  if (!list) return null;
+  const sub = list.filter(e => e.ath.group === squad);
+  const idx = sub.findIndex(e => e.ath.id === athleteId);
+  return idx === -1 ? null : { rank: idx + 1, total: sub.length };
+}
+
+function getAgeGroupRankForAthlete(ath, event, course) {
+  const list = rankings[event]?.[course]?.[ath.gender];
+  if (!list) return null;
+  const age   = parseInt(ath.age);
+  const group = AGE_GROUPS.find(g => age >= g.min && age <= g.max);
+  if (!group) return null;
+  const sub = list.filter(e => { const a = parseInt(e.ath.age); return a >= group.min && a <= group.max; });
+  const idx = sub.findIndex(e => e.ath.id === ath.id);
+  return idx === -1 ? null : { rank: idx + 1, total: sub.length };
+}
+
+function ordinal(n) {
+  const s = ["th", "st", "nd", "rd"];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
+function openRankingsTab() {
+  switchTab("rankings");
+  renderRankings();
+}
+
+function selectRankingsCourse(c) { rankingsCourse = c; renderRankings(); }
+function selectRankingsGender(g) { rankingsGender = g; renderRankings(); }
+
+function renderRankings() {
+  const pool = rankingsGender ? athletes.filter(a => a.gender === rankingsGender) : athletes;
+
+  const courseEl = document.getElementById("rankings-course-filter");
+  if (courseEl) {
+    courseEl.innerHTML = ["SCM", "LCM"].map(c => {
+      const badge = courseBadge(c).cls;
+      return '<button class="course-label ' + badge + ' chart-toggle' + (rankingsCourse === c ? "" : " inactive") + '" onclick="selectRankingsCourse(\'' + c + '\')">' + c + "</button>";
+    }).join("");
+  }
+
+  const genderEl = document.getElementById("rankings-gender-filter");
+  if (genderEl) {
+    genderEl.innerHTML = [["", "All"], ["M", "Male"], ["F", "Female"]].map(([val, label]) =>
+      '<button class="course-label badge-neutral chart-toggle' + (rankingsGender === val ? "" : " inactive") + '" onclick="selectRankingsGender(\'' + val + '\')">' + label + "</button>"
+    ).join("");
+  }
+
+  const dateEl = document.getElementById("rankings-date-range");
+  if (dateEl) {
+    const dates = pool.flatMap(a =>
+      (a.pbs || []).filter(pb => pb.course === rankingsCourse && pb.date).map(pb => pb.date)
+    ).sort();
+    if (dates.length) {
+      const first = formatDate(dates[0]);
+      const last  = formatDate(dates[dates.length - 1]);
+      dateEl.textContent = "Personal bests: " + (first === last ? first : first + " – " + last);
+    } else {
+      dateEl.textContent = "";
+    }
+  }
+
+  // Build event map for current pool + course
+  const eventMap = {};
+  pool.forEach(ath => {
+    (ath.pbs || []).forEach(pb => {
+      if (pb.course !== rankingsCourse) return;
+      const secs = timeToSeconds(pb.time);
+      if (secs === null) return;
+      if (!eventMap[pb.event]) eventMap[pb.event] = [];
+      eventMap[pb.event].push({ secs, time: pb.time, ath });
+    });
+  });
+  Object.keys(eventMap).forEach(event => {
+    eventMap[event].sort((a, b) => a.secs - b.secs);
+    if (eventMap[event].length < 3) delete eventMap[event];
+  });
+
+  const byStroke = {};
+  Object.keys(eventMap).forEach(event => {
+    const stroke = event.replace(/^\d+\s+/, "");
+    (byStroke[stroke] = byStroke[stroke] || []).push(event);
+  });
+  Object.keys(byStroke).forEach(s => byStroke[s].sort((a, b) => parseInt(a) - parseInt(b)));
+  const orderedStrokes = [
+    ...STROKE_ORDER.filter(s => byStroke[s]),
+    ...Object.keys(byStroke).filter(s => !STROKE_ORDER.includes(s)),
+  ];
+
+  const eventsEl = document.getElementById("rankings-events");
+  if (!eventsEl) return;
+
+  if (!orderedStrokes.length) {
+    eventsEl.innerHTML = '<p class="no-pbs">No events with 3 or more recorded times for ' + rankingsCourse + (rankingsGender ? " · " + genderLabel(rankingsGender) : "") + ".</p>";
+    return;
+  }
+
+  eventsEl.innerHTML = orderedStrokes.map(stroke => {
+    const badge = STROKE_BADGES[stroke] || "badge-neutral";
+    const rows = byStroke[stroke].map(event => {
+      const top = eventMap[event].slice(0, 3);
+      const podiumCells = [0, 1, 2].map(i => {
+        const e = top[i];
+        if (!e) return '<td class="rank-podium-cell rank-empty">—</td>';
+        const cls = ["rank-gold", "rank-silver", "rank-bronze"][i];
+        return (
+          '<td class="rank-podium-cell ' + cls + '">' +
+            '<div class="pb-time">' + esc(e.time) + "</div>" +
+            '<button class="link-btn" onclick="goToSwimmer(' + e.ath.id + ')">' +
+              esc(e.ath.first[0] + ". " + e.ath.last) +
+            "</button>" +
+            '<div class="rank-squad-badge">' + esc(squadLabel(e.ath.group).replace(" Squad", "")) + "</div>" +
+          "</td>"
+        );
+      }).join("");
+      return "<tr><td>" + esc(event) + "</td>" + podiumCells + "</tr>";
+    }).join("");
+
+    return (
+      '<details class="course-section" open>' +
+        '<summary class="course-label ' + badge + '">' + stroke + "</summary>" +
+        '<div style="overflow-x:auto">' +
+        '<table class="pb-table rankings-table">' +
+          "<thead><tr><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead>" +
+          "<tbody>" + rows + "</tbody>" +
+        "</table>" +
+        "</div>" +
+      "</details>"
+    );
+  }).join("");
+}
+
 // ── Routing ───────────────────────────────────────────────────────────────────
 
 function navigate(hash) {
@@ -1024,6 +1217,8 @@ function navigate(hash) {
     showMeetsList(false);
   } else if (h === "stats") {
     switchTab("stats", false);
+  } else if (h === "rankings") {
+    openRankingsTab();
   } else if (h === "compare") {
     if (isCoachMode()) openCompareTab();
     else switchTab("home", false);

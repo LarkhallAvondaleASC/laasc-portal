@@ -931,6 +931,43 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 
 .compare-no-data { color: var(--text-muted); font-style: italic; text-align: center; padding: 2rem; }
 
+/* ── In-profile rank column ───────────────────────────────────────────────── */
+.rank-primary {
+  font-weight: 700;
+  font-family: ui-monospace, monospace;
+  color: var(--navy);
+  font-size: .85rem;
+}
+.rank-sub {
+  font-size: .68rem;
+  color: var(--text-muted);
+  margin-top: .1rem;
+  white-space: nowrap;
+}
+.rank-note {
+  font-size: .75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: .35rem 0 1rem;
+}
+
+/* ── Rankings tab podium table ────────────────────────────────────────────── */
+.rankings-table td { vertical-align: top; min-width: 120px; }
+
+.rank-podium-cell { border-left: 3px solid transparent; }
+.rank-gold   { border-left-color: #ca8a04; background: #fefce8 !important; }
+.rank-silver { border-left-color: #94a3b8; background: #f8fafc !important; }
+.rank-bronze { border-left-color: #c2410c; background: #fff7ed !important; }
+.rank-empty  { color: var(--text-muted); }
+
+.rank-squad-badge {
+  font-size: .68rem;
+  color: var(--text-muted);
+  margin-top: .15rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
 /* ── Footer ───────────────────────────────────────────────────────────────── */
 footer {
   text-align: center;
@@ -994,12 +1031,13 @@ footer {
   #meets-list,
   #upcoming-meets-list { grid-template-columns: 1fr; }
 
-  /* PB table in swimmer detail: hide Meet + improvement columns, keep Event/Time/Date */
+  /* PB table in swimmer detail: hide Date/Meet/improvement columns, keep Event/Time/Rank */
   .pb-table   { font-size: .8rem; }
   .pb-table th,
   .pb-table td { padding: .4rem .5rem; }
   #swimmer-detail .pb-table th:nth-child(n+4),
   #swimmer-detail .pb-table td:nth-child(n+4) { display: none; }
+  .rank-sub { display: none; }
 
   /* Compare tab */
   .compare-slots { grid-template-columns: 1fr; }
