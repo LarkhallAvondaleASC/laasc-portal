@@ -1009,6 +1009,47 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   letter-spacing: .04em;
 }
 
+/* ── Rankings top 10 by squad ─────────────────────────────────────────────── */
+.top10-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.top10-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.top10-squad-title {
+  margin: 0 0 .6rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.top10-table td { vertical-align: middle; }
+
+.top10-pos {
+  font-weight: 700;
+  width: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+.top10-gold   { color: #ca8a04; }
+.top10-silver { color: #94a3b8; }
+.top10-bronze { color: #c2410c; }
+
+.top10-avg, .top10-events {
+  text-align: right;
+  color: var(--text-muted);
+  font-size: .85rem;
+  white-space: nowrap;
+}
+
 /* ── Footer ───────────────────────────────────────────────────────────────── */
 footer {
   text-align: center;

@@ -1170,6 +1170,8 @@ function renderRankings() {
   const eventsEl = document.getElementById("rankings-events");
   if (!eventsEl) return;
 
+  renderRankingsTop10();
+
   if (!orderedStrokes.length) {
     eventsEl.innerHTML = '<p class="no-pbs">No events with 3 or more recorded times for ' + rankingsCourse + (rankingsGender ? " · " + genderLabel(rankingsGender) : "") + ".</p>";
     return;
@@ -1208,6 +1210,80 @@ function renderRankings() {
       "</details>"
     );
   }).join("");
+}
+
+function renderRankingsTop10() {
+  const el = document.getElementById("rankings-top10");
+  if (!el) return;
+
+  const pool = rankingsGender ? athletes.filter(a => a.gender === rankingsGender) : athletes;
+
+  // Build per-event sorted lists (same logic as renderRankings)
+  const eventMap = {};
+  pool.forEach(ath => {
+    (ath.pbs || []).forEach(pb => {
+      if (pb.course !== rankingsCourse) return;
+      const secs = timeToSeconds(pb.time);
+      if (secs === null) return;
+      if (!eventMap[pb.event]) eventMap[pb.event] = [];
+      eventMap[pb.event].push({ secs, ath });
+    });
+  });
+  Object.keys(eventMap).forEach(event => {
+    eventMap[event].sort((a, b) => a.secs - b.secs);
+  });
+
+  // For each athlete, collect their rank position in every event they appear in
+  const athleteRanks = {};
+  Object.keys(eventMap).forEach(event => {
+    eventMap[event].forEach((entry, i) => {
+      const id = entry.ath.id;
+      if (!athleteRanks[id]) athleteRanks[id] = { ath: entry.ath, positions: [] };
+      athleteRanks[id].positions.push(i + 1);
+    });
+  });
+
+  // Filter to swimmers with at least 3 ranked events, compute average position
+  const ranked = Object.values(athleteRanks)
+    .filter(r => r.positions.length >= 3)
+    .map(r => ({
+      ath: r.ath,
+      avgPos: r.positions.reduce((s, p) => s + p, 0) / r.positions.length,
+      eventCount: r.positions.length,
+    }))
+    .sort((a, b) => a.avgPos - b.avgPos);
+
+  const squads = SQUAD_ORDER.filter(g => ranked.some(r => r.ath.group === g));
+
+  if (!squads.length) {
+    el.innerHTML = "";
+    return;
+  }
+
+  el.innerHTML =
+    '<h3 class="progression-title" style="margin:1.5rem 0 .75rem">Top 10 by Squad</h3>' +
+    '<p class="stats-note" style="margin-top:-.4rem">Ranked by average club position across all events with a personal best. Minimum 3 events required.</p>' +
+    '<div class="top10-grid">' +
+    squads.map(squad => {
+      const top = ranked.filter(r => r.ath.group === squad).slice(0, 10);
+      const rows = top.map((r, i) => {
+        const medal = i === 0 ? " top10-gold" : i === 1 ? " top10-silver" : i === 2 ? " top10-bronze" : "";
+        return "<tr>" +
+          '<td class="top10-pos' + medal + '">' + (i + 1) + "</td>" +
+          '<td><button class="link-btn" onclick="goToSwimmer(' + r.ath.id + ')">' + esc(r.ath.first + " " + r.ath.last) + "</button></td>" +
+          '<td class="top10-avg">' + r.avgPos.toFixed(1) + "</td>" +
+          '<td class="top10-events">' + r.eventCount + "</td>" +
+        "</tr>";
+      }).join("");
+      return '<div class="top10-card">' +
+        '<h4 class="top10-squad-title">' + esc(squadLabel(squad)) + "</h4>" +
+        '<table class="pb-table top10-table">' +
+          "<thead><tr><th>#</th><th>Swimmer</th><th>Avg pos</th><th>Events</th></tr></thead>" +
+          "<tbody>" + rows + "</tbody>" +
+        "</table>" +
+      "</div>";
+    }).join("") +
+    "</div>";
 }
 
 // ── Routing ───────────────────────────────────────────────────────────────────
