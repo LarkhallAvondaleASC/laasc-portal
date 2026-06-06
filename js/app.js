@@ -207,6 +207,7 @@ function showSwimmer(id, push = true) {
         '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
         '<div class="detail-meta">' + esc(meta) + "</div>" +
         '<div id="detail-dates" class="detail-dates"></div>' +
+        '<div id="season-strip" class="season-strip"></div>' +
       "</div>" +
     "</div>" +
     '<div class="detail-stats-card"><div class="detail-stats" id="detail-stats"></div></div>' +
@@ -590,6 +591,50 @@ async function loadProgressionSection(ath) {
     datesEl.textContent = first === last
       ? "Competed: " + first
       : "Competed: " + first + " – " + last;
+  }
+
+  const seasonStripEl = document.getElementById("season-strip");
+  if (seasonStripEl && validRaces.length) {
+    const now = new Date();
+    const yr = now.getFullYear(), mo = now.getMonth() + 1;
+    const seasonStart = mo >= 9
+      ? yr + "-09-01"
+      : (yr - 1) + "-09-01";
+    const seasonEnd = mo >= 9
+      ? (yr + 1) + "-06-30"
+      : yr + "-06-30";
+    const seasonLabel = mo >= 9
+      ? yr + "/" + String(yr + 1).slice(2)
+      : (yr - 1) + "/" + String(yr).slice(2);
+
+    const seasonRaces = validRaces.filter(r => r.date >= seasonStart && r.date <= seasonEnd);
+    const seasonMeetCount = new Set(seasonRaces.map(r => r.meet_id)).size;
+
+    // Count PB swims within the season by building chronological PB history per event+course
+    let seasonPBs = 0;
+    const ecMap = {};
+    validRaces.forEach(r => {
+      const k = r.event + "||" + r.course;
+      (ecMap[k] = ecMap[k] || []).push(r);
+    });
+    Object.values(ecMap).forEach(races => {
+      let best = Infinity;
+      races.slice().sort((a, b) => a.date.localeCompare(b.date)).forEach(r => {
+        const t = timeToSeconds(r.time);
+        if (t !== null && t < best) {
+          best = t;
+          if (r.date >= seasonStart && r.date <= seasonEnd) seasonPBs++;
+        }
+      });
+    });
+
+    const chip = (val, lbl) =>
+      '<span class="season-chip"><strong>' + val + "</strong> " + lbl + "</span>";
+    seasonStripEl.innerHTML =
+      '<span class="season-year">' + seasonLabel + "</span>" +
+      chip(seasonRaces.length, seasonRaces.length === 1 ? "swim" : "swims") +
+      chip(seasonMeetCount, seasonMeetCount === 1 ? "meet" : "meets") +
+      (seasonPBs ? chip(seasonPBs, seasonPBs === 1 ? "PB" : "PBs") : "");
   }
 
   const meetMap = {};
