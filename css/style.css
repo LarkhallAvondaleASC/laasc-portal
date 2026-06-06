@@ -311,7 +311,7 @@ main {
 .detail-dates {
   font-size: .8rem;
   color: var(--text-muted);
-  margin-top: .15rem;
+  margin-bottom: .75rem;
 }
 .season-strip {
   display: flex;
