@@ -265,6 +265,18 @@ def fetch_meet_results(session, meet_id):
     return results
 
 
+def _parse_time(t):
+    if not t:
+        return None
+    m = re.match(r'^(?:(\d+):)?(\d+)\.(\d+)$', str(t).strip())
+    if not m:
+        return None
+    mins = int(m.group(1) or 0)
+    secs = int(m.group(2))
+    frac = m.group(3)
+    return mins * 60 + secs + int(frac) / (10 ** len(frac))
+
+
 def build_athlete_histories(athletes, meets, meet_results_dir):
     name_to_id = {(a["first"].lower(), a["last"].lower()): a["id"] for a in athletes}
     histories = {}
@@ -306,8 +318,9 @@ def build_athlete_histories(athletes, meets, meet_results_dir):
 
     ath_results_dir = meet_results_dir.parent / "athlete_results"
     ath_results_dir.mkdir(exist_ok=True)
-    badges_by_id = {}
+    badges_by_id      = {}
     season_swims_by_id = {}
+    improvement_by_id  = {}
     for ath_id, races in histories.items():
         races.sort(key=lambda r: r.get("date") or "")
         (ath_results_dir / f"{ath_id}.json").write_text(
@@ -323,11 +336,48 @@ def build_athlete_histories(athletes, meets, meet_results_dir):
             badges.append("national")
         if badges:
             badges_by_id[ath_id] = badges
+
         swims = sum(1 for r in races if season_start <= (r.get("date") or "") <= season_end)
         if swims:
             season_swims_by_id[ath_id] = swims
+
+        # Season improvement: compare pre-season best vs season best per event+course
+        buckets = {}
+        for r in races:
+            d = r.get("date") or ""
+            t = _parse_time(r.get("time"))
+            if t is None or not d:
+                continue
+            key = (r["event"], r["course"])
+            if key not in buckets:
+                buckets[key] = {"pre": [], "season": []}
+            if d < season_start:
+                buckets[key]["pre"].append(t)
+            elif d <= season_end:
+                buckets[key]["season"].append(t)
+
+        improvements = []
+        for (event, course), b in buckets.items():
+            if not b["pre"] or not b["season"]:
+                continue
+            pre_best    = min(b["pre"])
+            season_best = min(b["season"])
+            if season_best >= pre_best:
+                continue
+            pct = (pre_best - season_best) / pre_best * 100
+            improvements.append({"event": event, "course": course, "pct": round(pct, 2)})
+
+        if len(improvements) >= 3:
+            avg  = sum(i["pct"] for i in improvements) / len(improvements)
+            best = max(improvements, key=lambda i: i["pct"])
+            improvement_by_id[ath_id] = {
+                "avg":    round(avg, 2),
+                "events": len(improvements),
+                "best":   {"event": best["event"], "course": best["course"], "pct": best["pct"]},
+            }
+
     print(f"  Built history files for {len(histories)} athletes")
-    return badges_by_id, season_swims_by_id
+    return badges_by_id, season_swims_by_id, improvement_by_id
 
 
 def main():
@@ -367,10 +417,11 @@ def main():
     )
 
     print("Building per-athlete race histories…")
-    badges_by_id, season_swims_by_id = build_athlete_histories(athletes, meets, meet_results_dir)
+    badges_by_id, season_swims_by_id, improvement_by_id = build_athlete_histories(athletes, meets, meet_results_dir)
     for ath in athletes:
         ath["badges"]       = badges_by_id.get(ath["id"], [])
         ath["season_swims"] = season_swims_by_id.get(ath["id"], 0)
+        ath["improvement"]  = improvement_by_id.get(ath["id"])
     (DATA_DIR / "athletes.json").write_text(
         json.dumps(athletes, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -383,10 +434,11 @@ if __name__ == "__main__":
         athletes = json.loads((DATA_DIR / "athletes.json").read_text(encoding="utf-8"))
         meets    = json.loads((DATA_DIR / "meets.json").read_text(encoding="utf-8"))
         print("Building athlete history files from existing data…")
-        badges_by_id, season_swims_by_id = build_athlete_histories(athletes, meets, DATA_DIR / "meet_results")
+        badges_by_id, season_swims_by_id, improvement_by_id = build_athlete_histories(athletes, meets, DATA_DIR / "meet_results")
         for ath in athletes:
             ath["badges"]       = badges_by_id.get(ath["id"], [])
             ath["season_swims"] = season_swims_by_id.get(ath["id"], 0)
+            ath["improvement"]  = improvement_by_id.get(ath["id"])
         (DATA_DIR / "athletes.json").write_text(
             json.dumps(athletes, indent=2, ensure_ascii=False), encoding="utf-8"
         )

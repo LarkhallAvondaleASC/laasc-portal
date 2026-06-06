@@ -1143,6 +1143,15 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   font-size: .85rem;
   white-space: nowrap;
 }
+.most-improved-best {
+  font-size: .8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.most-improved-best span {
+  font-weight: 600;
+  color: #166534;
+}
 
 /* ── Footer ───────────────────────────────────────────────────────────────── */
 footer {

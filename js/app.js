@@ -1258,6 +1258,7 @@ function renderRankings() {
   if (!eventsEl) return;
 
   renderRankingsTop10();
+  renderMostImproved();
 
   if (!orderedStrokes.length) {
     eventsEl.innerHTML = '<p class="no-pbs">No events with 3 or more recorded times for ' + rankingsCourse + (rankingsGender ? " · " + genderLabel(rankingsGender) : "") + ".</p>";
@@ -1371,6 +1372,66 @@ function renderRankingsTop10() {
       "</div>";
     }).join("") +
     "</div>";
+}
+
+function renderMostImproved() {
+  const el = document.getElementById("rankings-most-improved");
+  if (!el) return;
+
+  const pool = rankingsGender ? athletes.filter(a => a.gender === rankingsGender) : athletes;
+  const qualified = pool
+    .filter(a => a.improvement)
+    .map(a => ({ ath: a, imp: a.improvement }))
+    .sort((a, b) => b.imp.avg - a.imp.avg);
+
+  if (!qualified.length) { el.innerHTML = ""; return; }
+
+  const row = (r, i) => {
+    const medal = i === 0 ? " top10-gold" : i === 1 ? " top10-silver" : i === 2 ? " top10-bronze" : "";
+    return "<tr>" +
+      '<td class="top10-pos' + medal + '">' + (i + 1) + "</td>" +
+      '<td><button class="link-btn" onclick="goToSwimmer(' + r.ath.id + ')">' + esc(r.ath.first + " " + r.ath.last) + "</button></td>" +
+      '<td>' + r.imp.events + "</td>" +
+      '<td class="top10-avg">' + r.imp.avg.toFixed(1) + "%</td>" +
+      '<td class="most-improved-best">' + esc(r.imp.best.event) + " <span>" + r.imp.best.pct.toFixed(1) + "%</span></td>" +
+    "</tr>";
+  };
+
+  const overallRows = qualified.slice(0, 10).map((r, i) => {
+    const medal = i === 0 ? " top10-gold" : i === 1 ? " top10-silver" : i === 2 ? " top10-bronze" : "";
+    return "<tr>" +
+      '<td class="top10-pos' + medal + '">' + (i + 1) + "</td>" +
+      '<td><button class="link-btn" onclick="goToSwimmer(' + r.ath.id + ')">' + esc(r.ath.first + " " + r.ath.last) + "</button></td>" +
+      '<td><span class="rank-squad-badge">' + esc(squadLabel(r.ath.group).replace(" Squad", "")) + "</span></td>" +
+      '<td>' + r.imp.events + "</td>" +
+      '<td class="top10-avg">' + r.imp.avg.toFixed(1) + "%</td>" +
+      '<td class="most-improved-best">' + esc(r.imp.best.event) + " <span>" + r.imp.best.pct.toFixed(1) + "%</span></td>" +
+    "</tr>";
+  }).join("");
+
+  const squads = SQUAD_ORDER.filter(g => qualified.some(r => r.ath.group === g));
+  const squadCards = squads.map(squad => {
+    const top = qualified.filter(r => r.ath.group === squad).slice(0, 5);
+    return '<div class="top10-card">' +
+      '<h4 class="top10-squad-title">' + esc(squadLabel(squad)) + "</h4>" +
+      '<table class="pb-table top10-table">' +
+        "<thead><tr><th>#</th><th>Swimmer</th><th>Events</th><th>Avg %</th><th>Best event</th></tr></thead>" +
+        "<tbody>" + top.map((r, i) => row(r, i)).join("") + "</tbody>" +
+      "</table>" +
+    "</div>";
+  }).join("");
+
+  el.innerHTML =
+    '<h3 class="progression-title" style="margin:1.5rem 0 .75rem">Most Improved This Season</h3>' +
+    '<p class="stats-note" style="margin-top:-.4rem">Average % improvement comparing pre-season best to season best per event. Minimum 3 qualifying events required.</p>' +
+    '<h4 class="top10-squad-title" style="margin:.75rem 0 .4rem">Overall</h4>' +
+    '<div style="overflow-x:auto">' +
+    '<table class="pb-table top10-table" style="max-width:640px">' +
+      "<thead><tr><th>#</th><th>Swimmer</th><th>Squad</th><th>Events</th><th>Avg %</th><th>Best event</th></tr></thead>" +
+      "<tbody>" + overallRows + "</tbody>" +
+    "</table></div>" +
+    '<h4 class="top10-squad-title" style="margin:1.25rem 0 .4rem">By Squad</h4>' +
+    '<div class="top10-grid">' + squadCards + "</div>";
 }
 
 // ── Routing ───────────────────────────────────────────────────────────────────
