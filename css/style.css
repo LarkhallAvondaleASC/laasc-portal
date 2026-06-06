@@ -313,6 +313,17 @@ main {
   color: var(--text-muted);
   margin-bottom: .75rem;
 }
+.swimmer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-top: .3rem;
+}
+.swimmer-badges .achievement-badge {
+  font-size: .65rem;
+  padding: .1rem .45rem;
+}
+
 .achievement-badges {
   display: flex;
   flex-wrap: wrap;

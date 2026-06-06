@@ -162,15 +162,20 @@ function renderSwimmers() {
     container.innerHTML = '<p class="no-pbs">No swimmers match your search.</p>';
     return;
   }
+  const badgeLabel = { regional: "Regional", district: "West District", national: "National" };
   container.innerHTML = list.map(a => {
     const meta = [squadLabel(a.group), a.subgroup, genderLabel(a.gender)].filter(Boolean).join(" · ");
     const thumb = swimmerThumbHtml(a, "swimmer-thumb");
+    const badgesHtml = (a.badges || [])
+      .map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>")
+      .join("");
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
         thumb +
         "<div>" +
           '<div class="swimmer-name">' + esc(a.first + " " + a.last) + "</div>" +
           '<div class="swimmer-meta">' + esc(meta) + "</div>" +
+          (badgesHtml ? '<div class="swimmer-badges">' + badgesHtml + "</div>" : "") +
         "</div>" +
         '<span class="swimmer-arrow" aria-hidden="true">&#8250;</span>' +
       "</button>"
