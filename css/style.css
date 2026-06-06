@@ -1116,6 +1116,8 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .top10-squad-title {

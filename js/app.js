@@ -1412,11 +1412,20 @@ function renderMostImproved() {
   const squads = SQUAD_ORDER.filter(g => qualified.some(r => r.ath.group === g));
   const squadCards = squads.map(squad => {
     const top = qualified.filter(r => r.ath.group === squad).slice(0, 5);
+    const squadRows = top.map((r, i) => {
+      const medal = i === 0 ? " top10-gold" : i === 1 ? " top10-silver" : i === 2 ? " top10-bronze" : "";
+      return "<tr>" +
+        '<td class="top10-pos' + medal + '">' + (i + 1) + "</td>" +
+        '<td><button class="link-btn" onclick="goToSwimmer(' + r.ath.id + ')">' + esc(r.ath.first + " " + r.ath.last) + "</button></td>" +
+        '<td class="top10-avg">' + r.imp.events + "</td>" +
+        '<td class="top10-avg">' + r.imp.avg.toFixed(1) + "%</td>" +
+      "</tr>";
+    }).join("");
     return '<div class="top10-card">' +
       '<h4 class="top10-squad-title">' + esc(squadLabel(squad)) + "</h4>" +
       '<table class="pb-table top10-table">' +
-        "<thead><tr><th>#</th><th>Swimmer</th><th>Events</th><th>Avg %</th><th>Best event</th></tr></thead>" +
-        "<tbody>" + top.map((r, i) => row(r, i)).join("") + "</tbody>" +
+        "<thead><tr><th>#</th><th>Swimmer</th><th>Events</th><th>Avg %</th></tr></thead>" +
+        "<tbody>" + squadRows + "</tbody>" +
       "</table>" +
     "</div>";
   }).join("");
