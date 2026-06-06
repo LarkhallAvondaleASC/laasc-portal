@@ -696,10 +696,16 @@ async function loadProgressionSection(ath) {
       "</div>";
 
     statsEl.innerHTML =
-      group("SCM", scmCompStats) +
-      (hasLCM ? group("LCM", lcmCompStats) : "") +
-      group("SCM Events", scmEventStats) +
-      (hasLCM ? group("LCM Events", lcmEventStats) : "");
+      '<div class="stats-course">' +
+        group("SCM", scmCompStats) +
+        group("Events", scmEventStats) +
+      "</div>" +
+      (hasLCM
+        ? '<div class="stats-course">' +
+            group("LCM", lcmCompStats) +
+            group("Events", lcmEventStats) +
+          "</div>"
+        : "");
   }
 
   // Patch PB table with improvement columns

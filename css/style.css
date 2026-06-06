@@ -350,8 +350,22 @@ main {
 
 .detail-stats {
   display: flex;
-  flex-wrap: wrap;
-  gap: .75rem;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.stats-course {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding: 0 1.5rem 0 0;
+  margin-right: 1.5rem;
+}
+
+.stats-course + .stats-course {
+  border-left: 1px solid var(--border);
+  padding-left: 1.5rem;
+  margin-right: 0;
 }
 
 .stats-group {
@@ -374,8 +388,8 @@ main {
   gap: .4rem;
 }
 
-.stats-group:first-child .stat-item { background: #e0f2fe; }
-.stats-group:last-child  .stat-item { background: #dcfce7; }
+.stats-course .stats-group:first-child .stat-item { background: #e0f2fe; }
+.stats-course .stats-group:last-child  .stat-item { background: #dcfce7; }
 
 .stat-item {
   display: flex;
