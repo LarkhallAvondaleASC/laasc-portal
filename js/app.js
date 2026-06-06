@@ -683,7 +683,7 @@ async function loadProgressionSection(ath) {
         '<div class="stats-items">' + renderItems(competitionStats) + "</div>" +
       "</div>" +
       '<div class="stats-group">' +
-        '<span class="stats-group-label">Strokes</span>' +
+        '<span class="stats-group-label">Events</span>' +
         '<div class="stats-items">' + renderItems(strokeStats) + "</div>" +
       "</div>";
   }
