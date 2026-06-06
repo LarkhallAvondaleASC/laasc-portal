@@ -295,9 +295,19 @@ def build_athlete_histories(athletes, meets, meet_results_dir):
                 "place":   row.get("place", ""),
             })
 
+    from datetime import date as _date
+    today = _date.today()
+    if today.month >= 9:
+        season_start = f"{today.year}-09-01"
+        season_end   = f"{today.year + 1}-06-30"
+    else:
+        season_start = f"{today.year - 1}-09-01"
+        season_end   = f"{today.year}-06-30"
+
     ath_results_dir = meet_results_dir.parent / "athlete_results"
     ath_results_dir.mkdir(exist_ok=True)
     badges_by_id = {}
+    season_swims_by_id = {}
     for ath_id, races in histories.items():
         races.sort(key=lambda r: r.get("date") or "")
         (ath_results_dir / f"{ath_id}.json").write_text(
@@ -313,8 +323,11 @@ def build_athlete_histories(athletes, meets, meet_results_dir):
             badges.append("national")
         if badges:
             badges_by_id[ath_id] = badges
+        swims = sum(1 for r in races if season_start <= (r.get("date") or "") <= season_end)
+        if swims:
+            season_swims_by_id[ath_id] = swims
     print(f"  Built history files for {len(histories)} athletes")
-    return badges_by_id
+    return badges_by_id, season_swims_by_id
 
 
 def main():
@@ -354,9 +367,10 @@ def main():
     )
 
     print("Building per-athlete race histories…")
-    badges_by_id = build_athlete_histories(athletes, meets, meet_results_dir)
+    badges_by_id, season_swims_by_id = build_athlete_histories(athletes, meets, meet_results_dir)
     for ath in athletes:
-        ath["badges"] = badges_by_id.get(ath["id"], [])
+        ath["badges"]       = badges_by_id.get(ath["id"], [])
+        ath["season_swims"] = season_swims_by_id.get(ath["id"], 0)
     (DATA_DIR / "athletes.json").write_text(
         json.dumps(athletes, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -369,9 +383,10 @@ if __name__ == "__main__":
         athletes = json.loads((DATA_DIR / "athletes.json").read_text(encoding="utf-8"))
         meets    = json.loads((DATA_DIR / "meets.json").read_text(encoding="utf-8"))
         print("Building athlete history files from existing data…")
-        badges_by_id = build_athlete_histories(athletes, meets, DATA_DIR / "meet_results")
+        badges_by_id, season_swims_by_id = build_athlete_histories(athletes, meets, DATA_DIR / "meet_results")
         for ath in athletes:
-            ath["badges"] = badges_by_id.get(ath["id"], [])
+            ath["badges"]       = badges_by_id.get(ath["id"], [])
+            ath["season_swims"] = season_swims_by_id.get(ath["id"], 0)
         (DATA_DIR / "athletes.json").write_text(
             json.dumps(athletes, indent=2, ensure_ascii=False), encoding="utf-8"
         )

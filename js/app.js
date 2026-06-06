@@ -164,18 +164,20 @@ function renderSwimmers() {
   }
   const badgeLabel = { regional: "Regional", district: "West District", national: "National" };
   container.innerHTML = list.map(a => {
-    const meta = [squadLabel(a.group), a.subgroup, genderLabel(a.gender)].filter(Boolean).join(" · ");
+    const meta = [squadLabel(a.group), genderLabel(a.gender)].filter(Boolean).join(" · ");
     const thumb = swimmerThumbHtml(a, "swimmer-thumb");
-    const badgesHtml = (a.badges || [])
-      .map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>")
-      .join("");
+    const swims = a.season_swims || 0;
+    const chips =
+      (swims ? '<span class="swimmer-chip">' + swims + " swim" + (swims === 1 ? "" : "s") + "</span>" : "") +
+      (a.subgroup === "ML" ? '<span class="achievement-badge badge-ml">Mini League</span>' : "") +
+      (a.badges || []).map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>").join("");
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
         thumb +
         "<div>" +
           '<div class="swimmer-name">' + esc(a.first + " " + a.last) + "</div>" +
           '<div class="swimmer-meta">' + esc(meta) + "</div>" +
-          (badgesHtml ? '<div class="swimmer-badges">' + badgesHtml + "</div>" : "") +
+          (chips ? '<div class="swimmer-badges">' + chips + "</div>" : "") +
         "</div>" +
         '<span class="swimmer-arrow" aria-hidden="true">&#8250;</span>' +
       "</button>"
@@ -203,7 +205,7 @@ function showSwimmer(id, push = true) {
   const scm   = ath.pbs.filter(p => p.course === "SCM");
   const lcm   = ath.pbs.filter(p => p.course === "LCM");
   const other = ath.pbs.filter(p => p.course !== "SCM" && p.course !== "LCM");
-  const meta  = [squadLabel(ath.group), ath.subgroup, genderLabel(ath.gender)].filter(Boolean).join(" · ");
+  const meta  = [squadLabel(ath.group), genderLabel(ath.gender)].filter(Boolean).join(" · ");
 
   document.getElementById("swimmer-detail").innerHTML =
     '<div class="profile-card">' +
@@ -661,7 +663,8 @@ async function loadProgressionSection(ath) {
     const hasDistrict  = meetNames.some(n => /\bWD\b/.test(n));
     const hasNational  = meetNames.some(n => /Scottish\s+(National|Summer|Schools)/i.test(n));
     badgesEl.innerHTML =
-      (hasRegional  ? '<span class="achievement-badge badge-regional">Regional</span>'     : "") +
+      (ath.subgroup === "ML" ? '<span class="achievement-badge badge-ml">Mini League</span>' : "") +
+      (hasRegional  ? '<span class="achievement-badge badge-regional">Regional</span>'      : "") +
       (hasDistrict  ? '<span class="achievement-badge badge-district">West District</span>' : "") +
       (hasNational  ? '<span class="achievement-badge badge-national">National</span>'      : "");
   }

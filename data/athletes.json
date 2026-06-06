@@ -201,7 +201,8 @@
     "badges": [
       "district",
       "national"
-    ]
+    ],
+    "season_swims": 61
   },
   {
     "id": 3,
@@ -297,7 +298,8 @@
         "meet": "EK Graded Meet December 2025"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 50
   },
   {
     "id": 4,
@@ -493,7 +495,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 69
   },
   {
     "id": 168,
@@ -561,7 +564,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 18
   },
   {
     "id": 175,
@@ -615,7 +619,8 @@
         "meet": "Sl Development Meet 3 - 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 7
   },
   {
     "id": 158,
@@ -683,7 +688,8 @@
         "meet": "Sl Development Meet 3 - 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 20
   },
   {
     "id": 169,
@@ -737,7 +743,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 10
   },
   {
     "id": 153,
@@ -805,7 +812,8 @@
         "meet": "Larkhall Club Championships 20"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 21
   },
   {
     "id": 137,
@@ -887,7 +895,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 25
   },
   {
     "id": 104,
@@ -1063,7 +1072,8 @@
     "badges": [
       "district",
       "national"
-    ]
+    ],
+    "season_swims": 74
   },
   {
     "id": 147,
@@ -1166,7 +1176,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 52
   },
   {
     "id": 162,
@@ -1234,7 +1245,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 34
   },
   {
     "id": 11,
@@ -1358,7 +1370,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 54
   },
   {
     "id": 154,
@@ -1433,7 +1446,8 @@
         "meet": "Larkhall Club Championships 20"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 29
   },
   {
     "id": 142,
@@ -1508,7 +1522,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 24
   },
   {
     "id": 141,
@@ -1590,7 +1605,8 @@
         "meet": "Larkhall Club Championships 20"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 17
   },
   {
     "id": 123,
@@ -1709,7 +1725,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 67
   },
   {
     "id": 163,
@@ -1784,7 +1801,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 21
   },
   {
     "id": 19,
@@ -1946,7 +1964,8 @@
     "badges": [
       "district",
       "national"
-    ]
+    ],
+    "season_swims": 68
   },
   {
     "id": 176,
@@ -2007,7 +2026,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 9
   },
   {
     "id": 184,
@@ -2068,7 +2088,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 9
   },
   {
     "id": 24,
@@ -2258,7 +2279,8 @@
     "badges": [
       "district",
       "national"
-    ]
+    ],
+    "season_swims": 64
   },
   {
     "id": 106,
@@ -2333,7 +2355,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 0
   },
   {
     "id": 27,
@@ -2436,7 +2459,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 39
   },
   {
     "id": 119,
@@ -2518,7 +2542,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 45
   },
   {
     "id": 185,
@@ -2565,7 +2590,8 @@
         "meet": "Club Time Trials May 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 6
   },
   {
     "id": 28,
@@ -2661,7 +2687,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 37
   },
   {
     "id": 164,
@@ -2743,7 +2770,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 31
   },
   {
     "id": 165,
@@ -2811,7 +2839,8 @@
         "meet": "Club Time Trials June 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 11
   },
   {
     "id": 124,
@@ -2916,7 +2945,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 42
   },
   {
     "id": 181,
@@ -2949,7 +2979,8 @@
         "meet": "Club Time Trials June 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 3
   },
   {
     "id": 166,
@@ -3017,7 +3048,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 0
   },
   {
     "id": 33,
@@ -3134,7 +3166,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 45
   },
   {
     "id": 34,
@@ -3251,7 +3284,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 46
   },
   {
     "id": 152,
@@ -3326,7 +3360,8 @@
         "meet": "FVT Spring & Dev Meet_25 & 26"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 34
   },
   {
     "id": 143,
@@ -3415,7 +3450,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 35
   },
   {
     "id": 182,
@@ -3511,7 +3547,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 11
   },
   {
     "id": 107,
@@ -3616,7 +3653,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 24
   },
   {
     "id": 177,
@@ -3677,7 +3715,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 9
   },
   {
     "id": 155,
@@ -3745,7 +3784,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 13
   },
   {
     "id": 145,
@@ -3827,7 +3867,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 18
   },
   {
     "id": 178,
@@ -3895,7 +3936,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 11
   },
   {
     "id": 44,
@@ -3986,7 +4028,8 @@
     ],
     "badges": [
       "regional"
-    ]
+    ],
+    "season_swims": 17
   },
   {
     "id": 133,
@@ -4075,7 +4118,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 38
   },
   {
     "id": 47,
@@ -4157,7 +4201,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 13
   },
   {
     "id": 156,
@@ -4168,7 +4213,8 @@
     "group": "JUN",
     "subgroup": "",
     "pbs": [],
-    "badges": []
+    "badges": [],
+    "season_swims": 0
   },
   {
     "id": 51,
@@ -4208,7 +4254,8 @@
         "meet": "South Lanarkshire Development"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 4
   },
   {
     "id": 135,
@@ -4297,7 +4344,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 24
   },
   {
     "id": 183,
@@ -4400,7 +4448,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 14
   },
   {
     "id": 157,
@@ -4482,7 +4531,8 @@
         "meet": "Sl Development Meet 3 - 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 30
   },
   {
     "id": 59,
@@ -4606,7 +4656,8 @@
         "meet": "Club Time Trials October 2025"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 31
   },
   {
     "id": 138,
@@ -4695,7 +4746,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 23
   },
   {
     "id": 179,
@@ -4706,7 +4758,8 @@
     "group": "ENT",
     "subgroup": "",
     "pbs": [],
-    "badges": []
+    "badges": [],
+    "season_swims": 0
   },
   {
     "id": 170,
@@ -4809,7 +4862,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 37
   },
   {
     "id": 64,
@@ -4999,7 +5053,8 @@
     "badges": [
       "district",
       "national"
-    ]
+    ],
+    "season_swims": 48
   },
   {
     "id": 65,
@@ -5074,7 +5129,8 @@
         "meet": "Larkhall Club Championships 20"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 7
   },
   {
     "id": 66,
@@ -5116,7 +5172,8 @@
     ],
     "badges": [
       "regional"
-    ]
+    ],
+    "season_swims": 3
   },
   {
     "id": 67,
@@ -5200,7 +5257,8 @@
     ],
     "badges": [
       "regional"
-    ]
+    ],
+    "season_swims": 24
   },
   {
     "id": 71,
@@ -5348,7 +5406,8 @@
     "badges": [
       "district",
       "national"
-    ]
+    ],
+    "season_swims": 22
   },
   {
     "id": 174,
@@ -5402,7 +5461,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 10
   },
   {
     "id": 171,
@@ -5470,7 +5530,8 @@
         "meet": "Club Time Trials March 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 24
   },
   {
     "id": 82,
@@ -5645,7 +5706,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 69
   },
   {
     "id": 88,
@@ -5755,7 +5817,8 @@
         "meet": "Larkhall Club Championships 20"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 21
   },
   {
     "id": 110,
@@ -5837,7 +5900,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 36
   },
   {
     "id": 173,
@@ -5884,7 +5948,8 @@
         "meet": "Club Squad Time Trials April 2"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 9
   },
   {
     "id": 140,
@@ -5959,7 +6024,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 29
   },
   {
     "id": 89,
@@ -6069,7 +6135,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 30
   },
   {
     "id": 180,
@@ -6123,7 +6190,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 7
   },
   {
     "id": 90,
@@ -6212,7 +6280,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 22
   },
   {
     "id": 144,
@@ -6287,7 +6356,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 45
   },
   {
     "id": 128,
@@ -6385,7 +6455,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 56
   },
   {
     "id": 126,
@@ -6453,7 +6524,8 @@
         "meet": "North Ayrshire Junior Meet"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 65
   },
   {
     "id": 95,
@@ -6614,7 +6686,8 @@
     ],
     "badges": [
       "district"
-    ]
+    ],
+    "season_swims": 80
   },
   {
     "id": 101,
@@ -6731,7 +6804,8 @@
         "meet": "Larkhall Club Championships 20"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 59
   },
   {
     "id": 172,
@@ -6792,7 +6866,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 12
   },
   {
     "id": 130,
@@ -6881,7 +6956,8 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 38
   },
   {
     "id": 129,
@@ -6970,6 +7046,7 @@
         "meet": "Club Time Trials April 2026"
       }
     ],
-    "badges": []
+    "badges": [],
+    "season_swims": 46
   }
 ]
