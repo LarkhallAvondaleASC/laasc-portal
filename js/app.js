@@ -653,10 +653,11 @@ async function loadProgressionSection(ath) {
   const lcmTTs      = uniqueMeets.filter(m =>  isTimeTrial(m) && m.course === "LCM").length;
   const hasLCM      = lcmMeets + lcmTTs > 0;
 
-  const strokeCounts = {};
+  const scmCounts = {}, lcmCounts = {};
   validRaces.forEach(r => {
     const stroke = r.event.split(" ").pop();
-    strokeCounts[stroke] = (strokeCounts[stroke] || 0) + 1;
+    if (r.course === "SCM") scmCounts[stroke] = (scmCounts[stroke] || 0) + 1;
+    else if (r.course === "LCM") lcmCounts[stroke] = (lcmCounts[stroke] || 0) + 1;
   });
   const strokeOrder = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
   const statsEl = document.getElementById("detail-stats");
@@ -669,34 +670,36 @@ async function loadProgressionSection(ath) {
         "</div>"
       ).join("");
 
-    const scmStats = [
+    const scmCompStats = [
       { value: scmMeets, label: "Meets" },
       ...(scmTTs ? [{ value: scmTTs, label: "Time Trials" }] : []),
     ];
-    const lcmStats = [
+    const lcmCompStats = [
       { value: lcmMeets, label: "Meets" },
       ...(lcmTTs ? [{ value: lcmTTs, label: "Time Trials" }] : []),
     ];
-    const strokeStats = [
-      { value: validRaces.length, label: "Total" },
-      ...strokeOrder.filter(s => strokeCounts[s]).map(s => ({ value: strokeCounts[s], label: s })),
+    const scmRaceCount = validRaces.filter(r => r.course === "SCM").length;
+    const lcmRaceCount = validRaces.filter(r => r.course === "LCM").length;
+    const scmEventStats = [
+      { value: scmRaceCount, label: "Total" },
+      ...strokeOrder.filter(s => scmCounts[s]).map(s => ({ value: scmCounts[s], label: s })),
+    ];
+    const lcmEventStats = [
+      { value: lcmRaceCount, label: "Total" },
+      ...strokeOrder.filter(s => lcmCounts[s]).map(s => ({ value: lcmCounts[s], label: s })),
     ];
 
-    statsEl.innerHTML =
+    const group = (label, items) =>
       '<div class="stats-group">' +
-        '<span class="stats-group-label">SCM</span>' +
-        '<div class="stats-items">' + renderItems(scmStats) + "</div>" +
-      "</div>" +
-      (hasLCM
-        ? '<div class="stats-group">' +
-            '<span class="stats-group-label">LCM</span>' +
-            '<div class="stats-items">' + renderItems(lcmStats) + "</div>" +
-          "</div>"
-        : "") +
-      '<div class="stats-group">' +
-        '<span class="stats-group-label">Events</span>' +
-        '<div class="stats-items">' + renderItems(strokeStats) + "</div>" +
+        '<span class="stats-group-label">' + label + "</span>" +
+        '<div class="stats-items">' + renderItems(items) + "</div>" +
       "</div>";
+
+    statsEl.innerHTML =
+      group("SCM", scmCompStats) +
+      (hasLCM ? group("LCM", lcmCompStats) : "") +
+      group("SCM Events", scmEventStats) +
+      (hasLCM ? group("LCM Events", lcmEventStats) : "");
   }
 
   // Patch PB table with improvement columns
