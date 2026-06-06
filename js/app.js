@@ -652,10 +652,12 @@ async function loadProgressionSection(ath) {
   const badgesEl = document.getElementById("achievement-badges");
   if (badgesEl) {
     const meetNames = uniqueMeets.map(m => m.name);
-    const hasDistrict = meetNames.some(n => /\bWD\b/.test(n) || /WoS Regional/i.test(n));
+    const hasRegional  = meetNames.some(n => /WoS Regional/i.test(n));
+    const hasDistrict  = meetNames.some(n => /\bWD\b/.test(n));
     const hasNational  = meetNames.some(n => /Scottish\s+(National|Summer|Schools)/i.test(n));
     badgesEl.innerHTML =
-      (hasDistrict ? '<span class="achievement-badge badge-district">West District</span>' : "") +
+      (hasRegional  ? '<span class="achievement-badge badge-regional">Regional</span>'     : "") +
+      (hasDistrict  ? '<span class="achievement-badge badge-district">West District</span>' : "") +
       (hasNational  ? '<span class="achievement-badge badge-national">National</span>'      : "");
   }
   const scmMeets    = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
