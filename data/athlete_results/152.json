@@ -385,5 +385,32 @@
     "event": "100 Backstroke",
     "time": "1:52.64",
     "place": "9"
+  },
+  {
+    "meet_id": 277,
+    "meet": "Club Time Trials June 2026",
+    "date": "2026-06-01",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "45.81",
+    "place": ""
+  },
+  {
+    "meet_id": 277,
+    "meet": "Club Time Trials June 2026",
+    "date": "2026-06-01",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "57.25",
+    "place": ""
+  },
+  {
+    "meet_id": 277,
+    "meet": "Club Time Trials June 2026",
+    "date": "2026-06-01",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "2:11.96",
+    "place": ""
   }
 ]

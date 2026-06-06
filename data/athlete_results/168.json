@@ -142,5 +142,23 @@
     "event": "50 Breaststroke",
     "time": "1:07.21",
     "place": ""
+  },
+  {
+    "meet_id": 277,
+    "meet": "Club Time Trials June 2026",
+    "date": "2026-06-01",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "59.03",
+    "place": ""
+  },
+  {
+    "meet_id": 277,
+    "meet": "Club Time Trials June 2026",
+    "date": "2026-06-01",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:35.84",
+    "place": ""
   }
 ]

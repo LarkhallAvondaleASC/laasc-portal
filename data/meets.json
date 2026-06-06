@@ -18,6 +18,12 @@
     "date": "2026-06-13"
   },
   {
+    "id": 277,
+    "name": "Club Time Trials June 2026",
+    "course": "SCM",
+    "date": "2026-06-01"
+  },
+  {
     "id": 273,
     "name": "Jubilee Gala 2026",
     "course": "SCM",
@@ -54,15 +60,15 @@
     "date": "2026-04-27"
   },
   {
-    "id": 267,
-    "name": "FVT Spring & Dev Meet_25 & 26",
-    "course": "SCM",
-    "date": "2026-04-25"
-  },
-  {
     "id": 260,
     "name": "EK Long Course Age Group Meet",
     "course": "LCM",
+    "date": "2026-04-25"
+  },
+  {
+    "id": 267,
+    "name": "FVT Spring & Dev Meet_25 & 26",
+    "course": "SCM",
     "date": "2026-04-25"
   },
   {
@@ -84,6 +90,12 @@
     "date": "2026-03-21"
   },
   {
+    "id": 255,
+    "name": "Cumbernauld Spring Open Meet 2",
+    "course": "SCM",
+    "date": "2026-03-14"
+  },
+  {
     "id": 259,
     "name": "Club 200 fly",
     "course": "SCM",
@@ -92,12 +104,6 @@
   {
     "id": 274,
     "name": "WoS Regional Championships for",
-    "course": "SCM",
-    "date": "2026-03-14"
-  },
-  {
-    "id": 255,
-    "name": "Cumbernauld Spring Open Meet 2",
     "course": "SCM",
     "date": "2026-03-14"
   },
@@ -282,15 +288,15 @@
     "date": "2025-05-17"
   },
   {
-    "id": 200,
-    "name": "2025 WD LC May AG Meet",
-    "course": "LCM",
-    "date": "2025-05-10"
-  },
-  {
     "id": 204,
     "name": "South Lanarkshire Development",
     "course": "SCM",
+    "date": "2025-05-10"
+  },
+  {
+    "id": 200,
+    "name": "2025 WD LC May AG Meet",
+    "course": "LCM",
     "date": "2025-05-10"
   },
   {
@@ -348,12 +354,6 @@
     "date": "2025-03-01"
   },
   {
-    "id": 191,
-    "name": "South Lanarkshire Development",
-    "course": "SCM",
-    "date": "2025-02-22"
-  },
-  {
     "id": 190,
     "name": "Glenrothes Spring Meet",
     "course": "SCM",
@@ -362,6 +362,12 @@
   {
     "id": 189,
     "name": "Hearts Fast February",
+    "course": "SCM",
+    "date": "2025-02-22"
+  },
+  {
+    "id": 191,
+    "name": "South Lanarkshire Development",
     "course": "SCM",
     "date": "2025-02-22"
   },
@@ -462,14 +468,14 @@
     "date": "2024-10-12"
   },
   {
-    "id": 165,
-    "name": "Autumn Graded Meet 2024",
+    "id": 172,
+    "name": "South Lanarkshire Development",
     "course": "SCM",
     "date": "2024-10-05"
   },
   {
-    "id": 172,
-    "name": "South Lanarkshire Development",
+    "id": 165,
+    "name": "Autumn Graded Meet 2024",
     "course": "SCM",
     "date": "2024-10-05"
   },
@@ -514,17 +520,5 @@
     "name": "Lothian Region Distance Meet d",
     "course": "SCM",
     "date": "2024-06-09"
-  },
-  {
-    "id": 162,
-    "name": "Club Time Trials June 2024",
-    "course": "SCM",
-    "date": "2024-06-03"
-  },
-  {
-    "id": 220,
-    "name": "SAST 3 Club development meet",
-    "course": "SCM",
-    "date": "2024-06-02"
   }
 ]

@@ -88,9 +88,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "37.09",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "34.71",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -211,9 +211,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "42.18",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "41.48",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -277,6 +277,13 @@
         "time": "1:08.99",
         "date": "2026-04-20",
         "meet": "Club Time Trials April 2026"
+      },
+      {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "2:39.15",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -348,9 +355,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:00.42",
-        "date": "2026-01-17",
-        "meet": "Forth Valley Tridents Open Mee"
+        "time": "2:53.27",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -506,9 +513,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:06.47",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "59.03",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -527,9 +534,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:45.09",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:35.84",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -557,6 +564,13 @@
     "subgroup": "",
     "pbs": [
       {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "58.14",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 Backstroke",
         "course": "SCM",
         "time": "2:16.86",
@@ -569,6 +583,13 @@
         "time": "1:15.61",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:35.96",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -612,9 +633,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "53.21",
-        "date": "2026-02-21",
-        "meet": "South Lanarkshire Development"
+        "time": "52.80",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -633,9 +654,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:34.30",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:16.63",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -672,9 +693,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:23.85",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
+        "time": "1:16.97",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -686,9 +707,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "3:28.27",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:49.29",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -753,9 +774,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:18.07",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:15.32",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -785,9 +806,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "43.27",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "43.03",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -799,9 +820,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "53.20",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "51.32",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -834,9 +855,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "2:14.21",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
+        "time": "2:08.14",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -943,9 +964,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "37.20",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "35.62",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1045,9 +1066,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "37.05",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "35.61",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -1104,6 +1125,13 @@
         "time": "43.98",
         "date": "2026-03-11",
         "meet": "South Lanarkshire Schools 2026"
+      },
+      {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "1:49.99",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -1192,7 +1220,7 @@
     "id": 11,
     "last": "Callaghan",
     "first": "Millie",
-    "age": "13",
+    "age": "14",
     "gender": "F",
     "group": "TRN",
     "subgroup": "",
@@ -1256,9 +1284,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:41.29",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:35.27",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -1284,9 +1312,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "49.87",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "46.59",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1372,9 +1400,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:19.94",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:16.86",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -1397,9 +1425,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "42.35",
-        "date": "2026-01-31",
-        "meet": "South Lanarkshire Development"
+        "time": "41.69",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -1444,6 +1472,13 @@
         "meet": "Club Time Trials April 2026"
       },
       {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "2:23.48",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 IM",
         "course": "SCM",
         "time": "2:00.72",
@@ -1464,9 +1499,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "49.09",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "44.30",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -1511,6 +1546,13 @@
         "meet": "Club Time Trials April 2026"
       },
       {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "2:12.19",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 IM",
         "course": "SCM",
         "time": "2:01.46",
@@ -1545,9 +1587,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:14.30",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:13.40",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -1580,9 +1622,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:35.86",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:23.81",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -1601,9 +1643,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "42.50",
-        "date": "2025-11-21",
-        "meet": "Dumfries ASC Advent Open 2025"
+        "time": "38.15",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1687,6 +1729,13 @@
         "meet": "South Lanarkshire Development"
       },
       {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:24.29",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "25 Butterfly",
         "course": "SCM",
         "time": "27.47",
@@ -1728,9 +1777,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:17.22",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
+        "time": "1:16.49",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -1770,9 +1819,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:16.58",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:10.50",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -1798,9 +1847,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "39.73",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "39.32",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1886,9 +1935,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:20.31",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "1:13.34",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -1903,6 +1952,13 @@
         "time": "1:20.16",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "3:13.23",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -1939,9 +1995,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:22.03",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "1:19.21",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -1956,6 +2012,13 @@
         "time": "1:32.48",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "3:20.35",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -1992,9 +2055,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:10.59",
-        "date": "2025-11-21",
-        "meet": "Dumfries ASC Advent Open 2025"
+        "time": "1:08.18",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -2034,9 +2097,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:04.99",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "2:53.32",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -2062,9 +2125,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "33.72",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "33.34",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -2225,13 +2288,6 @@
         "meet": "Club 50m Time Trials"
       },
       {
-        "event": "100 IM",
-        "course": "SCM",
-        "time": "2:27.11",
-        "date": "2024-06-03",
-        "meet": "Club Time Trials June 2024"
-      },
-      {
         "event": "200 IM",
         "course": "SCM",
         "time": "4:06.43",
@@ -2287,9 +2343,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:35.46",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:24.00",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -2427,7 +2483,7 @@
     "id": 185,
     "last": "Fletcher",
     "first": "Natalie",
-    "age": "8",
+    "age": "9",
     "gender": "F",
     "group": "ENT",
     "subgroup": "",
@@ -2505,6 +2561,13 @@
         "time": "1:40.00",
         "date": "2026-05-09",
         "meet": "Sl Development Meet 3 - 2026"
+      },
+      {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "3:33.53",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -2650,9 +2713,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "46.03",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "34.76",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -2671,9 +2734,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "49.15",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "44.62",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -2695,6 +2758,13 @@
         "time": "43.37",
         "date": "2026-04-27",
         "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "1:43.69",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       }
     ]
   },
@@ -2743,6 +2813,13 @@
         "meet": "South Lanarkshire Development"
       },
       {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "3:11.27",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "59.12",
@@ -2759,9 +2836,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "46.97",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
+        "time": "45.42",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -2803,11 +2880,25 @@
     "subgroup": "",
     "pbs": [
       {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:02.45",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "1:13.30",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:37.08",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       }
     ]
   },
@@ -2858,9 +2949,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:54.46",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:17.71",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -2939,9 +3030,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:22.28",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:16.08",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -2967,9 +3058,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "45.20",
-        "date": "2025-11-21",
-        "meet": "Dumfries ASC Advent Open 2025"
+        "time": "43.76",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -3083,9 +3174,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "40.70",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "39.08",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -3169,6 +3260,13 @@
         "meet": "Forth Valley Tridents Developm"
       },
       {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "2:11.96",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 IM",
         "course": "SCM",
         "time": "1:57.74",
@@ -3210,9 +3308,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "52.23",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "50.59",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -3243,6 +3341,13 @@
         "meet": "Club Squad Time Trials April 2"
       },
       {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "1:58.91",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 IM",
         "course": "SCM",
         "time": "1:52.60",
@@ -3262,7 +3367,7 @@
     "id": 182,
     "last": "Innes",
     "first": "Sofi",
-    "age": "12",
+    "age": "13",
     "gender": "F",
     "group": "TRN",
     "subgroup": "",
@@ -3273,6 +3378,13 @@
         "time": "33.24",
         "date": "2025-08-18",
         "meet": "Club 50m Time Trials"
+      },
+      {
+        "event": "100 Freestyle",
+        "course": "SCM",
+        "time": "1:14.33",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -3296,6 +3408,13 @@
         "meet": "Club Time Trials April 2026"
       },
       {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "3:13.68",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "47.48",
@@ -3308,6 +3427,13 @@
         "time": "3:35.01",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "50 Butterfly",
+        "course": "SCM",
+        "time": "37.61",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -3453,9 +3579,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:04.90",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "1:03.69",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -3470,6 +3596,13 @@
         "time": "1:13.14",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:39.23",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -3513,9 +3646,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "52.58",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "49.48",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -3530,6 +3663,13 @@
         "time": "56.46",
         "date": "2026-01-24",
         "meet": "Clyde Coast Mini League"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:05.72",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -3608,9 +3748,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "2:31.53",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
+        "time": "2:07.74",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -3654,9 +3794,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "57.52",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "54.87",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -3671,6 +3811,13 @@
         "time": "1:17.92",
         "date": "2026-04-27",
         "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:29.24",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -3842,6 +3989,13 @@
         "meet": "Club 50m Time Trials"
       },
       {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "1:59.05",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 IM",
         "course": "SCM",
         "time": "1:46.95",
@@ -3991,7 +4145,7 @@
     "id": 135,
     "last": "McCafferty",
     "first": "Isla",
-    "age": "12",
+    "age": "13",
     "gender": "F",
     "group": "JUN",
     "subgroup": "",
@@ -4055,9 +4209,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "2:18.61",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
+        "time": "2:00.92",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -4120,6 +4274,13 @@
         "meet": "Sl Development Meet 3 - 2026"
       },
       {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "3:31.64",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "46.91",
@@ -4139,6 +4300,13 @@
         "time": "3:41.09",
         "date": "2026-05-04",
         "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "50 Butterfly",
+        "course": "SCM",
+        "time": "41.57",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -4196,9 +4364,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "58.39",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "56.06",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -4217,9 +4385,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:44.52",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:16.10",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "25 Butterfly",
@@ -4305,9 +4473,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:17.56",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:08.12",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -4333,9 +4501,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "38.18",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "37.34",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -4379,9 +4547,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "46.70",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "46.23",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -4433,6 +4601,13 @@
         "meet": "Clyde Coast Mini League"
       },
       {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "2:10.47",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 IM",
         "course": "SCM",
         "time": "1:57.23",
@@ -4477,9 +4652,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:22.35",
-        "date": "2025-09-20",
-        "meet": "South Lanarkshire Development"
+        "time": "1:21.08",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -4505,9 +4680,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:19.81",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "3:18.09",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -4579,9 +4754,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:00.29",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "58.96",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -4621,9 +4796,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "2:46.34",
-        "date": "2025-05-05",
-        "meet": "Club Time Trials May 2025"
+        "time": "2:38.49",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -4649,9 +4824,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "32.05",
-        "date": "2026-01-17",
-        "meet": "Forth Valley Tridents Open Mee"
+        "time": "31.16",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -4814,9 +4989,9 @@
       {
         "event": "100 IM",
         "course": "SCM",
-        "time": "1:50.05",
-        "date": "2024-06-03",
-        "meet": "Club Time Trials June 2024"
+        "time": "1:53.57",
+        "date": "2024-12-08",
+        "meet": "Larkhall Club Championships 20"
       }
     ]
   },
@@ -4881,13 +5056,6 @@
         "time": "2:17.24",
         "date": "2025-05-05",
         "meet": "Club Time Trials May 2025"
-      },
-      {
-        "event": "200 Freestyle",
-        "course": "SCM",
-        "time": "5:11.03",
-        "date": "2024-06-03",
-        "meet": "Club Time Trials June 2024"
       },
       {
         "event": "50 Backstroke",
@@ -5006,6 +5174,13 @@
         "meet": "Dumfries Spring Splash Graded"
       },
       {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "2:48.64",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "41.12",
@@ -5029,9 +5204,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "32.45",
-        "date": "2025-03-29",
-        "meet": "Dumfries Spring Splash Graded"
+        "time": "31.12",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -5110,16 +5285,16 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:00.08",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "57.34",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:36.26",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "2:12.16",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -5184,9 +5359,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:22.77",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "2:12.61",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -5293,9 +5468,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "35.96",
-        "date": "2025-11-03",
-        "meet": "Club Time Trials November 2025"
+        "time": "35.18",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -5430,9 +5605,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:46.23",
-        "date": "2025-05-05",
-        "meet": "Club Time Trials May 2025"
+        "time": "3:23.09",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -5458,9 +5633,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "46.08",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "42.78",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -5497,9 +5672,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "38.58",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "38.19",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -5542,6 +5717,13 @@
         "time": "55.83",
         "date": "2025-10-04",
         "meet": "South Lanarkshire Development"
+      },
+      {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "2:18.73",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -5805,6 +5987,13 @@
         "meet": "Club Time Trials February 2026"
       },
       {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:00.35",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "100 Backstroke",
         "course": "SCM",
         "time": "2:15.72",
@@ -5814,9 +6003,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:50.20",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "2:28.08",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -5872,6 +6061,13 @@
         "meet": "South Lanarkshire Development"
       },
       {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "3:31.24",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "58.34",
@@ -5895,9 +6091,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "51.06",
-        "date": "2025-03-03",
-        "meet": "Club Time Trials March 2025"
+        "time": "46.17",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
@@ -6027,6 +6223,13 @@
         "meet": "Sl Development Meet 3 - 2026"
       },
       {
+        "event": "200 Backstroke",
+        "course": "SCM",
+        "time": "3:35.21",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
         "event": "50 Breaststroke",
         "course": "SCM",
         "time": "48.64",
@@ -6050,9 +6253,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "44.44",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "42.80",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -6103,9 +6306,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "54.77",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "53.82",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -6124,9 +6327,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:02.80",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "2:01.04",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -6163,9 +6366,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:15.53",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "1:14.85",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "200 Freestyle",
@@ -6205,9 +6408,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:04.57",
-        "date": "2026-02-13",
-        "meet": "North Ayrshire 200 Meet 2026"
+        "time": "3:01.73",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -6233,9 +6436,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "39.08",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
+        "time": "36.64",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -6444,9 +6647,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "1:17.16",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "1:16.96",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -6454,6 +6657,13 @@
         "time": "1:17.81",
         "date": "2026-04-27",
         "meet": "Club Squad Time Trials April 2"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:30.41",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -6504,9 +6714,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "51.75",
-        "date": "2025-09-27",
-        "meet": "Forth Valley Tridents Developm"
+        "time": "48.46",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -6592,9 +6802,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "48.42",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "47.46",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -6623,6 +6833,13 @@
         "time": "53.37",
         "date": "2025-11-28",
         "meet": "Larkhall Club Championships 20"
+      },
+      {
+        "event": "100 Butterfly",
+        "course": "SCM",
+        "time": "1:59.69",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
       },
       {
         "event": "100 IM",
