@@ -357,6 +357,7 @@ main {
 .stats-course {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: .6rem;
   padding: 0 1.5rem 0 0;
   margin-right: 1.5rem;
@@ -397,7 +398,7 @@ main {
   align-items: center;
   border-radius: var(--radius);
   padding: .4rem .75rem;
-  min-width: 3.5rem;
+  min-width: 3rem;
 }
 
 .stat-value {

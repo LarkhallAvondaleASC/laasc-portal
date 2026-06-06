@@ -659,7 +659,8 @@ async function loadProgressionSection(ath) {
     if (r.course === "SCM") scmCounts[stroke] = (scmCounts[stroke] || 0) + 1;
     else if (r.course === "LCM") lcmCounts[stroke] = (lcmCounts[stroke] || 0) + 1;
   });
-  const strokeOrder = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
+  const strokeOrder  = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
+  const strokeAbbrev = { Freestyle: "Free", Backstroke: "Back", Breaststroke: "Breast", Butterfly: "Fly", IM: "IM" };
   const statsEl = document.getElementById("detail-stats");
   if (statsEl) {
     const renderItems = items =>
@@ -678,16 +679,12 @@ async function loadProgressionSection(ath) {
       { value: lcmMeets, label: "Meets" },
       ...(lcmTTs ? [{ value: lcmTTs, label: "Time Trials" }] : []),
     ];
-    const scmRaceCount = validRaces.filter(r => r.course === "SCM").length;
-    const lcmRaceCount = validRaces.filter(r => r.course === "LCM").length;
-    const scmEventStats = [
-      { value: scmRaceCount, label: "Total" },
-      ...strokeOrder.filter(s => scmCounts[s]).map(s => ({ value: scmCounts[s], label: s })),
-    ];
-    const lcmEventStats = [
-      { value: lcmRaceCount, label: "Total" },
-      ...strokeOrder.filter(s => lcmCounts[s]).map(s => ({ value: lcmCounts[s], label: s })),
-    ];
+    const scmEventStats = strokeOrder
+      .filter(s => scmCounts[s])
+      .map(s => ({ value: scmCounts[s], label: strokeAbbrev[s] }));
+    const lcmEventStats = strokeOrder
+      .filter(s => lcmCounts[s])
+      .map(s => ({ value: lcmCounts[s], label: strokeAbbrev[s] }));
 
     const group = (label, items) =>
       '<div class="stats-group">' +
