@@ -207,6 +207,7 @@ function showSwimmer(id, push = true) {
         '<div class="detail-name">' + esc(ath.first + " " + ath.last) + "</div>" +
         '<div class="detail-meta">' + esc(meta) + "</div>" +
         '<div id="season-strip" class="season-strip"></div>' +
+        '<div id="achievement-badges" class="achievement-badges"></div>' +
       "</div>" +
     "</div>" +
     '<div class="detail-stats-card">' +
@@ -647,6 +648,16 @@ async function loadProgressionSection(ath) {
   history.forEach(r => { if (!meetMap[r.meet_id]) meetMap[r.meet_id] = { name: r.meet, course: r.course }; });
   const uniqueMeets = Object.values(meetMap);
   const isTimeTrial = m => /time trial/i.test(m.name);
+
+  const badgesEl = document.getElementById("achievement-badges");
+  if (badgesEl) {
+    const meetNames = uniqueMeets.map(m => m.name);
+    const hasDistrict = meetNames.some(n => /\bWD\b/.test(n) || /WoS Regional/i.test(n));
+    const hasNational  = meetNames.some(n => /Scottish\s+(National|Summer|Schools)/i.test(n));
+    badgesEl.innerHTML =
+      (hasDistrict ? '<span class="achievement-badge badge-district">West District</span>' : "") +
+      (hasNational  ? '<span class="achievement-badge badge-national">National</span>'      : "");
+  }
   const scmMeets    = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
   const scmTTs      = uniqueMeets.filter(m =>  isTimeTrial(m) && m.course === "SCM").length;
   const lcmMeets    = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "LCM").length;
