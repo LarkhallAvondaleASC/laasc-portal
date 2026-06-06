@@ -611,7 +611,7 @@ async function loadProgressionSection(ath) {
     const seasonMeetCount = new Set(seasonRaces.map(r => r.meet_id)).size;
 
     // Count PB swims within the season by building chronological PB history per event+course
-    let seasonPBs = 0;
+    const seasonPBs = { SCM: 0, LCM: 0 };
     const ecMap = {};
     validRaces.forEach(r => {
       const k = r.event + "||" + r.course;
@@ -623,7 +623,10 @@ async function loadProgressionSection(ath) {
         const t = timeToSeconds(r.time);
         if (t !== null && t < best) {
           best = t;
-          if (r.date >= seasonStart && r.date <= seasonEnd) seasonPBs++;
+          if (r.date >= seasonStart && r.date <= seasonEnd) {
+            if (r.course === "SCM") seasonPBs.SCM++;
+            else if (r.course === "LCM") seasonPBs.LCM++;
+          }
         }
       });
     });
@@ -634,7 +637,8 @@ async function loadProgressionSection(ath) {
       '<span class="season-year">' + seasonLabel + "</span>" +
       chip(seasonRaces.length, seasonRaces.length === 1 ? "swim" : "swims") +
       chip(seasonMeetCount, seasonMeetCount === 1 ? "meet" : "meets") +
-      (seasonPBs ? chip(seasonPBs, seasonPBs === 1 ? "PB" : "PBs") : "");
+      (seasonPBs.SCM ? chip(seasonPBs.SCM, "SCM PB" + (seasonPBs.SCM === 1 ? "" : "s")) : "") +
+      (seasonPBs.LCM ? chip(seasonPBs.LCM, "LCM PB" + (seasonPBs.LCM === 1 ? "" : "s")) : "");
   }
 
   const meetMap = {};
