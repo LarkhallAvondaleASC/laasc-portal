@@ -647,10 +647,11 @@ async function loadProgressionSection(ath) {
   history.forEach(r => { if (!meetMap[r.meet_id]) meetMap[r.meet_id] = { name: r.meet, course: r.course }; });
   const uniqueMeets = Object.values(meetMap);
   const isTimeTrial = m => /time trial/i.test(m.name);
-  const totalMeets = uniqueMeets.length;
-  const timeTrials = uniqueMeets.filter(m => isTimeTrial(m)).length;
-  const scmMeets   = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
-  const lcmMeets   = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "LCM").length;
+  const scmMeets    = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
+  const scmTTs      = uniqueMeets.filter(m =>  isTimeTrial(m) && m.course === "SCM").length;
+  const lcmMeets    = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "LCM").length;
+  const lcmTTs      = uniqueMeets.filter(m =>  isTimeTrial(m) && m.course === "LCM").length;
+  const hasLCM      = lcmMeets + lcmTTs > 0;
 
   const strokeCounts = {};
   validRaces.forEach(r => {
@@ -668,11 +669,13 @@ async function loadProgressionSection(ath) {
         "</div>"
       ).join("");
 
-    const competitionStats = [
-      { value: totalMeets, label: "Total" },
-      { value: timeTrials, label: "Time Trials" },
-      { value: scmMeets,   label: "SCM" },
-      { value: lcmMeets,   label: "LCM" },
+    const scmStats = [
+      { value: scmMeets, label: "Meets" },
+      ...(scmTTs ? [{ value: scmTTs, label: "Time Trials" }] : []),
+    ];
+    const lcmStats = [
+      { value: lcmMeets, label: "Meets" },
+      ...(lcmTTs ? [{ value: lcmTTs, label: "Time Trials" }] : []),
     ];
     const strokeStats = [
       { value: validRaces.length, label: "Total" },
@@ -681,9 +684,15 @@ async function loadProgressionSection(ath) {
 
     statsEl.innerHTML =
       '<div class="stats-group">' +
-        '<span class="stats-group-label">Competitions</span>' +
-        '<div class="stats-items">' + renderItems(competitionStats) + "</div>" +
+        '<span class="stats-group-label">SCM</span>' +
+        '<div class="stats-items">' + renderItems(scmStats) + "</div>" +
       "</div>" +
+      (hasLCM
+        ? '<div class="stats-group">' +
+            '<span class="stats-group-label">LCM</span>' +
+            '<div class="stats-items">' + renderItems(lcmStats) + "</div>" +
+          "</div>"
+        : "") +
       '<div class="stats-group">' +
         '<span class="stats-group-label">Events</span>' +
         '<div class="stats-items">' + renderItems(strokeStats) + "</div>" +
