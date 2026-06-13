@@ -8,6 +8,7 @@ let statsGender = "";
 let rankingsCourse = "SCM";
 let rankingsGender = "";
 let rankings = {};
+let standardsIndex = null;
 
 const SQUAD_ORDER  = ["SEN", "TRN", "JUN", "DEV", "ENT"];
 const COURSE_ORDER = ["SCM", "LCM", "Yards"];
@@ -25,12 +26,14 @@ const AGE_GROUPS = [
 
 async function loadData() {
   try {
-    const [athleteData, meetData, updatedData, meetFlags] = await Promise.all([
+    const [athleteData, meetData, updatedData, meetFlags, standardsData] = await Promise.all([
       fetch("data/athletes.json").then(r => { if (!r.ok) throw new Error(); return r.json(); }),
       fetch("data/meets.json").then(r => { if (!r.ok) throw new Error(); return r.json(); }),
       fetch("data/last_updated.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/meet_flags.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+      fetch("data/time_standards/standards.json").then(r => r.ok ? r.json() : null).catch(() => null),
     ]);
+    if (standardsData?.standards) buildStandardsIndex(standardsData.standards);
 
     athletes = athleteData;
     meets = meetData.map(m => ({ ...m, ...(meetFlags[m.id] || {}) }));
@@ -249,9 +252,40 @@ function showSwimmer(id, push = true) {
   loadProgressionSection(ath);
 }
 
+function buildStandardsIndex(standards) {
+  standardsIndex = {};
+  for (const s of standards) {
+    standardsIndex[`${s.event}|${s.gender}|${s.age_group}|${s.grade}`] = timeToSeconds(s.time);
+  }
+}
+
+function ageToGroup(age) {
+  const n = parseInt(age, 10);
+  if (isNaN(n)) return null;
+  if (n <= 9)  return "9/U";
+  if (n >= 18) return "18+";
+  return String(n);
+}
+
+function gradeProgressionHtml(event, gender, ageGroup, timeSecs) {
+  if (!standardsIndex || !ageGroup) return "";
+  const grades = ["C", "B", "A", "AA"];
+  let hasAny = false;
+  const chips = grades.map(grade => {
+    const stdSecs = standardsIndex[`${event}|${gender}|${ageGroup}|${grade}`];
+    if (stdSecs === undefined) return "";
+    hasAny = true;
+    const achieved = timeSecs !== null && timeSecs <= stdSecs;
+    return `<span class="grade-chip grade-chip--${grade.toLowerCase()}${achieved ? " grade-chip--achieved" : ""}">${grade}</span>`;
+  }).join("");
+  return hasAny ? `<div class="grade-ladder">${chips}</div>` : "";
+}
+
 function pbSection(pbs, label, badgeClass, ath) {
   if (!pbs.length) return "";
-  const showRank = !!ath && Object.keys(rankings).length > 0;
+  const showRank  = !!ath && Object.keys(rankings).length > 0;
+  const showGrade = label === "SCM" && standardsIndex !== null && !!ath;
+  const ageGroup  = showGrade ? ageToGroup(ath.age) : null;
   const rows = pbs
     .slice()
     .sort((a, b) => a.event.localeCompare(b.event))
@@ -275,10 +309,14 @@ function pbSection(pbs, label, badgeClass, ath) {
           rankCell = '<td style="color:var(--text-muted)">—</td>';
         }
       }
+      const gradeCell = showGrade
+        ? "<td>" + gradeProgressionHtml(p.event, ath.gender, ageGroup, timeToSeconds(p.time)) + "</td>"
+        : "";
       return (
         '<tr data-event="' + esc(p.event) + '" data-course="' + esc(p.course) + '">' +
           "<td>" + esc(p.event) + "</td>" +
           '<td class="pb-time">' + esc(p.time) + "</td>" +
+          gradeCell +
           (showRank ? rankCell : "") +
           "<td>" + esc(formatDate(p.date)) + "</td>" +
           "<td>" + esc(p.meet) + "</td>" +
@@ -287,13 +325,14 @@ function pbSection(pbs, label, badgeClass, ath) {
         "</tr>"
       );
     }).join("");
-  const rankTh = showRank ? "<th>Club Rank</th>" : "";
+  const rankTh  = showRank  ? "<th>Club Rank</th>" : "";
+  const gradeTh = showGrade ? "<th>Grade</th>"     : "";
   return (
     '<details class="course-section" open>' +
       '<summary class="course-label ' + badgeClass + '">' + label + "</summary>" +
       '<div style="overflow-x:auto">' +
       '<table class="pb-table">' +
-        "<thead><tr><th>Event</th><th>Time</th>" + rankTh + "<th>Date</th><th>Meet</th><th>Overall ↓</th><th>Latest ↓</th></tr></thead>" +
+        "<thead><tr><th>Event</th><th>Time</th>" + gradeTh + rankTh + "<th>Date</th><th>Meet</th><th>Overall ↓</th><th>Latest ↓</th></tr></thead>" +
         "<tbody>" + rows + "</tbody>" +
       "</table>" +
       "</div>" +

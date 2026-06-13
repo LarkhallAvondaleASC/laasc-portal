@@ -659,6 +659,23 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 
 .badge-neutral { background: #f3f4f6; color: #374151; }
 
+/* ── Grade ladder ─────────────────────────────────────────────────────────── */
+.grade-ladder { display: flex; gap: 3px; align-items: center; }
+.grade-chip {
+  font-size: .6rem;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: .15rem .32rem;
+  line-height: 1.2;
+  letter-spacing: .03em;
+  background: #f3f4f6;
+  color: #d1d5db;
+}
+.grade-chip--achieved.grade-chip--c  { background: #fef3c7; color: #92400e; }
+.grade-chip--achieved.grade-chip--b  { background: #dbeafe; color: #1e40af; }
+.grade-chip--achieved.grade-chip--a  { background: #dcfce7; color: #166534; }
+.grade-chip--achieved.grade-chip--aa { background: #fef9c3; color: #713f12; border: 1px solid #fde047; }
+
 /* ── Section headings ─────────────────────────────────────────────────────── */
 .section-heading {
   font-size: 1rem;
