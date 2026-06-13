@@ -952,5 +952,14 @@
     "event": "100 Breaststroke",
     "time": "2:01.04",
     "place": ""
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "52.66",
+    "place": "6"
   }
 ]

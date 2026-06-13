@@ -1188,24 +1188,6 @@
     "place": ""
   },
   {
-    "meet_id": 272,
-    "meet": "2026 WD LC May AG Meet",
-    "date": "2026-05-09",
-    "course": "LCM",
-    "event": "50 Freestyle",
-    "time": "30.93",
-    "place": "4"
-  },
-  {
-    "meet_id": 272,
-    "meet": "2026 WD LC May AG Meet",
-    "date": "2026-05-09",
-    "course": "LCM",
-    "event": "50 Backstroke",
-    "time": "35.28",
-    "place": "3"
-  },
-  {
     "meet_id": 263,
     "meet": "Sl Development Meet 3 - 2026",
     "date": "2026-05-09",
@@ -1224,6 +1206,24 @@
     "place": "1"
   },
   {
+    "meet_id": 272,
+    "meet": "2026 WD LC May AG Meet",
+    "date": "2026-05-09",
+    "course": "LCM",
+    "event": "50 Freestyle",
+    "time": "30.93",
+    "place": "4"
+  },
+  {
+    "meet_id": 272,
+    "meet": "2026 WD LC May AG Meet",
+    "date": "2026-05-09",
+    "course": "LCM",
+    "event": "50 Backstroke",
+    "time": "35.28",
+    "place": "3"
+  },
+  {
     "meet_id": 277,
     "meet": "Club Time Trials June 2026",
     "date": "2026-06-01",
@@ -1240,5 +1240,23 @@
     "event": "50 Butterfly",
     "time": "35.62",
     "place": ""
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "29.53",
+    "place": "1"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "34.44",
+    "place": "1"
   }
 ]

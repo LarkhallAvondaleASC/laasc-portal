@@ -1,13 +1,13 @@
 [
   {
-    "id": 275,
-    "name": "Temple Swimming Club 50th Anni",
+    "id": 270,
+    "name": "REN96 Development Meet 2026",
     "course": "SCM",
     "date": "2026-06-20"
   },
   {
-    "id": 270,
-    "name": "REN96 Development Meet 2026",
+    "id": 275,
+    "name": "Temple Swimming Club 50th Anni",
     "course": "SCM",
     "date": "2026-06-20"
   },
@@ -16,6 +16,12 @@
     "name": "SAST Open meet 13-14 June 2026",
     "course": "SCM",
     "date": "2026-06-13"
+  },
+  {
+    "id": 278,
+    "name": "2026 Clyde Coast Mini League F",
+    "course": "SCM",
+    "date": "2026-06-07"
   },
   {
     "id": 277,
@@ -30,15 +36,15 @@
     "date": "2026-05-23"
   },
   {
-    "id": 272,
-    "name": "2026 WD LC May AG Meet",
-    "course": "LCM",
-    "date": "2026-05-09"
-  },
-  {
     "id": 263,
     "name": "Sl Development Meet 3 - 2026",
     "course": "SCM",
+    "date": "2026-05-09"
+  },
+  {
+    "id": 272,
+    "name": "2026 WD LC May AG Meet",
+    "course": "LCM",
     "date": "2026-05-09"
   },
   {
@@ -90,14 +96,14 @@
     "date": "2026-03-21"
   },
   {
-    "id": 255,
-    "name": "Cumbernauld Spring Open Meet 2",
+    "id": 259,
+    "name": "Club 200 fly",
     "course": "SCM",
     "date": "2026-03-14"
   },
   {
-    "id": 259,
-    "name": "Club 200 fly",
+    "id": 255,
+    "name": "Cumbernauld Spring Open Meet 2",
     "course": "SCM",
     "date": "2026-03-14"
   },
@@ -288,15 +294,15 @@
     "date": "2025-05-17"
   },
   {
-    "id": 204,
-    "name": "South Lanarkshire Development",
-    "course": "SCM",
-    "date": "2025-05-10"
-  },
-  {
     "id": 200,
     "name": "2025 WD LC May AG Meet",
     "course": "LCM",
+    "date": "2025-05-10"
+  },
+  {
+    "id": 204,
+    "name": "South Lanarkshire Development",
+    "course": "SCM",
     "date": "2025-05-10"
   },
   {
@@ -354,8 +360,8 @@
     "date": "2025-03-01"
   },
   {
-    "id": 190,
-    "name": "Glenrothes Spring Meet",
+    "id": 195,
+    "name": "Glenrothes Spring Meet 2025",
     "course": "SCM",
     "date": "2025-02-22"
   },
@@ -366,14 +372,14 @@
     "date": "2025-02-22"
   },
   {
-    "id": 191,
-    "name": "South Lanarkshire Development",
+    "id": 190,
+    "name": "Glenrothes Spring Meet",
     "course": "SCM",
     "date": "2025-02-22"
   },
   {
-    "id": 195,
-    "name": "Glenrothes Spring Meet 2025",
+    "id": 191,
+    "name": "South Lanarkshire Development",
     "course": "SCM",
     "date": "2025-02-22"
   },
@@ -456,26 +462,26 @@
     "date": "2024-10-19"
   },
   {
-    "id": 221,
-    "name": "DASC 3 Club Development Meet",
-    "course": "SCM",
-    "date": "2024-10-12"
-  },
-  {
     "id": 173,
     "name": "Club Time Trials October 2024",
     "course": "SCM",
     "date": "2024-10-12"
   },
   {
-    "id": 172,
-    "name": "South Lanarkshire Development",
+    "id": 221,
+    "name": "DASC 3 Club Development Meet",
     "course": "SCM",
-    "date": "2024-10-05"
+    "date": "2024-10-12"
   },
   {
     "id": 165,
     "name": "Autumn Graded Meet 2024",
+    "course": "SCM",
+    "date": "2024-10-05"
+  },
+  {
+    "id": 172,
+    "name": "South Lanarkshire Development",
     "course": "SCM",
     "date": "2024-10-05"
   },
@@ -514,11 +520,5 @@
     "name": "Warrender End of Season SC Mee",
     "course": "SCM",
     "date": "2024-06-15"
-  },
-  {
-    "id": 158,
-    "name": "Lothian Region Distance Meet d",
-    "course": "SCM",
-    "date": "2024-06-09"
   }
 ]

@@ -745,5 +745,41 @@
     "event": "100 Butterfly",
     "time": "1:49.99",
     "place": ""
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "25 Freestyle",
+    "time": "16.65",
+    "place": "1"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "35.72",
+    "place": "2"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "25 Butterfly",
+    "time": "19.60",
+    "place": "1"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "42.72",
+    "place": "3"
   }
 ]

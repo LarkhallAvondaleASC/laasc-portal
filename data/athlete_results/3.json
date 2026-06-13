@@ -781,5 +781,23 @@
     "event": "100 Butterfly",
     "time": "2:39.15",
     "place": ""
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "25 Backstroke",
+    "time": "22.38",
+    "place": "6"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "25 Breaststroke",
+    "time": "26.41",
+    "place": "4"
   }
 ]
