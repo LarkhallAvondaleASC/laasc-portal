@@ -189,7 +189,8 @@ function renderSwimmers() {
     const chips =
       (swims ? '<span class="swimmer-chip">' + swims + " swim" + (swims === 1 ? "" : "s") + "</span>" : "") +
       (a.subgroup === "ML" ? '<span class="achievement-badge badge-ml">Mini League</span>' : "") +
-      (a.badges || []).map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>").join("");
+      (a.badges || []).map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>").join("") +
+      athleteGradeSummary(a);
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
         thumb +
@@ -295,6 +296,29 @@ function gradeProgressionHtml(event, gender, ageGroup, timeSecs) {
     return `<span class="grade-chip grade-chip--${grade.toLowerCase()}${achieved ? " grade-chip--achieved" : ""}" data-tooltip="${GRADE_LABELS[grade]}">${grade}</span>`;
   }).join("");
   return hasAny ? `<div class="grade-ladder">${chips}</div>` : "";
+}
+
+function athleteGradeSummary(ath) {
+  if (!standardsIndex) return "";
+  const ageGroup = ageToGroup(ath.age);
+  if (!ageGroup) return "";
+  const scmPbs = (ath.pbs || []).filter(p => p.course === "SCM");
+  if (!scmPbs.length) return "";
+  const grades = ["AA", "A", "B", "C"];
+  const badgeClass = { AA: "badge-grade-aa", A: "badge-grade-a", B: "badge-grade-b", C: "badge-grade-c" };
+  for (const grade of grades) {
+    let count = 0, total = 0;
+    for (const pb of scmPbs) {
+      const stdSecs = standardsIndex[`${pb.event}|${ath.gender}|${ageGroup}|${grade}`];
+      if (stdSecs === undefined) continue;
+      total++;
+      const pbSecs = timeToSeconds(pb.time);
+      if (pbSecs !== null && pbSecs <= stdSecs) count++;
+    }
+    if (count > 0)
+      return `<span class="achievement-badge ${badgeClass[grade]}">${grade}: ${count} / ${total} events</span>`;
+  }
+  return "";
 }
 
 function pbSection(pbs, label, badgeClass, ath) {
