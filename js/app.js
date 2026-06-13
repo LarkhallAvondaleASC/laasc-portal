@@ -189,8 +189,7 @@ function renderSwimmers() {
     const chips =
       (swims ? '<span class="swimmer-chip">' + swims + " swim" + (swims === 1 ? "" : "s") + "</span>" : "") +
       (a.subgroup === "ML" ? '<span class="achievement-badge badge-ml">Mini League</span>' : "") +
-      (a.badges || []).map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>").join("") +
-      athleteGradeSummary(a);
+      (a.badges || []).map(b => '<span class="achievement-badge badge-' + b + '">' + badgeLabel[b] + "</span>").join("");
     return (
       '<button class="swimmer-item" onclick="showSwimmer(' + a.id + ')">' +
         thumb +
@@ -745,7 +744,8 @@ async function loadProgressionSection(ath) {
       (ath.subgroup === "ML" ? '<span class="achievement-badge badge-ml">Mini League</span>' : "") +
       (hasRegional  ? '<span class="achievement-badge badge-regional">Regional</span>'      : "") +
       (hasDistrict  ? '<span class="achievement-badge badge-district">West District</span>' : "") +
-      (hasNational  ? '<span class="achievement-badge badge-national">National</span>'      : "");
+      (hasNational  ? '<span class="achievement-badge badge-national">National</span>'      : "") +
+      athleteGradeSummary(ath);
   }
   const scmMeets    = uniqueMeets.filter(m => !isTimeTrial(m) && m.course === "SCM").length;
   const scmTTs      = uniqueMeets.filter(m =>  isTimeTrial(m) && m.course === "SCM").length;
