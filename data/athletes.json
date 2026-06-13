@@ -239,9 +239,9 @@
       {
         "event": "25 Backstroke",
         "course": "SCM",
-        "time": "23.73",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "22.38",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "50 Backstroke",
@@ -308,7 +308,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 50,
+    "season_swims": 52,
     "improvement": {
       "avg": 7.77,
       "events": 8,
@@ -366,9 +366,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "37.37",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "36.16",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Backstroke",
@@ -408,9 +408,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "36.64",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "35.53",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Butterfly",
@@ -424,7 +424,7 @@
         "course": "SCM",
         "time": "3:01.03",
         "date": "2026-03-14",
-        "meet": "Cumbernauld Spring Open Meet 2"
+        "meet": "Club 200 fly"
       },
       {
         "event": "100 IM",
@@ -514,9 +514,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 69,
+    "season_swims": 71,
     "improvement": {
-      "avg": 13.74,
+      "avg": 14.21,
       "events": 12,
       "best": {
         "event": "100 Butterfly",
@@ -951,9 +951,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "30.48",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "29.53",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Freestyle",
@@ -986,9 +986,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "34.88",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "34.44",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Backstroke",
@@ -1114,9 +1114,9 @@
       "district",
       "national"
     ],
-    "season_swims": 74,
+    "season_swims": 76,
     "improvement": {
-      "avg": 9.11,
+      "avg": 9.36,
       "events": 16,
       "best": {
         "event": "100 Butterfly",
@@ -1200,9 +1200,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "43.98",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "42.72",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Butterfly",
@@ -1227,9 +1227,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 52,
+    "season_swims": 56,
     "improvement": {
-      "avg": 14.06,
+      "avg": 14.41,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -1516,7 +1516,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 29,
+    "season_swims": 32,
     "improvement": null
   },
   {
@@ -1814,7 +1814,7 @@
     "badges": [
       "district"
     ],
-    "season_swims": 67,
+    "season_swims": 69,
     "improvement": {
       "avg": 14.57,
       "events": 11,
@@ -2268,9 +2268,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "39.50",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "37.66",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Breaststroke",
@@ -2289,9 +2289,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "33.34",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "32.13",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Butterfly",
@@ -2389,14 +2389,14 @@
       "district",
       "national"
     ],
-    "season_swims": 64,
+    "season_swims": 66,
     "improvement": {
-      "avg": 9.94,
+      "avg": 10.61,
       "events": 11,
       "best": {
-        "event": "200 Breaststroke",
+        "event": "50 Breaststroke",
         "course": "SCM",
-        "pct": 14.4
+        "pct": 16.31
       }
     }
   },
@@ -3003,9 +3003,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "35.93",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "35.53",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Freestyle",
@@ -3095,9 +3095,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 42,
+    "season_swims": 44,
     "improvement": {
-      "avg": 6.83,
+      "avg": 6.95,
       "events": 9,
       "best": {
         "event": "200 Freestyle",
@@ -4720,9 +4720,9 @@
       {
         "event": "25 Freestyle",
         "course": "SCM",
-        "time": "21.09",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "19.84",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "50 Freestyle",
@@ -4769,9 +4769,9 @@
       {
         "event": "25 Butterfly",
         "course": "SCM",
-        "time": "25.32",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
+        "time": "23.47",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "50 Butterfly",
@@ -4789,7 +4789,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 30,
+    "season_swims": 32,
     "improvement": null
   },
   {
@@ -5417,7 +5417,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 7,
+    "season_swims": 9,
     "improvement": {
       "avg": 3.73,
       "events": 3,
@@ -6236,7 +6236,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 36,
+    "season_swims": 38,
     "improvement": {
       "avg": 9.07,
       "events": 7,
@@ -6889,9 +6889,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "55.67",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "52.66",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Breaststroke",
@@ -6916,9 +6916,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 65,
+    "season_swims": 66,
     "improvement": {
-      "avg": 9.18,
+      "avg": 9.84,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -6939,9 +6939,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "33.19",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "32.97",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Freestyle",
@@ -6995,9 +6995,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "44.21",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "44.06",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Breaststroke",
@@ -7087,9 +7087,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 80,
+    "season_swims": 82,
     "improvement": {
-      "avg": 11.28,
+      "avg": 11.38,
       "events": 9,
       "best": {
         "event": "50 Butterfly",
@@ -7145,9 +7145,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "43.51",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "43.47",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Backstroke",
@@ -7214,9 +7214,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 59,
+    "season_swims": 60,
     "improvement": {
-      "avg": 7.4,
+      "avg": 7.41,
       "events": 9,
       "best": {
         "event": "50 Butterfly",
@@ -7399,9 +7399,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "40.41",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "39.72",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Freestyle",
@@ -7448,9 +7448,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "53.37",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
+        "time": "52.49",
+        "date": "2026-06-07",
+        "meet": "2026 Clyde Coast Mini League F"
       },
       {
         "event": "100 Butterfly",
@@ -7475,9 +7475,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 46,
+    "season_swims": 48,
     "improvement": {
-      "avg": 13.13,
+      "avg": 13.5,
       "events": 8,
       "best": {
         "event": "100 Backstroke",

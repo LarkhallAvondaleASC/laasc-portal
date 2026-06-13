@@ -268,5 +268,32 @@
     "event": "100 Breaststroke",
     "time": "2:16.86",
     "place": ""
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "25 Backstroke",
+    "time": "24.66",
+    "place": "7"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "50.47",
+    "place": "6"
+  },
+  {
+    "meet_id": 278,
+    "meet": "2026 Clyde Coast Mini League F",
+    "date": "2026-06-07",
+    "course": "SCM",
+    "event": "25 Breaststroke",
+    "time": "27.59",
+    "place": "8"
   }
 ]
