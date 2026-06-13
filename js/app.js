@@ -10,6 +10,12 @@ let rankingsGender = "";
 let rankings = {};
 let standardsIndex = null;
 
+const GRADE_LABELS = {
+  C:  "C – Entry-level graded meet standard",
+  B:  "B – Intermediate graded meet standard",
+  A:  "A – High performance graded standard",
+  AA: "AA – Top-level Scottish Swimming standard",
+};
 const SQUAD_ORDER  = ["SEN", "TRN", "JUN", "DEV", "ENT"];
 const COURSE_ORDER = ["SCM", "LCM", "Yards"];
 const STROKE_ORDER = ["Freestyle", "Backstroke", "Breaststroke", "Butterfly", "IM"];
@@ -276,7 +282,7 @@ function gradeProgressionHtml(event, gender, ageGroup, timeSecs) {
     if (stdSecs === undefined) return "";
     hasAny = true;
     const achieved = timeSecs !== null && timeSecs <= stdSecs;
-    return `<span class="grade-chip grade-chip--${grade.toLowerCase()}${achieved ? " grade-chip--achieved" : ""}">${grade}</span>`;
+    return `<span class="grade-chip grade-chip--${grade.toLowerCase()}${achieved ? " grade-chip--achieved" : ""}" data-tooltip="${GRADE_LABELS[grade]}">${grade}</span>`;
   }).join("");
   return hasAny ? `<div class="grade-ladder">${chips}</div>` : "";
 }

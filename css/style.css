@@ -662,6 +662,7 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 /* ── Grade ladder ─────────────────────────────────────────────────────────── */
 .grade-ladder { display: flex; gap: 3px; align-items: center; }
 .grade-chip {
+  position: relative;
   font-size: .6rem;
   font-weight: 700;
   border-radius: 3px;
@@ -670,11 +671,45 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
   letter-spacing: .03em;
   background: #f3f4f6;
   color: #d1d5db;
+  cursor: default;
 }
 .grade-chip--achieved.grade-chip--c  { background: #fef3c7; color: #92400e; }
 .grade-chip--achieved.grade-chip--b  { background: #dbeafe; color: #1e40af; }
 .grade-chip--achieved.grade-chip--a  { background: #dcfce7; color: #166534; }
 .grade-chip--achieved.grade-chip--aa { background: #fef9c3; color: #713f12; border: 1px solid #fde047; }
+.grade-chip[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1f2937;
+  color: #f9fafb;
+  font-size: .65rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: .3rem .55rem;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  z-index: 100;
+}
+.grade-chip[data-tooltip]::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: #1f2937;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  z-index: 100;
+}
+.grade-chip[data-tooltip]:hover::after,
+.grade-chip[data-tooltip]:hover::before { opacity: 1; }
 
 /* ── Section headings ─────────────────────────────────────────────────────── */
 .section-heading {
