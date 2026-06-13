@@ -711,6 +711,22 @@ details:not([open]) summary.course-label::after { transform: rotate(180deg); }
 .grade-chip[data-tooltip]:hover::after,
 .grade-chip[data-tooltip]:hover::before { opacity: 1; }
 
+/* ── Standards reference table ────────────────────────────────────────────── */
+.standards-stroke-header td {
+  background: var(--bg);
+  font-weight: 700;
+  font-size: .72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  padding: .7rem .75rem .3rem;
+  border-bottom: none;
+}
+.standards-stroke-header:hover td { background: var(--bg) !important; }
+.standards-grade-th { text-align: center; min-width: 5.5rem; }
+.standards-time { text-align: center; font-weight: 700; font-family: ui-monospace, monospace; }
+.standards-na   { text-align: center; color: var(--text-muted); }
+
 /* ── Section headings ─────────────────────────────────────────────────────── */
 .section-heading {
   font-size: 1rem;

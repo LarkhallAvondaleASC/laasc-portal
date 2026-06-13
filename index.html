@@ -24,6 +24,7 @@
         <button class="tab-btn" data-tab="meets">Meets</button>
         <button class="tab-btn" data-tab="stats">Stats</button>
         <button class="tab-btn" data-tab="rankings">Rankings</button>
+        <button class="tab-btn" data-tab="standards">Standards</button>
         <button class="tab-btn tab-btn--compare hidden" data-tab="compare">Compare</button>
       </nav>
       <button class="coach-btn" id="coach-btn" onclick="openCoachModal()" aria-label="Coach login">Coach</button>
@@ -136,6 +137,15 @@
       <div id="rankings-events"></div>
       <div id="rankings-top10"></div>
       <div id="rankings-most-improved"></div>
+    </section>
+
+    <!-- Standards -->
+    <section id="tab-standards" class="tab-panel" role="tabpanel">
+      <div class="stats-filter-bar">
+        <div id="standards-gender-filter" class="stats-toggle-group"></div>
+        <div id="standards-age-filter" class="stats-toggle-group"></div>
+      </div>
+      <div id="standards-table"></div>
     </section>
 
     <!-- Compare (coaches only) -->

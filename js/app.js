@@ -9,7 +9,16 @@ let rankingsCourse = "SCM";
 let rankingsGender = "";
 let rankings = {};
 let standardsIndex = null;
+let standardsGender   = "F";
+let standardsAgeGroup = "12";
 
+const STANDARDS_EVENTS = [
+  { stroke: "Freestyle",    events: ["50 Freestyle", "100 Freestyle", "200 Freestyle", "400 Freestyle", "800 Freestyle", "1500 Freestyle"] },
+  { stroke: "Backstroke",   events: ["50 Backstroke", "100 Backstroke", "200 Backstroke"] },
+  { stroke: "Breaststroke", events: ["50 Breaststroke", "100 Breaststroke", "200 Breaststroke"] },
+  { stroke: "Butterfly",    events: ["50 Butterfly", "100 Butterfly", "200 Butterfly"] },
+  { stroke: "IM",           events: ["100 IM", "200 IM", "400 IM"] },
+];
 const GRADE_LABELS = {
   C:  "C – Entry-level graded meet standard",
   B:  "B – Intermediate graded meet standard",
@@ -107,8 +116,9 @@ document.querySelectorAll(".tab-btn").forEach(btn =>
     if (btn.dataset.tab === "swimmers")  openSwimmersTab();
     else if (btn.dataset.tab === "meets")    openMeetsTab();
     else if (btn.dataset.tab === "stats")    openStatsTab();
-    else if (btn.dataset.tab === "rankings") openRankingsTab();
-    else if (btn.dataset.tab === "compare")  openCompareTab();
+    else if (btn.dataset.tab === "rankings")  openRankingsTab();
+    else if (btn.dataset.tab === "standards") openStandardsTab();
+    else if (btn.dataset.tab === "compare")   openCompareTab();
     else switchTab(btn.dataset.tab);
   })
 );
@@ -1240,6 +1250,80 @@ function openRankingsTab() {
 function selectRankingsCourse(c) { rankingsCourse = c; renderRankings(); }
 function selectRankingsGender(g) { rankingsGender = g; renderRankings(); }
 
+// ── Standards ─────────────────────────────────────────────────────────────────
+
+function openStandardsTab() {
+  switchTab("standards");
+  renderStandards();
+}
+
+function selectStandardsGender(g)   { standardsGender   = g; renderStandards(); }
+function selectStandardsAgeGroup(a) { standardsAgeGroup = a; renderStandards(); }
+
+function renderStandards() {
+  const genderEl = document.getElementById("standards-gender-filter");
+  if (genderEl) {
+    genderEl.innerHTML = [["F", "Female"], ["M", "Male"]].map(([val, label]) =>
+      '<button class="course-label badge-neutral chart-toggle' + (standardsGender === val ? "" : " inactive") + '" onclick="selectStandardsGender(\'' + val + '\')">' + label + "</button>"
+    ).join("");
+  }
+
+  const ageGroups = ["9/U", "10", "11", "12", "13", "14", "15", "16", "17", "18+"];
+  const ageEl = document.getElementById("standards-age-filter");
+  if (ageEl) {
+    ageEl.innerHTML = ageGroups.map(ag =>
+      '<button class="course-label badge-neutral chart-toggle' + (standardsAgeGroup === ag ? "" : " inactive") + '" onclick="selectStandardsAgeGroup(\'' + ag.replace("/", "\\/") + '\')">' + ag + "</button>"
+    ).join("");
+  }
+
+  const tableEl = document.getElementById("standards-table");
+  if (!tableEl) return;
+
+  if (!standardsIndex) {
+    tableEl.innerHTML = '<p class="no-pbs">Standards data not available.</p>';
+    return;
+  }
+
+  const grades = ["C", "B", "A", "AA"];
+  const gradeStyle = {
+    C:  "background:#fef3c7;color:#92400e",
+    B:  "background:#dbeafe;color:#1e40af",
+    A:  "background:#dcfce7;color:#166534",
+    AA: "background:#fef9c3;color:#713f12",
+  };
+
+  let rows = "";
+  for (const { stroke, events } of STANDARDS_EVENTS) {
+    const strokeEvents = events.filter(event =>
+      grades.some(g => standardsIndex[`${event}|${standardsGender}|${standardsAgeGroup}|${g}`] !== undefined)
+    );
+    if (!strokeEvents.length) continue;
+
+    rows += '<tr class="standards-stroke-header"><td colspan="5">' + stroke + "</td></tr>";
+    for (const event of strokeEvents) {
+      const cells = grades.map(grade => {
+        const stdSecs = standardsIndex[`${event}|${standardsGender}|${standardsAgeGroup}|${grade}`];
+        return stdSecs !== undefined
+          ? '<td class="standards-time" style="' + gradeStyle[grade] + '">' + secondsToTime(stdSecs) + "</td>"
+          : '<td class="standards-na">—</td>';
+      }).join("");
+      rows += "<tr><td>" + esc(event) + "</td>" + cells + "</tr>";
+    }
+  }
+
+  const gradeThs = grades.map(g =>
+    '<th class="standards-grade-th" style="' + gradeStyle[g] + '">' + g + "</th>"
+  ).join("");
+
+  tableEl.innerHTML =
+    '<div style="overflow-x:auto">' +
+    '<table class="pb-table standards-ref-table">' +
+      "<thead><tr><th>Event</th>" + gradeThs + "</tr></thead>" +
+      "<tbody>" + rows + "</tbody>" +
+    "</table></div>" +
+    '<p class="rank-note" style="margin-top:.75rem">Scottish Swimming graded meet consideration times (SCM) · West District · April 2025.</p>';
+}
+
 function renderRankings() {
   const pool = rankingsGender ? athletes.filter(a => a.gender === rankingsGender) : athletes;
 
@@ -1508,6 +1592,8 @@ function navigate(hash) {
     switchTab("stats", false);
   } else if (h === "rankings") {
     openRankingsTab();
+  } else if (h === "standards") {
+    openStandardsTab();
   } else if (h === "compare") {
     if (isCoachMode()) openCompareTab();
     else switchTab("home", false);
