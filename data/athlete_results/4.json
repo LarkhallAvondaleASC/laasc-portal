@@ -1006,5 +1006,50 @@
     "event": "50 Butterfly",
     "time": "35.53",
     "place": "1"
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "2:33.56",
+    "place": "3"
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "200 Backstroke",
+    "time": "2:51.87",
+    "place": "1"
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:32.17",
+    "place": "3"
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "2:50.51",
+    "place": "1"
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "400 IM",
+    "time": "6:08.54",
+    "place": "10"
   }
 ]

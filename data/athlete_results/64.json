@@ -1177,5 +1177,14 @@
     "event": "50 Butterfly",
     "time": "31.16",
     "place": ""
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "26.92",
+    "place": "21"
   }
 ]

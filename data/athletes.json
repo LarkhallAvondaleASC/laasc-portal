@@ -25,16 +25,16 @@
       {
         "event": "200 Freestyle",
         "course": "SCM",
-        "time": "2:29.62",
-        "date": "2026-01-17",
-        "meet": "Forth Valley Tridents Open Mee"
+        "time": "2:27.65",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "400 Freestyle",
         "course": "SCM",
-        "time": "5:20.56",
-        "date": "2025-05-03",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "5:17.90",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "800 Freestyle",
@@ -46,9 +46,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "33.19",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "32.15",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Backstroke",
@@ -67,16 +67,16 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "37.36",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "36.62",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:23.22",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "1:21.65",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Breaststroke",
@@ -109,9 +109,9 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "2:45.96",
-        "date": "2026-01-17",
-        "meet": "Forth Valley Tridents Open Mee"
+        "time": "2:39.80",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "400 IM",
@@ -202,10 +202,10 @@
       "district",
       "national"
     ],
-    "season_swims": 61,
+    "season_swims": 69,
     "improvement": {
-      "avg": 4.89,
-      "events": 21,
+      "avg": 5.23,
+      "events": 22,
       "best": {
         "event": "100 Butterfly",
         "course": "SCM",
@@ -345,9 +345,9 @@
       {
         "event": "200 Freestyle",
         "course": "SCM",
-        "time": "2:39.32",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "2:33.56",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "400 Freestyle",
@@ -380,9 +380,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "2:53.27",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "2:51.87",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -394,9 +394,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:35.73",
-        "date": "2026-01-31",
-        "meet": "South Lanarkshire Development"
+        "time": "1:32.17",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Breaststroke",
@@ -436,16 +436,16 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "2:54.58",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "2:50.51",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "400 IM",
         "course": "SCM",
-        "time": "6:53.85",
-        "date": "2025-10-06",
-        "meet": "Club Time Trials October 2025"
+        "time": "6:08.54",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Backstroke",
@@ -514,9 +514,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 71,
+    "season_swims": 76,
     "improvement": {
-      "avg": 14.21,
+      "avg": 14.91,
       "events": 12,
       "best": {
         "event": "100 Butterfly",
@@ -718,7 +718,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 20,
+    "season_swims": 21,
     "improvement": null
   },
   {
@@ -1014,9 +1014,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:43.44",
-        "date": "2025-02-22",
-        "meet": "Hearts Fast February"
+        "time": "1:34.79",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Breaststroke",
@@ -1114,10 +1114,10 @@
       "district",
       "national"
     ],
-    "season_swims": 76,
+    "season_swims": 81,
     "improvement": {
-      "avg": 9.36,
-      "events": 16,
+      "avg": 9.3,
+      "events": 17,
       "best": {
         "event": "100 Butterfly",
         "course": "SCM",
@@ -1144,9 +1144,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "35.61",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "34.72",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -1172,9 +1172,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:35.46",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:32.98",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -1200,9 +1200,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "42.72",
-        "date": "2026-06-07",
-        "meet": "2026 Clyde Coast Mini League F"
+        "time": "41.38",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1227,14 +1227,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 56,
+    "season_swims": 59,
     "improvement": {
-      "avg": 14.41,
+      "avg": 15.3,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
         "course": "SCM",
-        "pct": 25.8
+        "pct": 27.73
       }
     }
   },
@@ -1482,9 +1482,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:52.36",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "1:48.06",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "25 Breaststroke",
@@ -1516,7 +1516,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 32,
+    "season_swims": 33,
     "improvement": null
   },
   {
@@ -1708,9 +1708,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "32.16",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "31.63",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -1771,9 +1771,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "38.15",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "37.31",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1814,9 +1814,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 69,
+    "season_swims": 73,
     "improvement": {
-      "avg": 14.57,
+      "avg": 14.87,
       "events": 11,
       "best": {
         "event": "100 Backstroke",
@@ -1914,9 +1914,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "33.46",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "33.21",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -1956,9 +1956,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:23.99",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:23.50",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Backstroke",
@@ -1991,9 +1991,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "39.32",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "37.39",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -2063,14 +2063,14 @@
       "district",
       "national"
     ],
-    "season_swims": 68,
+    "season_swims": 72,
     "improvement": {
-      "avg": 4.8,
+      "avg": 5.29,
       "events": 12,
       "best": {
-        "event": "100 IM",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 7.97
+        "pct": 11.48
       }
     }
   },
@@ -2212,9 +2212,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "30.29",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "28.91",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -2226,9 +2226,9 @@
       {
         "event": "200 Freestyle",
         "course": "SCM",
-        "time": "2:27.99",
-        "date": "2026-03-14",
-        "meet": "Cumbernauld Spring Open Meet 2"
+        "time": "2:26.06",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "400 Freestyle",
@@ -2275,9 +2275,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:25.25",
-        "date": "2026-03-14",
-        "meet": "Cumbernauld Spring Open Meet 2"
+        "time": "1:22.39",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Breaststroke",
@@ -2289,9 +2289,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "32.13",
-        "date": "2026-06-07",
-        "meet": "2026 Clyde Coast Mini League F"
+        "time": "32.03",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -2389,14 +2389,14 @@
       "district",
       "national"
     ],
-    "season_swims": 66,
+    "season_swims": 70,
     "improvement": {
-      "avg": 10.61,
+      "avg": 11.37,
       "events": 11,
       "best": {
-        "event": "50 Breaststroke",
+        "event": "100 Breaststroke",
         "course": "SCM",
-        "pct": 16.31
+        "pct": 16.67
       }
     }
   },
@@ -3003,9 +3003,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "35.53",
-        "date": "2026-06-07",
-        "meet": "2026 Clyde Coast Mini League F"
+        "time": "34.18",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -3038,9 +3038,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:11.27",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "3:04.04",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Breaststroke",
@@ -3095,9 +3095,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 44,
+    "season_swims": 47,
     "improvement": {
-      "avg": 6.95,
+      "avg": 7.35,
       "events": 9,
       "best": {
         "event": "200 Freestyle",
@@ -3675,9 +3675,9 @@
       {
         "event": "200 Freestyle",
         "course": "SCM",
-        "time": "2:57.97",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "2:42.24",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Backstroke",
@@ -3689,9 +3689,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:32.09",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "1:28.15",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Backstroke",
@@ -3744,7 +3744,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 11,
+    "season_swims": 14,
     "improvement": null
   },
   {
@@ -3992,7 +3992,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 13,
+    "season_swims": 14,
     "improvement": null
   },
   {
@@ -4615,9 +4615,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "35.56",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "33.78",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -4705,7 +4705,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 14,
+    "season_swims": 16,
     "improvement": null
   },
   {
@@ -5155,9 +5155,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "28.86",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "26.92",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -5332,9 +5332,9 @@
       "district",
       "national"
     ],
-    "season_swims": 48,
+    "season_swims": 49,
     "improvement": {
-      "avg": 4.71,
+      "avg": 5.25,
       "events": 12,
       "best": {
         "event": "100 Butterfly",
@@ -5925,9 +5925,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:25.62",
-        "date": "2026-01-17",
-        "meet": "Forth Valley Tridents Open Mee"
+        "time": "1:24.01",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Breaststroke",
@@ -6024,9 +6024,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 69,
+    "season_swims": 70,
     "improvement": {
-      "avg": 6.93,
+      "avg": 7.03,
       "events": 17,
       "best": {
         "event": "400 Freestyle",
@@ -6753,9 +6753,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "38.45",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "35.45",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Freestyle",
@@ -6809,9 +6809,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "42.80",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "41.93",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "100 Butterfly",
@@ -6838,9 +6838,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 56,
+    "season_swims": 60,
     "improvement": {
-      "avg": 13.21,
+      "avg": 14.34,
       "events": 8,
       "best": {
         "event": "100 Freestyle",
@@ -7002,16 +7002,16 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:36.74",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "1:33.50",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "200 Breaststroke",
         "course": "SCM",
-        "time": "3:25.07",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "3:24.71",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Butterfly",
@@ -7044,16 +7044,16 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "2:54.71",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "2:52.32",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "400 IM",
         "course": "SCM",
-        "time": "6:18.07",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "6:12.95",
+        "date": "2026-06-13",
+        "meet": "SAST Open meet 13-14 June 2026"
       },
       {
         "event": "50 Backstroke",
@@ -7087,9 +7087,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 82,
+    "season_swims": 93,
     "improvement": {
-      "avg": 11.38,
+      "avg": 11.71,
       "events": 9,
       "best": {
         "event": "50 Butterfly",

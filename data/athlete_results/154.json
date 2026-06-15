@@ -295,5 +295,14 @@
     "event": "25 Breaststroke",
     "time": "27.59",
     "place": "8"
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:48.06",
+    "place": "18"
   }
 ]

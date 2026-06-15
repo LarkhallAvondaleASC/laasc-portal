@@ -1267,5 +1267,14 @@
     "event": "50 Butterfly",
     "time": "35.18",
     "place": ""
+  },
+  {
+    "meet_id": 269,
+    "meet": "SAST Open meet 13-14 June 2026",
+    "date": "2026-06-13",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:24.01",
+    "place": "16"
   }
 ]
