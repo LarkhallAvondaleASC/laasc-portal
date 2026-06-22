@@ -1051,5 +1051,59 @@
     "event": "400 IM",
     "time": "6:08.54",
     "place": "10"
+  },
+  {
+    "meet_id": 270,
+    "meet": "REN96 Development Meet 2026",
+    "date": "2026-06-20",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:10.24",
+    "place": "10"
+  },
+  {
+    "meet_id": 270,
+    "meet": "REN96 Development Meet 2026",
+    "date": "2026-06-20",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "2:35.55",
+    "place": "9"
+  },
+  {
+    "meet_id": 270,
+    "meet": "REN96 Development Meet 2026",
+    "date": "2026-06-20",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:19.55",
+    "place": "9"
+  },
+  {
+    "meet_id": 270,
+    "meet": "REN96 Development Meet 2026",
+    "date": "2026-06-20",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:38.37",
+    "place": "12"
+  },
+  {
+    "meet_id": 270,
+    "meet": "REN96 Development Meet 2026",
+    "date": "2026-06-20",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "DQ",
+    "place": ""
+  },
+  {
+    "meet_id": 270,
+    "meet": "REN96 Development Meet 2026",
+    "date": "2026-06-20",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "2:52.64",
+    "place": "6"
   }
 ]

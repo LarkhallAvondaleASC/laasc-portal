@@ -338,9 +338,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:11.34",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:10.24",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Freestyle",
@@ -373,9 +373,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:23.34",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "1:19.55",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Backstroke",
@@ -514,9 +514,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 76,
+    "season_swims": 82,
     "improvement": {
-      "avg": 14.91,
+      "avg": 15.35,
       "events": 12,
       "best": {
         "event": "100 Butterfly",
@@ -1404,9 +1404,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "46.59",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "41.57",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Butterfly",
@@ -1431,14 +1431,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 54,
+    "season_swims": 56,
     "improvement": {
-      "avg": 6.77,
+      "avg": 7.78,
       "events": 10,
       "best": {
-        "event": "100 Butterfly",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 12.93
+        "pct": 16.64
       }
     }
   },
@@ -1715,9 +1715,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:13.40",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:10.89",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Freestyle",
@@ -1814,9 +1814,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 73,
+    "season_swims": 75,
     "improvement": {
-      "avg": 14.87,
+      "avg": 15.14,
       "events": 11,
       "best": {
         "event": "100 Backstroke",
@@ -2141,7 +2141,7 @@
     "id": 184,
     "last": "Donnelly",
     "first": "Jorgie",
-    "age": "11",
+    "age": "12",
     "gender": "F",
     "group": "ENT",
     "subgroup": "",
@@ -2296,9 +2296,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "1:20.43",
-        "date": "2025-11-08",
-        "meet": "2025 WD Short Course Champions"
+        "time": "1:13.22",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Butterfly",
@@ -2317,9 +2317,9 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "2:48.13",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "2:39.98",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "50 Freestyle",
@@ -2389,9 +2389,9 @@
       "district",
       "national"
     ],
-    "season_swims": 70,
+    "season_swims": 76,
     "improvement": {
-      "avg": 11.37,
+      "avg": 12.54,
       "events": 11,
       "best": {
         "event": "100 Breaststroke",
@@ -3010,9 +3010,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:22.56",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "1:18.16",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Freestyle",
@@ -3031,9 +3031,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:29.44",
-        "date": "2026-01-31",
-        "meet": "South Lanarkshire Development"
+        "time": "1:27.97",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Backstroke",
@@ -3095,9 +3095,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 47,
+    "season_swims": 50,
     "improvement": {
-      "avg": 7.35,
+      "avg": 8.07,
       "events": 9,
       "best": {
         "event": "200 Freestyle",
@@ -3682,9 +3682,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "41.49",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "40.13",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Backstroke",
@@ -3724,9 +3724,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "1:32.96",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
+        "time": "1:28.12",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 IM",
@@ -3744,7 +3744,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 14,
+    "season_swims": 17,
     "improvement": null
   },
   {
@@ -5190,9 +5190,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "35.73",
-        "date": "2025-08-18",
-        "meet": "Club 50m Time Trials"
+        "time": "33.98",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Backstroke",
@@ -5232,9 +5232,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "31.16",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "30.67",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Butterfly",
@@ -5332,10 +5332,10 @@
       "district",
       "national"
     ],
-    "season_swims": 49,
+    "season_swims": 53,
     "improvement": {
-      "avg": 5.25,
-      "events": 12,
+      "avg": 5.34,
+      "events": 13,
       "best": {
         "event": "100 Butterfly",
         "course": "SCM",
@@ -5862,16 +5862,16 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "30.48",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "29.36",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:05.27",
-        "date": "2025-11-21",
-        "meet": "Dumfries ASC Advent Open 2025"
+        "time": "1:02.93",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Freestyle",
@@ -5904,9 +5904,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:18.19",
-        "date": "2025-09-20",
-        "meet": "South Lanarkshire Development"
+        "time": "1:15.21",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "200 Backstroke",
@@ -5946,9 +5946,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "1:20.00",
-        "date": "2025-11-21",
-        "meet": "Dumfries ASC Advent Open 2025"
+        "time": "1:18.00",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 IM",
@@ -6024,9 +6024,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 70,
+    "season_swims": 75,
     "improvement": {
-      "avg": 7.03,
+      "avg": 7.79,
       "events": 17,
       "best": {
         "event": "400 Freestyle",
@@ -6668,9 +6668,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "37.36",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "35.56",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Freestyle",
@@ -6696,9 +6696,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "48.62",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "46.91",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Breaststroke",
@@ -6710,9 +6710,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "45.53",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "45.44",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 IM",
@@ -6730,9 +6730,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 45,
+    "season_swims": 48,
     "improvement": {
-      "avg": 10.93,
+      "avg": 11.88,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -6753,9 +6753,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "35.45",
-        "date": "2026-06-13",
-        "meet": "SAST Open meet 13-14 June 2026"
+        "time": "34.49",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Freestyle",
@@ -6788,9 +6788,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "48.64",
-        "date": "2026-04-27",
-        "meet": "Club Squad Time Trials April 2"
+        "time": "45.07",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Breaststroke",
@@ -6809,9 +6809,9 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "41.93",
-        "date": "2026-06-13",
-        "meet": "SAST Open meet 13-14 June 2026"
+        "time": "39.10",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Butterfly",
@@ -6838,9 +6838,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 60,
+    "season_swims": 63,
     "improvement": {
-      "avg": 14.34,
+      "avg": 16.15,
       "events": 8,
       "best": {
         "event": "100 Freestyle",
@@ -6953,9 +6953,9 @@
       {
         "event": "200 Freestyle",
         "course": "SCM",
-        "time": "2:37.80",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "2:36.40",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "400 Freestyle",
@@ -6995,9 +6995,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "44.06",
-        "date": "2026-06-07",
-        "meet": "2026 Clyde Coast Mini League F"
+        "time": "43.48",
+        "date": "2026-06-20",
+        "meet": "REN96 Development Meet 2026"
       },
       {
         "event": "100 Breaststroke",
@@ -7087,9 +7087,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 93,
+    "season_swims": 100,
     "improvement": {
-      "avg": 11.71,
+      "avg": 11.93,
       "events": 9,
       "best": {
         "event": "50 Butterfly",

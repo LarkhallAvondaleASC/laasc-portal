@@ -1,32 +1,5 @@
 [
   {
-    "meet_id": 156,
-    "meet": "Warrender End of Season SC Mee",
-    "date": "2024-06-15",
-    "course": "SCM",
-    "event": "100 Freestyle",
-    "time": "1:08.10",
-    "place": "6"
-  },
-  {
-    "meet_id": 156,
-    "meet": "Warrender End of Season SC Mee",
-    "date": "2024-06-15",
-    "course": "SCM",
-    "event": "100 Butterfly",
-    "time": "1:16.54",
-    "place": "3"
-  },
-  {
-    "meet_id": 156,
-    "meet": "Warrender End of Season SC Mee",
-    "date": "2024-06-15",
-    "course": "SCM",
-    "event": "200 IM",
-    "time": "2:52.32",
-    "place": "5"
-  },
-  {
     "meet_id": 163,
     "meet": "Club 50m Sprints August 2024",
     "date": "2024-08-19",

@@ -360,14 +360,14 @@
     "date": "2025-03-01"
   },
   {
-    "id": 195,
-    "name": "Glenrothes Spring Meet 2025",
+    "id": 189,
+    "name": "Hearts Fast February",
     "course": "SCM",
     "date": "2025-02-22"
   },
   {
-    "id": 189,
-    "name": "Hearts Fast February",
+    "id": 195,
+    "name": "Glenrothes Spring Meet 2025",
     "course": "SCM",
     "date": "2025-02-22"
   },
@@ -514,11 +514,5 @@
     "name": "Scottish Summer Meet 2024",
     "course": "LCM",
     "date": "2024-07-11"
-  },
-  {
-    "id": 156,
-    "name": "Warrender End of Season SC Mee",
-    "course": "SCM",
-    "date": "2024-06-15"
   }
 ]
