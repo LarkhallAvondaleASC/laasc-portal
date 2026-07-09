@@ -655,7 +655,7 @@
     "id": 158,
     "last": "Bayne",
     "first": "Emily",
-    "age": "9",
+    "age": "10",
     "gender": "F",
     "group": "DEV",
     "subgroup": "",
@@ -719,62 +719,6 @@
     ],
     "badges": [],
     "season_swims": 21,
-    "improvement": null
-  },
-  {
-    "id": 169,
-    "last": "Beaton",
-    "first": "Tilly",
-    "age": "10",
-    "gender": "F",
-    "group": "ENT",
-    "subgroup": "",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "1:02.62",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "1:16.97",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "1:23.09",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:49.29",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "1:11.41",
-        "date": "2025-11-28",
-        "meet": "Larkhall Club Championships 20"
-      },
-      {
-        "event": "100 IM",
-        "course": "SCM",
-        "time": "2:43.91",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
-      }
-    ],
-    "badges": [],
-    "season_swims": 10,
     "improvement": null
   },
   {
@@ -6660,7 +6604,7 @@
     "id": 144,
     "last": "Stevenson",
     "first": "Skye",
-    "age": "11",
+    "age": "12",
     "gender": "F",
     "group": "JUN",
     "subgroup": "ML",
@@ -6853,9 +6797,9 @@
     "id": 126,
     "last": "Thompson",
     "first": "Amy",
-    "age": "9",
+    "age": "10",
     "gender": "F",
-    "group": "DEV",
+    "group": "JUN",
     "subgroup": "ML",
     "pbs": [
       {
@@ -7231,7 +7175,7 @@
     "first": "Evie",
     "age": "11",
     "gender": "F",
-    "group": "ENT",
+    "group": "DEV",
     "subgroup": "",
     "pbs": [
       {
@@ -7292,7 +7236,7 @@
     "id": 130,
     "last": "Young",
     "first": "Grace",
-    "age": "12",
+    "age": "13",
     "gender": "F",
     "group": "JUN",
     "subgroup": "ML",
@@ -7391,7 +7335,7 @@
     "id": 129,
     "last": "Young",
     "first": "Leila",
-    "age": "10",
+    "age": "11",
     "gender": "F",
     "group": "JUN",
     "subgroup": "ML",
