@@ -484,5 +484,14 @@
     "event": "50 Breaststroke",
     "time": "41.46",
     "place": "7"
+  },
+  {
+    "meet_id": 282,
+    "meet": "Club 800 Time Trials",
+    "date": "2026-07-21",
+    "course": "SCM",
+    "event": "800 Freestyle",
+    "time": "14:40.00",
+    "place": ""
   }
 ]

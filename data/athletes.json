@@ -3,7 +3,7 @@
     "id": 2,
     "last": "Addison",
     "first": "Heidi",
-    "age": "13",
+    "age": "14",
     "gender": "F",
     "group": "SEN",
     "subgroup": "",
@@ -2452,6 +2452,13 @@
         "meet": "Club Time Trials March 2026"
       },
       {
+        "event": "800 Freestyle",
+        "course": "SCM",
+        "time": "14:31.00",
+        "date": "2026-07-21",
+        "meet": "Club 800 Time Trials"
+      },
+      {
         "event": "50 Backstroke",
         "course": "SCM",
         "time": "47.46",
@@ -2538,7 +2545,7 @@
     "id": 119,
     "last": "Fletcher",
     "first": "Connie",
-    "age": "11",
+    "age": "12",
     "gender": "F",
     "group": "JUN",
     "subgroup": "ML",
@@ -2785,7 +2792,7 @@
     "id": 164,
     "last": "Forshaw",
     "first": "Kai",
-    "age": "9",
+    "age": "10",
     "gender": "M",
     "group": "DEV",
     "subgroup": "",
@@ -2869,7 +2876,7 @@
     "id": 165,
     "last": "Franchuk",
     "first": "Maksym",
-    "age": "12",
+    "age": "13",
     "gender": "M",
     "group": "JUN",
     "subgroup": "",
@@ -2964,6 +2971,13 @@
         "time": "2:59.29",
         "date": "2026-04-25",
         "meet": "FVT Spring & Dev Meet_25 & 26"
+      },
+      {
+        "event": "800 Freestyle",
+        "course": "SCM",
+        "time": "15:18.00",
+        "date": "2026-07-21",
+        "meet": "Club 800 Time Trials"
       },
       {
         "event": "50 Backstroke",
@@ -3286,7 +3300,7 @@
     "id": 34,
     "last": "Hamilton",
     "first": "Mirren",
-    "age": "15",
+    "age": "16",
     "gender": "F",
     "group": "SEN",
     "subgroup": "",
@@ -3720,6 +3734,13 @@
         "time": "2:49.81",
         "date": "2025-11-21",
         "meet": "Dumfries ASC Advent Open 2025"
+      },
+      {
+        "event": "800 Freestyle",
+        "course": "SCM",
+        "time": "14:40.00",
+        "date": "2026-07-21",
+        "meet": "Club 800 Time Trials"
       },
       {
         "event": "50 Backstroke",
@@ -4874,7 +4895,7 @@
     "id": 138,
     "last": "Meikle",
     "first": "Chloe",
-    "age": "11",
+    "age": "12",
     "gender": "F",
     "group": "JUN",
     "subgroup": "ML",
@@ -5529,9 +5550,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:03.72",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
+        "time": "1:01.64",
+        "date": "2026-07-11",
+        "meet": "PSC Summer Spectacular Summer"
       },
       {
         "event": "200 Freestyle",
@@ -5599,16 +5620,16 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "31.12",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "30.86",
+        "date": "2026-07-11",
+        "meet": "PSC Summer Spectacular Summer"
       },
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "1:11.31",
-        "date": "2024-12-08",
-        "meet": "Larkhall Club Championships 20"
+        "time": "1:08.28",
+        "date": "2026-07-11",
+        "meet": "PSC Summer Spectacular Summer"
       },
       {
         "event": "100 IM",
@@ -6707,6 +6728,13 @@
         "time": "1:22.28",
         "date": "2026-05-09",
         "meet": "Sl Development Meet 3 - 2026"
+      },
+      {
+        "event": "800 Freestyle",
+        "course": "SCM",
+        "time": "15:37.00",
+        "date": "2026-07-21",
+        "meet": "Club 800 Time Trials"
       },
       {
         "event": "50 Backstroke",

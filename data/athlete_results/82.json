@@ -72,15 +72,6 @@
     "place": "4"
   },
   {
-    "meet_id": 165,
-    "meet": "Autumn Graded Meet 2024",
-    "date": "2024-10-05",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:38.70",
-    "place": "1"
-  },
-  {
     "meet_id": 172,
     "meet": "South Lanarkshire Development",
     "date": "2024-10-05",
@@ -97,6 +88,15 @@
     "event": "100 Breaststroke",
     "time": "1:40.63",
     "place": "2"
+  },
+  {
+    "meet_id": 165,
+    "meet": "Autumn Graded Meet 2024",
+    "date": "2024-10-05",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:38.70",
+    "place": "1"
   },
   {
     "meet_id": 173,

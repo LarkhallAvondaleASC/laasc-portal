@@ -1,41 +1,5 @@
 [
   {
-    "meet_id": 164,
-    "meet": "Scottish Summer Meet 2024",
-    "date": "2024-07-11",
-    "course": "LCM",
-    "event": "100 Freestyle",
-    "time": "1:08.23",
-    "place": "23"
-  },
-  {
-    "meet_id": 164,
-    "meet": "Scottish Summer Meet 2024",
-    "date": "2024-07-11",
-    "course": "LCM",
-    "event": "100 Breaststroke",
-    "time": "1:25.04",
-    "place": "6"
-  },
-  {
-    "meet_id": 164,
-    "meet": "Scottish Summer Meet 2024",
-    "date": "2024-07-11",
-    "course": "LCM",
-    "event": "100 Breaststroke",
-    "time": "1:25.31",
-    "place": "6"
-  },
-  {
-    "meet_id": 164,
-    "meet": "Scottish Summer Meet 2024",
-    "date": "2024-07-11",
-    "course": "LCM",
-    "event": "200 Breaststroke",
-    "time": "3:07.85",
-    "place": "11"
-  },
-  {
     "meet_id": 163,
     "meet": "Club 50m Sprints August 2024",
     "date": "2024-08-19",

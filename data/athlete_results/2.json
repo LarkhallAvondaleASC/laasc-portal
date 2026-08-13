@@ -117,15 +117,6 @@
     "place": "3"
   },
   {
-    "meet_id": 165,
-    "meet": "Autumn Graded Meet 2024",
-    "date": "2024-10-05",
-    "course": "SCM",
-    "event": "100 Butterfly",
-    "time": "1:32.16",
-    "place": "3"
-  },
-  {
     "meet_id": 172,
     "meet": "South Lanarkshire Development",
     "date": "2024-10-05",
@@ -151,6 +142,15 @@
     "event": "200 IM",
     "time": "2:58.82",
     "place": "1"
+  },
+  {
+    "meet_id": 165,
+    "meet": "Autumn Graded Meet 2024",
+    "date": "2024-10-05",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:32.16",
+    "place": "3"
   },
   {
     "meet_id": 173,

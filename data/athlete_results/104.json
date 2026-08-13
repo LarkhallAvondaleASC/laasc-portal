@@ -1170,24 +1170,6 @@
     "place": ""
   },
   {
-    "meet_id": 263,
-    "meet": "Sl Development Meet 3 - 2026",
-    "date": "2026-05-09",
-    "course": "SCM",
-    "event": "100 Freestyle",
-    "time": "1:10.68",
-    "place": "1"
-  },
-  {
-    "meet_id": 263,
-    "meet": "Sl Development Meet 3 - 2026",
-    "date": "2026-05-09",
-    "course": "SCM",
-    "event": "100 Backstroke",
-    "time": "1:17.37",
-    "place": "1"
-  },
-  {
     "meet_id": 272,
     "meet": "2026 WD LC May AG Meet",
     "date": "2026-05-09",
@@ -1204,6 +1186,24 @@
     "event": "50 Backstroke",
     "time": "35.28",
     "place": "3"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:10.68",
+    "place": "1"
+  },
+  {
+    "meet_id": 263,
+    "meet": "Sl Development Meet 3 - 2026",
+    "date": "2026-05-09",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:17.37",
+    "place": "1"
   },
   {
     "meet_id": 277,
@@ -1285,5 +1285,14 @@
     "event": "50 Butterfly",
     "time": "36.25",
     "place": "16"
+  },
+  {
+    "meet_id": 282,
+    "meet": "Club 800 Time Trials",
+    "date": "2026-07-21",
+    "course": "SCM",
+    "event": "800 Freestyle",
+    "time": "13:07.00",
+    "place": ""
   }
 ]

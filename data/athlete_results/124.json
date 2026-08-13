@@ -826,5 +826,14 @@
     "event": "200 IM",
     "time": "DQ",
     "place": ""
+  },
+  {
+    "meet_id": 282,
+    "meet": "Club 800 Time Trials",
+    "date": "2026-07-21",
+    "course": "SCM",
+    "event": "800 Freestyle",
+    "time": "15:18.00",
+    "place": ""
   }
 ]

@@ -772,5 +772,14 @@
     "event": "50 Butterfly",
     "time": "43.76",
     "place": ""
+  },
+  {
+    "meet_id": 282,
+    "meet": "Club 800 Time Trials",
+    "date": "2026-07-21",
+    "course": "SCM",
+    "event": "800 Freestyle",
+    "time": "15:36.00",
+    "place": ""
   }
 ]
