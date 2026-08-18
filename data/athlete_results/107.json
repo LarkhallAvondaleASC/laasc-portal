@@ -493,5 +493,41 @@
     "event": "800 Freestyle",
     "time": "14:40.00",
     "place": ""
+  },
+  {
+    "meet_id": 283,
+    "meet": "Club 50m Time Trials August 20",
+    "date": "2026-08-17",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "32.61",
+    "place": ""
+  },
+  {
+    "meet_id": 283,
+    "meet": "Club 50m Time Trials August 20",
+    "date": "2026-08-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "40.96",
+    "place": ""
+  },
+  {
+    "meet_id": 283,
+    "meet": "Club 50m Time Trials August 20",
+    "date": "2026-08-17",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "42.99",
+    "place": ""
+  },
+  {
+    "meet_id": 283,
+    "meet": "Club 50m Time Trials August 20",
+    "date": "2026-08-17",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "37.11",
+    "place": ""
   }
 ]
