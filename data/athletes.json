@@ -308,14 +308,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 52,
+    "season_swims": 56,
     "improvement": {
-      "avg": 9.01,
+      "avg": 12.53,
       "events": 8,
       "best": {
         "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 15.25
+        "pct": 30.85
       }
     }
   },
@@ -514,9 +514,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 82,
+    "season_swims": 87,
     "improvement": {
-      "avg": 15.35,
+      "avg": 15.67,
       "events": 12,
       "best": {
         "event": "100 Butterfly",
@@ -592,7 +592,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 18,
+    "season_swims": 22,
     "improvement": null
   },
   {
@@ -655,7 +655,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 7,
+    "season_swims": 11,
     "improvement": null
   },
   {
@@ -725,7 +725,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 21,
+    "season_swims": 25,
     "improvement": null
   },
   {
@@ -795,7 +795,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 21,
+    "season_swims": 25,
     "improvement": null
   },
   {
@@ -879,10 +879,10 @@
       }
     ],
     "badges": [],
-    "season_swims": 25,
+    "season_swims": 29,
     "improvement": {
-      "avg": 9.8,
-      "events": 8,
+      "avg": 12.64,
+      "events": 9,
       "best": {
         "event": "200 IM",
         "course": "SCM",
@@ -1065,9 +1065,9 @@
       "district",
       "national"
     ],
-    "season_swims": 81,
+    "season_swims": 86,
     "improvement": {
-      "avg": 9.3,
+      "avg": 9.73,
       "events": 17,
       "best": {
         "event": "100 Butterfly",
@@ -1178,9 +1178,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 59,
+    "season_swims": 63,
     "improvement": {
-      "avg": 15.3,
+      "avg": 15.53,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -1256,7 +1256,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 34,
+    "season_swims": 38,
     "improvement": null
   },
   {
@@ -1382,9 +1382,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 56,
+    "season_swims": 60,
     "improvement": {
-      "avg": 7.78,
+      "avg": 8.03,
       "events": 10,
       "best": {
         "event": "50 Butterfly",
@@ -1467,7 +1467,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 33,
+    "season_swims": 37,
     "improvement": null
   },
   {
@@ -1765,9 +1765,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 75,
+    "season_swims": 79,
     "improvement": {
-      "avg": 15.14,
+      "avg": 15.22,
       "events": 11,
       "best": {
         "event": "100 Backstroke",
@@ -1937,7 +1937,7 @@
       "district",
       "national"
     ],
-    "season_swims": 72,
+    "season_swims": 76,
     "improvement": {
       "avg": 5.29,
       "events": 12,
@@ -2008,7 +2008,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 9,
+    "season_swims": 13,
     "improvement": null
   },
   {
@@ -2071,7 +2071,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 9,
+    "season_swims": 13,
     "improvement": null
   },
   {
@@ -2263,10 +2263,10 @@
       "district",
       "national"
     ],
-    "season_swims": 76,
+    "season_swims": 80,
     "improvement": {
-      "avg": 12.54,
-      "events": 11,
+      "avg": 12.51,
+      "events": 12,
       "best": {
         "event": "100 Breaststroke",
         "course": "SCM",
@@ -2460,10 +2460,10 @@
       }
     ],
     "badges": [],
-    "season_swims": 39,
+    "season_swims": 44,
     "improvement": {
-      "avg": 8.22,
-      "events": 7,
+      "avg": 7.72,
+      "events": 8,
       "best": {
         "event": "100 Freestyle",
         "course": "SCM",
@@ -2552,14 +2552,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 45,
+    "season_swims": 49,
     "improvement": {
-      "avg": 9.23,
+      "avg": 11.03,
       "events": 8,
       "best": {
-        "event": "50 Freestyle",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 14.8
+        "pct": 21.91
       }
     }
   },
@@ -2707,14 +2707,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 37,
+    "season_swims": 41,
     "improvement": {
-      "avg": 7.9,
+      "avg": 8.57,
       "events": 8,
       "best": {
-        "event": "100 IM",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 13.47
+        "pct": 13.82
       }
     }
   },
@@ -2799,7 +2799,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 31,
+    "season_swims": 35,
     "improvement": null
   },
   {
@@ -3018,9 +3018,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 50,
+    "season_swims": 55,
     "improvement": {
-      "avg": 8.07,
+      "avg": 8.53,
       "events": 9,
       "best": {
         "event": "200 Freestyle",
@@ -3075,7 +3075,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 3,
+    "season_swims": 7,
     "improvement": null
   },
   {
@@ -3264,7 +3264,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 45,
+    "season_swims": 50,
     "improvement": {
       "avg": 7.49,
       "events": 13,
@@ -3391,7 +3391,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 46,
+    "season_swims": 50,
     "improvement": {
       "avg": 4.57,
       "events": 11,
@@ -3476,9 +3476,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 34,
+    "season_swims": 38,
     "improvement": {
-      "avg": 14.9,
+      "avg": 16.52,
       "events": 7,
       "best": {
         "event": "100 Freestyle",
@@ -3575,14 +3575,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 35,
+    "season_swims": 39,
     "improvement": {
-      "avg": 13.84,
+      "avg": 17.53,
       "events": 8,
       "best": {
-        "event": "50 Freestyle",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 20.07
+        "pct": 23.66
       }
     }
   },
@@ -3681,7 +3681,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 17,
+    "season_swims": 21,
     "improvement": null
   },
   {
@@ -3795,10 +3795,10 @@
     "badges": [
       "district"
     ],
-    "season_swims": 24,
+    "season_swims": 29,
     "improvement": {
-      "avg": 10.21,
-      "events": 9,
+      "avg": 10.89,
+      "events": 10,
       "best": {
         "event": "100 Butterfly",
         "course": "SCM",
@@ -3866,7 +3866,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 9,
+    "season_swims": 13,
     "improvement": null
   },
   {
@@ -3936,7 +3936,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 14,
+    "season_swims": 18,
     "improvement": null
   },
   {
@@ -3985,7 +3985,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 3,
+    "season_swims": 7,
     "improvement": null
   },
   {
@@ -4147,7 +4147,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 11,
+    "season_swims": 15,
     "improvement": null
   },
   {
@@ -4240,9 +4240,9 @@
     "badges": [
       "regional"
     ],
-    "season_swims": 17,
+    "season_swims": 21,
     "improvement": {
-      "avg": 18.95,
+      "avg": 19.66,
       "events": 6,
       "best": {
         "event": "100 IM",
@@ -4339,14 +4339,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 38,
+    "season_swims": 42,
     "improvement": {
-      "avg": 13.39,
-      "events": 7,
+      "avg": 14.62,
+      "events": 8,
       "best": {
-        "event": "100 Backstroke",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 22.07
+        "pct": 23.17
       }
     }
   },
@@ -4585,14 +4585,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 24,
+    "season_swims": 28,
     "improvement": {
-      "avg": 9.78,
+      "avg": 12.1,
       "events": 10,
       "best": {
-        "event": "50 Breaststroke",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 18.67
+        "pct": 22.97
       }
     }
   },
@@ -4698,7 +4698,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 16,
+    "season_swims": 20,
     "improvement": null
   },
   {
@@ -4782,7 +4782,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 32,
+    "season_swims": 36,
     "improvement": null
   },
   {
@@ -4908,10 +4908,10 @@
       }
     ],
     "badges": [],
-    "season_swims": 31,
+    "season_swims": 35,
     "improvement": {
-      "avg": 10.29,
-      "events": 9,
+      "avg": 9.9,
+      "events": 10,
       "best": {
         "event": "100 Butterfly",
         "course": "SCM",
@@ -5007,9 +5007,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 23,
+    "season_swims": 27,
     "improvement": {
-      "avg": 9.05,
+      "avg": 9.21,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -5548,7 +5548,7 @@
     "badges": [
       "regional"
     ],
-    "season_swims": 24,
+    "season_swims": 28,
     "improvement": {
       "avg": 3.95,
       "events": 6,
@@ -5706,14 +5706,14 @@
       "district",
       "national"
     ],
-    "season_swims": 22,
+    "season_swims": 30,
     "improvement": {
-      "avg": 2.18,
-      "events": 6,
+      "avg": 3.12,
+      "events": 9,
       "best": {
-        "event": "50 Butterfly",
+        "event": "50 Breaststroke",
         "course": "SCM",
-        "pct": 4.1
+        "pct": 5.02
       }
     }
   },
@@ -5840,7 +5840,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 24,
+    "season_swims": 28,
     "improvement": null
   },
   {
@@ -6017,9 +6017,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 75,
+    "season_swims": 79,
     "improvement": {
-      "avg": 7.79,
+      "avg": 8.06,
       "events": 17,
       "best": {
         "event": "400 Freestyle",
@@ -6363,10 +6363,10 @@
       }
     ],
     "badges": [],
-    "season_swims": 29,
+    "season_swims": 33,
     "improvement": {
-      "avg": 7.81,
-      "events": 7,
+      "avg": 8.37,
+      "events": 8,
       "best": {
         "event": "100 Backstroke",
         "course": "SCM",
@@ -6483,7 +6483,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 30,
+    "season_swims": 34,
     "improvement": {
       "avg": 6.69,
       "events": 13,
@@ -6554,7 +6554,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 7,
+    "season_swims": 11,
     "improvement": null
   },
   {
@@ -6645,10 +6645,10 @@
       }
     ],
     "badges": [],
-    "season_swims": 22,
+    "season_swims": 26,
     "improvement": {
-      "avg": 14.01,
-      "events": 8,
+      "avg": 14.02,
+      "events": 9,
       "best": {
         "event": "50 Backstroke",
         "course": "SCM",
@@ -6730,9 +6730,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 48,
+    "season_swims": 52,
     "improvement": {
-      "avg": 11.88,
+      "avg": 13.84,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -6845,9 +6845,9 @@
     "badges": [
       "district"
     ],
-    "season_swims": 63,
+    "season_swims": 68,
     "improvement": {
-      "avg": 16.15,
+      "avg": 16.53,
       "events": 8,
       "best": {
         "event": "100 Freestyle",
@@ -6923,9 +6923,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 66,
+    "season_swims": 70,
     "improvement": {
-      "avg": 9.84,
+      "avg": 10.48,
       "events": 8,
       "best": {
         "event": "100 Backstroke",
@@ -7094,14 +7094,14 @@
     "badges": [
       "district"
     ],
-    "season_swims": 100,
+    "season_swims": 105,
     "improvement": {
-      "avg": 11.93,
+      "avg": 12.84,
       "events": 9,
       "best": {
         "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 16.23
+        "pct": 20.39
       }
     }
   },
@@ -7221,9 +7221,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 60,
+    "season_swims": 64,
     "improvement": {
-      "avg": 7.41,
+      "avg": 8.0,
       "events": 9,
       "best": {
         "event": "50 Butterfly",
@@ -7383,14 +7383,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 38,
+    "season_swims": 42,
     "improvement": {
-      "avg": 6.53,
+      "avg": 7.61,
       "events": 8,
       "best": {
-        "event": "50 Backstroke",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 10.23
+        "pct": 13.16
       }
     }
   },
@@ -7482,9 +7482,9 @@
       }
     ],
     "badges": [],
-    "season_swims": 48,
+    "season_swims": 52,
     "improvement": {
-      "avg": 13.5,
+      "avg": 14.3,
       "events": 8,
       "best": {
         "event": "100 Backstroke",

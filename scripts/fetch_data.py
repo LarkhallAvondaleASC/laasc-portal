@@ -311,10 +311,10 @@ def build_athlete_histories(athletes, meets, meet_results_dir):
     today = _date.today()
     if today.month >= 9:
         season_start = f"{today.year}-09-01"
-        season_end   = f"{today.year + 1}-06-30"
+        season_end   = f"{today.year + 1}-08-31"
     else:
         season_start = f"{today.year - 1}-09-01"
-        season_end   = f"{today.year}-06-30"
+        season_end   = f"{today.year}-08-31"
 
     ath_results_dir = meet_results_dir.parent / "athlete_results"
     ath_results_dir.mkdir(exist_ok=True)

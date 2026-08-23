@@ -689,8 +689,8 @@ async function loadProgressionSection(ath) {
       ? yr + "-09-01"
       : (yr - 1) + "-09-01";
     const seasonEnd = mo >= 9
-      ? (yr + 1) + "-06-30"
-      : yr + "-06-30";
+      ? (yr + 1) + "-08-31"
+      : yr + "-08-31";
     const seasonLabel = mo >= 9
       ? yr + "/" + String(yr + 1).slice(2)
       : (yr - 1) + "/" + String(yr).slice(2);
