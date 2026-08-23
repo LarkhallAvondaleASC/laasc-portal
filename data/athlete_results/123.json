@@ -1,41 +1,5 @@
 [
   {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Freestyle",
-    "time": "42.16",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Backstroke",
-    "time": "52.10",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Breaststroke",
-    "time": "57.40",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Butterfly",
-    "time": "50.98",
-    "place": ""
-  },
-  {
     "meet_id": 161,
     "meet": "South Lanarkshire Development",
     "date": "2024-09-14",

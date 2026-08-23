@@ -1,41 +1,5 @@
 [
   {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Freestyle",
-    "time": "37.41",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Backstroke",
-    "time": "43.30",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Breaststroke",
-    "time": "50.87",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Butterfly",
-    "time": "45.17",
-    "place": ""
-  },
-  {
     "meet_id": 166,
     "meet": "Club Time Trials September 202",
     "date": "2024-09-02",

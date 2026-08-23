@@ -310,12 +310,12 @@
     "badges": [],
     "season_swims": 52,
     "improvement": {
-      "avg": 7.77,
+      "avg": 9.01,
       "events": 8,
       "best": {
-        "event": "100 Freestyle",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 11.64
+        "pct": 15.25
       }
     }
   },
@@ -1770,83 +1770,6 @@
     }
   },
   {
-    "id": 163,
-    "last": "Connor",
-    "first": "Isaac",
-    "age": "9",
-    "gender": "M",
-    "group": "DEV",
-    "subgroup": "",
-    "pbs": [
-      {
-        "event": "50 Freestyle",
-        "course": "SCM",
-        "time": "46.86",
-        "date": "2026-02-21",
-        "meet": "South Lanarkshire Development"
-      },
-      {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "time": "1:50.83",
-        "date": "2026-03-02",
-        "meet": "Club Time Trials March 2026"
-      },
-      {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "time": "54.83",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
-      },
-      {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "time": "2:09.58",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
-      },
-      {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "time": "1:01.48",
-        "date": "2026-02-21",
-        "meet": "South Lanarkshire Development"
-      },
-      {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "time": "2:24.29",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
-      },
-      {
-        "event": "25 Butterfly",
-        "course": "SCM",
-        "time": "27.47",
-        "date": "2026-01-24",
-        "meet": "Clyde Coast Mini League"
-      },
-      {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "time": "1:09.14",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
-      },
-      {
-        "event": "100 IM",
-        "course": "SCM",
-        "time": "2:06.75",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
-      }
-    ],
-    "badges": [],
-    "season_swims": 21,
-    "improvement": null
-  },
-  {
     "id": 19,
     "last": "Connor",
     "first": "Richard",
@@ -2870,6 +2793,41 @@
     ],
     "badges": [],
     "season_swims": 31,
+    "improvement": null
+  },
+  {
+    "id": 187,
+    "last": "Franchuk",
+    "first": "Denys",
+    "age": "9",
+    "gender": "M",
+    "group": "DEV",
+    "subgroup": "",
+    "pbs": [
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:04.78",
+        "date": "2026-05-04",
+        "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "100 Backstroke",
+        "course": "SCM",
+        "time": "2:17.46",
+        "date": "2026-05-04",
+        "meet": "Club Time Trials May 2026"
+      },
+      {
+        "event": "50 Breaststroke",
+        "course": "SCM",
+        "time": "1:13.59",
+        "date": "2026-05-04",
+        "meet": "Club Time Trials May 2026"
+      }
+    ],
+    "badges": [],
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -3975,6 +3933,41 @@
     "improvement": null
   },
   {
+    "id": 186,
+    "last": "Kruger",
+    "first": "Maria",
+    "age": "9",
+    "gender": "F",
+    "group": "DEV",
+    "subgroup": "",
+    "pbs": [
+      {
+        "event": "50 Backstroke",
+        "course": "SCM",
+        "time": "1:05.30",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "2:47.00",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      },
+      {
+        "event": "50 Butterfly",
+        "course": "SCM",
+        "time": "1:35.82",
+        "date": "2026-06-01",
+        "meet": "Club Time Trials June 2026"
+      }
+    ],
+    "badges": [],
+    "season_swims": 3,
+    "improvement": null
+  },
+  {
     "id": 145,
     "last": "Kulkarni",
     "first": "Arjun",
@@ -4573,12 +4566,12 @@
     "badges": [],
     "season_swims": 24,
     "improvement": {
-      "avg": 9.7,
+      "avg": 9.78,
       "events": 10,
       "best": {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "pct": 17.87
+        "pct": 18.67
       }
     }
   },
@@ -6633,12 +6626,12 @@
     "badges": [],
     "season_swims": 22,
     "improvement": {
-      "avg": 13.84,
+      "avg": 14.01,
       "events": 8,
       "best": {
         "event": "50 Backstroke",
         "course": "SCM",
-        "pct": 21.18
+        "pct": 22.55
       }
     }
   },

@@ -1,41 +1,5 @@
 [
   {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Freestyle",
-    "time": "58.79",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Backstroke",
-    "time": "1:04.48",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Breaststroke",
-    "time": "1:13.38",
-    "place": ""
-  },
-  {
-    "meet_id": 163,
-    "meet": "Club 50m Sprints August 2024",
-    "date": "2024-08-19",
-    "course": "SCM",
-    "event": "50 Butterfly",
-    "time": "1:10.42",
-    "place": ""
-  },
-  {
     "meet_id": 165,
     "meet": "Autumn Graded Meet 2024",
     "date": "2024-10-05",

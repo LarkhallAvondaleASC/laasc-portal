@@ -232,36 +232,6 @@
   {
     "ath_id": null,
     "last": "Connor",
-    "first": "Isaac",
-    "gender": "M",
-    "age": "9",
-    "event": "50 Freestyle",
-    "time": "50.32",
-    "place": "9"
-  },
-  {
-    "ath_id": null,
-    "last": "Connor",
-    "first": "Isaac",
-    "gender": "M",
-    "age": "9",
-    "event": "50 Backstroke",
-    "time": "54.83",
-    "place": "6"
-  },
-  {
-    "ath_id": null,
-    "last": "Connor",
-    "first": "Isaac",
-    "gender": "M",
-    "age": "9",
-    "event": "50 Breaststroke",
-    "time": "1:06.94",
-    "place": "3"
-  },
-  {
-    "ath_id": null,
-    "last": "Connor",
     "first": "Richard",
     "gender": "M",
     "age": "12",

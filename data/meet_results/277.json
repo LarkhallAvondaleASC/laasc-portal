@@ -412,26 +412,6 @@
   {
     "ath_id": null,
     "last": "Connor",
-    "first": "Isaac",
-    "gender": "M",
-    "age": "9",
-    "event": "50 Backstroke",
-    "time": "59.28",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Connor",
-    "first": "Isaac",
-    "gender": "M",
-    "age": "9",
-    "event": "100 Breaststroke",
-    "time": "2:24.29",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Connor",
     "first": "Richard",
     "gender": "M",
     "age": "12",
@@ -897,6 +877,36 @@
     "age": "11",
     "event": "100 Breaststroke",
     "time": "2:05.72",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Maria",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Backstroke",
+    "time": "1:05.30",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Maria",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Breaststroke",
+    "time": "2:47.00",
+    "place": ""
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Maria",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "1:35.82",
     "place": ""
   },
   {

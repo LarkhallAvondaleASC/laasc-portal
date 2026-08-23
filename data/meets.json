@@ -390,12 +390,6 @@
     "date": "2025-03-01"
   },
   {
-    "id": 191,
-    "name": "South Lanarkshire Development",
-    "course": "SCM",
-    "date": "2025-02-22"
-  },
-  {
     "id": 189,
     "name": "Hearts Fast February",
     "course": "SCM",
@@ -404,6 +398,12 @@
   {
     "id": 190,
     "name": "Glenrothes Spring Meet",
+    "course": "SCM",
+    "date": "2025-02-22"
+  },
+  {
+    "id": 191,
+    "name": "South Lanarkshire Development",
     "course": "SCM",
     "date": "2025-02-22"
   },
@@ -532,11 +532,5 @@
     "name": "Club Time Trials September 202",
     "course": "SCM",
     "date": "2024-09-02"
-  },
-  {
-    "id": 163,
-    "name": "Club 50m Sprints August 2024",
-    "course": "SCM",
-    "date": "2024-08-19"
   }
 ]
