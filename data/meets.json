@@ -1,5 +1,11 @@
 [
   {
+    "id": 285,
+    "name": "FVT Autumn Development Meet",
+    "course": "SCM",
+    "date": "2026-09-26"
+  },
+  {
     "id": 280,
     "name": "EK September Sprints 2026",
     "course": "SCM",
@@ -396,6 +402,12 @@
     "date": "2025-02-22"
   },
   {
+    "id": 195,
+    "name": "Glenrothes Spring Meet 2025",
+    "course": "SCM",
+    "date": "2025-02-22"
+  },
+  {
     "id": 190,
     "name": "Glenrothes Spring Meet",
     "course": "SCM",
@@ -404,12 +416,6 @@
   {
     "id": 191,
     "name": "South Lanarkshire Development",
-    "course": "SCM",
-    "date": "2025-02-22"
-  },
-  {
-    "id": 195,
-    "name": "Glenrothes Spring Meet 2025",
     "course": "SCM",
     "date": "2025-02-22"
   },
@@ -526,11 +532,5 @@
     "name": "2024 WD AG Meet and Relay Cham",
     "course": "SCM",
     "date": "2024-09-07"
-  },
-  {
-    "id": 166,
-    "name": "Club Time Trials September 202",
-    "course": "SCM",
-    "date": "2024-09-02"
   }
 ]

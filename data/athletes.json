@@ -202,16 +202,8 @@
       "district",
       "national"
     ],
-    "season_swims": 69,
-    "improvement": {
-      "avg": 5.23,
-      "events": 22,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 12.13
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 3,
@@ -253,9 +245,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:48.06",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:38.95",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "25 Breaststroke",
@@ -308,16 +300,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 56,
-    "improvement": {
-      "avg": 12.53,
-      "events": 8,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 30.85
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 4,
@@ -514,16 +498,8 @@
     "badges": [
       "district"
     ],
-    "season_swims": 87,
-    "improvement": {
-      "avg": 15.67,
-      "events": 12,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 28.28
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 168,
@@ -558,9 +534,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "2:09.99",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "2:06.54",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Breaststroke",
@@ -592,7 +568,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 22,
+    "season_swims": 1,
     "improvement": null
   },
   {
@@ -642,20 +618,20 @@
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "1:06.26",
-        "date": "2026-08-17",
-        "meet": "Club 50m Time Trials August 20"
+        "time": "1:04.66",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 IM",
         "course": "SCM",
-        "time": "2:19.45",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "2:09.05",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       }
     ],
     "badges": [],
-    "season_swims": 11,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -670,9 +646,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "46.73",
-        "date": "2026-08-17",
-        "meet": "Club 50m Time Trials August 20"
+        "time": "43.73",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Freestyle",
@@ -684,9 +660,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "52.80",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "50.49",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Backstroke",
@@ -698,9 +674,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "59.85",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "59.38",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Breaststroke",
@@ -725,8 +701,16 @@
       }
     ],
     "badges": [],
-    "season_swims": 25,
-    "improvement": null
+    "season_swims": 3,
+    "improvement": {
+      "avg": 3.86,
+      "events": 3,
+      "best": {
+        "event": "50 Freestyle",
+        "course": "SCM",
+        "pct": 6.42
+      }
+    }
   },
   {
     "id": 153,
@@ -795,7 +779,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 25,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -879,16 +863,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 29,
-    "improvement": {
-      "avg": 12.64,
-      "events": 9,
-      "best": {
-        "event": "200 IM",
-        "course": "SCM",
-        "pct": 22.19
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 104,
@@ -909,9 +885,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:10.68",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:09.60",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -965,9 +941,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:34.79",
-        "date": "2026-06-13",
-        "meet": "SAST Open meet 13-14 June 2026"
+        "time": "1:32.87",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Breaststroke",
@@ -1000,8 +976,8 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "2:56.82",
-        "date": "2026-01-31",
+        "time": "2:53.06",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -1065,14 +1041,14 @@
       "district",
       "national"
     ],
-    "season_swims": 86,
+    "season_swims": 3,
     "improvement": {
-      "avg": 9.73,
-      "events": 17,
+      "avg": 1.9,
+      "events": 3,
       "best": {
-        "event": "100 Butterfly",
+        "event": "200 IM",
         "course": "SCM",
-        "pct": 11.96
+        "pct": 2.13
       }
     }
   },
@@ -1178,16 +1154,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 63,
-    "improvement": {
-      "avg": 15.53,
-      "events": 8,
-      "best": {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "pct": 27.73
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 162,
@@ -1229,9 +1197,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:06.60",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:05.39",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Breaststroke",
@@ -1256,7 +1224,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 38,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -1341,8 +1309,8 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:52.94",
-        "date": "2026-02-21",
+        "time": "1:51.29",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -1382,16 +1350,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 60,
-    "improvement": {
-      "avg": 8.03,
-      "events": 10,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 16.64
-      }
-    }
+    "season_swims": 2,
+    "improvement": null
   },
   {
     "id": 154,
@@ -1405,9 +1365,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "48.73",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "48.23",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Freestyle",
@@ -1433,9 +1393,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:48.06",
-        "date": "2026-06-13",
-        "meet": "SAST Open meet 13-14 June 2026"
+        "time": "1:43.44",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "25 Breaststroke",
@@ -1467,7 +1427,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 37,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -1544,22 +1504,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 24,
-    "improvement": {
-      "avg": 5.2,
-      "events": 7,
-      "best": {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "pct": 7.96
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 141,
     "last": "Clark",
     "first": "Matthew",
-    "age": "12",
+    "age": "13",
     "gender": "M",
     "group": "JUN",
     "subgroup": "ML",
@@ -1636,16 +1588,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 17,
-    "improvement": {
-      "avg": 9.52,
-      "events": 7,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 21.81
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 123,
@@ -1694,9 +1638,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:27.98",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:26.06",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Backstroke",
@@ -1765,16 +1709,8 @@
     "badges": [
       "district"
     ],
-    "season_swims": 79,
-    "improvement": {
-      "avg": 15.22,
-      "events": 11,
-      "best": {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "pct": 27.1
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 19,
@@ -1830,9 +1766,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:23.50",
-        "date": "2026-06-13",
-        "meet": "SAST Open meet 13-14 June 2026"
+        "time": "1:19.74",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Backstroke",
@@ -1937,16 +1873,8 @@
       "district",
       "national"
     ],
-    "season_swims": 76,
-    "improvement": {
-      "avg": 5.29,
-      "events": 12,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 11.48
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 176,
@@ -2008,7 +1936,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 13,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -2071,7 +1999,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 13,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -2263,16 +2191,8 @@
       "district",
       "national"
     ],
-    "season_swims": 80,
-    "improvement": {
-      "avg": 12.51,
-      "events": 12,
-      "best": {
-        "event": "100 Breaststroke",
-        "course": "SCM",
-        "pct": 16.67
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 106,
@@ -2460,16 +2380,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 44,
-    "improvement": {
-      "avg": 7.72,
-      "events": 8,
-      "best": {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "pct": 15.27
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 119,
@@ -2511,8 +2423,8 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:44.49",
-        "date": "2026-02-21",
+        "time": "1:43.09",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -2546,22 +2458,14 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "3:55.50",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "3:40.17",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       }
     ],
     "badges": [],
-    "season_swims": 49,
-    "improvement": {
-      "avg": 11.03,
-      "events": 8,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 21.91
-      }
-    }
+    "season_swims": 2,
+    "improvement": null
   },
   {
     "id": 185,
@@ -2609,7 +2513,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 6,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -2666,9 +2570,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:55.07",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:54.02",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Breaststroke",
@@ -2707,16 +2611,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 41,
-    "improvement": {
-      "avg": 8.57,
-      "events": 8,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 13.82
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 164,
@@ -2737,8 +2633,8 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "48.93",
-        "date": "2026-02-21",
+        "time": "45.70",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -2758,8 +2654,8 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "54.76",
-        "date": "2026-02-21",
+        "time": "51.42",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -2799,7 +2695,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 35,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -2834,7 +2730,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 3,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -2904,7 +2800,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 11,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -2926,9 +2822,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:18.16",
-        "date": "2026-06-20",
-        "meet": "REN96 Development Meet 2026"
+        "time": "1:17.31",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -2996,9 +2892,9 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "3:28.76",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "3:14.87",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Backstroke",
@@ -3018,16 +2914,8 @@
     "badges": [
       "district"
     ],
-    "season_swims": 55,
-    "improvement": {
-      "avg": 8.53,
-      "events": 9,
-      "best": {
-        "event": "200 Freestyle",
-        "course": "SCM",
-        "pct": 13.54
-      }
-    }
+    "season_swims": 2,
+    "improvement": null
   },
   {
     "id": 181,
@@ -3075,7 +2963,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 7,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -3118,9 +3006,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:03.06",
-        "date": "2026-05-04",
-        "meet": "Club Time Trials May 2026"
+        "time": "56.84",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Breaststroke",
@@ -3202,8 +3090,8 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:29.35",
-        "date": "2025-09-20",
+        "time": "1:29.03",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -3264,16 +3152,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 50,
-    "improvement": {
-      "avg": 7.49,
-      "events": 13,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 21.04
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 34,
@@ -3391,16 +3271,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 50,
-    "improvement": {
-      "avg": 4.57,
-      "events": 11,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 9.99
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 152,
@@ -3476,16 +3348,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 38,
-    "improvement": {
-      "avg": 16.52,
-      "events": 7,
-      "best": {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "pct": 23.98
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 143,
@@ -3541,9 +3405,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:48.30",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:41.34",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Butterfly",
@@ -3575,16 +3439,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 39,
-    "improvement": {
-      "avg": 17.53,
-      "events": 8,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 23.66
-      }
-    }
+    "season_swims": 1,
+    "improvement": null
   },
   {
     "id": 182,
@@ -3605,9 +3461,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:14.33",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:12.65",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -3645,6 +3501,13 @@
         "meet": "Club 50m Time Trials August 20"
       },
       {
+        "event": "100 Breaststroke",
+        "course": "SCM",
+        "time": "1:38.45",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
+      },
+      {
         "event": "200 Breaststroke",
         "course": "SCM",
         "time": "3:35.01",
@@ -3675,13 +3538,13 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "3:08.77",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "3:05.98",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       }
     ],
     "badges": [],
-    "season_swims": 21,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -3703,8 +3566,8 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:14.01",
-        "date": "2026-01-31",
+        "time": "1:12.90",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -3795,16 +3658,8 @@
     "badges": [
       "district"
     ],
-    "season_swims": 29,
-    "improvement": {
-      "avg": 10.89,
-      "events": 10,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 24.55
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 177,
@@ -3866,7 +3721,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 13,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -3916,9 +3771,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:05.72",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:56.03",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Butterfly",
@@ -3936,7 +3791,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 18,
+    "season_swims": 2,
     "improvement": null
   },
   {
@@ -3985,7 +3840,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 7,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -4069,16 +3924,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 18,
-    "improvement": {
-      "avg": 10.51,
-      "events": 7,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 15.7
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 178,
@@ -4113,9 +3960,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "2:05.50",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:50.32",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Breaststroke",
@@ -4147,7 +3994,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 15,
+    "season_swims": 1,
     "improvement": null
   },
   {
@@ -4240,16 +4087,8 @@
     "badges": [
       "regional"
     ],
-    "season_swims": 21,
-    "improvement": {
-      "avg": 19.66,
-      "events": 6,
-      "best": {
-        "event": "100 IM",
-        "course": "SCM",
-        "pct": 29.59
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 133,
@@ -4291,9 +4130,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:39.48",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:38.97",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Breaststroke",
@@ -4339,16 +4178,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 42,
-    "improvement": {
-      "avg": 14.62,
-      "events": 8,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 23.17
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 47,
@@ -4431,16 +4262,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 13,
-    "improvement": {
-      "avg": 4.87,
-      "events": 5,
-      "best": {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "pct": 7.83
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 156,
@@ -4459,7 +4282,7 @@
     "id": 51,
     "last": "McBride",
     "first": "Natasha",
-    "age": "14",
+    "age": "15",
     "gender": "F",
     "group": "SEN",
     "subgroup": "",
@@ -4494,7 +4317,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 4,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -4585,16 +4408,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 28,
-    "improvement": {
-      "avg": 12.1,
-      "events": 10,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 22.97
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 183,
@@ -4615,9 +4430,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:21.78",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:15.73",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -4657,9 +4472,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:44.28",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:39.22",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Breaststroke",
@@ -4692,14 +4507,22 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "3:09.81",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "3:03.56",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       }
     ],
     "badges": [],
-    "season_swims": 20,
-    "improvement": null
+    "season_swims": 3,
+    "improvement": {
+      "avg": 5.18,
+      "events": 3,
+      "best": {
+        "event": "100 Freestyle",
+        "course": "SCM",
+        "pct": 7.4
+      }
+    }
   },
   {
     "id": 157,
@@ -4734,9 +4557,9 @@
       {
         "event": "50 Backstroke",
         "course": "SCM",
-        "time": "56.06",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "52.57",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Backstroke",
@@ -4748,9 +4571,9 @@
       {
         "event": "50 Breaststroke",
         "course": "SCM",
-        "time": "1:01.33",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "1:00.07",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Breaststroke",
@@ -4782,7 +4605,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 36,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -4804,9 +4627,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:11.19",
-        "date": "2026-03-11",
-        "meet": "South Lanarkshire Schools 2026"
+        "time": "1:11.12",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -4839,9 +4662,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:22.97",
-        "date": "2025-11-01",
-        "meet": "southlanarkshire development m"
+        "time": "1:22.60",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Backstroke",
@@ -4860,9 +4683,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:46.68",
-        "date": "2025-11-01",
-        "meet": "southlanarkshire development m"
+        "time": "1:43.13",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Breaststroke",
@@ -4908,14 +4731,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 35,
+    "season_swims": 3,
     "improvement": {
-      "avg": 9.9,
-      "events": 10,
+      "avg": 1.29,
+      "events": 3,
       "best": {
-        "event": "100 Butterfly",
+        "event": "100 Breaststroke",
         "course": "SCM",
-        "pct": 19.78
+        "pct": 3.33
       }
     }
   },
@@ -5007,16 +4830,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 27,
-    "improvement": {
-      "avg": 9.21,
-      "events": 8,
-      "best": {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "pct": 14.34
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 179,
@@ -5050,9 +4865,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:21.08",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:19.49",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -5071,8 +4886,8 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:29.88",
-        "date": "2026-02-21",
+        "time": "1:28.70",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -5133,7 +4948,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 37,
+    "season_swims": 3,
     "improvement": null
   },
   {
@@ -5325,16 +5140,8 @@
       "district",
       "national"
     ],
-    "season_swims": 53,
-    "improvement": {
-      "avg": 5.34,
-      "events": 13,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 15.2
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 65,
@@ -5410,16 +5217,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 9,
-    "improvement": {
-      "avg": 3.73,
-      "events": 3,
-      "best": {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "pct": 6.12
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 66,
@@ -5462,7 +5261,7 @@
     "badges": [
       "regional"
     ],
-    "season_swims": 3,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -5548,16 +5347,8 @@
     "badges": [
       "regional"
     ],
-    "season_swims": 28,
-    "improvement": {
-      "avg": 3.95,
-      "events": 6,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 10.59
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 71,
@@ -5706,16 +5497,8 @@
       "district",
       "national"
     ],
-    "season_swims": 30,
-    "improvement": {
-      "avg": 3.12,
-      "events": 9,
-      "best": {
-        "event": "50 Breaststroke",
-        "course": "SCM",
-        "pct": 5.02
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 174,
@@ -5770,7 +5553,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 10,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -5840,7 +5623,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 28,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -6017,16 +5800,8 @@
     "badges": [
       "district"
     ],
-    "season_swims": 79,
-    "improvement": {
-      "avg": 8.06,
-      "events": 17,
-      "best": {
-        "event": "400 Freestyle",
-        "course": "SCM",
-        "pct": 17.65
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 88,
@@ -6137,16 +5912,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 21,
-    "improvement": {
-      "avg": 6.28,
-      "events": 11,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 12.24
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 110,
@@ -6229,16 +5996,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 38,
-    "improvement": {
-      "avg": 9.07,
-      "events": 7,
-      "best": {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "pct": 14.43
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 173,
@@ -6286,7 +6045,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 9,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -6363,16 +6122,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 33,
-    "improvement": {
-      "avg": 8.37,
-      "events": 8,
-      "best": {
-        "event": "100 Backstroke",
-        "course": "SCM",
-        "pct": 13.96
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 89,
@@ -6483,16 +6234,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 34,
-    "improvement": {
-      "avg": 6.69,
-      "events": 13,
-      "best": {
-        "event": "100 Butterfly",
-        "course": "SCM",
-        "pct": 17.15
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 180,
@@ -6554,7 +6297,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 11,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -6645,16 +6388,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 26,
-    "improvement": {
-      "avg": 14.02,
-      "events": 9,
-      "best": {
-        "event": "50 Backstroke",
-        "course": "SCM",
-        "pct": 22.55
-      }
-    }
+    "season_swims": 0,
+    "improvement": null
   },
   {
     "id": 144,
@@ -6675,9 +6410,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:29.63",
-        "date": "2026-02-02",
-        "meet": "Club Time Trials February 2026"
+        "time": "1:25.35",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Backstroke",
@@ -6689,9 +6424,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:39.47",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "1:33.94",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Breaststroke",
@@ -6703,9 +6438,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:46.68",
-        "date": "2026-04-25",
-        "meet": "FVT Spring & Dev Meet_25 & 26"
+        "time": "1:39.90",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Butterfly",
@@ -6730,14 +6465,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 52,
+    "season_swims": 3,
     "improvement": {
-      "avg": 13.84,
-      "events": 8,
+      "avg": 5.57,
+      "events": 3,
       "best": {
-        "event": "100 Backstroke",
+        "event": "100 Breaststroke",
         "course": "SCM",
-        "pct": 29.5
+        "pct": 6.36
       }
     }
   },
@@ -6760,9 +6495,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:22.28",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:19.23",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "800 Freestyle",
@@ -6781,9 +6516,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:41.09",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:34.20",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Backstroke",
@@ -6845,16 +6580,8 @@
     "badges": [
       "district"
     ],
-    "season_swims": 68,
-    "improvement": {
-      "avg": 16.53,
-      "events": 8,
-      "best": {
-        "event": "100 Freestyle",
-        "course": "SCM",
-        "pct": 29.43
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 126,
@@ -6868,9 +6595,9 @@
       {
         "event": "50 Freestyle",
         "course": "SCM",
-        "time": "42.06",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "41.89",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 Freestyle",
@@ -6903,16 +6630,16 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "2:01.04",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:54.70",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Butterfly",
         "course": "SCM",
-        "time": "54.47",
-        "date": "2026-08-17",
-        "meet": "Club 50m Time Trials August 20"
+        "time": "51.30",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 IM",
@@ -6923,14 +6650,14 @@
       }
     ],
     "badges": [],
-    "season_swims": 70,
+    "season_swims": 3,
     "improvement": {
-      "avg": 10.48,
-      "events": 8,
+      "avg": 3.82,
+      "events": 3,
       "best": {
-        "event": "100 Backstroke",
+        "event": "50 Butterfly",
         "course": "SCM",
-        "pct": 25.73
+        "pct": 5.82
       }
     }
   },
@@ -6953,9 +6680,9 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:14.85",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:11.79",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Freestyle",
@@ -6995,9 +6722,9 @@
       {
         "event": "200 Backstroke",
         "course": "SCM",
-        "time": "3:01.73",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "2:55.98",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Breaststroke",
@@ -7037,9 +6764,9 @@
       {
         "event": "200 Butterfly",
         "course": "SCM",
-        "time": "3:23.52",
-        "date": "2026-05-02",
-        "meet": "North Ayrshire Junior Meet"
+        "time": "3:04.18",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 IM",
@@ -7094,14 +6821,14 @@
     "badges": [
       "district"
     ],
-    "season_swims": 105,
+    "season_swims": 3,
     "improvement": {
-      "avg": 12.84,
-      "events": 9,
+      "avg": 5.58,
+      "events": 3,
       "best": {
-        "event": "50 Butterfly",
+        "event": "200 Butterfly",
         "course": "SCM",
-        "pct": 20.39
+        "pct": 9.5
       }
     }
   },
@@ -7159,8 +6886,8 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:33.86",
-        "date": "2026-02-21",
+        "time": "1:33.80",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -7180,9 +6907,9 @@
       {
         "event": "100 Breaststroke",
         "course": "SCM",
-        "time": "1:47.83",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:44.65",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "200 Breaststroke",
@@ -7221,16 +6948,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 64,
-    "improvement": {
-      "avg": 8.0,
-      "events": 9,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 12.3
-      }
-    }
+    "season_swims": 3,
+    "improvement": null
   },
   {
     "id": 172,
@@ -7292,7 +7011,7 @@
       }
     ],
     "badges": [],
-    "season_swims": 12,
+    "season_swims": 0,
     "improvement": null
   },
   {
@@ -7314,8 +7033,8 @@
       {
         "event": "100 Freestyle",
         "course": "SCM",
-        "time": "1:26.40",
-        "date": "2026-02-21",
+        "time": "1:20.72",
+        "date": "2026-09-05",
         "meet": "South Lanarkshire Development"
       },
       {
@@ -7383,16 +7102,8 @@
       }
     ],
     "badges": [],
-    "season_swims": 42,
-    "improvement": {
-      "avg": 7.61,
-      "events": 8,
-      "best": {
-        "event": "50 Butterfly",
-        "course": "SCM",
-        "pct": 13.16
-      }
-    }
+    "season_swims": 1,
+    "improvement": null
   },
   {
     "id": 129,
@@ -7434,9 +7145,9 @@
       {
         "event": "100 Backstroke",
         "course": "SCM",
-        "time": "1:40.90",
-        "date": "2026-05-09",
-        "meet": "Sl Development Meet 3 - 2026"
+        "time": "1:40.68",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "50 Breaststroke",
@@ -7462,9 +7173,9 @@
       {
         "event": "100 Butterfly",
         "course": "SCM",
-        "time": "1:59.69",
-        "date": "2026-06-01",
-        "meet": "Club Time Trials June 2026"
+        "time": "1:53.99",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       },
       {
         "event": "100 IM",
@@ -7476,20 +7187,20 @@
       {
         "event": "200 IM",
         "course": "SCM",
-        "time": "3:59.21",
-        "date": "2026-04-20",
-        "meet": "Club Time Trials April 2026"
+        "time": "3:39.49",
+        "date": "2026-09-05",
+        "meet": "South Lanarkshire Development"
       }
     ],
     "badges": [],
-    "season_swims": 52,
+    "season_swims": 3,
     "improvement": {
-      "avg": 14.3,
-      "events": 8,
+      "avg": 4.41,
+      "events": 3,
       "best": {
-        "event": "100 Backstroke",
+        "event": "200 IM",
         "course": "SCM",
-        "pct": 24.44
+        "pct": 8.24
       }
     }
   }
