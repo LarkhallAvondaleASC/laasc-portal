@@ -7,7 +7,7 @@
     "age": "15",
     "event": "50 Freestyle",
     "time": "28.44",
-    "place": ""
+    "place": "459"
   },
   {
     "ath_id": null,
@@ -17,7 +17,7 @@
     "age": "15",
     "event": "100 Freestyle",
     "time": "1:01.64",
-    "place": ""
+    "place": "432"
   },
   {
     "ath_id": null,
@@ -27,7 +27,7 @@
     "age": "15",
     "event": "50 Butterfly",
     "time": "30.86",
-    "place": ""
+    "place": "397"
   },
   {
     "ath_id": null,
@@ -37,6 +37,6 @@
     "age": "15",
     "event": "100 Butterfly",
     "time": "1:08.28",
-    "place": ""
+    "place": "362"
   }
 ]

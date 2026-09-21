@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "1:18.16",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 276,
@@ -15,7 +15,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "57.56",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 276,
@@ -24,7 +24,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:04.79",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 276,
@@ -33,7 +33,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:15.46",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 268,
@@ -42,7 +42,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:13.32",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 268,
@@ -51,6 +51,33 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "2:27.53",
-    "place": ""
+    "place": "1"
+  },
+  {
+    "meet_id": 286,
+    "meet": "Club Time Trials September 202",
+    "date": "2026-09-07",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "2:04.85",
+    "place": "1"
+  },
+  {
+    "meet_id": 286,
+    "meet": "Club Time Trials September 202",
+    "date": "2026-09-07",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "1:08.23",
+    "place": "1"
+  },
+  {
+    "meet_id": 280,
+    "meet": "EK September Sprints 2026",
+    "date": "2026-09-12",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:07.94",
+    "place": "1"
   }
 ]

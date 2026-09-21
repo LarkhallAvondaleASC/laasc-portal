@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "1:31.85",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 265,
@@ -15,7 +15,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "2:54.82",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 276,
@@ -24,7 +24,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "1:06.25",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 276,
@@ -33,7 +33,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:20.31",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 276,
@@ -42,7 +42,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:23.37",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 268,
@@ -51,7 +51,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "2:04.82",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 268,
@@ -60,7 +60,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:20.16",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 277,
@@ -69,7 +69,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:13.34",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 277,
@@ -78,7 +78,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "3:13.23",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 283,
@@ -87,7 +87,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "1:08.01",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 283,
@@ -96,7 +96,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:14.44",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 283,
@@ -105,7 +105,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:22.24",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 283,
@@ -114,6 +114,6 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "1:27.58",
-    "place": ""
+    "place": "1"
   }
 ]

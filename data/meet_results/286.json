@@ -1,0 +1,1012 @@
+[
+  {
+    "ath_id": null,
+    "last": "Addison",
+    "first": "Heidi",
+    "gender": "F",
+    "age": "14",
+    "event": "50 Breaststroke",
+    "time": "39.11",
+    "place": "518"
+  },
+  {
+    "ath_id": null,
+    "last": "Addison",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "1:29.70",
+    "place": "219"
+  },
+  {
+    "ath_id": null,
+    "last": "Addison",
+    "first": "Isaac",
+    "gender": "M",
+    "age": "9",
+    "event": "100 IM",
+    "time": "1:46.25",
+    "place": "102"
+  },
+  {
+    "ath_id": null,
+    "last": "Addison",
+    "first": "Wendy",
+    "gender": "F",
+    "age": "11",
+    "event": "50 Breaststroke",
+    "time": "40.48",
+    "place": "536"
+  },
+  {
+    "ath_id": null,
+    "last": "Addison",
+    "first": "Wendy",
+    "gender": "F",
+    "age": "11",
+    "event": "200 Butterfly",
+    "time": "3:01.28",
+    "place": "467"
+  },
+  {
+    "ath_id": null,
+    "last": "Allison",
+    "first": "Liam",
+    "gender": "M",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "2:22.93",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Allison",
+    "first": "Liam",
+    "gender": "M",
+    "age": "10",
+    "event": "50 Butterfly",
+    "time": "1:11.45",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Asher",
+    "first": "Kirsty",
+    "gender": "F",
+    "age": "7",
+    "event": "100 Freestyle",
+    "time": "2:06.46",
+    "place": "214"
+  },
+  {
+    "ath_id": null,
+    "last": "Asher",
+    "first": "Kirsty",
+    "gender": "F",
+    "age": "7",
+    "event": "50 Butterfly",
+    "time": "1:08.54",
+    "place": "166"
+  },
+  {
+    "ath_id": null,
+    "last": "Bayne",
+    "first": "Emily",
+    "gender": "F",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "1:43.82",
+    "place": "14"
+  },
+  {
+    "ath_id": null,
+    "last": "Bayne",
+    "first": "Emily",
+    "gender": "F",
+    "age": "10",
+    "event": "100 IM",
+    "time": "1:48.46",
+    "place": "103"
+  },
+  {
+    "ath_id": null,
+    "last": "Black",
+    "first": "Erin",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "1:56.81",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Black",
+    "first": "Erin",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "1:04.16",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Buchan",
+    "first": "Oliver",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Breaststroke",
+    "time": "41.59",
+    "place": "430"
+  },
+  {
+    "ath_id": null,
+    "last": "Buchan",
+    "first": "Oliver",
+    "gender": "M",
+    "age": "12",
+    "event": "200 Butterfly",
+    "time": "3:38.23",
+    "place": "80"
+  },
+  {
+    "ath_id": null,
+    "last": "Buchan",
+    "first": "Tom",
+    "gender": "M",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "1:19.51",
+    "place": "446"
+  },
+  {
+    "ath_id": null,
+    "last": "Buchan",
+    "first": "Tom",
+    "gender": "M",
+    "age": "9",
+    "event": "100 IM",
+    "time": "1:32.79",
+    "place": "334"
+  },
+  {
+    "ath_id": null,
+    "last": "Callaghan",
+    "first": "Locky",
+    "gender": "M",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "1:53.81",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Callaghan",
+    "first": "Locky",
+    "gender": "M",
+    "age": "10",
+    "event": "50 Butterfly",
+    "time": "1:09.23",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Callaghan",
+    "first": "Millie",
+    "gender": "F",
+    "age": "14",
+    "event": "50 Breaststroke",
+    "time": "54.04",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Callaghan",
+    "first": "Millie",
+    "gender": "F",
+    "age": "14",
+    "event": "200 Butterfly",
+    "time": "4:18.81",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Charlton",
+    "first": "Sophie",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "1:57.93",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Charlton",
+    "first": "Sophie",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "1:02.08",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Connor",
+    "first": "Richard",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Breaststroke",
+    "time": "50.44",
+    "place": "72"
+  },
+  {
+    "ath_id": null,
+    "last": "Connor",
+    "first": "Richard",
+    "gender": "M",
+    "age": "12",
+    "event": "200 Butterfly",
+    "time": "3:51.59",
+    "place": "13"
+  },
+  {
+    "ath_id": null,
+    "last": "Cranstoun",
+    "first": "Mia",
+    "gender": "F",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "2:24.08",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Cranstoun",
+    "first": "Mia",
+    "gender": "F",
+    "age": "10",
+    "event": "50 Butterfly",
+    "time": "1:28.81",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Donnelly",
+    "first": "Jorgie",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Freestyle",
+    "time": "2:06.55",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Donnelly",
+    "first": "Jorgie",
+    "gender": "F",
+    "age": "12",
+    "event": "50 Butterfly",
+    "time": "1:11.85",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "12",
+    "event": "50 Breaststroke",
+    "time": "38.21",
+    "place": "610"
+  },
+  {
+    "ath_id": null,
+    "last": "Easton",
+    "first": "Joshua",
+    "gender": "M",
+    "age": "12",
+    "event": "200 Butterfly",
+    "time": "2:42.77",
+    "place": "614"
+  },
+  {
+    "ath_id": null,
+    "last": "Fletcher",
+    "first": "Connie",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Freestyle",
+    "time": "1:37.09",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Fletcher",
+    "first": "Connie",
+    "gender": "F",
+    "age": "12",
+    "event": "100 IM",
+    "time": "1:44.31",
+    "place": "7"
+  },
+  {
+    "ath_id": null,
+    "last": "Fletcher",
+    "first": "Natalie",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "2:04.85",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Fletcher",
+    "first": "Natalie",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "1:08.23",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Hagan",
+    "first": "Harris",
+    "gender": "M",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "2:05.86",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Hagan",
+    "first": "Harris",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Butterfly",
+    "time": "1:09.04",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Hamilton",
+    "first": "Keiran",
+    "gender": "M",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "1:41.28",
+    "place": "39"
+  },
+  {
+    "ath_id": null,
+    "last": "Hamilton",
+    "first": "Keiran",
+    "gender": "M",
+    "age": "10",
+    "event": "100 IM",
+    "time": "1:53.50",
+    "place": "27"
+  },
+  {
+    "ath_id": null,
+    "last": "Hamilton",
+    "first": "Leah",
+    "gender": "F",
+    "age": "13",
+    "event": "50 Breaststroke",
+    "time": "48.21",
+    "place": "87"
+  },
+  {
+    "ath_id": null,
+    "last": "Hamilton",
+    "first": "Leah",
+    "gender": "F",
+    "age": "13",
+    "event": "200 Butterfly",
+    "time": "4:01.67",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Harkin",
+    "first": "Grace",
+    "gender": "F",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "1:38.96",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Harkin",
+    "first": "Grace",
+    "gender": "F",
+    "age": "11",
+    "event": "100 IM",
+    "time": "1:48.54",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Harkin",
+    "first": "Owen",
+    "gender": "M",
+    "age": "14",
+    "event": "100 Freestyle",
+    "time": "1:29.24",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Harkin",
+    "first": "Owen",
+    "gender": "M",
+    "age": "14",
+    "event": "100 IM",
+    "time": "1:36.41",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Innes",
+    "first": "Sofi",
+    "gender": "F",
+    "age": "13",
+    "event": "50 Breaststroke",
+    "time": "44.44",
+    "place": "240"
+  },
+  {
+    "ath_id": null,
+    "last": "Innes",
+    "first": "Sofi",
+    "gender": "F",
+    "age": "13",
+    "event": "200 Butterfly",
+    "time": "3:14.90",
+    "place": "109"
+  },
+  {
+    "ath_id": null,
+    "last": "Jones",
+    "first": "Sam",
+    "gender": "M",
+    "age": "13",
+    "event": "50 Breaststroke",
+    "time": "42.33",
+    "place": "157"
+  },
+  {
+    "ath_id": null,
+    "last": "Jones",
+    "first": "Sam",
+    "gender": "M",
+    "age": "13",
+    "event": "100 Butterfly",
+    "time": "1:24.21",
+    "place": "59"
+  },
+  {
+    "ath_id": null,
+    "last": "Khan",
+    "first": "Calum",
+    "gender": "M",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "2:03.88",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Khan",
+    "first": "Calum",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Butterfly",
+    "time": "1:22.23",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Holly",
+    "gender": "F",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "1:39.38",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Holly",
+    "gender": "F",
+    "age": "11",
+    "event": "100 IM",
+    "time": "1:48.09",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Maria",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "2:15.24",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Kruger",
+    "first": "Maria",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "1:32.76",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Little",
+    "first": "Ruby",
+    "gender": "F",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "1:42.75",
+    "place": "22"
+  },
+  {
+    "ath_id": null,
+    "last": "Little",
+    "first": "Ruby",
+    "gender": "F",
+    "age": "10",
+    "event": "50 Butterfly",
+    "time": "1:05.96",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Lorimer",
+    "first": "Hamish",
+    "gender": "M",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "1:59.87",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Lorimer",
+    "first": "Hamish",
+    "gender": "M",
+    "age": "11",
+    "event": "50 Butterfly",
+    "time": "1:04.92",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Marshall",
+    "first": "Lauren",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Freestyle",
+    "time": "1:38.86",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Marshall",
+    "first": "Lauren",
+    "gender": "F",
+    "age": "12",
+    "event": "100 IM",
+    "time": "1:41.41",
+    "place": "30"
+  },
+  {
+    "ath_id": null,
+    "last": "Matulevicze",
+    "first": "Ava",
+    "gender": "F",
+    "age": "15",
+    "event": "100 Freestyle",
+    "time": "1:56.20",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Matulevicze",
+    "first": "Ava",
+    "gender": "F",
+    "age": "15",
+    "event": "100 IM",
+    "time": "1:59.82",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "McCafferty",
+    "first": "Isla",
+    "gender": "F",
+    "age": "13",
+    "event": "100 Freestyle",
+    "time": "1:26.92",
+    "place": "2"
+  },
+  {
+    "ath_id": null,
+    "last": "McCafferty",
+    "first": "Isla",
+    "gender": "F",
+    "age": "13",
+    "event": "100 IM",
+    "time": "1:39.09",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "McCarthy",
+    "first": "Alexis",
+    "gender": "F",
+    "age": "13",
+    "event": "50 Breaststroke",
+    "time": "47.25",
+    "place": "122"
+  },
+  {
+    "ath_id": null,
+    "last": "McCarthy",
+    "first": "Alexis",
+    "gender": "F",
+    "age": "13",
+    "event": "200 Butterfly",
+    "time": "3:30.21",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "McMillan",
+    "first": "Skye",
+    "gender": "F",
+    "age": "9",
+    "event": "100 Freestyle",
+    "time": "1:42.70",
+    "place": "23"
+  },
+  {
+    "ath_id": null,
+    "last": "McMillan",
+    "first": "Skye",
+    "gender": "F",
+    "age": "9",
+    "event": "50 Butterfly",
+    "time": "1:03.32",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "McNaughton",
+    "first": "Cole",
+    "gender": "M",
+    "age": "15",
+    "event": "50 Breaststroke",
+    "time": "47.46",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "McNaughton",
+    "first": "Cole",
+    "gender": "M",
+    "age": "15",
+    "event": "200 Butterfly",
+    "time": "3:35.40",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Moore",
+    "first": "Ava",
+    "gender": "F",
+    "age": "13",
+    "event": "50 Breaststroke",
+    "time": "45.57",
+    "place": "190"
+  },
+  {
+    "ath_id": null,
+    "last": "Moore",
+    "first": "Ava",
+    "gender": "F",
+    "age": "13",
+    "event": "200 Butterfly",
+    "time": "4:22.90",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Neeson",
+    "first": "Zakk",
+    "gender": "M",
+    "age": "14",
+    "event": "50 Breaststroke",
+    "time": "35.33",
+    "place": "547"
+  },
+  {
+    "ath_id": null,
+    "last": "Neeson",
+    "first": "Zakk",
+    "gender": "M",
+    "age": "14",
+    "event": "100 Butterfly",
+    "time": "1:10.81",
+    "place": "396"
+  },
+  {
+    "ath_id": null,
+    "last": "Nutt",
+    "first": "Kaitlin",
+    "gender": "F",
+    "age": "26",
+    "event": "50 Breaststroke",
+    "time": "1:19.99",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Nutt",
+    "first": "Kaitlin",
+    "gender": "F",
+    "age": "26",
+    "event": "100 Butterfly",
+    "time": "2:38.01",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Perrie",
+    "first": "Sam",
+    "gender": "M",
+    "age": "15",
+    "event": "50 Breaststroke",
+    "time": "40.32",
+    "place": "174"
+  },
+  {
+    "ath_id": null,
+    "last": "Perrie",
+    "first": "Sam",
+    "gender": "M",
+    "age": "15",
+    "event": "200 Butterfly",
+    "time": "2:46.90",
+    "place": "175"
+  },
+  {
+    "ath_id": null,
+    "last": "Prinson",
+    "first": "Eleena Maria",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Freestyle",
+    "time": "1:50.67",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Prinson",
+    "first": "Eleena Maria",
+    "gender": "F",
+    "age": "12",
+    "event": "50 Butterfly",
+    "time": "1:07.38",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Scott",
+    "first": "Cole",
+    "gender": "M",
+    "age": "14",
+    "event": "50 Breaststroke",
+    "time": "39.08",
+    "place": "320"
+  },
+  {
+    "ath_id": null,
+    "last": "Scott",
+    "first": "Cole",
+    "gender": "M",
+    "age": "14",
+    "event": "200 Butterfly",
+    "time": "2:58.54",
+    "place": "136"
+  },
+  {
+    "ath_id": null,
+    "last": "Soper",
+    "first": "Lacey",
+    "gender": "F",
+    "age": "14",
+    "event": "50 Breaststroke",
+    "time": "50.84",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Soper",
+    "first": "Lacey",
+    "gender": "F",
+    "age": "14",
+    "event": "200 Butterfly",
+    "time": "4:17.49",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Stevenson",
+    "first": "Skye",
+    "gender": "F",
+    "age": "12",
+    "event": "100 Freestyle",
+    "time": "1:24.51",
+    "place": "108"
+  },
+  {
+    "ath_id": null,
+    "last": "Stevenson",
+    "first": "Skye",
+    "gender": "F",
+    "age": "12",
+    "event": "100 IM",
+    "time": "1:31.51",
+    "place": "178"
+  },
+  {
+    "ath_id": null,
+    "last": "Stone",
+    "first": "Jessica",
+    "gender": "F",
+    "age": "12",
+    "event": "50 Breaststroke",
+    "time": "48.54",
+    "place": "176"
+  },
+  {
+    "ath_id": null,
+    "last": "Stone",
+    "first": "Jessica",
+    "gender": "F",
+    "age": "12",
+    "event": "200 Butterfly",
+    "time": "3:54.67",
+    "place": "28"
+  },
+  {
+    "ath_id": null,
+    "last": "Thompson",
+    "first": "Amy",
+    "gender": "F",
+    "age": "10",
+    "event": "100 Freestyle",
+    "time": "1:37.97",
+    "place": "73"
+  },
+  {
+    "ath_id": null,
+    "last": "Thompson",
+    "first": "Amy",
+    "gender": "F",
+    "age": "10",
+    "event": "100 IM",
+    "time": "1:48.15",
+    "place": "107"
+  },
+  {
+    "ath_id": null,
+    "last": "Thompson",
+    "first": "Emma",
+    "gender": "F",
+    "age": "11",
+    "event": "50 Breaststroke",
+    "time": "41.78",
+    "place": "470"
+  },
+  {
+    "ath_id": null,
+    "last": "Thompson",
+    "first": "Emma",
+    "gender": "F",
+    "age": "11",
+    "event": "200 Butterfly",
+    "time": "3:13.52",
+    "place": "345"
+  },
+  {
+    "ath_id": null,
+    "last": "Wayt",
+    "first": "Quinn",
+    "gender": "F",
+    "age": "12",
+    "event": "50 Breaststroke",
+    "time": "47.40",
+    "place": "219"
+  },
+  {
+    "ath_id": null,
+    "last": "Wayt",
+    "first": "Quinn",
+    "gender": "F",
+    "age": "12",
+    "event": "200 Butterfly",
+    "time": "3:46.76",
+    "place": "74"
+  },
+  {
+    "ath_id": null,
+    "last": "Wright",
+    "first": "Evie",
+    "gender": "F",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "2:08.43",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Wright",
+    "first": "Evie",
+    "gender": "F",
+    "age": "11",
+    "event": "50 Butterfly",
+    "time": "1:08.68",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Young",
+    "first": "Grace",
+    "gender": "F",
+    "age": "13",
+    "event": "100 Freestyle",
+    "time": "1:24.34",
+    "place": "23"
+  },
+  {
+    "ath_id": null,
+    "last": "Young",
+    "first": "Grace",
+    "gender": "F",
+    "age": "13",
+    "event": "100 IM",
+    "time": "1:39.25",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Young",
+    "first": "Leila",
+    "gender": "F",
+    "age": "11",
+    "event": "100 Freestyle",
+    "time": "1:33.88",
+    "place": "1"
+  },
+  {
+    "ath_id": null,
+    "last": "Young",
+    "first": "Leila",
+    "gender": "F",
+    "age": "11",
+    "event": "100 IM",
+    "time": "1:42.59",
+    "place": "20"
+  }
+]

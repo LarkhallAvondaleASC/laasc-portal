@@ -1,30 +1,12 @@
 [
   {
-    "meet_id": 161,
-    "meet": "South Lanarkshire Development",
-    "date": "2024-09-14",
-    "course": "SCM",
-    "event": "100 Freestyle",
-    "time": "DQ",
-    "place": ""
-  },
-  {
-    "meet_id": 161,
-    "meet": "South Lanarkshire Development",
-    "date": "2024-09-14",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:46.27",
-    "place": "3"
-  },
-  {
     "meet_id": 274,
     "meet": "WoS Regional Championships for",
     "date": "2026-03-14",
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "13:13.50",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 274,
@@ -33,7 +15,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "45.47",
-    "place": ""
+    "place": "2"
   },
   {
     "meet_id": 274,
@@ -42,6 +24,6 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "40.66",
-    "place": ""
+    "place": "1"
   }
 ]

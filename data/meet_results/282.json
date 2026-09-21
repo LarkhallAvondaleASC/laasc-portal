@@ -7,7 +7,7 @@
     "age": "10",
     "event": "800 Freestyle",
     "time": "12:40.00",
-    "place": ""
+    "place": "189"
   },
   {
     "ath_id": null,
@@ -17,7 +17,7 @@
     "age": "11",
     "event": "800 Freestyle",
     "time": "13:07.00",
-    "place": ""
+    "place": "132"
   },
   {
     "ath_id": null,
@@ -27,7 +27,7 @@
     "age": "11",
     "event": "800 Freestyle",
     "time": "14:31.00",
-    "place": ""
+    "place": "11"
   },
   {
     "ath_id": null,
@@ -37,7 +37,7 @@
     "age": "10",
     "event": "800 Freestyle",
     "time": "15:18.00",
-    "place": ""
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -47,7 +47,7 @@
     "age": "12",
     "event": "800 Freestyle",
     "time": "15:36.00",
-    "place": ""
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -57,7 +57,7 @@
     "age": "12",
     "event": "800 Freestyle",
     "time": "14:40.00",
-    "place": ""
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -67,7 +67,7 @@
     "age": "11",
     "event": "800 Freestyle",
     "time": "15:37.00",
-    "place": ""
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -77,6 +77,6 @@
     "age": "10",
     "event": "800 Freestyle",
     "time": "13:04.00",
-    "place": ""
+    "place": "136"
   }
 ]

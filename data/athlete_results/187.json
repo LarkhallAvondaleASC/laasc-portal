@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:04.78",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 268,
@@ -15,7 +15,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "2:17.46",
-    "place": ""
+    "place": "1"
   },
   {
     "meet_id": 268,
@@ -24,6 +24,6 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:13.59",
-    "place": ""
+    "place": "1"
   }
 ]
