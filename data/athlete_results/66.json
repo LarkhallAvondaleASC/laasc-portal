@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "13:13.50",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 274,
@@ -15,7 +15,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "45.47",
-    "place": "2"
+    "place": ""
   },
   {
     "meet_id": 274,
@@ -24,6 +24,6 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "40.66",
-    "place": "1"
+    "place": ""
   }
 ]

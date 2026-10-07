@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "1:18.16",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 276,
@@ -15,7 +15,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "57.56",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 276,
@@ -24,7 +24,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:04.79",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 276,
@@ -33,7 +33,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:15.46",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 268,
@@ -42,7 +42,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:13.32",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 268,
@@ -51,7 +51,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "2:27.53",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 286,
@@ -60,7 +60,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "2:04.85",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 286,
@@ -69,7 +69,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "1:08.23",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 280,
@@ -78,6 +78,42 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "1:07.94",
-    "place": "1"
+    "place": "38"
+  },
+  {
+    "meet_id": 288,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-10-03",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "51.25",
+    "place": "20"
+  },
+  {
+    "meet_id": 288,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-10-03",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "1:10.06",
+    "place": "17"
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "1:05.62",
+    "place": ""
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "2:34.13",
+    "place": ""
   }
 ]

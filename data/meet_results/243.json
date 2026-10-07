@@ -7,7 +7,7 @@
     "age": "13",
     "event": "100 Freestyle",
     "time": "1:06.11",
-    "place": "486"
+    "place": "3"
   },
   {
     "ath_id": null,
@@ -17,7 +17,7 @@
     "age": "13",
     "event": "100 Backstroke",
     "time": "1:11.87",
-    "place": "585"
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -27,7 +27,7 @@
     "age": "13",
     "event": "100 Breaststroke",
     "time": "1:23.22",
-    "place": "530"
+    "place": "2"
   },
   {
     "ath_id": null,
@@ -37,7 +37,7 @@
     "age": "11",
     "event": "50 Backstroke",
     "time": "39.66",
-    "place": "339"
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -47,7 +47,7 @@
     "age": "11",
     "event": "100 Breaststroke",
     "time": "1:37.88",
-    "place": "326"
+    "place": "7"
   },
   {
     "ath_id": null,
@@ -57,7 +57,7 @@
     "age": "11",
     "event": "200 IM",
     "time": "3:05.85",
-    "place": "315"
+    "place": "5"
   },
   {
     "ath_id": null,
@@ -67,7 +67,7 @@
     "age": "12",
     "event": "50 Freestyle",
     "time": "32.26",
-    "place": "466"
+    "place": "5"
   },
   {
     "ath_id": null,
@@ -87,7 +87,7 @@
     "age": "12",
     "event": "200 Backstroke",
     "time": "2:54.76",
-    "place": "452"
+    "place": "3"
   },
   {
     "ath_id": null,
@@ -97,7 +97,7 @@
     "age": "11",
     "event": "400 Freestyle",
     "time": "5:15.58",
-    "place": "462"
+    "place": "3"
   },
   {
     "ath_id": null,
@@ -107,7 +107,7 @@
     "age": "11",
     "event": "100 Breaststroke",
     "time": "1:30.49",
-    "place": "459"
+    "place": "1"
   },
   {
     "ath_id": null,
@@ -117,7 +117,7 @@
     "age": "11",
     "event": "200 Butterfly",
     "time": "2:57.63",
-    "place": "440"
+    "place": "2"
   },
   {
     "ath_id": null,
@@ -127,7 +127,7 @@
     "age": "14",
     "event": "200 Freestyle",
     "time": "2:34.99",
-    "place": "172"
+    "place": "3"
   },
   {
     "ath_id": null,
@@ -157,7 +157,7 @@
     "age": "10",
     "event": "100 Freestyle",
     "time": "1:17.07",
-    "place": "271"
+    "place": "6"
   },
   {
     "ath_id": null,
@@ -167,7 +167,7 @@
     "age": "10",
     "event": "200 Freestyle",
     "time": "2:47.12",
-    "place": "230"
+    "place": "4"
   },
   {
     "ath_id": null,
@@ -177,6 +177,6 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "1:29.10",
-    "place": "258"
+    "place": "7"
   }
 ]

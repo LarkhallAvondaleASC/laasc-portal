@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "1:06.91",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 237,
@@ -15,7 +15,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "2:21.96",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 254,
@@ -24,7 +24,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:28.49",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 254,
@@ -33,7 +33,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:46.76",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 276,
@@ -42,7 +42,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "49.15",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 276,
@@ -51,7 +51,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "47.56",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 276,
@@ -60,7 +60,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "43.37",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 268,
@@ -69,7 +69,7 @@
     "course": "SCM",
     "event": "200 Freestyle",
     "time": "3:10.79",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 268,
@@ -78,7 +78,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "43.41",
-    "place": "112"
+    "place": ""
   },
   {
     "meet_id": 277,
@@ -87,7 +87,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "34.76",
-    "place": "127"
+    "place": ""
   },
   {
     "meet_id": 277,
@@ -96,7 +96,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "44.62",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 277,
@@ -105,6 +105,24 @@
     "course": "SCM",
     "event": "100 Butterfly",
     "time": "1:43.69",
-    "place": "1"
+    "place": ""
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "2:59.45",
+    "place": ""
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:37.36",
+    "place": ""
   }
 ]

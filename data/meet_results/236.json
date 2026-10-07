@@ -7,7 +7,7 @@
     "age": "11",
     "event": "50 Backstroke",
     "time": "41.87",
-    "place": "214"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -17,7 +17,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "48.68",
-    "place": "127"
+    "place": "2"
   },
   {
     "ath_id": null,
@@ -27,7 +27,7 @@
     "age": "11",
     "event": "100 Breaststroke",
     "time": "1:46.29",
-    "place": "146"
+    "place": "3"
   },
   {
     "ath_id": null,
@@ -37,7 +37,7 @@
     "age": "11",
     "event": "100 Butterfly",
     "time": "1:38.12",
-    "place": "59"
+    "place": "2"
   },
   {
     "ath_id": null,
@@ -47,7 +47,7 @@
     "age": "11",
     "event": "50 Freestyle",
     "time": "46.25",
-    "place": "1"
+    "place": "28"
   },
   {
     "ath_id": null,
@@ -57,7 +57,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "1:55.01",
-    "place": "1"
+    "place": "26"
   },
   {
     "ath_id": null,
@@ -67,7 +67,7 @@
     "age": "11",
     "event": "100 Breaststroke",
     "time": "2:12.72",
-    "place": "1"
+    "place": "21"
   },
   {
     "ath_id": null,
@@ -77,7 +77,7 @@
     "age": "11",
     "event": "50 Butterfly",
     "time": "55.47",
-    "place": "1"
+    "place": "23"
   },
   {
     "ath_id": null,
@@ -87,7 +87,7 @@
     "age": "11",
     "event": "50 Freestyle",
     "time": "41.24",
-    "place": "45"
+    "place": "17"
   },
   {
     "ath_id": null,
@@ -97,7 +97,7 @@
     "age": "11",
     "event": "50 Backstroke",
     "time": "52.43",
-    "place": "1"
+    "place": "27"
   },
   {
     "ath_id": null,
@@ -107,7 +107,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "55.54",
-    "place": "1"
+    "place": "19"
   },
   {
     "ath_id": null,
@@ -117,7 +117,7 @@
     "age": "11",
     "event": "50 Butterfly",
     "time": "53.15",
-    "place": "1"
+    "place": "20"
   },
   {
     "ath_id": null,
@@ -127,7 +127,7 @@
     "age": "9",
     "event": "50 Freestyle",
     "time": "47.24",
-    "place": "22"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -137,7 +137,7 @@
     "age": "9",
     "event": "50 Backstroke",
     "time": "58.61",
-    "place": "1"
+    "place": "18"
   },
   {
     "ath_id": null,
@@ -147,7 +147,7 @@
     "age": "9",
     "event": "100 Breaststroke",
     "time": "2:12.48",
-    "place": "44"
+    "place": "4"
   },
   {
     "ath_id": null,
@@ -157,7 +157,7 @@
     "age": "9",
     "event": "50 Butterfly",
     "time": "1:02.34",
-    "place": "1"
+    "place": "9"
   },
   {
     "ath_id": null,
@@ -167,7 +167,7 @@
     "age": "9",
     "event": "100 IM",
     "time": "1:57.77",
-    "place": "12"
+    "place": "8"
   },
   {
     "ath_id": null,
@@ -177,6 +177,6 @@
     "age": "10",
     "event": "100 Butterfly",
     "time": "1:36.92",
-    "place": "114"
+    "place": "1"
   }
 ]

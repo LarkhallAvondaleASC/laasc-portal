@@ -1,30 +1,12 @@
 [
   {
-    "meet_id": 165,
-    "meet": "Autumn Graded Meet 2024",
-    "date": "2024-10-05",
-    "course": "SCM",
-    "event": "100 Backstroke",
-    "time": "1:53.01",
-    "place": "1"
-  },
-  {
-    "meet_id": 165,
-    "meet": "Autumn Graded Meet 2024",
-    "date": "2024-10-05",
-    "course": "SCM",
-    "event": "50 Butterfly",
-    "time": "53.82",
-    "place": "1"
-  },
-  {
     "meet_id": 173,
     "meet": "Club Time Trials October 2024",
     "date": "2024-10-12",
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:53.04",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 173,
@@ -33,7 +15,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "55.23",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 183,
@@ -42,7 +24,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "40.65",
-    "place": "65"
+    "place": ""
   },
   {
     "meet_id": 183,
@@ -51,7 +33,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "2:05.59",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 184,
@@ -60,7 +42,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:43.00",
-    "place": "29"
+    "place": "15"
   },
   {
     "meet_id": 184,
@@ -69,7 +51,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:46.84",
-    "place": "1"
+    "place": "17"
   },
   {
     "meet_id": 186,
@@ -78,7 +60,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:36.22",
-    "place": "1"
+    "place": "2"
   },
   {
     "meet_id": 186,
@@ -87,7 +69,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:47.34",
-    "place": "1"
+    "place": "3"
   },
   {
     "meet_id": 186,
@@ -96,7 +78,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "2:01.39",
-    "place": "1"
+    "place": "4"
   },
   {
     "meet_id": 186,
@@ -105,7 +87,7 @@
     "course": "SCM",
     "event": "200 IM",
     "time": "3:57.55",
-    "place": "1"
+    "place": "3"
   },
   {
     "meet_id": 187,
@@ -114,7 +96,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:40.19",
-    "place": "62"
+    "place": "6"
   },
   {
     "meet_id": 187,
@@ -123,7 +105,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "2:02.02",
-    "place": "1"
+    "place": "3"
   },
   {
     "meet_id": 225,
@@ -132,7 +114,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "40.20",
-    "place": "81"
+    "place": ""
   },
   {
     "meet_id": 225,
@@ -141,7 +123,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:57.75",
-    "place": "15"
+    "place": ""
   },
   {
     "meet_id": 226,
@@ -150,7 +132,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:36.89",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 226,
@@ -159,7 +141,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "54.36",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 224,
@@ -168,7 +150,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "49.31",
-    "place": "5"
+    "place": ""
   },
   {
     "meet_id": 224,
@@ -177,7 +159,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:54.92",
-    "place": "44"
+    "place": ""
   },
   {
     "meet_id": 201,
@@ -186,7 +168,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:28.37",
-    "place": "48"
+    "place": "14"
   },
   {
     "meet_id": 201,
@@ -195,7 +177,7 @@
     "course": "SCM",
     "event": "200 Freestyle",
     "time": "3:17.61",
-    "place": "8"
+    "place": "12"
   },
   {
     "meet_id": 201,
@@ -204,7 +186,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:40.05",
-    "place": "63"
+    "place": "11"
   },
   {
     "meet_id": 201,
@@ -213,7 +195,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:56.35",
-    "place": "29"
+    "place": "11"
   },
   {
     "meet_id": 201,
@@ -222,7 +204,7 @@
     "course": "SCM",
     "event": "200 IM",
     "time": "3:48.62",
-    "place": "3"
+    "place": "14"
   },
   {
     "meet_id": 227,
@@ -231,7 +213,7 @@
     "course": "SCM",
     "event": "200 Freestyle",
     "time": "3:11.54",
-    "place": "31"
+    "place": ""
   },
   {
     "meet_id": 227,
@@ -240,7 +222,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "53.20",
-    "place": "32"
+    "place": ""
   },
   {
     "meet_id": 204,
@@ -249,7 +231,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:32.80",
-    "place": "5"
+    "place": "10"
   },
   {
     "meet_id": 204,
@@ -258,7 +240,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:42.63",
-    "place": "33"
+    "place": "8"
   },
   {
     "meet_id": 204,
@@ -267,7 +249,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:58.07",
-    "place": "13"
+    "place": "6"
   },
   {
     "meet_id": 230,
@@ -276,7 +258,7 @@
     "course": "SCM",
     "event": "200 Freestyle",
     "time": "3:18.05",
-    "place": "7"
+    "place": ""
   },
   {
     "meet_id": 230,
@@ -285,7 +267,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "52.26",
-    "place": "56"
+    "place": ""
   },
   {
     "meet_id": 230,
@@ -294,7 +276,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:45.50",
-    "place": "2"
+    "place": ""
   },
   {
     "meet_id": 238,
@@ -303,7 +285,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "40.64",
-    "place": "65"
+    "place": ""
   },
   {
     "meet_id": 238,
@@ -312,7 +294,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "47.49",
-    "place": "36"
+    "place": ""
   },
   {
     "meet_id": 238,
@@ -321,7 +303,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "54.44",
-    "place": "8"
+    "place": ""
   },
   {
     "meet_id": 238,
@@ -330,7 +312,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "50.48",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 237,
@@ -339,7 +321,7 @@
     "course": "SCM",
     "event": "400 Freestyle",
     "time": "7:02.21",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 237,
@@ -348,7 +330,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:39.91",
-    "place": "65"
+    "place": ""
   },
   {
     "meet_id": 233,
@@ -357,7 +339,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:26.99",
-    "place": "67"
+    "place": "6"
   },
   {
     "meet_id": 233,
@@ -366,7 +348,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:35.86",
-    "place": "127"
+    "place": "2"
   },
   {
     "meet_id": 233,
@@ -375,7 +357,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:53.43",
-    "place": "63"
+    "place": "10"
   },
   {
     "meet_id": 231,
@@ -384,7 +366,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "39.32",
-    "place": "115"
+    "place": "12"
   },
   {
     "meet_id": 231,
@@ -393,7 +375,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "45.55",
-    "place": "89"
+    "place": "7"
   },
   {
     "meet_id": 231,
@@ -402,7 +384,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "52.23",
-    "place": "56"
+    "place": "10"
   },
   {
     "meet_id": 231,
@@ -411,7 +393,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "51.22",
-    "place": "1"
+    "place": "20"
   },
   {
     "meet_id": 231,
@@ -420,7 +402,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:36.60",
-    "place": "91"
+    "place": "9"
   },
   {
     "meet_id": 232,
@@ -429,7 +411,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:27.47",
-    "place": "60"
+    "place": "21"
   },
   {
     "meet_id": 232,
@@ -438,7 +420,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:38.56",
-    "place": "84"
+    "place": "17"
   },
   {
     "meet_id": 232,
@@ -447,7 +429,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:55.58",
-    "place": "37"
+    "place": "22"
   },
   {
     "meet_id": 235,
@@ -456,7 +438,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:30.36",
-    "place": "24"
+    "place": "10"
   },
   {
     "meet_id": 235,
@@ -465,7 +447,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:37.20",
-    "place": "105"
+    "place": "5"
   },
   {
     "meet_id": 235,
@@ -474,7 +456,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:53.94",
-    "place": "56"
+    "place": "4"
   },
   {
     "meet_id": 240,
@@ -483,7 +465,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:55.24",
-    "place": "41"
+    "place": ""
   },
   {
     "meet_id": 240,
@@ -492,7 +474,7 @@
     "course": "SCM",
     "event": "200 IM",
     "time": "3:42.39",
-    "place": "24"
+    "place": ""
   },
   {
     "meet_id": 242,
@@ -501,7 +483,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:28.94",
-    "place": "40"
+    "place": "6"
   },
   {
     "meet_id": 242,
@@ -510,7 +492,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:36.53",
-    "place": "116"
+    "place": "7"
   },
   {
     "meet_id": 242,
@@ -519,7 +501,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:51.76",
-    "place": "85"
+    "place": "4"
   },
   {
     "meet_id": 246,
@@ -528,7 +510,7 @@
     "course": "SCM",
     "event": "800 Freestyle",
     "time": "14:41.85",
-    "place": "5"
+    "place": ""
   },
   {
     "meet_id": 246,
@@ -537,7 +519,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "49.95",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 245,
@@ -546,7 +528,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:26.74",
-    "place": "71"
+    "place": "3"
   },
   {
     "meet_id": 245,
@@ -555,7 +537,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:34.98",
-    "place": "142"
+    "place": "2"
   },
   {
     "meet_id": 245,
@@ -564,7 +546,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:51.17",
-    "place": "93"
+    "place": "4"
   },
   {
     "meet_id": 245,
@@ -573,7 +555,7 @@
     "course": "SCM",
     "event": "200 IM",
     "time": "3:28.67",
-    "place": "105"
+    "place": "3"
   },
   {
     "meet_id": 244,
@@ -582,7 +564,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "37.78",
-    "place": "184"
+    "place": "1"
   },
   {
     "meet_id": 244,
@@ -591,7 +573,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "45.12",
-    "place": "103"
+    "place": "3"
   },
   {
     "meet_id": 244,
@@ -600,7 +582,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:34.58",
-    "place": "123"
+    "place": "4"
   },
   {
     "meet_id": 253,
@@ -609,7 +591,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "43.73",
-    "place": "153"
+    "place": ""
   },
   {
     "meet_id": 253,
@@ -618,7 +600,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "44.27",
-    "place": "86"
+    "place": ""
   },
   {
     "meet_id": 249,
@@ -627,7 +609,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:34.29",
-    "place": "154"
+    "place": "4"
   },
   {
     "meet_id": 254,
@@ -636,7 +618,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:31.23",
-    "place": "16"
+    "place": ""
   },
   {
     "meet_id": 254,
@@ -645,7 +627,7 @@
     "course": "SCM",
     "event": "200 Backstroke",
     "time": "3:43.98",
-    "place": "32"
+    "place": ""
   },
   {
     "meet_id": 254,
@@ -654,7 +636,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:52.30",
-    "place": "77"
+    "place": ""
   },
   {
     "meet_id": 251,
@@ -663,7 +645,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:22.60",
-    "place": "144"
+    "place": "4"
   },
   {
     "meet_id": 251,
@@ -672,7 +654,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:33.86",
-    "place": "162"
+    "place": "1"
   },
   {
     "meet_id": 251,
@@ -681,7 +663,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:51.09",
-    "place": "94"
+    "place": "9"
   },
   {
     "meet_id": 257,
@@ -690,7 +672,7 @@
     "course": "SCM",
     "event": "200 Freestyle",
     "time": "3:11.97",
-    "place": "29"
+    "place": ""
   },
   {
     "meet_id": 257,
@@ -699,7 +681,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "51.82",
-    "place": "68"
+    "place": ""
   },
   {
     "meet_id": 257,
@@ -708,7 +690,7 @@
     "course": "SCM",
     "event": "100 Butterfly",
     "time": "1:50.17",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 265,
@@ -717,7 +699,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "39.41",
-    "place": "111"
+    "place": ""
   },
   {
     "meet_id": 265,
@@ -726,7 +708,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:37.50",
-    "place": "100"
+    "place": ""
   },
   {
     "meet_id": 267,
@@ -735,7 +717,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "37.21",
-    "place": "212"
+    "place": "5"
   },
   {
     "meet_id": 267,
@@ -744,7 +726,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:26.78",
-    "place": "70"
+    "place": "19"
   },
   {
     "meet_id": 267,
@@ -753,7 +735,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "43.51",
-    "place": "161"
+    "place": "8"
   },
   {
     "meet_id": 267,
@@ -762,7 +744,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:35.02",
-    "place": "141"
+    "place": "5"
   },
   {
     "meet_id": 267,
@@ -771,7 +753,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:50.91",
-    "place": "97"
+    "place": "7"
   },
   {
     "meet_id": 267,
@@ -780,7 +762,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:33.12",
-    "place": "148"
+    "place": "7"
   },
   {
     "meet_id": 268,
@@ -789,7 +771,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "45.23",
-    "place": "99"
+    "place": ""
   },
   {
     "meet_id": 268,
@@ -798,7 +780,7 @@
     "course": "SCM",
     "event": "200 Breaststroke",
     "time": "4:00.58",
-    "place": "109"
+    "place": ""
   },
   {
     "meet_id": 268,
@@ -807,7 +789,7 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:42.00",
-    "place": "25"
+    "place": ""
   },
   {
     "meet_id": 263,
@@ -816,7 +798,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:26.61",
-    "place": "73"
+    "place": "6"
   },
   {
     "meet_id": 263,
@@ -825,7 +807,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:34.47",
-    "place": "151"
+    "place": "7"
   },
   {
     "meet_id": 263,
@@ -834,7 +816,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:47.83",
-    "place": "144"
+    "place": "5"
   },
   {
     "meet_id": 277,
@@ -843,7 +825,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:32.00",
-    "place": "10"
+    "place": ""
   },
   {
     "meet_id": 277,
@@ -852,7 +834,7 @@
     "course": "SCM",
     "event": "200 Backstroke",
     "time": "3:48.89",
-    "place": "10"
+    "place": ""
   },
   {
     "meet_id": 277,
@@ -861,7 +843,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "47.93",
-    "place": "2"
+    "place": ""
   },
   {
     "meet_id": 278,
@@ -870,7 +852,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "43.47",
-    "place": "163"
+    "place": "8"
   },
   {
     "meet_id": 283,
@@ -879,7 +861,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "36.99",
-    "place": "223"
+    "place": ""
   },
   {
     "meet_id": 283,
@@ -888,7 +870,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "44.77",
-    "place": "115"
+    "place": ""
   },
   {
     "meet_id": 283,
@@ -897,7 +879,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "49.32",
-    "place": "147"
+    "place": ""
   },
   {
     "meet_id": 283,
@@ -906,7 +888,7 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "45.72",
-    "place": "45"
+    "place": ""
   },
   {
     "meet_id": 281,
@@ -915,7 +897,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:25.16",
-    "place": "96"
+    "place": "11"
   },
   {
     "meet_id": 281,
@@ -924,7 +906,7 @@
     "course": "SCM",
     "event": "100 Backstroke",
     "time": "1:33.80",
-    "place": "163"
+    "place": "3"
   },
   {
     "meet_id": 281,
@@ -933,7 +915,7 @@
     "course": "SCM",
     "event": "100 Breaststroke",
     "time": "1:44.65",
-    "place": "198"
+    "place": "4"
   },
   {
     "meet_id": 286,
@@ -942,7 +924,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "47.40",
-    "place": "219"
+    "place": ""
   },
   {
     "meet_id": 286,
@@ -951,7 +933,7 @@
     "course": "SCM",
     "event": "200 Butterfly",
     "time": "3:46.76",
-    "place": "74"
+    "place": ""
   },
   {
     "meet_id": 280,
@@ -960,7 +942,7 @@
     "course": "SCM",
     "event": "50 Freestyle",
     "time": "36.73",
-    "place": "236"
+    "place": "43"
   },
   {
     "meet_id": 280,
@@ -969,7 +951,7 @@
     "course": "SCM",
     "event": "50 Backstroke",
     "time": "42.82",
-    "place": "190"
+    "place": "39"
   },
   {
     "meet_id": 280,
@@ -978,7 +960,7 @@
     "course": "SCM",
     "event": "50 Breaststroke",
     "time": "48.88",
-    "place": "163"
+    "place": "33"
   },
   {
     "meet_id": 280,
@@ -987,6 +969,51 @@
     "course": "SCM",
     "event": "50 Butterfly",
     "time": "43.55",
-    "place": "110"
+    "place": "38"
+  },
+  {
+    "meet_id": 288,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-10-03",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:26.45",
+    "place": "8"
+  },
+  {
+    "meet_id": 288,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-10-03",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:33.56",
+    "place": "7"
+  },
+  {
+    "meet_id": 288,
+    "meet": "South Lanarkshire Development",
+    "date": "2026-10-03",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:44.94",
+    "place": "5"
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "400 Freestyle",
+    "time": "6:39.04",
+    "place": ""
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "45.33",
+    "place": ""
   }
 ]

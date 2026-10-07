@@ -7,7 +7,7 @@
     "age": "12",
     "event": "100 Breaststroke",
     "time": "1:31.94",
-    "place": "311"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -17,7 +17,7 @@
     "age": "12",
     "event": "400 IM",
     "time": "6:29.38",
-    "place": "202"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -27,7 +27,7 @@
     "age": "7",
     "event": "100 Backstroke",
     "time": "2:10.68",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -37,7 +37,7 @@
     "age": "7",
     "event": "50 Breaststroke",
     "time": "1:01.73",
-    "place": "27"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -47,7 +47,7 @@
     "age": "9",
     "event": "50 Breaststroke",
     "time": "49.80",
-    "place": "131"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -57,7 +57,7 @@
     "age": "9",
     "event": "200 IM",
     "time": "3:40.79",
-    "place": "31"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -67,7 +67,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "50.06",
-    "place": "83"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -77,7 +77,7 @@
     "age": "10",
     "event": "200 IM",
     "time": "3:39.59",
-    "place": "20"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -87,7 +87,7 @@
     "age": "8",
     "event": "100 Backstroke",
     "time": "2:08.65",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -97,7 +97,7 @@
     "age": "12",
     "event": "100 Backstroke",
     "time": "2:01.29",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -107,7 +107,7 @@
     "age": "12",
     "event": "50 Breaststroke",
     "time": "1:04.45",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -117,7 +117,7 @@
     "age": "8",
     "event": "100 Backstroke",
     "time": "2:14.03",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -127,7 +127,7 @@
     "age": "8",
     "event": "50 Breaststroke",
     "time": "1:05.35",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -137,7 +137,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:21.07",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -147,7 +147,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "1:08.11",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -157,7 +157,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:00.69",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -167,7 +167,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "53.58",
-    "place": "24"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -177,7 +177,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "51.56",
-    "place": "43"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -187,7 +187,7 @@
     "age": "10",
     "event": "200 IM",
     "time": "3:29.86",
-    "place": "70"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -197,7 +197,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "49.39",
-    "place": "104"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -207,7 +207,7 @@
     "age": "10",
     "event": "200 IM",
     "time": "3:20.07",
-    "place": "141"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -217,7 +217,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:00.66",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -227,7 +227,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "58.00",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -237,7 +237,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "1:58.49",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -247,7 +247,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "54.60",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -257,7 +257,7 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "2:05.28",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -267,7 +267,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "1:05.50",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -277,7 +277,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "1:52.47",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -287,7 +287,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "56.48",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -297,7 +297,7 @@
     "age": "9",
     "event": "100 Backstroke",
     "time": "1:44.28",
-    "place": "14"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -307,7 +307,7 @@
     "age": "9",
     "event": "50 Breaststroke",
     "time": "1:04.54",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -317,7 +317,7 @@
     "age": "11",
     "event": "100 Breaststroke",
     "time": "2:00.63",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -327,7 +327,7 @@
     "age": "11",
     "event": "200 IM",
     "time": "4:02.43",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -337,7 +337,7 @@
     "age": "14",
     "event": "100 Breaststroke",
     "time": "1:44.28",
-    "place": "39"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -347,7 +347,7 @@
     "age": "14",
     "event": "200 IM",
     "time": "3:18.94",
-    "place": "42"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -357,7 +357,7 @@
     "age": "13",
     "event": "100 Backstroke",
     "time": "2:48.32",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -367,7 +367,7 @@
     "age": "13",
     "event": "50 Breaststroke",
     "time": "1:05.23",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -377,7 +377,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:17.12",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -387,7 +387,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "1:06.62",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -397,7 +397,7 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "2:18.55",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -407,7 +407,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "59.79",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -417,7 +417,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:03.66",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -427,7 +427,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "1:00.53",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -437,7 +437,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:16.42",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -447,7 +447,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "1:06.73",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -457,7 +457,7 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "2:24.47",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -467,7 +467,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "1:04.27",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -477,7 +477,7 @@
     "age": "13",
     "event": "100 Breaststroke",
     "time": "1:24.25",
-    "place": "370"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -487,7 +487,7 @@
     "age": "13",
     "event": "400 IM",
     "time": "5:59.17",
-    "place": "264"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -497,7 +497,7 @@
     "age": "12",
     "event": "100 Breaststroke",
     "time": "1:43.03",
-    "place": "8"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -507,7 +507,7 @@
     "age": "12",
     "event": "400 IM",
     "time": "7:02.61",
-    "place": "6"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -517,7 +517,7 @@
     "age": "12",
     "event": "50 Breaststroke",
     "time": "49.80",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -527,7 +527,7 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "2:08.65",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -537,7 +537,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "1:09.35",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -547,7 +547,7 @@
     "age": "13",
     "event": "100 Breaststroke",
     "time": "2:03.21",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -557,7 +557,7 @@
     "age": "13",
     "event": "200 IM",
     "time": "4:25.07",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -567,7 +567,7 @@
     "age": "12",
     "event": "100 Backstroke",
     "time": "1:58.47",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -577,7 +577,7 @@
     "age": "12",
     "event": "50 Breaststroke",
     "time": "58.34",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -587,7 +587,7 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "2:21.10",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -597,7 +597,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "1:06.72",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -607,7 +607,7 @@
     "age": "10",
     "event": "100 Backstroke",
     "time": "2:14.32",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -617,7 +617,7 @@
     "age": "10",
     "event": "50 Breaststroke",
     "time": "1:00.82",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -627,7 +627,7 @@
     "age": "8",
     "event": "100 Backstroke",
     "time": "2:39.96",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -637,7 +637,7 @@
     "age": "8",
     "event": "50 Breaststroke",
     "time": "1:09.41",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -647,7 +647,7 @@
     "age": "9",
     "event": "100 Backstroke",
     "time": "1:44.84",
-    "place": "13"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -657,7 +657,7 @@
     "age": "9",
     "event": "50 Breaststroke",
     "time": "56.06",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -667,7 +667,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "1:53.04",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -677,7 +677,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "55.23",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -687,7 +687,7 @@
     "age": "11",
     "event": "100 Backstroke",
     "time": "2:08.47",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -697,7 +697,7 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "1:04.25",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -707,7 +707,7 @@
     "age": "9",
     "event": "100 Backstroke",
     "time": "2:13.54",
-    "place": "1"
+    "place": ""
   },
   {
     "ath_id": null,
@@ -717,6 +717,6 @@
     "age": "9",
     "event": "50 Breaststroke",
     "time": "1:11.00",
-    "place": "1"
+    "place": ""
   }
 ]

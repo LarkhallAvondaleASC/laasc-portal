@@ -6,7 +6,7 @@
     "course": "SCM",
     "event": "100 Freestyle",
     "time": "1:56.20",
-    "place": "1"
+    "place": ""
   },
   {
     "meet_id": 286,
@@ -15,6 +15,15 @@
     "course": "SCM",
     "event": "100 IM",
     "time": "1:59.82",
-    "place": "1"
+    "place": ""
+  },
+  {
+    "meet_id": 291,
+    "meet": "Club Time Trials Oct 2026",
+    "date": "2026-10-05",
+    "course": "SCM",
+    "event": "200 Freestyle",
+    "time": "4:33.11",
+    "place": ""
   }
 ]

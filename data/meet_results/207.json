@@ -7,7 +7,7 @@
     "age": "13",
     "event": "100 Freestyle",
     "time": "1:07.79",
-    "place": "426"
+    "place": "4"
   },
   {
     "ath_id": null,
@@ -17,7 +17,7 @@
     "age": "13",
     "event": "200 Backstroke",
     "time": "2:46.15",
-    "place": "428"
+    "place": "5"
   },
   {
     "ath_id": null,
@@ -27,6 +27,6 @@
     "age": "13",
     "event": "200 Breaststroke",
     "time": "3:02.30",
-    "place": "501"
+    "place": "1"
   }
 ]
