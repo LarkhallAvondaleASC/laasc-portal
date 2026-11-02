@@ -131,66 +131,6 @@
   },
   {
     "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "43.31",
-    "place": "15"
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "100 Freestyle",
-    "time": "1:41.10",
-    "place": "11"
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Backstroke",
-    "time": "55.09",
-    "place": "14"
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Breaststroke",
-    "time": "58.08",
-    "place": "10"
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "100 Breaststroke",
-    "time": "2:14.63",
-    "place": "13"
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "100 IM",
-    "time": "1:53.56",
-    "place": "20"
-  },
-  {
-    "ath_id": null,
     "last": "Neeson",
     "first": "Zakk",
     "gender": "M",

@@ -721,36 +721,6 @@
   },
   {
     "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "3:01.06",
-    "place": "7"
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Backstroke",
-    "time": "2:10.12",
-    "place": "6"
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Butterfly",
-    "time": "2:31.53",
-    "place": "4"
-  },
-  {
-    "ath_id": null,
     "last": "Marshall",
     "first": "Lauren",
     "gender": "F",
@@ -898,46 +868,6 @@
     "event": "200 IM",
     "time": "3:33.51",
     "place": "5"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "50 Freestyle",
-    "time": "40.75",
-    "place": "3"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "50 Backstroke",
-    "time": "47.93",
-    "place": "4"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "50 Butterfly",
-    "time": "59.60",
-    "place": "5"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "100 IM",
-    "time": "1:53.57",
-    "place": "3"
   },
   {
     "ath_id": null,

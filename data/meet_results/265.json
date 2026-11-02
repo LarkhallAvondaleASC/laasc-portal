@@ -771,26 +771,6 @@
   },
   {
     "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "13",
-    "event": "50 Freestyle",
-    "time": "40.79",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "13",
-    "event": "200 IM",
-    "time": "3:51.28",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Little",
     "first": "Ruby",
     "gender": "F",
@@ -847,26 +827,6 @@
     "age": "12",
     "event": "200 IM",
     "time": "3:46.96",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "42.23",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "200 IM",
-    "time": "4:04.35",
     "place": ""
   },
   {

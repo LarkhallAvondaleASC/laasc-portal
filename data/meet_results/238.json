@@ -901,46 +901,6 @@
   },
   {
     "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "43.70",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Backstroke",
-    "time": "57.82",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Breaststroke",
-    "time": "59.96",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Butterfly",
-    "time": "50.39",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Lorimer",
     "first": "Hamish",
     "gender": "M",
@@ -1017,46 +977,6 @@
     "age": "11",
     "event": "50 Butterfly",
     "time": "1:01.16",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "43.35",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Backstroke",
-    "time": "53.92",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Breaststroke",
-    "time": "59.63",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Butterfly",
-    "time": "50.92",
     "place": ""
   },
   {
@@ -1197,46 +1117,6 @@
     "age": "13",
     "event": "50 Butterfly",
     "time": "34.20",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "41.02",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Backstroke",
-    "time": "45.37",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Breaststroke",
-    "time": "58.70",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Butterfly",
-    "time": "51.78",
     "place": ""
   },
   {

@@ -1,32 +1,5 @@
 [
   {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:43.03",
-    "place": ""
-  },
-  {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "400 IM",
-    "time": "7:02.61",
-    "place": ""
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:37.91",
-    "place": "15"
-  },
-  {
     "meet_id": 183,
     "meet": "Club Time Trials November 2024",
     "date": "2024-11-04",
@@ -1276,5 +1249,50 @@
     "event": "50 Backstroke",
     "time": "36.34",
     "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "29.07",
+    "place": "25"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:05.16",
+    "place": "23"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "800 Freestyle",
+    "time": "10:19.30",
+    "place": "6"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:20.38",
+    "place": "14"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "400 IM",
+    "time": "5:41.62",
+    "place": "1"
   }
 ]

@@ -322,5 +322,77 @@
     "event": "50 Backstroke",
     "time": "39.06",
     "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "38.57",
+    "place": "15"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:37.16",
+    "place": "26"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "35.29",
+    "place": "9"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:25.27",
+    "place": "24"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:00.91",
+    "place": "18"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "400 Freestyle",
+    "time": "5:47.09",
+    "place": "1"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:26.06",
+    "place": "3"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "100 Butterfly",
+    "time": "1:25.73",
+    "place": "2"
   }
 ]

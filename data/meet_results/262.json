@@ -311,36 +311,6 @@
   },
   {
     "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Freestyle",
-    "time": "37.62",
-    "place": "12"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Backstroke",
-    "time": "45.10",
-    "place": "13"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Butterfly",
-    "time": "50.20",
-    "place": "9"
-  },
-  {
-    "ath_id": null,
     "last": "Scott",
     "first": "Cole",
     "gender": "M",

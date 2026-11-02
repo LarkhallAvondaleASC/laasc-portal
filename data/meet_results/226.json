@@ -471,16 +471,6 @@
   },
   {
     "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Butterfly",
-    "time": "1:07.13",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Marshall",
     "first": "Lauren",
     "gender": "F",
@@ -497,16 +487,6 @@
     "age": "10",
     "event": "50 Butterfly",
     "time": "1:01.25",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "1:44.64",
     "place": ""
   },
   {
@@ -607,26 +587,6 @@
     "age": "13",
     "event": "200 IM",
     "time": "2:47.42",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "100 Freestyle",
-    "time": "1:39.42",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "50 Butterfly",
-    "time": "56.25",
     "place": ""
   },
   {

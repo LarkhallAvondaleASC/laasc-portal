@@ -1,23 +1,5 @@
 [
   {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "100 Backstroke",
-    "time": "2:39.96",
-    "place": ""
-  },
-  {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "50 Breaststroke",
-    "time": "1:09.41",
-    "place": ""
-  },
-  {
     "meet_id": 183,
     "meet": "Club Time Trials November 2024",
     "date": "2024-11-04",
@@ -1132,5 +1114,32 @@
     "event": "100 Breaststroke",
     "time": "2:00.39",
     "place": ""
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "100 Freestyle",
+    "time": "1:41.71",
+    "place": "2"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "52.60",
+    "place": "4"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:58.82",
+    "place": "1"
   }
 ]

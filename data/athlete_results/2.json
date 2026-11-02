@@ -1,68 +1,5 @@
 [
   {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:31.94",
-    "place": ""
-  },
-  {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "400 IM",
-    "time": "6:29.38",
-    "place": ""
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "50 Backstroke",
-    "time": "36.71",
-    "place": "6"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "100 Backstroke",
-    "time": "1:20.57",
-    "place": "8"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:29.78",
-    "place": "3"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "200 Breaststroke",
-    "time": "3:14.54",
-    "place": "4"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "200 IM",
-    "time": "DQ",
-    "place": ""
-  },
-  {
     "meet_id": 208,
     "meet": "Ren 96 Open Meet 2024",
     "date": "2024-11-01",
@@ -1465,5 +1402,68 @@
     "event": "50 Backstroke",
     "time": "33.84",
     "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "32.70",
+    "place": "4"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "33.19",
+    "place": "4"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:11.79",
+    "place": "4"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:12.43",
+    "place": "5"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:21.65",
+    "place": "3"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:24.77",
+    "place": "7"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:17.71",
+    "place": "11"
   }
 ]

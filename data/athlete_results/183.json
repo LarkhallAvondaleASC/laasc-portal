@@ -313,5 +313,50 @@
     "event": "50 Backstroke",
     "time": "41.94",
     "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "41.14",
+    "place": "26"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:36.41",
+    "place": "25"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "36.36",
+    "place": "16"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:25.31",
+    "place": "25"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "3:02.06",
+    "place": "20"
   }
 ]

@@ -1,59 +1,5 @@
 [
   {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:24.25",
-    "place": ""
-  },
-  {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "400 IM",
-    "time": "5:59.17",
-    "place": ""
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "100 Breaststroke",
-    "time": "1:22.75",
-    "place": "2"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "200 Breaststroke",
-    "time": "2:57.00",
-    "place": "1"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "100 IM",
-    "time": "1:16.66",
-    "place": "2"
-  },
-  {
-    "meet_id": 170,
-    "meet": "2024 WD Short Course Champions",
-    "date": "2024-10-19",
-    "course": "SCM",
-    "event": "200 IM",
-    "time": "2:46.04",
-    "place": "9"
-  },
-  {
     "meet_id": 185,
     "meet": "South Lanarkshire Development",
     "date": "2024-11-16",

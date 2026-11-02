@@ -461,26 +461,6 @@
   },
   {
     "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "40.95",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:12.91",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "McCafferty",
     "first": "Isla",
     "gender": "F",
@@ -577,26 +557,6 @@
     "age": "13",
     "event": "100 IM",
     "time": "1:16.43",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "50 Freestyle",
-    "time": "39.32",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "100 Breaststroke",
-    "time": "2:04.33",
     "place": ""
   },
   {

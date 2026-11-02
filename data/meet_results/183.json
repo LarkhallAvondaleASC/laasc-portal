@@ -411,26 +411,6 @@
   },
   {
     "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "47.67",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:20.50",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Marshall",
     "first": "Lauren",
     "gender": "F",
@@ -447,26 +427,6 @@
     "age": "10",
     "event": "100 Breaststroke",
     "time": "2:10.84",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "50 Freestyle",
-    "time": "45.76",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:14.89",
     "place": ""
   },
   {
@@ -507,26 +467,6 @@
     "age": "10",
     "event": "100 Breaststroke",
     "time": "2:23.72",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "50 Freestyle",
-    "time": "40.43",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "10",
-    "event": "100 Breaststroke",
-    "time": "2:03.16",
     "place": ""
   },
   {

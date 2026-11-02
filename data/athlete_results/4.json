@@ -1,23 +1,5 @@
 [
   {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "50 Breaststroke",
-    "time": "49.80",
-    "place": ""
-  },
-  {
-    "meet_id": 173,
-    "meet": "Club Time Trials October 2024",
-    "date": "2024-10-12",
-    "course": "SCM",
-    "event": "200 IM",
-    "time": "3:40.79",
-    "place": ""
-  },
-  {
     "meet_id": 183,
     "meet": "Club Time Trials November 2024",
     "date": "2024-11-04",
@@ -1141,5 +1123,140 @@
     "event": "50 Backstroke",
     "time": "38.49",
     "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "35.90",
+    "place": "2"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "36.33",
+    "place": "3"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:16.87",
+    "place": "6"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Backstroke",
+    "time": "1:17.17",
+    "place": "6"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:29.10",
+    "place": "4"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:30.32",
+    "place": "5"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "200 Breaststroke",
+    "time": "3:12.90",
+    "place": "3"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "34.98",
+    "place": "5"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "DQ",
+    "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "200 Butterfly",
+    "time": "3:06.43",
+    "place": "3"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:17.34",
+    "place": "1"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "100 IM",
+    "time": "1:18.54",
+    "place": "1"
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "200 IM",
+    "time": "2:53.66",
+    "place": "5"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "100 Breaststroke",
+    "time": "1:33.61",
+    "place": "1"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "400 IM",
+    "time": "6:30.93",
+    "place": "2"
   }
 ]

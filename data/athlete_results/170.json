@@ -430,5 +430,14 @@
     "event": "50 Backstroke",
     "time": "41.54",
     "place": ""
+  },
+  {
+    "meet_id": 287,
+    "meet": "2026 WD Short Course Champions",
+    "date": "2026-10-17",
+    "course": "SCM",
+    "event": "50 Backstroke",
+    "time": "40.02",
+    "place": "21"
   }
 ]

@@ -1,5 +1,41 @@
 [
   {
+    "id": 295,
+    "name": "Dumfries ASC Advent Open 2026",
+    "course": "SCM",
+    "date": "2026-12-04"
+  },
+  {
+    "id": 297,
+    "name": "Kingston Sprints 2026",
+    "course": "SCM",
+    "date": "2026-11-28"
+  },
+  {
+    "id": 296,
+    "name": "2026 WD AG Meet and Relay Cham",
+    "course": "SCM",
+    "date": "2026-11-21"
+  },
+  {
+    "id": 294,
+    "name": "Bellshill Sharks Open Meet 202",
+    "course": "SCM",
+    "date": "2026-11-14"
+  },
+  {
+    "id": 293,
+    "name": "2026 WD Short Course Champions",
+    "course": "SCM",
+    "date": "2026-11-07"
+  },
+  {
+    "id": 292,
+    "name": "south lanarkshire dev meet 6",
+    "course": "SCM",
+    "date": "2026-10-31"
+  },
+  {
     "id": 287,
     "name": "2026 WD Short Course Champions",
     "course": "SCM",
@@ -72,14 +108,14 @@
     "date": "2026-07-11"
   },
   {
-    "id": 270,
-    "name": "REN96 Development Meet 2026",
+    "id": 275,
+    "name": "Temple Swimming Club 50th Anni",
     "course": "SCM",
     "date": "2026-06-20"
   },
   {
-    "id": 275,
-    "name": "Temple Swimming Club 50th Anni",
+    "id": 270,
+    "name": "REN96 Development Meet 2026",
     "course": "SCM",
     "date": "2026-06-20"
   },
@@ -168,12 +204,6 @@
     "date": "2026-03-21"
   },
   {
-    "id": 274,
-    "name": "WoS Regional Championships for",
-    "course": "SCM",
-    "date": "2026-03-14"
-  },
-  {
     "id": 259,
     "name": "Club 200 fly",
     "course": "SCM",
@@ -182,6 +212,12 @@
   {
     "id": 255,
     "name": "Cumbernauld Spring Open Meet 2",
+    "course": "SCM",
+    "date": "2026-03-14"
+  },
+  {
+    "id": 274,
+    "name": "WoS Regional Championships for",
     "course": "SCM",
     "date": "2026-03-14"
   },
@@ -526,23 +562,5 @@
     "name": "Ren 96 Open Meet 2024",
     "course": "SCM",
     "date": "2024-11-01"
-  },
-  {
-    "id": 170,
-    "name": "2024 WD Short Course Champions",
-    "course": "SCM",
-    "date": "2024-10-19"
-  },
-  {
-    "id": 221,
-    "name": "DASC 3 Club Development Meet",
-    "course": "SCM",
-    "date": "2024-10-12"
-  },
-  {
-    "id": 173,
-    "name": "Club Time Trials October 2024",
-    "course": "SCM",
-    "date": "2024-10-12"
   }
 ]

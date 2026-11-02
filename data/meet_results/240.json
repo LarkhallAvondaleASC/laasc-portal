@@ -331,26 +331,6 @@
   },
   {
     "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "100 Backstroke",
-    "time": "1:57.91",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Kulkarni",
-    "first": "Arjun",
-    "gender": "M",
-    "age": "12",
-    "event": "50 Breaststroke",
-    "time": "57.59",
-    "place": ""
-  },
-  {
-    "ath_id": null,
     "last": "Lorimer",
     "first": "Hamish",
     "gender": "M",
@@ -387,26 +367,6 @@
     "age": "11",
     "event": "50 Breaststroke",
     "time": "1:00.85",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "100 Backstroke",
-    "time": "1:57.41",
-    "place": ""
-  },
-  {
-    "ath_id": null,
-    "last": "Martin Barrera",
-    "first": "Ilithyia",
-    "gender": "F",
-    "age": "12",
-    "event": "50 Breaststroke",
-    "time": "56.35",
     "place": ""
   },
   {

@@ -430,5 +430,32 @@
     "event": "100 Breaststroke",
     "time": "2:08.93",
     "place": ""
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "50 Freestyle",
+    "time": "47.31",
+    "place": "7"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "50 Breaststroke",
+    "time": "56.55",
+    "place": "4"
+  },
+  {
+    "meet_id": 292,
+    "meet": "south lanarkshire dev meet 6",
+    "date": "2026-10-31",
+    "course": "SCM",
+    "event": "50 Butterfly",
+    "time": "1:02.13",
+    "place": "4"
   }
 ]

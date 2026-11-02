@@ -421,36 +421,6 @@
   },
   {
     "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Freestyle",
-    "time": "1:37.58",
-    "place": "4"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Backstroke",
-    "time": "1:41.62",
-    "place": "2"
-  },
-  {
-    "ath_id": null,
-    "last": "Noble",
-    "first": "Cameron",
-    "gender": "M",
-    "age": "11",
-    "event": "100 Breaststroke",
-    "time": "2:08.11",
-    "place": "6"
-  },
-  {
-    "ath_id": null,
     "last": "Soper",
     "first": "Darcy",
     "gender": "F",
